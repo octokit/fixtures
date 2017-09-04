@@ -1,0 +1,51 @@
+{
+  "name": "octokit-fixtures",
+  "version": "0.0.0-development",
+  "description": "Fixtures for all the octokittens",
+  "main": "index.js",
+  "bin": {
+    "octokit-fixtures-server": "bin/serve.js"
+  },
+  "scripts": {
+    "coverage": "tap --coverage-report=html",
+    "coverage:upload": "tap --coverage-report=text-lcov | coveralls",
+    "record": "bin/record.js",
+    "start": "node bin/serve.js",
+    "pretest": "standard",
+    "test": "tap --coverage 'test/**/*-test.js'",
+    "test:unit": "tap 'test/unit/**/*-test.js'",
+    "test:integration": "tap 'test/integration/**/*-test.js'",
+    "test:e2e": "test/end-to-end/server-test.sh",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gr2m/octokit-fixtures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gr2m/octokit-fixtures/issues"
+  },
+  "homepage": "https://github.com/gr2m/octokit-fixtures#readme",
+  "dependencies": {
+    "envalid": "^4.0.1",
+    "express": "^4.15.4",
+    "glob": "^7.1.2",
+    "http-proxy-middleware": "^0.17.4",
+    "minimist": "^1.2.0",
+    "nock": "gr2m/nock#961/define-ignores-badheaders"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "chalk": "^2.1.0",
+    "coveralls": "^2.13.1",
+    "humanize-string": "^1.0.1",
+    "json-diff": "^0.5.1",
+    "mkdirp": "^0.5.1",
+    "semantic-release": "^7.0.2",
+    "standard": "^10.0.3",
+    "tap": "^10.7.2"
+  }
+}
