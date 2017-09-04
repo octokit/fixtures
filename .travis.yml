@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+node_js:
+  - 8
+before_script:
+  - npm prune
+after_success:
+  - npm run semantic-release
+script: npm run $COMMAND
+env:
+  matrix:
+    - COMMAND=pretest # linting
+    - COMMAND=test:unit
+    - COMMAND=test:integration
+    - COMMAND=test:e2e
+    - COMMAND=record
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
