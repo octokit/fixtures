@@ -8,7 +8,7 @@
   },
   "scripts": {
     "coverage": "tap --coverage-report=html",
-    "coverage:upload": "tap --coverage-report=text-lcov | coveralls",
+    "coverage:upload": "npm run test && tap --coverage-report=text-lcov | coveralls",
     "record": "bin/record.js",
     "start": "node bin/serve.js",
     "pretest": "standard",
