@@ -32,14 +32,16 @@ or as a [Node module](#asnodemodule).
 
 ### Standalone mock server
 
-Requires node 4+
+Download binary for your os from the [latest release](https://github.com/gr2m/octokit-fixtures/releases/latest).
+
+Alternatively, you can also install `octokit-fixtures` as a global npm package, if you prefer that:
 
 ```
 # npm install --global octokit-fixtures
 octokit-fixtures-server
 ```
 
-It currently loads all mocks from `/fixtures/api.github.com`. Once started,
+It currently loads all mocks from [`/fixtures/api.github.com`](fixtures/api.github.com/). Once started,
 you can send requests
 
 ```
