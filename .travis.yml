@@ -12,10 +12,11 @@ script: npm run $COMMAND
 env:
   matrix:
     - COMMAND=pretest # linting
+    - COMMAND=record
     - COMMAND=test:unit
     - COMMAND=test:integration
     - COMMAND=test:e2e
-    - COMMAND=record
+    - COMMAND=coverage:upload
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
