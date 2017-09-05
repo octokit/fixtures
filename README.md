@@ -2,9 +2,9 @@
 
 > Fixtures for all the octokittens
 
-[![Build Status](https://travis-ci.org/gr2m/octokit-fixture.svg?branch=master)](https://travis-ci.org/gr2m/octokit-fixture)
-[![Coverage Status](https://coveralls.io/repos/gr2m/octokit-fixture/badge.svg?branch=master)](https://coveralls.io/github/gr2m/octokit-fixture?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/octokit-fixture.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/gr2m/octokit-fixtures.svg?branch=master)](https://travis-ci.org/gr2m/octokit-fixtures)
+[![Coverage Status](https://coveralls.io/repos/gr2m/octokit-fixtures/badge.svg?branch=master)](https://coveralls.io/github/gr2m/octokit-fixtures?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/octokit-fixtures.svg)](https://greenkeeper.io/)
 
 Records requests/responses against the [GitHub REST API](https://developer.github.com/v3/)
 and stores them as JSON fixtures for usage as a standalone [http mock server](#standalonemockserver)
