@@ -1,0 +1,62 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/orgs/octokit-fixture-org",
+    "body": "",
+    "status": 200,
+    "response": {
+      "login": "octokit-fixture-org",
+      "id": 31898100,
+      "url": "https://api.github.com/orgs/octokit-fixture-org",
+      "repos_url": "https://api.github.com/orgs/octokit-fixture-org/repos",
+      "events_url": "https://api.github.com/orgs/octokit-fixture-org/events",
+      "hooks_url": "https://api.github.com/orgs/octokit-fixture-org/hooks",
+      "issues_url": "https://api.github.com/orgs/octokit-fixture-org/issues",
+      "members_url": "https://api.github.com/orgs/octokit-fixture-org/members{/member}",
+      "public_members_url": "https://api.github.com/orgs/octokit-fixture-org/public_members{/member}",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/31898100?v=4",
+      "description": null,
+      "has_organization_projects": true,
+      "has_repository_projects": true,
+      "public_repos": 42,
+      "public_gists": 0,
+      "followers": 0,
+      "following": 0,
+      "html_url": "https://github.com/octokit-fixture-org",
+      "created_at": "2017-10-10T16:00:00Z",
+      "updated_at": "2017-10-10T16:00:00Z",
+      "type": "Organization"
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "public, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "914",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "last-modified": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "59",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    },
+    "badheaders": [
+      "authorization"
+    ]
+  }
+]

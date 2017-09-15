@@ -1,6 +1,6 @@
 module.exports = {
   method: 'get',
-  url: '/repos/octokit-fixture-org/hello-world',
+  url: '/orgs/octokit-fixture-org',
   headers: {
     Accept: 'application/vnd.github.v3+json'
   }
