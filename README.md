@@ -162,9 +162,43 @@ to proxy requests to the mocked routes based on the existing fixtures.
   - for authenticated requests, `X-RateLimit-Remaining` is set to `4999`.
 - **Random things**  
   Fill random headers like `ETag` or `X-GitHub-Request-Id` and auth tokens with 0s.
-- **Content-Lenght** header is re-calculated after normalization of the response body
+- **Content-Length** header is re-calculated after normalization of the response body
 
 ## Local development
+
+### Test users / organization
+
+GitHub created test user accounts and an organization for the octokit fixtures:
+
+<table>
+  <tr>
+    <th valign=top>
+      <a href="https://github.com/octokit-fixture-user-a"><img src="https://github.com/octokit-fixture-user-a.png?size=60" alt=""></a>
+    </th>
+    <td valign=top>
+      <a href="https://github.com/octokit-fixture-user-a"><strong>octokit-fixture-user-a</strong> </a>(user)<br>
+      Main user, has unlimited private repositories
+    </td>
+  </tr>
+    <tr>
+      <th valign=top>
+        <a href="https://github.com/octokit-fixture-user-b"><img src="https://github.com/octokit-fixture-user-b.png?size=60" alt=""></a>
+      </th>
+      <td valign=top>
+        <a href="https://github.com/octokit-fixture-user-b"><strong>octokit-fixture-user-b</strong> </a>(user)<br>
+        Secondary user, private repositories only
+      </td>
+    </tr>
+      <tr>
+        <th valign=top>
+          <a href="https://github.com/octokit-fixture-org"><img src="https://github.com/octokit-fixture-org.png?size=60" alt=""></a>
+        </th>
+        <td valign=top>
+          <a href="https://github.com/octokit-fixture-org"><strong>octokit-fixture-org</strong></a> (org)<br>
+          Main organization, unlimited private repositories, unlimited seats
+        </td>
+      </tr>
+</table>
 
 ### Record
 
