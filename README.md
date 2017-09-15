@@ -256,6 +256,22 @@ After running tests, a coverage report can be generated that can be browsed loca
 npm run coverage
 ```
 
+### Releases
+
+Releases are automated using [semantic-release](https://github.com/semantic-release/semantic-release).
+The following commit message conventions determine which version is released:
+
+1. `fix: ...` or `fix(scope name): ...` prefix in subject: bumps fix version, e.g. `1.2.3` → `1.2.4`
+2. `feat: ...` or `feat(scope name): ...` prefix in subject: bumps feature version, e.g. `1.2.3` → `1.3.0`
+3. `BREAKING CHANGE:` in body: bumps breaking version, e.g. `1.2.3` → `2.0.0`
+
+Only one version number is bumped at a time, the highest version change trumps the others.
+
+The server binaries are currently not generated and uploaded automatically. To
+generate them run `npx pgk .`, then upload the resulting binaries to the respective
+[release](https://github.com/gr2m/octokit-fixtures/releases). We plan to automate
+that process: [#](https://github.com/gr2m/octokit-fixtures/issues/6) – pull requests welcome 🤗
+
 ## License
 
 [MIT](LICENSE.md)
