@@ -34,10 +34,10 @@ or as a [Node module](#asnodemodule).
 
 Download binary for your os from the [latest release](https://github.com/gr2m/octokit-fixtures/releases/latest).
 
-Alternatively, you can also install `octokit-fixtures` as a global npm package, if you prefer that:
+Alternatively, you can also install `@octokit/fixtures` as a global npm package, if you prefer that:
 
 ```
-# npm install --global octokit-fixtures
+# npm install --global @octokit/fixtures
 octokit-fixtures-server
 ```
 
@@ -97,7 +97,7 @@ format, for example.
 
 [![](assets/octokit-fixtures-introduction.png)](https://youtu.be/L851arJSMhM)
 
-`octokit-fixtures` provides fixtures that can be used by automated tests for
+`@octokit/fixtures` provides fixtures that can be used by automated tests for
 GitHub API clients, either as [standalone mock server](#standalonemockserver)
 or as a [Node module](#asnodemodule).
 
@@ -142,7 +142,7 @@ In order to keep the fixtures up-to-date with GitHubâ€™s and GitHub Enterpriseâ€
 APIs, the record task is run daily utilizing [Travis Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/).
 If a change in the fixtures occurs, a pull request is opened (or updated) in
 order to notify the maintainers who can then release a new breaking version
-of the `octokit-fixtures` and notify developers of the update.
+of the `@octokit/fixtures` package and notify developers of the update.
 
 ### Standalone server
 
