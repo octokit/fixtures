@@ -180,24 +180,24 @@ GitHub created test user accounts and an organization for the octokit fixtures:
       Main user, has unlimited private repositories
     </td>
   </tr>
-    <tr>
-      <th valign=top>
-        <a href="https://github.com/octokit-fixture-user-b"><img src="https://github.com/octokit-fixture-user-b.png?size=60" alt=""></a>
-      </th>
-      <td valign=top>
-        <a href="https://github.com/octokit-fixture-user-b"><strong>octokit-fixture-user-b</strong> </a>(user)<br>
-        Secondary user, private repositories only
-      </td>
-    </tr>
-      <tr>
-        <th valign=top>
-          <a href="https://github.com/octokit-fixture-org"><img src="https://github.com/octokit-fixture-org.png?size=60" alt=""></a>
-        </th>
-        <td valign=top>
-          <a href="https://github.com/octokit-fixture-org"><strong>octokit-fixture-org</strong></a> (org)<br>
-          Main organization, unlimited private repositories, unlimited seats
-        </td>
-      </tr>
+  <tr>
+    <th valign=top>
+      <a href="https://github.com/octokit-fixture-user-b"><img src="https://github.com/octokit-fixture-user-b.png?size=60" alt=""></a>
+    </th>
+    <td valign=top>
+      <a href="https://github.com/octokit-fixture-user-b"><strong>octokit-fixture-user-b</strong> </a>(user)<br>
+      Secondary user, private repositories only
+    </td>
+  </tr>
+  <tr>
+    <th valign=top>
+      <a href="https://github.com/octokit-fixture-org"><img src="https://github.com/octokit-fixture-org.png?size=60" alt=""></a>
+    </th>
+    <td valign=top>
+      <a href="https://github.com/octokit-fixture-org"><strong>octokit-fixture-org</strong></a> (org)<br>
+      Main organization, unlimited private repositories, unlimited seats
+    </td>
+  </tr>
 </table>
 
 ### Record
