@@ -8,14 +8,14 @@ test('Get repository', async (t) => {
 
   const result = await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octocat/hello-world',
+    url: 'https://api.github.com/repos/octokit-fixture-org/hello-world',
     headers: {
       Accept: 'application/vnd.github.v3+json'
     }
   })
 
   t.doesNotThrow(mock.done.bind(mock), 'satisfies all mocks')
-  t.is(result.data.id, 1296269)
+  t.is(result.data.id, 103703892)
   t.end()
 })
 
@@ -25,7 +25,7 @@ test('Missing Accept header', async (t) => {
   try {
     await axios({
       method: 'get',
-      url: 'https://api.github.com/repos/octocat/hello-world'
+      url: 'https://api.github.com/repos/octokit-fixture-org/hello-world'
     })
     t.fail('request should fail')
   } catch (error) {
