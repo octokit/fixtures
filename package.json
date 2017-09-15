@@ -1,6 +1,9 @@
 {
-  "name": "octokit-fixtures",
+  "name": "@octokit/fixtures",
   "version": "0.0.0-development",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Fixtures for all the octokittens",
   "main": "index.js",
   "bin": {
