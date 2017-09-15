@@ -95,6 +95,8 @@ format, for example.
 
 ## How it works
 
+[![](assets/octokit-fixtures-introduction.png)](https://youtu.be/L851arJSMhM)
+
 `octokit-fixtures` provides fixtures that can be used by automated tests for
 GitHub API clients, either as [standalone mock server](#standalonemockserver)
 or as a [Node module](#asnodemodule).
