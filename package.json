@@ -18,6 +18,7 @@
     "test": "tap --coverage 'test/**/*-test.js'",
     "test:unit": "tap 'test/unit/**/*-test.js'",
     "test:integration": "tap 'test/integration/**/*-test.js'",
+    "test:node4": "node test/node-4-compatibility.js",
     "test:e2e": "test/end-to-end/server-test.sh",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
