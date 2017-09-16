@@ -17,6 +17,12 @@ env:
     - COMMAND=test:integration
     - COMMAND=test:e2e
     - COMMAND=coverage:upload
+
+matrix:
+  fast_finish: true
+  include:
+    - node_js: "4"
+      env: COMMAND=test:node4
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
