@@ -1,6 +1,7 @@
 module.exports = {
-  get,
-  mock
+  // don’t use short syntax for node@4 compatibility
+  get: get,
+  mock: mock
 }
 
 const nock = require('nock')
