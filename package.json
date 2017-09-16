@@ -34,12 +34,13 @@
   },
   "homepage": "https://github.com/gr2m/octokit-fixtures#readme",
   "dependencies": {
-    "envalid": "^4.0.1",
-    "express": "^4.15.4",
-    "glob": "^7.1.2",
-    "http-proxy-middleware": "^0.17.4",
-    "minimist": "^1.2.0",
     "nock": "gr2m/nock#961/define-ignores-badheaders"
+  },
+  "optionalDependencies": {
+    "express": "^4.15.4",
+    "http-proxy-middleware": "^0.17.4",
+    "envalid": "^4.0.1",
+    "glob": "^7.1.2"
   },
   "devDependencies": {
     "axios": "^0.16.2",
@@ -47,6 +48,7 @@
     "coveralls": "^2.13.1",
     "humanize-string": "^1.0.1",
     "json-diff": "^0.5.1",
+    "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "semantic-release": "^7.0.2",
     "standard": "^10.0.3",
