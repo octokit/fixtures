@@ -13,7 +13,7 @@ module.exports = [
     url: '/',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token ${env.FIXTURES_USER_ACCESS_TOKEN}`
+      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
     }
   }
 ]
