@@ -168,7 +168,7 @@ to proxy requests to the mocked routes based on the existing fixtures.
 
 ## Local development
 
-### Test users / organization
+### Test users / organization / tokens
 
 GitHub created test user accounts and an organization for the octokit fixtures:
 
@@ -202,10 +202,39 @@ GitHub created test user accounts and an organization for the octokit fixtures:
   </tr>
 </table>
 
+The following access tokens need to be configured as environment variables.
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        Environment variable
+      </th>
+      <th>
+        User
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tr>
+    <th valign=top>
+      FIXTURES_USER_A_TOKEN_FULL_ACCESS
+    </th>
+    <td>
+      octokit-fixture-user-a
+    </td>
+    <td valign=top>
+      All scopes enabled
+    </td>
+  </tr>
+</table>
+
 ### Record
 
 Some scenarios require a user token with full access. [Create one](https://github.com/settings/tokens)
-and then set the `FIXTURES_USER_ACCESS_TOKEN` environment variable. You can
+and then set the `FIXTURES_USER_A_TOKEN_FULL_ACCESS` environment variable. You can
 create a local `.env` file if you like, it is parsed using [dotenv](https://www.npmjs.com/package/dotenv).
 
 Run scenarios from `scenarios/**` against the real GitHub APIs and compare
