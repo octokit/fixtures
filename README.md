@@ -152,6 +152,7 @@ to proxy requests to the mocked routes based on the existing fixtures.
 
 ### Normalizations
 
+- **All IDs are set to 1**
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
   Dates are set in different formats, so here are a few examples
   - UTC in seconds: **2017-10-10T16:00:00Z** (e.g. `updated_at`)
