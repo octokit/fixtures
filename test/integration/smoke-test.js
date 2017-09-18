@@ -15,7 +15,7 @@ test('Get repository', async (t) => {
   })
 
   t.doesNotThrow(mock.done.bind(mock), 'satisfies all mocks')
-  t.is(result.data.id, 103703892)
+  t.is(result.data.id, 1)
   t.end()
 })
 
