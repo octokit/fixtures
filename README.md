@@ -203,11 +203,15 @@ GitHub created test user accounts and an organization for the octokit fixtures:
   </tr>
 </table>
 
-The following access tokens need to be configured as environment variables.
+The following access tokens need to be configured as environment variables. You
+can create a `.env` file to configure them locally, it is parsed using [dotenv](https://www.npmjs.com/package/dotenv).
 
 <table>
   <thead>
     <tr>
+      <th>
+        #
+      </th>
       <th>
         Environment variable
       </th>
@@ -221,6 +225,9 @@ The following access tokens need to be configured as environment variables.
   </thead>
   <tr>
     <th valign=top>
+      1
+    </th>
+    <th valign=top>
       FIXTURES_USER_A_TOKEN_FULL_ACCESS
     </th>
     <td>
@@ -230,13 +237,23 @@ The following access tokens need to be configured as environment variables.
       All scopes enabled
     </td>
   </tr>
+  <tr>
+    <th valign=top>
+      2
+    </th>
+    <th valign=top>
+      FIXTURES_USER_B_TOKEN_FULL_ACCESS
+    </th>
+    <td>
+      octokit-fixture-user-b
+    </td>
+    <td valign=top>
+      All scopes enabled
+    </td>
+  </tr>
 </table>
 
 ### Record
-
-Some scenarios require a user token with full access. [Create one](https://github.com/settings/tokens)
-and then set the `FIXTURES_USER_A_TOKEN_FULL_ACCESS` environment variable. You can
-create a local `.env` file if you like, it is parsed using [dotenv](https://www.npmjs.com/package/dotenv).
 
 Run scenarios from `scenarios/**` against the real GitHub APIs and compare
 responses to previously recorded fixtures
