@@ -251,7 +251,7 @@ If there are changes, you can updated the recorded fixtures
 node bin/record --update
 ```
 
-To record a selected scenarios, pass their names to the record command.
+To record selected scenarios, pass their names to the record command.
 You can combine that with the `--update` flag.
 
 ```
