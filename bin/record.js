@@ -46,6 +46,10 @@ scenarios.reduce(async (promise, scenarioPath) => {
     baseURL = env.FIXTURES_PROXY
   }
 
+  const state = {
+    request: axios.create({baseURL})
+  }
+
   if (Array.isArray(scenario)) {
     // if scenario is an array of request options, send requests sequentially
     await scenario.reduce(async (promise, step) => {
@@ -58,14 +62,14 @@ scenarios.reduce(async (promise, scenarioPath) => {
         }
       }
 
-      return axios.create({baseURL})(step)
+      return state.request(step)
     }, Promise.resolve())
   } else if (typeof scenario === 'object') {
     // if scenario is an object with request options, send a request for it
-    await axios.create({baseURL})(scenario)
+    await state.request(scenario)
   } else {
     // otherwise we expect scenario to be an asynchronous function
-    await scenario()
+    await scenario(state)
   }
 
   const newFixtures = nock.recorder.play().map(normalize)
