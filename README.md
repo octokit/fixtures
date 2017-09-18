@@ -156,6 +156,7 @@ to proxy requests to the mocked routes based on the existing fixtures.
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
   Dates are set in different formats, so here are a few examples
   - UTC in seconds: **2017-10-10T16:00:00Z** (e.g. `updated_at`)
+  - UTC with Timezone Delta: **2017-10-10T09:00:00-07:00** (e.g. invitation `created_at`)
   - GMT date string: **Tue, 10 Oct 2017 16:00:00 GMT** (e.g. `Last-Modified` header)
   - UNIX timestamp in seconds: **1507651200000** (e.g. `X-RateLimit-Reset` header)
 - **All counts are set to 42**  
