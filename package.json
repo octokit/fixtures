@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/gr2m/octokit-fixtures#readme",
   "dependencies": {
-    "nock": "gr2m/nock#961/define-ignores-badheaders"
+    "nock": "^9.0.15"
   },
   "optionalDependencies": {
     "express": "^4.15.4",
