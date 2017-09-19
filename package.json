@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/gr2m/octokit-fixtures#readme",
   "dependencies": {
+    "lodash": "^4.17.4",
     "nock": "^9.0.16"
   },
   "optionalDependencies": {
