@@ -41,14 +41,14 @@
     "express": "^4.15.4",
     "http-proxy-middleware": "^0.17.4",
     "envalid": "^4.0.1",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "json-diff": "^0.5.2"
   },
   "devDependencies": {
     "axios": "^0.16.2",
     "chalk": "^2.1.0",
     "coveralls": "^2.13.1",
     "humanize-string": "^1.0.1",
-    "json-diff": "^0.5.2",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "semantic-release": "^8.0.1",
