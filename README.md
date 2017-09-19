@@ -85,6 +85,46 @@ For tests, you can check if all mocks have been satisfied for a given scenario
 const mock = fixtures.mock('api.github.com/get-repository')
 // send requests ...
 mock.done() // will throw an error unless all mocked routes have been called
+mock.isDone() // returns true / false
+mock.pending() // returns array of pending mocks in the format [<method> <path>]
+```
+
+`mock.explain` can be used to amend an error thrown by nock if a request could
+not be matched
+
+```js
+const mock = fixtures.mock('api.github.com/get-repository')
+const github = new GitHub()
+return github.repos.get({owner: 'octokit-fixture-org', repo: 'hello-world'})
+.catch(mock.explain)
+```
+
+Now instead of logging
+
+```
+Error: Nock: No match for request {
+  "method": "get",
+  "url": "https://api.github.com/orgs/octokit-fixture-org",
+  "headers": {
+    "host": "api.github.com",
+    "content-length": "0",
+    "user-agent": "NodeJS HTTP Client",
+    "accept": "application/vnd.github.v3+json"
+  }
+}
+```
+
+The log shows exactly what the difference between the sent request and the next
+pending mock is
+
+```diff
+ Request did not match mock:
+ {
+   headers: {
+-    accept: "application/vnd.github.v3"
++    accept: "application/vnd.github.v3+json"
+   }
+ }
 ```
 
 #### fixtures.get(scenario)
