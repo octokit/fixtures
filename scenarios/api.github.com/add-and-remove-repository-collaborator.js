@@ -39,6 +39,9 @@ async function addAndRemoveRepostioryCollaborator (state) {
     }
   })
 
+  // wait for 1000ms as there seems to be a race condition on GitHub’s API
+  await new Promise(resolve => setTimeout(resolve, 1000))
+
   // https://developer.github.com/v3/repos/collaborators/#list-collaborators
   await state.request({
     method: 'get',
