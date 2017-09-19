@@ -117,9 +117,9 @@
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/x-www-form-urlencoded",
       "authorization": "token 0000000000000000000000000000000000000000",
-      "host": "api.github.com"
+      "host": "api.github.com",
+      "content-length": 0
     },
     "headers": {
       "access-control-allow-origin": "*",
@@ -304,9 +304,9 @@
     "response": "",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/x-www-form-urlencoded",
       "authorization": "token 0000000000000000000000000000000000000000",
-      "host": "api.github.com"
+      "host": "api.github.com",
+      "content-length": 0
     },
     "headers": {
       "access-control-allow-origin": "*",
