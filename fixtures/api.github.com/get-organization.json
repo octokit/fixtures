@@ -49,6 +49,7 @@
       "x-frame-options": "deny",
       "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-now-region": "now-sfo",
       "x-ratelimit-limit": "60",
       "x-ratelimit-remaining": "59",
       "x-ratelimit-reset": "1507651200000",
