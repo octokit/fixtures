@@ -24,6 +24,6 @@ axios({
 
 .then(() => {
   const fixtures = nock.recorder.play()
-  console.log(JSON.stringify(fixtures, null, 2))
+  console.log(JSON.stringify(fixtures[0], null, 2))
 })
 ```
