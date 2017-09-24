@@ -160,9 +160,13 @@ To create a new scenario
 
 1. create a new file in the [scenarios folder](scenarios/) that matches the host
    name you send requests to. A scenario is a `*.js` which can export
+
    - [axios request config](https://www.npmjs.com/package/axios#request-config)
    - an array of axios request configs
-   - a function that returns a Promise
+   - a function that returns a Promise  
+
+   To keep requests from being captured as fixture (e.g. to create/delete a
+   temporary request), set the request Header `X-Octokit-Fixture-Ignore` to `'true'`.
 2. Run `bin/record.js`. It should log something like
    ```
    ⏯  api.github.com: Get root ...
