@@ -1,0 +1,151 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "post",
+    "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues",
+    "body": {
+      "title": "Issue without a label"
+    },
+    "status": 201,
+    "response": {
+      "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1",
+      "repository_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue",
+      "labels_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels{/name}",
+      "comments_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/comments",
+      "events_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/events",
+      "html_url": "https://github.com/octokit-fixture-org/add-labels-to-issue/issues/1",
+      "id": 1,
+      "number": 1,
+      "title": "Issue without a label",
+      "user": {
+        "login": "octokit-fixture-user-a",
+        "id": 1,
+        "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/octokit-fixture-user-a",
+        "html_url": "https://github.com/octokit-fixture-user-a",
+        "followers_url": "https://api.github.com/users/octokit-fixture-user-a/followers",
+        "following_url": "https://api.github.com/users/octokit-fixture-user-a/following{/other_user}",
+        "gists_url": "https://api.github.com/users/octokit-fixture-user-a/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/octokit-fixture-user-a/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/octokit-fixture-user-a/subscriptions",
+        "organizations_url": "https://api.github.com/users/octokit-fixture-user-a/orgs",
+        "repos_url": "https://api.github.com/users/octokit-fixture-user-a/repos",
+        "events_url": "https://api.github.com/users/octokit-fixture-user-a/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "labels": [],
+      "state": "open",
+      "locked": false,
+      "assignee": null,
+      "assignees": [],
+      "milestone": null,
+      "comments": 42,
+      "created_at": "2017-10-10T16:00:00Z",
+      "updated_at": "2017-10-10T16:00:00Z",
+      "closed_at": null,
+      "author_association": "OWNER",
+      "body": null,
+      "closed_by": null
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json;charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000000",
+      "content-length": 33,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "1905",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "location": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1",
+      "status": "201 Created",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "post",
+    "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels",
+    "body": [
+      "Foo",
+      "bAr",
+      "baZ"
+    ],
+    "status": 200,
+    "response": [
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/bAr",
+        "name": "bAr",
+        "color": "ededed",
+        "default": false
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/baZ",
+        "name": "baZ",
+        "color": "ededed",
+        "default": false
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/Foo",
+        "name": "Foo",
+        "color": "ededed",
+        "default": false
+      }
+    ],
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json;charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000000",
+      "content-length": 19,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "430",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "public_repo, repo",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+]
