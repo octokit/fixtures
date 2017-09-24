@@ -89,7 +89,7 @@ scenarios.reduce(async (promise, scenarioPath) => {
         console.log(`📼  New fixtures recorded`)
         return write(fixtureName, newFixtures)
       }
-      console.log(`❌  This looks like a new fixture`)
+      console.log(`❌  "${fixtureName}" looks like a new fixture`)
     } else {
       if (doUpdate) {
         console.log(`📼  Fixture updates recorded`)
