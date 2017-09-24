@@ -52,7 +52,7 @@
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/json;charset=utf-8",
+      "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000000",
       "content-length": 33,
       "host": "api.github.com"
@@ -118,7 +118,7 @@
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/json;charset=utf-8",
+      "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000000",
       "content-length": 19,
       "host": "api.github.com"
