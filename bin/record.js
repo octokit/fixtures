@@ -72,7 +72,9 @@ scenarios.reduce(async (promise, scenarioPath) => {
     await scenario(state)
   }
 
-  const newFixtures = nock.recorder.play().map(normalize)
+  const newFixtures = nock.recorder.play()
+    .filter(hasntIgnoreHeader)
+    .map(normalize)
   const oldFixtures = await read(fixtureName)
   nock.recorder.clear()
 
@@ -139,3 +141,8 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log(JSON.stringify(error.response.data, null, 2))
   process.exit(1)
 })
+
+function hasntIgnoreHeader (fixture) {
+  const hasIgnoreHeader = 'x-octokit-fixture-ignore' in fixture.reqheaders
+  return !hasIgnoreHeader
+}
