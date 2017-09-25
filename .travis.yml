@@ -23,6 +23,7 @@ env:
     - COMMAND=record
     - COMMAND=test:unit
     - COMMAND=test:integration
+    - COMMAND=test:scenarios
     - COMMAND=test:e2e
     - COMMAND=coverage:upload
 
