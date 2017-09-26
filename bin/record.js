@@ -5,13 +5,12 @@ const chalk = require('chalk')
 const {diff, diffString} = require('json-diff')
 const glob = require('glob')
 const humanize = require('humanize-string')
-const nock = require('nock')
 
 const env = require('../lib/env')
 const isTravisCronJob = require('../lib/is-travis-cron-job')
-const normalize = require('../lib/normalize')
 const notifyAboutFixturesChanges = require('../lib/notify-about-fixtures-changes')
 const read = require('../lib/read')
+const recordScenario = require('../lib/record-scenario')
 const write = require('../lib/write')
 
 const argv = require('minimist')(process.argv.slice(2), {
@@ -20,12 +19,6 @@ const argv = require('minimist')(process.argv.slice(2), {
 const doUpdate = argv.update
 const selectedScenarios = argv._
 const hasSelectedScenarios = selectedScenarios.length > 0
-
-nock.recorder.rec({
-  output_objects: true,
-  dont_print: true,
-  enable_reqheaders_recording: true
-})
 
 const scenarios = hasSelectedScenarios ? selectedScenarios : glob.sync('scenarios/**/*.js')
 const diffs = []
@@ -38,7 +31,6 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log('')
   console.log(`⏯️  ${chalk.bold(domain)}: ${humanize(title.replace('.js', ''))} ...`)
 
-  const scenario = require(`../scenarios/${fixtureName}`)
   let baseURL = `https://${domain}`
 
   // workaround for https://github.com/gr2m/octokit-fixtures/issues/3
@@ -46,69 +38,45 @@ scenarios.reduce(async (promise, scenarioPath) => {
     baseURL = env.FIXTURES_PROXY
   }
 
-  const state = {
-    request: axios.create({baseURL})
-  }
-
-  if (Array.isArray(scenario)) {
-    // if scenario is an array of request options, send requests sequentially
-    await scenario.reduce(async (promise, step) => {
-      try {
-        await promise
-      } catch (error) {
-        // don’t fail on 4xx errors, they are valid fixtures
-        if (error.response.status >= 500) {
-          throw error
-        }
-      }
-
-      return state.request(step)
-    }, Promise.resolve())
-  } else if (typeof scenario === 'object') {
-    // if scenario is an object with request options, send a request for it
-    await state.request(scenario)
-  } else {
-    // otherwise we expect scenario to be an asynchronous function
-    await scenario(state)
-  }
-
-  const newFixtures = nock.recorder.play()
-    .filter(hasntIgnoreHeader)
-    .map(normalize)
   const oldFixtures = await read(fixtureName)
-  nock.recorder.clear()
+  const newFixtures = await recordScenario({
+    request: axios.create({baseURL}),
+    scenario: require(`../scenarios/${fixtureName}`)
+  })
 
   const fixturesDiffs = diff(newFixtures, oldFixtures)
-  if (fixturesDiffs) {
-    diffs.push({
-      name: fixtureName,
-      changes: fixturesDiffs,
-      newFixtures,
-      oldFixtures
-    })
-    if (fixturesDiffs[0][0] === '-') {
-      if (doUpdate) {
-        console.log(`📼  New fixtures recorded`)
-        return write(fixtureName, newFixtures)
-      }
-      console.log(`❌  "${fixtureName}" looks like a new fixture`)
-    } else {
-      if (doUpdate) {
-        console.log(`📼  Fixture updates recorded`)
-        return write(fixtureName, newFixtures)
-      }
-      console.log(`❌  Fixtures are not up-to-date`)
-
-      if (!isTravisCronJob()) {
-        console.log(diffString(oldFixtures, newFixtures))
-        console.log(`💁  Update fixtures with \`${chalk.bold('bin/record.js --update')}\``)
-      }
-    }
-  } else {
+  if (!fixturesDiffs) {
     console.log(`✅  Fixtures are up-to-date`)
+    return
   }
 
-  return Promise.resolve()
+  diffs.push({
+    name: fixtureName,
+    changes: fixturesDiffs,
+    newFixtures,
+    oldFixtures
+  })
+
+  if (fixturesDiffs[0][0] === '-') {
+    if (doUpdate) {
+      console.log(`📼  New fixtures recorded`)
+      return write(fixtureName, newFixtures)
+    }
+    console.log(`❌  "${fixtureName}" looks like a new fixture`)
+    return
+  }
+
+  if (doUpdate) {
+    console.log(`📼  Fixture updates recorded`)
+    return write(fixtureName, newFixtures)
+  }
+
+  console.log(`❌  Fixtures are not up-to-date`)
+
+  if (!isTravisCronJob()) {
+    console.log(diffString(oldFixtures, newFixtures))
+    console.log(`💁  Update fixtures with \`${chalk.bold('bin/record.js --update')}\``)
+  }
 }, Promise.resolve())
 
 .then(() => {
@@ -141,8 +109,3 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log(JSON.stringify(error.response.data, null, 2))
   process.exit(1)
 })
-
-function hasntIgnoreHeader (fixture) {
-  const hasIgnoreHeader = 'x-octokit-fixture-ignore' in fixture.reqheaders
-  return !hasIgnoreHeader
-}
