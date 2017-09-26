@@ -52,6 +52,7 @@
     "humanize-string": "^1.0.1",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
+    "proxyquire": "^1.8.0",
     "semantic-release": "^8.0.1",
     "standard": "^10.0.3",
     "tap": "^10.7.2"
