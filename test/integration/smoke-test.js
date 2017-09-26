@@ -35,3 +35,35 @@ test('Matches corret fixture based on authorization header', async (t) => {
 
   t.end()
 })
+
+test('unmatched request error', async (t) => {
+  const mock = fixtures.mock('api.github.com/get-repository')
+
+  try {
+    await axios({
+      method: 'get',
+      url: 'https://api.github.com/unknown',
+      headers: {
+        Accept: 'application/vnd.github.v3+json'
+      }
+    }).catch(mock.explain)
+    t.fail('request should fail')
+  } catch (error) {
+    t.match(error.message, '+  url: "https://api.github.com/unknown')
+  }
+
+  t.end()
+})
+
+test('explain non-request error', {only: true}, async (t) => {
+  const mock = fixtures.mock('api.github.com/get-repository')
+
+  try {
+    mock.explain(new Error('foo'))
+    t.fail('should throw error')
+  } catch (error) {
+    t.is(error.message, 'foo')
+  }
+
+  t.end()
+})

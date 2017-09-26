@@ -1,32 +1,32 @@
+const proxyquire = require('proxyquire')
 const {test} = require('tap')
 
-const normalize = require('../../lib/normalize')
-
-const fixtures = {
-  getRepository: require('../fixtures/get-organization-repository.json'),
-  getRootViaNowProxy: require('../fixtures/get-root-via-now-proxy.json'),
-  getTemporaryRepository: require('../fixtures/get-temporary-repository.json')
+const minimalFixture = {
+  path: '/',
+  rawHeaders: [],
+  reqheaders: {},
+  response: {}
 }
 
-test('normalize', (t) => {
-  const result = normalize(fixtures.getRepository)
+test('normalize when using proxy (#3)', (t) => {
+  const normalize = proxyquire('../../lib/normalize', {
+    '../env': {
+      FIXTURES_PROXY: 1
+    }
+  })
 
-  t.deepEqual(result.response.id, 1)
-  t.end()
-})
+  const fixture = Object.assign({}, minimalFixture)
+  fixture.scope = 'https://myproxy.com:443'
+  fixture.reqheaders.host = 'myproxy.com'
+  fixture.rawHeaders = [
+    'x-powered-by',
+    'foobar'
+  ]
 
-test('normalize now proxy response #20', (t) => {
-  const response = normalize(fixtures.getRootViaNowProxy)
-
-  t.is(response.headers['x-now-region'], undefined)
-
-  t.end()
-})
-
-test('normalize request paths containing temporary repository name #23', (t) => {
-  const fixture = normalize(fixtures.getTemporaryRepository)
-
-  t.is(fixture.path, '/repos/octokit-fixture-org/bar')
+  const result = normalize(fixture)
+  t.is(result.scope, 'https://api.github.com:443', 'sets scope')
+  t.is(fixture.reqheaders.host, 'api.github.com', 'sets host request header')
+  t.is(fixture.headers['x-powered-by'], undefined, 'removes x-powered-by response header')
 
   t.end()
 })
