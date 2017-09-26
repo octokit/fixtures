@@ -41,7 +41,7 @@ Alternatively, you can also install `@octokit/fixtures` as a global npm package,
 octokit-fixtures-server
 ```
 
-It currently loads all mocks from [`/fixtures/api.github.com`](fixtures/api.github.com/). Once started,
+It currently loads all mocks from [`/scenarios/api.github.com/*/normalized-fixture.json`](scenarios/api.github.com/). Once started,
 you can send requests
 
 ```
@@ -141,9 +141,25 @@ format, for example.
 GitHub API clients, either as [standalone mock server](#standalonemockserver)
 or as a [Node module](#asnodemodule).
 
-The fixtures are recorded programatically (see [scenarios/ folder](scenarios/))
+The fixtures are recorded programatically
 by sending requests against the [GitHub REST API](https://developer.github.com/v3/)
-and recording both requests and responses into JSON files (see [fixtures/ folder](fixtures/)).
+and recording both requests and responses into JSON files. Each scenario has their own folder in the [scenarios/<host>/ folder](scenarios/)). Each of these folders contains 4 files:
+
+- **`test.js`**  
+  an integration test as an example for consumers
+- **`record.js`** <a name="record-js-file"></a>  
+  exports one of the following
+
+  - [axios request config](https://www.npmjs.com/package/axios#request-config)
+  - an array of axios request configs
+  - a function that returns a Promise
+
+  To keep requests from being captured as fixture (e.g. to create/delete a
+  temporary request), set the request Header `X-Octokit-Fixture-Ignore` to `'true'`.
+- **`raw-fixture.json`**  
+  The raw request and response before normalization, which is used for integration tests and debugging. Only sensitive credentials are removed
+- **`normalized-fixture`**  
+  The result of the recorded fixtures after normalization.
 
 ### Recording
 
@@ -158,15 +174,9 @@ The stored fixtures can be updated by running `bin/record.js --update`.
 
 To create a new scenario
 
-1. create a new file in the [scenarios folder](scenarios/) that matches the host
-   name you send requests to. A scenario is a `*.js` which can export
+1. create a new folder in the [scenarios folder](scenarios/) that matches the host
+   name you send requests to. In that folder, create a [`record.js`](#record-js-file) file.
 
-   - [axios request config](https://www.npmjs.com/package/axios#request-config)
-   - an array of axios request configs
-   - a function that returns a Promise  
-
-   To keep requests from being captured as fixture (e.g. to create/delete a
-   temporary request), set the request Header `X-Octokit-Fixture-Ignore` to `'true'`.
 2. Run `bin/record.js`. It should log something like
    ```
    ⏯  api.github.com: Get root ...
@@ -197,6 +207,7 @@ to proxy requests to the mocked routes based on the existing fixtures.
 ### Normalizations
 
 - **All IDs are set to 1**
+- **Tokens Authorization Header are zerofied**
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
   Dates are set in different formats, so here are a few examples
   - UTC in seconds: **2017-10-10T16:00:00Z** (e.g. `updated_at`)
