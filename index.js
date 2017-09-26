@@ -11,7 +11,7 @@ const headers = require('./lib/headers')
 const diffString = require('json-diff').diffString
 
 function get (name) {
-  const fixtures = require(`./fixtures/${name}.json`)
+  const fixtures = require(`./scenarios/${name}/normalized-fixture.json`)
   return fixtures.map(fixture => Object.assign({}, fixture))
 }
 

@@ -1,4 +1,4 @@
-const env = require('../../lib/env')
+const env = require('../../../lib/env')
 
 // https://developer.github.com/v3/#root-endpoint
 module.exports = [

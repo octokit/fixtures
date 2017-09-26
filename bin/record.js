@@ -20,13 +20,13 @@ const doUpdate = argv.update
 const selectedScenarios = argv._
 const hasSelectedScenarios = selectedScenarios.length > 0
 
-const scenarios = hasSelectedScenarios ? selectedScenarios : glob.sync('scenarios/**/*.js')
+const scenarios = hasSelectedScenarios ? selectedScenarios : glob.sync('scenarios/**/record.js')
 const diffs = []
 
 // run scenarios one by one
 scenarios.reduce(async (promise, scenarioPath) => {
   await promise
-  const fixtureName = scenarioPath.replace(/(^scenarios\/|\.js$)/g, '')
+  const fixtureName = scenarioPath.replace(/(^scenarios\/|\/record\.js$)/g, '')
   const [domain, title] = fixtureName.split('/')
   console.log('')
   console.log(`⏯️  ${chalk.bold(domain)}: ${humanize(title.replace('.js', ''))} ...`)
@@ -41,10 +41,10 @@ scenarios.reduce(async (promise, scenarioPath) => {
   const oldFixtures = await read(fixtureName)
   const newFixtures = await recordScenario({
     request: axios.create({baseURL}),
-    scenario: require(`../scenarios/${fixtureName}`)
+    scenario: require(`../scenarios/${fixtureName}/record`)
   })
 
-  const fixturesDiffs = diff(newFixtures, oldFixtures)
+  const fixturesDiffs = diff(newFixtures.normalized, oldFixtures)
   if (!fixturesDiffs) {
     console.log(`✅  Fixtures are up-to-date`)
     return
