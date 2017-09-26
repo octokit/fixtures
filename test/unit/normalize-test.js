@@ -1,22 +1,17 @@
-const {diffString} = require('json-diff')
 const {test} = require('tap')
 
 const normalize = require('../../lib/normalize')
 
 const fixtures = {
-  getRepository: {
-    in: require('../fixtures/get-organization-repository.json'),
-    out: require('../../fixtures/api.github.com/get-repository.json')[0]
-  },
+  getRepository: require('../fixtures/get-organization-repository.json'),
   getRootViaNowProxy: require('../fixtures/get-root-via-now-proxy.json'),
   getTemporaryRepository: require('../fixtures/get-temporary-repository.json')
 }
 
 test('normalize', (t) => {
-  const actual = normalize(fixtures.getRepository.in)
-  const expected = fixtures.getRepository.out
+  const result = normalize(fixtures.getRepository)
 
-  t.deepEqual(actual, expected, diffString(actual, expected))
+  t.deepEqual(result.response.id, 1)
   t.end()
 })
 
