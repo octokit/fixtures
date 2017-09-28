@@ -138,8 +138,8 @@ format, for example.
 [![](assets/octokit-fixtures-introduction.png)](https://youtu.be/L851arJSMhM)
 
 `@octokit/fixtures` provides fixtures that can be used by automated tests for
-GitHub API clients, either as [standalone mock server](#standalonemockserver)
-or as a [Node module](#asnodemodule).
+GitHub API clients, either as [standalone mock server](#standalone-mock-server)
+or as a [Node module](#as-node-module).
 
 The fixtures are recorded programatically
 by sending requests against the [GitHub REST API](https://developer.github.com/v3/)
