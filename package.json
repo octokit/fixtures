@@ -48,7 +48,7 @@
   "devDependencies": {
     "axios": "^0.16.2",
     "chalk": "^2.1.0",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.0",
     "humanize-string": "^1.0.1",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
