@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gr2m/octokit-fixtures.git"
+    "url": "https://github.com/octokit/fixtures.git"
   },
   "keywords": [],
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gr2m/octokit-fixtures/issues"
+    "url": "https://github.com/octokit/fixtures/issues"
   },
-  "homepage": "https://github.com/gr2m/octokit-fixtures#readme",
+  "homepage": "https://github.com/octokit/fixtures#readme",
   "dependencies": {
     "lodash": "^4.17.4",
     "nock": "^9.0.21"

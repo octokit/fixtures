@@ -33,7 +33,7 @@ scenarios.reduce(async (promise, scenarioPath) => {
 
   let baseURL = `https://${domain}`
 
-  // workaround for https://github.com/gr2m/octokit-fixtures/issues/3
+  // workaround for https://github.com/octokit/fixtures/issues/3
   if (domain === 'api.github.com' && env.FIXTURES_PROXY) {
     baseURL = env.FIXTURES_PROXY
   }

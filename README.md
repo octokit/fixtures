@@ -1,10 +1,10 @@
-# octokit-fixtures
+# fixtures
 
 > Fixtures for all the octokittens
 
-[![Build Status](https://travis-ci.org/gr2m/octokit-fixtures.svg?branch=master)](https://travis-ci.org/gr2m/octokit-fixtures)
-[![Coverage Status](https://coveralls.io/repos/gr2m/octokit-fixtures/badge.svg?branch=master)](https://coveralls.io/github/gr2m/octokit-fixtures?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/octokit-fixtures.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/octokit/fixtures.svg?branch=master)](https://travis-ci.org/octokit/fixtures)
+[![Coverage Status](https://coveralls.io/repos/octokit/fixtures/badge.svg?branch=master)](https://coveralls.io/github/octokit/fixtures?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/octokit/fixtures.svg)](https://greenkeeper.io/)
 
 Records requests/responses against the [GitHub REST API](https://developer.github.com/v3/)
 and stores them as JSON fixtures for usage as a standalone [http mock server](#standalonemockserver)
@@ -32,7 +32,7 @@ or as a [Node module](#asnodemodule).
 
 ### Standalone mock server
 
-Download binary for your os from the [latest release](https://github.com/gr2m/octokit-fixtures/releases/latest).
+Download binary for your os from the [latest release](https://github.com/octokit/fixtures/releases/latest).
 
 Alternatively, you can also install `@octokit/fixtures` as a global npm package, if you prefer that:
 
@@ -62,7 +62,7 @@ the host name folders without the `.js` extension.
 
 ```js
 const https = require('https')
-const fixtures = require('octokit-fixtures')
+const fixtures = require('@octokit/fixtures')
 
 fixtures.mock('api.github.com/get-repository')
 https.request({
@@ -374,8 +374,8 @@ Only one version number is bumped at a time, the highest version change trumps t
 
 The server binaries are currently not generated and uploaded automatically. To
 generate them run `npx pgk .`, then upload the resulting binaries to the respective
-[release](https://github.com/gr2m/octokit-fixtures/releases). We plan to automate
-that process: [#](https://github.com/gr2m/octokit-fixtures/issues/6) – pull requests welcome 🤗
+[release](https://github.com/octokit/fixtures/releases). We plan to automate
+that process: [#](https://github.com/octokit/fixtures/issues/6) – pull requests welcome 🤗
 
 ## License
 
