@@ -224,10 +224,10 @@ to proxy requests to the mocked routes based on the existing fixtures.
 - **Tokens Authorization Header are zerofied**
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
   Dates are set in different formats, so here are a few examples
-  - UTC in seconds: **2017-10-10T16:00:00Z** (e.g. `updated_at`)
-  - UTC with Timezone Delta: **2017-10-10T09:00:00-07:00** (e.g. invitation `created_at`)
-  - GMT date string: **Tue, 10 Oct 2017 16:00:00 GMT** (e.g. `Last-Modified` header)
-  - UNIX timestamp in seconds: **1507651200000** (e.g. `X-RateLimit-Reset` header)
+  - UTC in seconds: `2017-10-10T16:00:00Z` (e.g. `updated_at`)
+  - UTC with Timezone Delta: `2017-10-10T09:00:00-07:00` (e.g. invitation `created_at`)
+  - GMT date string: `Tue, 10 Oct 2017 16:00:00 GMT` (e.g. `Last-Modified` header)
+  - UNIX timestamp in seconds: `1507651200000` (e.g. `X-RateLimit-Reset` header)
 - **All counts are set to 42**  
   for example: `forks_count`, `open_issues_count`
 - **Rate limits**
@@ -236,6 +236,13 @@ to proxy requests to the mocked routes based on the existing fixtures.
 - **Random things**  
   Fill random headers like `ETag` or `X-GitHub-Request-Id` and auth tokens with 0s.
 - **Content-Length** header is re-calculated after normalization of the response body
+- **URLs containing temporary repository names** in response properties, paths
+  and location header are renamed,
+  e.g. `tmp-scenario-create-file-20170930034241803` is renamed to `create-file`.
+- **Commit sha hashes** are zerofied,
+  e.g. `3f3f005b29247e51a4f4d6b8ce07b67646cd6074` becomes `0000000000000000000000000000000000000000`
+
+https://github.com/octokit/fixtures/issues/14
 
 ## Local development
 
