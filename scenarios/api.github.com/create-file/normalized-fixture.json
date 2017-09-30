@@ -1,0 +1,82 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "put",
+    "path": "/repos/octokit-fixture-org/create-file/contents/test.txt",
+    "body": {
+      "message": "create test.txt",
+      "content": "VGVzdCBjb250ZW50"
+    },
+    "status": 201,
+    "response": {
+      "content": {
+        "name": "test.txt",
+        "path": "test.txt",
+        "sha": "3f3f005b29247e51a4f4d6b8ce07b67646cd6074",
+        "size": 12,
+        "url": "https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt?ref=master",
+        "html_url": "https://github.com/octokit-fixture-org/create-file/blob/master/test.txt",
+        "git_url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/blobs/3f3f005b29247e51a4f4d6b8ce07b67646cd6074",
+        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/create-file/master/test.txt",
+        "type": "file",
+        "_links": {
+          "self": "https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt?ref=master",
+          "git": "https://api.github.com/repos/octokit-fixture-org/create-file/git/blobs/3f3f005b29247e51a4f4d6b8ce07b67646cd6074",
+          "html": "https://github.com/octokit-fixture-org/create-file/blob/master/test.txt"
+        }
+      },
+      "commit": {
+        "sha": "0000000000000000000000000000000000000000",
+        "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/commits/0000000000000000000000000000000000000000",
+        "html_url": "https://github.com/octokit-fixture-org/create-file/commit/0000000000000000000000000000000000000000",
+        "author": {
+          "name": "octokit-fixture-user-a",
+          "email": "31898046+octokit-fixture-user-a@users.noreply.github.com",
+          "date": "2017-10-10T16:00:00Z"
+        },
+        "committer": {
+          "name": "octokit-fixture-user-a",
+          "email": "31898046+octokit-fixture-user-a@users.noreply.github.com",
+          "date": "2017-10-10T16:00:00Z"
+        },
+        "tree": {
+          "sha": "0000000000000000000000000000000000000000",
+          "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/trees/0000000000000000000000000000000000000000"
+        },
+        "message": "create test.txt",
+        "parents": []
+      }
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000000",
+      "content-length": 58,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "1635",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "status": "201 Created",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+]
