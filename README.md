@@ -158,7 +158,7 @@ and recording both requests and responses into JSON files. Each scenario has the
   temporary request), set the request Header `X-Octokit-Fixture-Ignore` to `'true'`.
 - **`raw-fixture.json`**  
   The raw request and response before normalization, which is used for integration tests and debugging. Only sensitive credentials are removed
-- **`normalized-fixture`**  
+- **`normalized-fixture`** <a name="normalized-fixture-file"></a>    
   The result of the recorded fixtures after normalization.
 
 ### Recording
@@ -172,23 +172,37 @@ an error is logged.
 
 The stored fixtures can be updated by running `bin/record.js --update`.
 
-To create a new scenario
+To create a new scenario, follow the steps below which describe the process
+for the example to create a new scenario "Get repository" for GitHub’s public
+api at https://api.github.com, make sure to adapt it for your own scenario.
 
-1. create a new folder in the [scenarios folder](scenarios/) that matches the host
-   name you send requests to. In that folder, create a [`record.js`](#record-js-file) file.
 
-2. Run `bin/record.js`. It should log something like
+1. Create the folder `scenarios/api.github.com/get-repository/`. In that folder,
+   create a [`record.js`](#record-js-file) file.
+
+2. Run `bin/record.js`. It should log the following
    ```
-   ⏯  api.github.com: Get root ...
+   ⏯  api.github.com: Get repository ...
    ❌  This looks like a new fixture
    ```
 3. If there are no other changes, you can create the new fixtures by
-   running `bin/record.js --update`. Now it should log something like
+   running `bin/record.js --update`. Now it should log
    ```
-   ⏯  api.github.com: Get root ...
+   ⏯  api.github.com: Get repository ...
    📼  New fixtures recorded
    ```
-4. Running `bin/record.js` again will show that all fixtures are up-to-date now.
+4. Look into the created [`normalized-fixture.json`](#normalized-fixture-file) file
+   and make sure all content is normalized correctly (see [Normalizations](#normalizations) below).
+   Adapt the file as needed.
+5. Run `TAP_GREP="normalize api.github.com/get-repository" ./node_modules/.bin/tap test/integration/normalize-test.js`
+   (replace `api.github.com/get-repository` with the folder of your new scenario).
+   It will fail and show the changes between your `normalized-fixture.json` file
+   and the one that got calculated. Look into the [`lib/normalize` folder](lib/normalize)
+   and make the necessary changes. Repeat until the test passes
+6. Run `bin/record.js` again, it should result with "Fixtures are up-to-date".
+   If not, repeat the previous step until it does
+7. Commit all changes with `feat(scenario): get repository`
+8. Create a pull request
 
 ### Automated pull requests when API change
 
