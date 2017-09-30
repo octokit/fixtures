@@ -8,13 +8,14 @@ const humanize = require('humanize-string')
 
 const env = require('../lib/env')
 const isTravisCronJob = require('../lib/is-travis-cron-job')
+const normalize = require('../lib/normalize')
 const notifyAboutFixturesChanges = require('../lib/notify-about-fixtures-changes')
 const read = require('../lib/read')
 const recordScenario = require('../lib/record-scenario')
 const write = require('../lib/write')
 
 const argv = require('minimist')(process.argv.slice(2), {
-  boolean: 'update'
+  boolean: ['update', 'test-cached']
 })
 const doUpdate = argv.update
 const selectedScenarios = argv._
@@ -38,13 +39,18 @@ scenarios.reduce(async (promise, scenarioPath) => {
     baseURL = env.FIXTURES_PROXY
   }
 
-  const oldFixtures = await read(fixtureName)
-  const newFixtures = await recordScenario({
+  const oldNormalizedFixtures = await read(fixtureName)
+  const newRawFixtures = await recordScenario({
     request: axios.create({baseURL}),
     scenario: require(`../scenarios/${fixtureName}/record`)
   })
 
-  const fixturesDiffs = diff(newFixtures.normalized, oldFixtures)
+  const newNormalizedFixtures = newRawFixtures
+    .map(copy)
+    .filter(hasntIgnoreHeader)
+    .map(normalize)
+
+  const fixturesDiffs = diff(newNormalizedFixtures, oldNormalizedFixtures)
   if (!fixturesDiffs) {
     console.log(`✅  Fixtures are up-to-date`)
     return
@@ -53,14 +59,14 @@ scenarios.reduce(async (promise, scenarioPath) => {
   diffs.push({
     name: fixtureName,
     changes: fixturesDiffs,
-    newFixtures,
-    oldFixtures
+    newNormalizedFixtures,
+    oldNormalizedFixtures
   })
 
   if (fixturesDiffs[0][0] === '-') {
     if (doUpdate) {
       console.log(`📼  New fixtures recorded`)
-      return write(fixtureName, newFixtures)
+      return write(fixtureName, newNormalizedFixtures)
     }
     console.log(`❌  "${fixtureName}" looks like a new fixture`)
     return
@@ -68,13 +74,13 @@ scenarios.reduce(async (promise, scenarioPath) => {
 
   if (doUpdate) {
     console.log(`📼  Fixture updates recorded`)
-    return write(fixtureName, newFixtures)
+    return write(fixtureName, newNormalizedFixtures)
   }
 
   console.log(`❌  Fixtures are not up-to-date`)
 
   if (!isTravisCronJob()) {
-    console.log(diffString(oldFixtures, newFixtures))
+    console.log(diffString(oldNormalizedFixtures, newNormalizedFixtures))
     console.log(`💁  Update fixtures with \`${chalk.bold('bin/record.js --update')}\``)
   }
 }, Promise.resolve())
@@ -109,3 +115,12 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log(JSON.stringify(error.response.data, null, 2))
   process.exit(1)
 })
+
+function copy (object) {
+  return Object.assign({}, object)
+}
+
+function hasntIgnoreHeader (fixture) {
+  const hasIgnoreHeader = 'x-octokit-fixture-ignore' in fixture.reqheaders
+  return !hasIgnoreHeader
+}
