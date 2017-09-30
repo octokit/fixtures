@@ -7,3 +7,14 @@ test('setIfExists accepts undefined as object argument', (t) => {
   t.is(result, undefined)
   t.end()
 })
+
+test('setIfExists sets nested valuest', (t) => {
+  const object = {
+    foo: {
+      bar: 'baz'
+    }
+  }
+  setIfExists(object, 'foo.bar', 'qux')
+  t.is(object.foo.bar, 'qux')
+  t.end()
+})
