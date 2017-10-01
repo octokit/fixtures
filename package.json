@@ -15,7 +15,7 @@
     "record": "bin/record.js",
     "start": "node bin/serve.js",
     "pretest": "standard",
-    "test": "tap --coverage 'test/**/*-test.js' 'scenarios/**/test.js'",
+    "test": "tap --100 --coverage 'test/**/*-test.js' 'scenarios/**/test.js'",
     "test:unit": "tap 'test/unit/**/*-test.js'",
     "test:integration": "tap 'test/integration/**/*-test.js'",
     "test:scenarios": "tap 'scenarios/**/test.js'",
