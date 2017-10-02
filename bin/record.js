@@ -66,7 +66,10 @@ scenarios.reduce(async (promise, scenarioPath) => {
   if (fixturesDiffs[0][0] === '-') {
     if (doUpdate) {
       console.log(`📼  New fixtures recorded`)
-      return write(fixtureName, newNormalizedFixtures)
+      return write(fixtureName, {
+        normalized: newNormalizedFixtures,
+        raw: newRawFixtures
+      })
     }
     console.log(`❌  "${fixtureName}" looks like a new fixture`)
     return
@@ -74,7 +77,10 @@ scenarios.reduce(async (promise, scenarioPath) => {
 
   if (doUpdate) {
     console.log(`📼  Fixture updates recorded`)
-    return write(fixtureName, newNormalizedFixtures)
+    return write(fixtureName, {
+      normalized: newNormalizedFixtures,
+      raw: newRawFixtures
+    })
   }
 
   console.log(`❌  Fixtures are not up-to-date`)
