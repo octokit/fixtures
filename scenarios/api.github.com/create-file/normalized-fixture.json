@@ -44,7 +44,13 @@
           "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/trees/0000000000000000000000000000000000000000"
         },
         "message": "create test.txt",
-        "parents": []
+        "parents": [],
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
       }
     },
     "reqheaders": {
@@ -59,7 +65,7 @@
       "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1635",
+      "content-length": "1721",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
