@@ -1,0 +1,57 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/hello-world/contents/",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "93a078d1c3f76aa1ca11def8f882a06df1d4a01b",
+        "size": 13,
+        "url": "https://api.github.com/repos/octokit-fixture-org/hello-world/contents/README.md?ref=master",
+        "html_url": "https://github.com/octokit-fixture-org/hello-world/blob/master/README.md",
+        "git_url": "https://api.github.com/repos/octokit-fixture-org/hello-world/git/blobs/93a078d1c3f76aa1ca11def8f882a06df1d4a01b",
+        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/hello-world/master/README.md",
+        "type": "file",
+        "_links": {
+          "self": "https://api.github.com/repos/octokit-fixture-org/hello-world/contents/README.md?ref=master",
+          "git": "https://api.github.com/repos/octokit-fixture-org/hello-world/git/blobs/93a078d1c3f76aa1ca11def8f882a06df1d4a01b",
+          "html": "https://github.com/octokit-fixture-org/hello-world/blob/master/README.md"
+        }
+      }
+    ],
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "public, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "836",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "last-modified": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "59",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    },
+    "badheaders": [
+      "authorization"
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/hello-world/contents/",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "93a078d1c3f76aa1ca11def8f882a06df1d4a01b",
+        "size": 13,
+        "url": "https://api.github.com/repos/octokit-fixture-org/hello-world/contents/README.md?ref=master",
+        "html_url": "https://github.com/octokit-fixture-org/hello-world/blob/master/README.md",
+        "git_url": "https://api.github.com/repos/octokit-fixture-org/hello-world/git/blobs/93a078d1c3f76aa1ca11def8f882a06df1d4a01b",
+        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/hello-world/master/README.md",
+        "type": "file",
+        "_links": {
+          "self": "https://api.github.com/repos/octokit-fixture-org/hello-world/contents/README.md?ref=master",
+          "git": "https://api.github.com/repos/octokit-fixture-org/hello-world/git/blobs/93a078d1c3f76aa1ca11def8f882a06df1d4a01b",
+          "html": "https://github.com/octokit-fixture-org/hello-world/blob/master/README.md"
+        }
+      }
+    ],
+    "rawHeaders": [
+      "Date",
+      "Tue, 17 Oct 2017 19:03:03 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "836",
+      "Connection",
+      "close",
+      "Server",
+      "GitHub.com",
+      "Status",
+      "200 OK",
+      "X-RateLimit-Limit",
+      "60",
+      "X-RateLimit-Remaining",
+      "56",
+      "X-RateLimit-Reset",
+      "1508270494",
+      "Cache-Control",
+      "public, max-age=60, s-maxage=60",
+      "Vary",
+      "Accept",
+      "ETag",
+      "\"6abdf94dfc0e9e0079d071e2cbfb82cf\"",
+      "Last-Modified",
+      "Tue, 19 Sep 2017 15:57:54 GMT",
+      "X-GitHub-Media-Type",
+      "github.v3; format=json",
+      "Access-Control-Expose-Headers",
+      "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Content-Security-Policy",
+      "default-src 'none'",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubdomains; preload",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-Frame-Options",
+      "deny",
+      "X-XSS-Protection",
+      "1; mode=block",
+      "X-Runtime-rack",
+      "0.025281",
+      "Vary",
+      "Accept-Encoding",
+      "X-GitHub-Request-Id",
+      "D11D:3D1D:DC198D0:12A343B7:59E653E7"
+    ],
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "host": "api.github.com"
+    }
+  }
+]
