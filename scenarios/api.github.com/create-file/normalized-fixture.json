@@ -26,9 +26,9 @@
         }
       },
       "commit": {
-        "sha": "0000000000000000000000000000000000000000",
-        "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/commits/0000000000000000000000000000000000000000",
-        "html_url": "https://github.com/octokit-fixture-org/create-file/commit/0000000000000000000000000000000000000000",
+        "sha": "0000000000000000000000000000000000000002",
+        "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/commits/0000000000000000000000000000000000000002",
+        "html_url": "https://github.com/octokit-fixture-org/create-file/commit/0000000000000000000000000000000000000002",
         "author": {
           "name": "octokit-fixture-user-a",
           "email": "31898046+octokit-fixture-user-a@users.noreply.github.com",
@@ -40,8 +40,8 @@
           "date": "2017-10-10T16:00:00Z"
         },
         "tree": {
-          "sha": "0000000000000000000000000000000000000000",
-          "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/trees/0000000000000000000000000000000000000000"
+          "sha": "0000000000000000000000000000000000000001",
+          "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/trees/0000000000000000000000000000000000000001"
         },
         "message": "create test.txt",
         "parents": [],

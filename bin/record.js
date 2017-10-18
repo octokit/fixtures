@@ -2,6 +2,7 @@
 
 const axios = require('axios')
 const chalk = require('chalk')
+const cloneDeep = require('lodash/cloneDeep')
 const {diff, diffString} = require('json-diff')
 const glob = require('glob')
 const humanize = require('humanize-string')
@@ -45,10 +46,14 @@ scenarios.reduce(async (promise, scenarioPath) => {
     scenario: require(`../scenarios/${fixtureName}/record`)
   })
 
+  const scenarioState = {
+    commitSha: {} // map original commits to normalized commits
+  }
+
   const newNormalizedFixtures = newRawFixtures
-    .map(copy)
+    .map(cloneDeep)
     .filter(hasntIgnoreHeader)
-    .map(normalize)
+    .map(normalize.bind(null, scenarioState))
 
   const fixturesDiffs = diff(newNormalizedFixtures, oldNormalizedFixtures)
   if (!fixturesDiffs) {
@@ -121,10 +126,6 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log(JSON.stringify(error.response.data, null, 2))
   process.exit(1)
 })
-
-function copy (object) {
-  return Object.assign({}, object)
-}
 
 function hasntIgnoreHeader (fixture) {
   const hasIgnoreHeader = 'x-octokit-fixture-ignore' in fixture.reqheaders
