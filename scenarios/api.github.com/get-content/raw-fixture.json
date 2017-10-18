@@ -25,7 +25,7 @@
     ],
     "rawHeaders": [
       "Date",
-      "Tue, 17 Oct 2017 19:03:03 GMT",
+      "Wed, 18 Oct 2017 03:21:25 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -39,9 +39,9 @@
       "X-RateLimit-Limit",
       "60",
       "X-RateLimit-Remaining",
-      "56",
+      "51",
       "X-RateLimit-Reset",
-      "1508270494",
+      "1508300360",
       "Cache-Control",
       "public, max-age=60, s-maxage=60",
       "Vary",
@@ -56,6 +56,8 @@
       "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "Access-Control-Allow-Origin",
       "*",
+      "Expect-CT",
+      "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
       "Content-Security-Policy",
       "default-src 'none'",
       "Strict-Transport-Security",
@@ -67,11 +69,11 @@
       "X-XSS-Protection",
       "1; mode=block",
       "X-Runtime-rack",
-      "0.025281",
+      "0.021772",
       "Vary",
       "Accept-Encoding",
       "X-GitHub-Request-Id",
-      "D11D:3D1D:DC198D0:12A343B7:59E653E7"
+      "C599:3D1D:DF08917:12E00B67:59E6C8B5"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
