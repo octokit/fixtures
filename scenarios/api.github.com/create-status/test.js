@@ -12,7 +12,7 @@ test('Create status', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000000',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000000`,
+      Authorization: `token 0000000000000000000000000000000000000001`,
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
@@ -29,7 +29,7 @@ test('Create status', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000000',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000000`,
+      Authorization: `token 0000000000000000000000000000000000000001`,
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
@@ -46,7 +46,7 @@ test('Create status', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000000/statuses',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000000`
+      Authorization: `token 0000000000000000000000000000000000000001`
     }
   })
 
@@ -56,7 +56,7 @@ test('Create status', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000000/status',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000000`
+      Authorization: `token 0000000000000000000000000000000000000001`
     }
   })
 

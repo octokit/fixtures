@@ -11,7 +11,7 @@ test('Get repository', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000000`,
+      Authorization: `token 0000000000000000000000000000000000000001`,
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {

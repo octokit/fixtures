@@ -27,7 +27,7 @@ test('Matches corret fixture based on authorization header', async (t) => {
     url: 'https://api.github.com',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: 'token 0000000000000000000000000000000000000000'
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   })
 
