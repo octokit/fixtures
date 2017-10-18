@@ -239,8 +239,9 @@ to proxy requests to the mocked routes based on the existing fixtures.
 - **URLs containing temporary repository names** in response properties, paths
   and location header are renamed,
   e.g. `tmp-scenario-create-file-20170930034241803` is renamed to `create-file`.
-- **Commit sha hashes** are zerofied,
-  e.g. `3f3f005b29247e51a4f4d6b8ce07b67646cd6074` becomes `0000000000000000000000000000000000000000`
+- **Commit sha hashes** are zerofied with a counter,
+  e.g. `3f3f005b29247e51a4f4d6b8ce07b67646cd6074` becomes `0000000000000000000000000000000000000001`,
+  the next unique commit sha becomes `0000000000000000000000000000000000000002`, etc.
 
 https://github.com/octokit/fixtures/issues/14
 
