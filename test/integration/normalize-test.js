@@ -10,7 +10,10 @@ glob.sync('scenarios/**/raw-fixture.json')
       const raw = require(`../../scenarios/${fixturnName}/raw-fixture.json`)
       const expected = require(`../../scenarios/${fixturnName}/normalized-fixture.json`)
 
-      const actual = raw.filter(isntIgnored).map(normalize)
+      const scenarioState = {
+        commitSha: {}
+      }
+      const actual = raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))
       t.deepEqual(actual, expected)
       t.end()
     })

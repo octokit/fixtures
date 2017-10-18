@@ -23,7 +23,7 @@ test('normalize when using proxy (#3)', (t) => {
     'foobar'
   ]
 
-  const result = normalize(fixture)
+  const result = normalize({}, fixture)
   t.is(result.scope, 'https://api.github.com:443', 'sets scope')
   t.is(fixture.reqheaders.host, 'api.github.com', 'sets host request header')
   t.is(fixture.headers['x-powered-by'], undefined, 'removes x-powered-by response header')
