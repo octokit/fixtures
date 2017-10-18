@@ -221,7 +221,9 @@ to proxy requests to the mocked routes based on the existing fixtures.
 ### Normalizations
 
 - **All IDs are set to 1**
-- **Tokens Authorization Header are zerofied**
+- **Tokens Authorization Header are zerofied** ending with the token number, see [environment variables below](https://github.com/octokit/fixtures#test-users--organization--tokens)  
+  e.g. `FIXTURES_USER_A_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000001`,
+  `FIXTURES_USER_B_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000002`, etc
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
   Dates are set in different formats, so here are a few examples
   - UTC in seconds: `2017-10-10T16:00:00Z` (e.g. `updated_at`)
