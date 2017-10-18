@@ -37,6 +37,7 @@
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
       "last-modified": "Tue, 10 Oct 2017 16:00:00 GMT",
       "status": "200 OK",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
