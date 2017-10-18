@@ -40,7 +40,7 @@
     },
     "rawHeaders": [
       "Date",
-      "Wed, 18 Oct 2017 03:21:26 GMT",
+      "Wed, 18 Oct 2017 03:59:41 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -54,7 +54,7 @@
       "X-RateLimit-Limit",
       "60",
       "X-RateLimit-Remaining",
-      "48",
+      "32",
       "X-RateLimit-Reset",
       "1508300360",
       "Cache-Control",
@@ -82,11 +82,11 @@
       "X-XSS-Protection",
       "1; mode=block",
       "X-Runtime-rack",
-      "0.010065",
+      "0.009643",
       "Vary",
       "Accept-Encoding",
       "X-GitHub-Request-Id",
-      "C5A3:3D1D:DF089AE:12E00C2B:59E6C8B6"
+      "FD5A:3D1B:304FA31:42897E7:59E6D1AC"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -134,7 +134,7 @@
     },
     "rawHeaders": [
       "Date",
-      "Wed, 18 Oct 2017 03:21:27 GMT",
+      "Wed, 18 Oct 2017 03:59:41 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -148,7 +148,7 @@
       "X-RateLimit-Limit",
       "5000",
       "X-RateLimit-Remaining",
-      "4880",
+      "4677",
       "X-RateLimit-Reset",
       "1508300151",
       "Cache-Control",
@@ -180,15 +180,15 @@
       "X-XSS-Protection",
       "1; mode=block",
       "X-Runtime-rack",
-      "0.017498",
+      "0.019816",
       "Vary",
       "Accept-Encoding",
       "X-GitHub-Request-Id",
-      "C5A6:3D1B:30431C3:4279486:59E6C8B7"
+      "FD61:3D1B:304FA37:42897F2:59E6D1AD"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "authorization": "token 0000000000000000000000000000000000000000",
+      "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
     }
   }
