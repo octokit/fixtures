@@ -137,7 +137,7 @@
       "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
       "status": "200 OK",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
-      "x-accepted-oauth-scopes": "public_repo, repo",
+      "x-accepted-oauth-scopes": "",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-github-media-type": "github.v3; format=json",
