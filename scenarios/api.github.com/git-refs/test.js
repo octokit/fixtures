@@ -3,7 +3,7 @@ const {test} = require('tap')
 
 const fixtures = require('../../..')
 
-test('Get repository', async (t) => {
+test('Git references', async (t) => {
   const mock = fixtures.mock('api.github.com/git-refs')
 
   // https://developer.github.com/v3/git/refs/#get-all-references

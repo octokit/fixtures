@@ -3,7 +3,7 @@ const {test} = require('tap')
 
 const fixtures = require('../../..')
 
-test('Get repository', async (t) => {
+test('Create File', async (t) => {
   const mock = fixtures.mock('api.github.com/create-file')
 
   const result = await axios({
