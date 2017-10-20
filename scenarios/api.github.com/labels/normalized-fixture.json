@@ -1,0 +1,277 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/labels/labels",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/bug",
+        "name": "bug",
+        "color": "ee0701",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/duplicate",
+        "name": "duplicate",
+        "color": "cccccc",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/enhancement",
+        "name": "enhancement",
+        "color": "84b6eb",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "33aa3f",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/invalid",
+        "name": "invalid",
+        "color": "e6e6e6",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/question",
+        "name": "question",
+        "color": "cc317c",
+        "default": true
+      },
+      {
+        "id": 1,
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "default": true
+      }
+    ],
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "1135",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "repo",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "post",
+    "path": "/repos/octokit-fixture-org/labels/labels",
+    "body": {
+      "name": "test-label",
+      "color": "663399"
+    },
+    "status": 201,
+    "response": {
+      "id": 1,
+      "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
+      "name": "test-label",
+      "color": "663399",
+      "default": false
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "content-length": 38,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "143",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "location": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
+      "status": "201 Created",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/labels/labels/test-label",
+    "body": "",
+    "status": 200,
+    "response": {
+      "id": 1,
+      "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
+      "name": "test-label",
+      "color": "663399",
+      "default": false
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "143",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "last-modified": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "repo",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "patch",
+    "path": "/repos/octokit-fixture-org/labels/labels/test-label",
+    "body": {
+      "name": "test-label-updated",
+      "color": "BADA55"
+    },
+    "status": 200,
+    "response": {
+      "id": 1,
+      "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label-updated",
+      "name": "test-label-updated",
+      "color": "BADA55",
+      "default": false
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "content-length": 46,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "159",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "delete",
+    "path": "/repos/octokit-fixture-org/labels/labels/test-label-updated",
+    "body": "",
+    "status": 204,
+    "response": "",
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "connection": "close",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/octet-stream",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "expect-ct": "max-age=2592000; report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "204 No Content",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block",
+      "content-length": "2"
+    }
+  }
+]
