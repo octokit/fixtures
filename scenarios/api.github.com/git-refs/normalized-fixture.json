@@ -243,7 +243,7 @@
       "x-ratelimit-reset": "1507651200000",
       "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block",
-      "content-length": "2"
+      "content-length": "0"
     }
   }
 ]
