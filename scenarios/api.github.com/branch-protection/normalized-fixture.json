@@ -1,0 +1,279 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+    "body": "",
+    "status": 404,
+    "response": {
+      "message": "Branch not protected",
+      "documentation_url": "https://developer.github.com/v3/repos/branches/#get-branch-protection"
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "connection": "close",
+      "content-length": "126",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "404 Not Found",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "put",
+    "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+    "body": {
+      "required_status_checks": null,
+      "required_pull_request_reviews": null,
+      "restrictions": null,
+      "enforce_admins": false
+    },
+    "status": 200,
+    "response": {
+      "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/enforce_admins",
+        "enabled": false
+      }
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "content-length": 111,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "255",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "put",
+    "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+    "body": {
+      "required_status_checks": {
+        "strict": true,
+        "contexts": [
+          "foo/bar"
+        ]
+      },
+      "required_pull_request_reviews": {
+        "dismissal_restrictions": {
+          "users": [
+            "octokit-fixture-user-a"
+          ],
+          "teams": []
+        },
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": false
+      },
+      "restrictions": {
+        "users": [
+          "octokit-fixture-user-a"
+        ],
+        "teams": [
+          "a-team"
+        ]
+      },
+      "enforce_admins": true
+    },
+    "status": 200,
+    "response": {
+      "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+      "required_status_checks": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks",
+        "strict": true,
+        "contexts": [
+          "foo/bar"
+        ],
+        "contexts_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks/contexts"
+      },
+      "restrictions": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/restrictions",
+        "users_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/restrictions/users",
+        "teams_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/restrictions/teams",
+        "users": [
+          {
+            "login": "octokit-fixture-user-a",
+            "id": 1,
+            "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/octokit-fixture-user-a",
+            "html_url": "https://github.com/octokit-fixture-user-a",
+            "followers_url": "https://api.github.com/users/octokit-fixture-user-a/followers",
+            "following_url": "https://api.github.com/users/octokit-fixture-user-a/following{/other_user}",
+            "gists_url": "https://api.github.com/users/octokit-fixture-user-a/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/octokit-fixture-user-a/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/octokit-fixture-user-a/subscriptions",
+            "organizations_url": "https://api.github.com/users/octokit-fixture-user-a/orgs",
+            "repos_url": "https://api.github.com/users/octokit-fixture-user-a/repos",
+            "events_url": "https://api.github.com/users/octokit-fixture-user-a/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "teams": [
+          {
+            "name": "A-Team",
+            "id": 1,
+            "slug": "a-team",
+            "description": "If you have a problem, if no one else can help you, then if you can find them, maybe you can hire the A-Team!",
+            "privacy": "closed",
+            "url": "https://api.github.com/teams/1",
+            "members_url": "https://api.github.com/teams/1/members{/member}",
+            "repositories_url": "https://api.github.com/teams/1/repos",
+            "permission": "pull"
+          }
+        ]
+      },
+      "required_pull_request_reviews": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_pull_request_reviews",
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": false,
+        "dismissal_restrictions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/dismissal_restrictions",
+          "users_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/dismissal_restrictions/users",
+          "teams_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/dismissal_restrictions/teams",
+          "users": [
+            {
+              "login": "octokit-fixture-user-a",
+              "id": 1,
+              "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/octokit-fixture-user-a",
+              "html_url": "https://github.com/octokit-fixture-user-a",
+              "followers_url": "https://api.github.com/users/octokit-fixture-user-a/followers",
+              "following_url": "https://api.github.com/users/octokit-fixture-user-a/following{/other_user}",
+              "gists_url": "https://api.github.com/users/octokit-fixture-user-a/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/octokit-fixture-user-a/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/octokit-fixture-user-a/subscriptions",
+              "organizations_url": "https://api.github.com/users/octokit-fixture-user-a/orgs",
+              "repos_url": "https://api.github.com/users/octokit-fixture-user-a/repos",
+              "events_url": "https://api.github.com/users/octokit-fixture-user-a/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
+              "type": "User",
+              "site_admin": false
+            }
+          ],
+          "teams": []
+        }
+      },
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/enforce_admins",
+        "enabled": true
+      }
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "content-length": 329,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "private, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "4096",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "delete",
+    "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+    "body": "",
+    "status": 204,
+    "response": "",
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "connection": "close",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/octet-stream",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "expect-ct": "max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"",
+      "status": "204 No Content",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block",
+      "content-length": "0"
+    }
+  }
+]
