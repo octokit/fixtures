@@ -56,5 +56,11 @@
     "semantic-release": "^8.0.1",
     "standard": "^10.0.3",
     "tap": "^10.7.2"
+  },
+  "nyc": {
+    "exclude": [
+      "test",
+      "scenarios/**/test.js"
+    ]
   }
 }
