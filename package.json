@@ -46,7 +46,7 @@
     "json-diff": "^0.5.2"
   },
   "devDependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.17.0",
     "chalk": "^2.1.0",
     "coveralls": "^3.0.0",
     "humanize-string": "^1.0.1",
