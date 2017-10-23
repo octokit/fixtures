@@ -9,7 +9,7 @@ test('Create status', async (t) => {
   // create failure status
   await axios({
     method: 'post',
-    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000000',
+    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`,
@@ -26,7 +26,7 @@ test('Create status', async (t) => {
   // create success status
   await axios({
     method: 'post',
-    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000000',
+    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`,
@@ -43,7 +43,7 @@ test('Create status', async (t) => {
   // get all statuses
   await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000000/statuses',
+    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000001/statuses',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`
@@ -53,7 +53,7 @@ test('Create status', async (t) => {
   // get combined status
   const {data} = await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000000/status',
+    url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000001/status',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`
