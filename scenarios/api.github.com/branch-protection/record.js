@@ -1,9 +1,9 @@
-module.exports = createFile
+module.exports = branchProtection
 
 const env = require('../../../lib/env')
 const getTemporaryRepository = require('../../../lib/temporary-repository')
 
-async function createFile (state) {
+async function branchProtection (state) {
   let error
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({

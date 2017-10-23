@@ -1,9 +1,9 @@
-module.exports = gitRefs
+module.exports = labels
 
 const env = require('../../../lib/env')
 const getTemporaryRepository = require('../../../lib/temporary-repository')
 
-async function gitRefs (state) {
+async function labels (state) {
   let error
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({
