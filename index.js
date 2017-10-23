@@ -41,6 +41,13 @@ function mock (name) {
 
       error.message = `Request did not match mock:\n${diffString(expected, actual)}`
 
+      delete error.config
+      delete error.request
+      delete error.response
+      delete error.status
+      delete error.statusCode
+      delete error.source
+
       throw error
     },
     done () {
