@@ -25,7 +25,7 @@
     ],
     "rawHeaders": [
       "Date",
-      "Sat, 21 Oct 2017 05:58:18 GMT",
+      "Wed, 25 Oct 2017 05:29:52 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -39,9 +39,9 @@
       "X-RateLimit-Limit",
       "60",
       "X-RateLimit-Remaining",
-      "51",
+      "59",
       "X-RateLimit-Reset",
-      "1508568927",
+      "1508912992",
       "Cache-Control",
       "public, max-age=60, s-maxage=60",
       "Vary",
@@ -53,7 +53,7 @@
       "X-GitHub-Media-Type",
       "github.v3; format=json",
       "Access-Control-Expose-Headers",
-      "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "Access-Control-Allow-Origin",
       "*",
       "Expect-CT",
@@ -69,11 +69,11 @@
       "X-XSS-Protection",
       "1; mode=block",
       "X-Runtime-rack",
-      "0.026186",
+      "0.026775",
       "Vary",
       "Accept-Encoding",
       "X-GitHub-Request-Id",
-      "C5C1:3D1C:8D0CF5C:BEB17FE:59EAE1FA"
+      "C340:3D1D:112DABE8:171F5683:59F02150"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
