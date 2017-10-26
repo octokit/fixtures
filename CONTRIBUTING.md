@@ -136,6 +136,12 @@ You can combine that with the `--update` flag.
 node bin/record api.github.com/get-root api.github.com/get-repository
 ```
 
+In case you created temporary repositories that you want to delete all at once:
+
+```
+node bin/remove-temporary-repositories
+```
+
 ## Server
 
 Start the server with
