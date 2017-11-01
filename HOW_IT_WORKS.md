@@ -5,6 +5,7 @@
 * [Automated pull requests when API change](#automated-pull-requests-when-api-change)
 * [Standalone server](#standalone-server)
 * [Normalizations](#normalizations)
+* [Cron job](#cron-job)
 
 [![](assets/octokit-fixtures-introduction.png)](https://youtu.be/L851arJSMhM)
 
@@ -115,3 +116,23 @@ to proxy requests to the mocked routes based on the existing fixtures.
 - **Commit sha hashes** are zerofied with a counter,
   e.g. `3f3f005b29247e51a4f4d6b8ce07b67646cd6074` becomes `0000000000000000000000000000000000000001`,
   the next unique commit sha becomes `0000000000000000000000000000000000000002`, etc.
+
+## Cron job
+
+Changes to GitHub’s API are automatically detected using a daily cron job which
+runs on Travis. If changes are detected, the cron job creates a pull request
+([example](https://github.com/octokit/fixtures/pull/61)).
+
+A Cron job is detected by checking if the `TRAVIS_EVENT_TYPE` environment
+variable is set to `cron`. Other required environment variables are
+
+- `TRAVIS_REPO_SLUG`: full name of the fixtures repository (set to `octokit/fixtures`)
+- `FIXTURES_USER_A_TOKEN_FULL_ACCESS`: [@octokit-fixture-user-a](https://github.com/octokit-fixture-user-a)
+  is creating the pull request. If you use a token of a different account, make
+  sure it has write access to the `TRAVIS_REPO_SLUG` repository.
+
+You can run the cron-related code for local testing with
+
+```
+TRAVIS_EVENT_TYPE=cron bin/record
+```
