@@ -33,16 +33,28 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log('')
   console.log(`⏯️  ${chalk.bold(domain)}: ${humanize(title.replace('.js', ''))} ...`)
 
-  let baseURL = `https://${domain}`
+  const request = axios.create({baseURL: `https://${domain}`})
 
-  // workaround for https://github.com/octokit/fixtures/issues/3
-  if (domain === 'api.github.com' && env.FIXTURES_PROXY) {
-    baseURL = env.FIXTURES_PROXY
+  // set Proxy for unauthenticated requests to https://api.github.com
+  if (env.FIXTURES_PROXY) {
+    request.interceptors.request.use(config => {
+      if (config.headers.Authorization) {
+        return config
+      }
+
+      if (config.baseURL !== 'https://api.github.com') {
+        return config
+      }
+
+      config.baseURL = env.FIXTURES_PROXY
+
+      return config
+    })
   }
 
   const oldNormalizedFixtures = await read(fixtureName)
   const newRawFixtures = await recordScenario({
-    request: axios.create({baseURL}),
+    request: request,
     scenario: require(`../scenarios/${fixtureName}/record`)
   })
 
