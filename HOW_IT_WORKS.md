@@ -51,13 +51,13 @@ api at https://api.github.com, make sure to adapt it for your own scenario.
 1. Create the folder `scenarios/api.github.com/get-repository/`. In that folder,
    create a [`record.js`](#record-js-file) file.
 
-2. Run `bin/record.js`. It should log the following
+2. Run `bin/record.js api.github.com/get-repository`. It should log the following
    ```
    ⏯  api.github.com: Get repository ...
    ❌  This looks like a new fixture
    ```
 3. If there are no other changes, you can create the new fixtures by
-   running `bin/record.js --update`. Now it should log
+   running `bin/record.js --update api.github.com/get-repository`. Now it should log
    ```
    ⏯  api.github.com: Get repository ...
    📼  New fixtures recorded
@@ -70,7 +70,7 @@ api at https://api.github.com, make sure to adapt it for your own scenario.
    It will fail and show the changes between your `normalized-fixture.json` file
    and the one that got calculated. Look into the [`lib/normalize` folder](lib/normalize)
    and make the necessary changes. Repeat until the test passes
-6. Run `bin/record.js` again, it should result with "Fixtures are up-to-date".
+6. Run `bin/record.js`, it should result with "Fixtures are up-to-date".
    If not, repeat the previous step until it does
 7. Commit all changes with `feat(scenario): get repository`
 8. Create a pull request
