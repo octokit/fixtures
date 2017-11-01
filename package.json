@@ -36,7 +36,8 @@
   "homepage": "https://github.com/octokit/fixtures#readme",
   "dependencies": {
     "lodash": "^4.17.4",
-    "nock": "^9.0.21"
+    "nock": "^9.0.21",
+    "url-template": "^2.0.8"
   },
   "optionalDependencies": {
     "express": "^4.15.4",
