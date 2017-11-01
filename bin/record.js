@@ -65,7 +65,8 @@ scenarios.reduce(async (promise, scenarioPath) => {
     name: fixtureName,
     changes: fixturesDiffs,
     newNormalizedFixtures,
-    oldNormalizedFixtures
+    oldNormalizedFixtures,
+    newRawFixtures
   })
 
   if (fixturesDiffs[0][0] === '-') {
