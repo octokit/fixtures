@@ -33,13 +33,13 @@ async function releaseAssets (state) {
       },
       data: {
         message: 'initial commit',
-        content: Buffer.from('# create-status').toString('base64')
+        content: Buffer.from('# release-assets').toString('base64')
       }
     })
 
     // https://developer.github.com/v3/repos/releases/#create-a-release
     // (this request gets ignored, it will create our test release)
-    const {data: {id: releaseId, upload_url}} = await state.request({
+    await state.request({
       method: 'post',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases`,
       headers: {
@@ -52,6 +52,17 @@ async function releaseAssets (state) {
         name: 'Version 1.0.0',
         body: 'Initial release',
         target_commitish: sha
+      }
+    })
+
+    // https://developer.github.com/v3/repos/releases/#create-a-release
+    // Get the release. The upload_url from the response must be used for uploads
+    const {data: {id: releaseId, upload_url}} = await state.request({
+      method: 'get',
+      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/tags/v1.0.0`,
+      headers: {
+        Accept: 'application/vnd.github.v3+json',
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       }
     })
 
