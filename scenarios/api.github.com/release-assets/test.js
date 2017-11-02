@@ -7,6 +7,17 @@ test('Labels', async (t) => {
   const mock = fixtures.mock('api.github.com/release-assets')
 
   // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
+  // Get release to retrieve upload URL
+  await axios({
+    method: 'get',
+    url: `https://api.github.com/repos/octokit-fixture-org/release-assets/releases/tags/v1.0.0`,
+    headers: {
+      Accept: 'application/vnd.github.v3+json',
+      Authorization: 'token 0000000000000000000000000000000000000001'
+    }
+  })
+
+  // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
   // upload attachment to release URL returned by create release request
   await axios({
     method: 'post',
