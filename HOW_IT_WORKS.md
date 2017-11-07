@@ -116,6 +116,8 @@ to proxy requests to the mocked routes based on the existing fixtures.
 - **Commit sha hashes** are zerofied with a counter,
   e.g. `3f3f005b29247e51a4f4d6b8ce07b67646cd6074` becomes `0000000000000000000000000000000000000001`,
   the next unique commit sha becomes `0000000000000000000000000000000000000002`, etc.
+- **GitHub Request IDs** are zerofied,
+  e.g. `DDA3:292D9:5B9AC0:62137E:5A022DD0` becomes `0000:00000:0000000:0000000:00000000`
 
 ## Cron job
 
