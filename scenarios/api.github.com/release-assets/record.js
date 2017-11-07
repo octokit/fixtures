@@ -137,7 +137,7 @@ async function releaseAssets (state) {
     error = _error
   }
 
-  // await temporaryRepository.delete()
+  await temporaryRepository.delete()
 
   if (error) {
     return Promise.reject(error)
