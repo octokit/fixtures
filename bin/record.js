@@ -136,6 +136,11 @@ scenarios.reduce(async (promise, scenarioPath) => {
   }
 
   console.log(error.toString())
+  console.log('REQUEST')
+  console.log(`${error.config.method.toUpperCase()} ${error.config.url}`)
+  console.log('RESPONSE HEADERS')
+  console.log(JSON.stringify(error.response.headers, null, 2))
+  console.log('RESPONSE BODY')
   console.log(JSON.stringify(error.response.data, null, 2))
   process.exit(1)
 })
