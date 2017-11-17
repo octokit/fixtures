@@ -59,7 +59,8 @@ scenarios.reduce(async (promise, scenarioPath) => {
   })
 
   const scenarioState = {
-    commitSha: {} // map original commits to normalized commits
+    commitSha: {}, // map original commit sha hashes to normalized commit hashes
+    ids: {}
   }
 
   const newNormalizedFixtures = newRawFixtures
