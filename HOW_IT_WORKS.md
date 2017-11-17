@@ -92,7 +92,8 @@ to proxy requests to the mocked routes based on the existing fixtures.
 
 ## Normalizations
 
-- **All IDs are set to 1**
+- **All IDs are set to 1000** or above. The ID increments for each entity of the
+  same type within the same scenario
 - **Tokens Authorization Header are zerofied** ending with the token number, see [environment variables below](https://github.com/octokit/fixtures#test-users--organization--tokens)  
   e.g. `FIXTURES_USER_A_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000001`,
   `FIXTURES_USER_B_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000002`, etc
