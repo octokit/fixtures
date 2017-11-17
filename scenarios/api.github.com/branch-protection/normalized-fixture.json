@@ -136,8 +136,8 @@
         "users": [
           {
             "login": "octokit-fixture-user-a",
-            "id": 1,
-            "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+            "id": 1000,
+            "avatar_url": "https://avatars0.githubusercontent.com/u/1000?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/octokit-fixture-user-a",
             "html_url": "https://github.com/octokit-fixture-user-a",
@@ -157,13 +157,13 @@
         "teams": [
           {
             "name": "A-Team",
-            "id": 1,
+            "id": 1000,
             "slug": "a-team",
             "description": "If you have a problem, if no one else can help you, then if you can find them, maybe you can hire the A-Team!",
             "privacy": "closed",
-            "url": "https://api.github.com/teams/1",
-            "members_url": "https://api.github.com/teams/1/members{/member}",
-            "repositories_url": "https://api.github.com/teams/1/repos",
+            "url": "https://api.github.com/teams/1000",
+            "members_url": "https://api.github.com/teams/1000/members{/member}",
+            "repositories_url": "https://api.github.com/teams/1000/repos",
             "permission": "pull"
           }
         ]
@@ -179,8 +179,8 @@
           "users": [
             {
               "login": "octokit-fixture-user-a",
-              "id": 1,
-              "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+              "id": 1000,
+              "avatar_url": "https://avatars0.githubusercontent.com/u/1000?v=4",
               "gravatar_id": "",
               "url": "https://api.github.com/users/octokit-fixture-user-a",
               "html_url": "https://github.com/octokit-fixture-user-a",
@@ -217,7 +217,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4096",
+      "content-length": "4120",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

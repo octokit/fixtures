@@ -11,7 +11,8 @@ glob.sync('scenarios/**/raw-fixture.json')
       const expected = require(`../../scenarios/${fixturnName}/normalized-fixture.json`)
 
       const scenarioState = {
-        commitSha: {}
+        commitSha: {},
+        ids: {}
       }
       const actual = raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))
       t.deepEqual(actual, expected)

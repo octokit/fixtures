@@ -21,7 +21,7 @@ test('Labels', async (t) => {
   // upload attachment to release URL returned by create release request
   await axios({
     method: 'post',
-    url: `https://uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1/assets?name=test-upload.txt&label=test`,
+    url: `https://uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets?name=test-upload.txt&label=test`,
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001',
@@ -35,7 +35,7 @@ test('Labels', async (t) => {
   // list assets for release
   await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/1/assets',
+    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001'
@@ -46,7 +46,7 @@ test('Labels', async (t) => {
   // get single release asset
   await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1',
+    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001'
@@ -57,7 +57,7 @@ test('Labels', async (t) => {
   // Edit name / label of release asset
   await axios({
     method: 'patch',
-    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1',
+    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001',
@@ -72,7 +72,7 @@ test('Labels', async (t) => {
   // delete a release asset
   await axios({
     method: 'delete',
-    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1',
+    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001'
