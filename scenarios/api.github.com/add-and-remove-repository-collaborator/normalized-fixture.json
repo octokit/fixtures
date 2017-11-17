@@ -6,15 +6,15 @@
     "body": "",
     "status": 201,
     "response": {
-      "id": 1,
+      "id": 1000,
       "repository": {
-        "id": 1,
+        "id": 1000,
         "name": "add-and-remove-repository-collaborator",
         "full_name": "octokit-fixture-org/add-and-remove-repository-collaborator",
         "owner": {
           "login": "octokit-fixture-org",
-          "id": 1,
-          "avatar_url": "https://avatars2.githubusercontent.com/u/1?v=4",
+          "id": 1000,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-org",
           "html_url": "https://github.com/octokit-fixture-org",
@@ -74,8 +74,8 @@
       },
       "invitee": {
         "login": "octokit-fixture-user-b",
-        "id": 1,
-        "avatar_url": "https://avatars1.githubusercontent.com/u/1?v=4",
+        "id": 1002,
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1002?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-b",
         "html_url": "https://github.com/octokit-fixture-user-b",
@@ -93,8 +93,8 @@
       },
       "inviter": {
         "login": "octokit-fixture-user-a",
-        "id": 1,
-        "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+        "id": 1001,
+        "avatar_url": "https://avatars0.githubusercontent.com/u/1001?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
         "html_url": "https://github.com/octokit-fixture-user-a",
@@ -112,7 +112,7 @@
       },
       "permissions": "write",
       "created_at": "2017-10-10T09:00:00-07:00",
-      "url": "https://api.github.com/user/repository_invitations/1",
+      "url": "https://api.github.com/user/repository_invitations/1000",
       "html_url": "https://github.com/octokit-fixture-org/add-and-remove-repository-collaborator/invitations"
     },
     "reqheaders": {
@@ -126,12 +126,12 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "8043",
+      "content-length": "8070",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
-      "location": "https://api.github.com/user/repository_invitations/1",
+      "location": "https://api.github.com/user/repository_invitations/1000",
       "status": "201 Created",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-accepted-oauth-scopes": "",
@@ -155,15 +155,15 @@
     "status": 200,
     "response": [
       {
-        "id": 1,
+        "id": 1000,
         "repository": {
-          "id": 1,
+          "id": 1000,
           "name": "add-and-remove-repository-collaborator",
           "full_name": "octokit-fixture-org/add-and-remove-repository-collaborator",
           "owner": {
             "login": "octokit-fixture-org",
-            "id": 1,
-            "avatar_url": "https://avatars2.githubusercontent.com/u/1?v=4",
+            "id": 1000,
+            "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/octokit-fixture-org",
             "html_url": "https://github.com/octokit-fixture-org",
@@ -223,8 +223,8 @@
         },
         "invitee": {
           "login": "octokit-fixture-user-b",
-          "id": 1,
-          "avatar_url": "https://avatars1.githubusercontent.com/u/1?v=4",
+          "id": 1002,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/1002?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-user-b",
           "html_url": "https://github.com/octokit-fixture-user-b",
@@ -242,8 +242,8 @@
         },
         "inviter": {
           "login": "octokit-fixture-user-a",
-          "id": 1,
-          "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+          "id": 1001,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/1001?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-user-a",
           "html_url": "https://github.com/octokit-fixture-user-a",
@@ -261,7 +261,7 @@
         },
         "permissions": "write",
         "created_at": "2017-10-10T09:00:00-07:00",
-        "url": "https://api.github.com/user/repository_invitations/1",
+        "url": "https://api.github.com/user/repository_invitations/1000",
         "html_url": "https://github.com/octokit-fixture-org/add-and-remove-repository-collaborator/invitations"
       }
     ],
@@ -275,7 +275,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "8045",
+      "content-length": "8072",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -298,7 +298,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "patch",
-    "path": "/user/repository_invitations/1",
+    "path": "/user/repository_invitations/1000",
     "body": "",
     "status": 204,
     "response": "",

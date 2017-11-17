@@ -27,12 +27,12 @@ test('Get repository', async (t) => {
     }
   }).catch(mock.explain)
 
-  t.is(invitationsResponse.data[0].id, 1)
+  t.is(invitationsResponse.data[0].id, 1000)
 
   // https://developer.github.com/v3/repos/invitations/#accept-a-repository-invitation
   await axios({
     method: 'patch',
-    url: `https://api.github.com/user/repository_invitations/1`,
+    url: `https://api.github.com/user/repository_invitations/1000`,
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000002`,
