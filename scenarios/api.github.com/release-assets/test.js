@@ -64,6 +64,7 @@ test('Labels', async (t) => {
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
+      name: 'new-filename.txt',
       label: 'new label'
     }
   })
