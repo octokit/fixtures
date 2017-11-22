@@ -119,6 +119,7 @@ async function releaseAssets (state) {
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
+        name: 'new-filename.txt',
         label: 'new label'
       }
     })
