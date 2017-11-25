@@ -33,7 +33,10 @@ scenarios.reduce(async (promise, scenarioPath) => {
   console.log('')
   console.log(`⏯️  ${chalk.bold(domain)}: ${humanize(title.replace('.js', ''))} ...`)
 
-  const request = axios.create({baseURL: `https://${domain}`})
+  const request = axios.create({
+    baseURL: `https://${domain}`,
+    maxRedirects: 0 // record redirects explicitly
+  })
 
   // set Proxy for unauthenticated requests to https://api.github.com
   if (env.FIXTURES_PROXY) {
