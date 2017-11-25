@@ -39,7 +39,7 @@ function mock (name) {
       const actual = pick(requestConfig, Object.keys(expected))
       actual.headers = pick(requestConfig.headers, Object.keys(expected.headers))
 
-      error.message = `Request did not match mock:\n${diffString(expected, actual)}`
+      error.message = `Request did not match mock ${api.pending()[0]}:\n${diffString(expected, actual)}`
 
       delete error.config
       delete error.request
