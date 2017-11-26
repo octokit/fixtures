@@ -32,3 +32,5 @@ matrix:
   include:
     - node_js: "4"
       env: COMMAND=test:node4
+  allow_failures:
+    - env: CLIENT=node ADAPTER=websql COMMAND=test
