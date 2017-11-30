@@ -21,6 +21,7 @@
     "test:scenarios": "tap 'scenarios/**/test.js'",
     "test:node4": "node test/node-4-compatibility.js",
     "test:e2e": "test/end-to-end/server-test.sh",
+    "test:external-fixtures": "test/end-to-end/server-external-fixtures-test.sh",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -37,13 +38,14 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "nock": "^9.0.21",
-    "url-template": "^2.0.8"
+    "url-template": "^2.0.8",
+    "yargs": "^10.0.3"
   },
   "optionalDependencies": {
-    "express": "^4.15.4",
-    "http-proxy-middleware": "^0.17.4",
     "envalid": "^4.0.1",
+    "express": "^4.15.4",
     "glob": "^7.1.2",
+    "http-proxy-middleware": "^0.17.4",
     "json-diff": "^0.5.2"
   },
   "devDependencies": {
