@@ -15,9 +15,9 @@ const { argv } = yargs.options({
       describe: 'Path glob for all test fixtures',
       default: pathResolve(__dirname, '..', 'scenarios/api.github.com/*/normalized-fixture.json')
     },
-    debug: {
+    loglevel: {
       type: 'string',
-      describe: 'Set logging level',
+      describe: 'Set logging level for Express',
       default: 'debug'
     },
   })
