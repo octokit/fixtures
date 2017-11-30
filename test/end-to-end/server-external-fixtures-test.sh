@@ -12,7 +12,10 @@ returnCode1=$? # is 0 if grep could not find string above
 
 # should fail since we're not loading the repo (inverted due to grep -v)
 curl -H'Accept: application/vnd.github.v3+json' http://localhost:3000/repos/octokit-fixture-org/hello-world | grep -v -q '"full_name":"octokit-fixture-org/hello-world"'
-returnCode2=$? # is 1 if grep could not find string above
+returnCode2=$? # is 0 if grep could not find string above
 
+# stop the server
 kill $serverPid
+
+# exit non-zero if any return codes are non-zero
 ! (( $returnCode1 || $returnCode2 ))
