@@ -24,7 +24,8 @@ env:
     - COMMAND=test:unit
     - COMMAND=test:integration
     - COMMAND=test:scenarios
-    - COMMAND=test:e2e
+    - COMMAND=test:e2e:server
+    - COMMAND=test:e2e:external-fixtures
     - COMMAND=coverage:upload
 
 matrix:
