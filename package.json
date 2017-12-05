@@ -21,6 +21,7 @@
     "test:scenarios": "tap 'scenarios/**/test.js'",
     "test:node4": "node test/node-4-compatibility.js",
     "test:e2e:server": "test/end-to-end/server-test.sh",
+    "test:e2e:external-fixtures": "test/end-to-end/server-external-fixtures-test.sh",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
