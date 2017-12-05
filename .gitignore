@@ -1,5 +1,6 @@
 .env
 .nyc_output
+*.lock
 coverage
 node_modules
-*.lock
+package-lock.json
