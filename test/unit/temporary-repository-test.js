@@ -23,7 +23,7 @@ test('temporaryRepository(name) returns {name}', (t) => {
   t.end()
 })
 
-test('temporaryRepository.regex', {only: true}, (t) => {
+test('temporaryRepository.regex', (t) => {
   const {name} = temporaryRepository({name: 'funky-repo'})
   const [, originalName] = name.match(temporaryRepository.regex)
   t.is(originalName, 'funky-repo')
