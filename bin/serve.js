@@ -44,7 +44,10 @@ app.use('/', proxy({
       return response.end(error.message)
     }
 
-    const errorRequestJson = JSON.parse(error.message.substr('Nock: No match for request '.length))
+    const actualString = error.message
+      .substr('Nock: No match for request '.length)
+      .replace(/\s+Got instead(.|[\r\n])*$/, '')
+    const errorRequestJson = JSON.parse(actualString)
 
     response.end(JSON.stringify({
       error: 'Nock: No match for request',

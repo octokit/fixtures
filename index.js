@@ -35,7 +35,11 @@ function mock (name) {
       }
 
       const expected = getNextMockConfig(mocks)
-      const requestConfig = JSON.parse(error.message.substr('Nock: No match for request '.length))
+      const actualString = error.message
+        .substr('Nock: No match for request '.length)
+        .replace(/\s+Got instead(.|[\r\n])*$/, '')
+
+      const requestConfig = JSON.parse(actualString)
       const actual = pick(requestConfig, Object.keys(expected))
       actual.headers = pick(requestConfig.headers, Object.keys(expected.headers))
 
