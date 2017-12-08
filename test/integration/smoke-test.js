@@ -55,7 +55,7 @@ test('unmatched request error', async (t) => {
   t.end()
 })
 
-test('explain non-request error', {only: true}, async (t) => {
+test('explain non-request error', async (t) => {
   const mock = fixtures.mock('api.github.com/get-repository')
 
   try {
