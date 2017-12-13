@@ -43,6 +43,7 @@ test('temporaryRepository(name).create() sends POST /orgs/octokit-fixture-org/re
       t.is(options.url, '/orgs/org-foo/repos')
       t.is(options.headers.Authorization, 'token token123')
       t.is(options.data.name, api.name)
+      return Promise.resolve()
     }
   }
   const api = temporaryRepository(options)
