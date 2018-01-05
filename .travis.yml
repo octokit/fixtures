@@ -26,7 +26,6 @@ env:
     - COMMAND=test:scenarios
     - COMMAND=test:e2e:server
     - COMMAND=test:e2e:external-fixtures
-    - COMMAND=coverage:upload
 
 matrix:
   fast_finish: true
@@ -34,4 +33,5 @@ matrix:
     - node_js: "4"
       env: COMMAND=test:node4
   allow_failures:
-    - env: CLIENT=node ADAPTER=websql COMMAND=test
+    - node_js: "8"
+      env: COMMAND=coverage:upload
