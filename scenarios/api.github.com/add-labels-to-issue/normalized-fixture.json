@@ -96,22 +96,22 @@
     "response": [
       {
         "id": 1000,
+        "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/Foo",
+        "name": "Foo",
+        "color": "ededed",
+        "default": false
+      },
+      {
+        "id": 1001,
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/bAr",
         "name": "bAr",
         "color": "ededed",
         "default": false
       },
       {
-        "id": 1001,
+        "id": 1002,
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/baZ",
         "name": "baZ",
-        "color": "ededed",
-        "default": false
-      },
-      {
-        "id": 1002,
-        "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/Foo",
-        "name": "Foo",
         "color": "ededed",
         "default": false
       }
