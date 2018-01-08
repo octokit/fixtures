@@ -52,6 +52,7 @@
     "axios": "^0.17.0",
     "chalk": "^2.1.0",
     "coveralls": "^3.0.0",
+    "follow-redirects": "1.2.6",
     "humanize-string": "^1.0.1",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
