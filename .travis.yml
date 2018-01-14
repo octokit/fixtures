@@ -41,3 +41,8 @@ jobs:
     - stage: release
       node_js: lts/*
       script: npm run semantic-release
+
+stages:
+  - lint
+  - test
+  - release
