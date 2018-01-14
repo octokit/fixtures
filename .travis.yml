@@ -17,7 +17,6 @@ before_script:
 script: npm run $COMMAND
 env:
   matrix:
-    - COMMAND=pretest # linting
     - COMMAND=record
     - COMMAND=test:unit
     - COMMAND=test:integration
@@ -36,7 +35,9 @@ matrix:
 
 jobs:
   include:
+    - stage: lint
+      script: npm run pretest
+    - stage: test
     - stage: release
       node_js: lts/*
-      script:
-        - npm run semantic-release
+      script: npm run semantic-release
