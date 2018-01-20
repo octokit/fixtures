@@ -10,21 +10,21 @@
         "id": 1000,
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/bug",
         "name": "bug",
-        "color": "ee0701",
+        "color": "d73a4a",
         "default": true
       },
       {
         "id": 1001,
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/duplicate",
         "name": "duplicate",
-        "color": "cccccc",
+        "color": "cfd3d7",
         "default": true
       },
       {
         "id": 1002,
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/enhancement",
         "name": "enhancement",
-        "color": "84b6eb",
+        "color": "a2eeef",
         "default": true
       },
       {
@@ -38,21 +38,21 @@
         "id": 1004,
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/help%20wanted",
         "name": "help wanted",
-        "color": "33aa3f",
+        "color": "008672",
         "default": true
       },
       {
         "id": 1005,
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/invalid",
         "name": "invalid",
-        "color": "e6e6e6",
+        "color": "e4e669",
         "default": true
       },
       {
         "id": 1006,
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/question",
         "name": "question",
-        "color": "cc317c",
+        "color": "d876e3",
         "default": true
       },
       {
