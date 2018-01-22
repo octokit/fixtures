@@ -56,7 +56,7 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "proxyquire": "^1.8.0",
-    "semantic-release": "^11.0.2",
+    "semantic-release": "^12.2.2",
     "standard": "^10.0.3",
     "tap": "^11.0.0"
   },
