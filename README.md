@@ -36,7 +36,7 @@ It currently loads all mocks from [`/scenarios/api.github.com/*/normalized-fixtu
 you can send requests
 
 ```
-curl -H'Accept: application/vnd.github.v3+json' http://localhost:3000/repos/octocat/hello-world
+curl -H'Accept: application/vnd.github.v3+json' http://localhost:3000/repos/octokit-fixture-org/hello-world
 # returns response from fixture
 ```
 
@@ -59,7 +59,7 @@ fixtures.mock('api.github.com/get-repository')
 https.request({
   method: 'GET',
   hostname: 'api.github.com',
-  path: '/repos/octocat/hello-world',
+  path: '/repos/octokit-fixture-org/hello-world',
   headers: {
     accept: 'application/vnd.github.v3+json'
   }
