@@ -2,6 +2,7 @@
 
 const pathResolve = require('path').resolve
 
+const cors = require('cors')
 const express = require('express')
 const glob = require('glob')
 const nock = require('nock')
@@ -31,6 +32,7 @@ fixturePaths.map(nock.load).forEach((fixtureMocks) => {
 })
 
 const app = express()
+app.use(cors())
 app.use('/', proxy({
   target: 'https://api.github.com',
   changeOrigin: true,
