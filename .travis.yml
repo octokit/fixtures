@@ -12,37 +12,30 @@ branches:
     - master
     - /^greenkeeper.*$/
 
-before_script:
-  - npm prune
 script: npm run $COMMAND
-env:
-  matrix:
-    - COMMAND=record
-    - COMMAND=test:unit
-    - COMMAND=test:integration
-    - COMMAND=test:scenarios
-    - COMMAND=test:e2e:server
-    - COMMAND=test:e2e:external-fixtures
-
-matrix:
-  fast_finish: true
-  include:
-    - node_js: "4"
-      env: COMMAND=test:node4
-  allow_failures:
-    - node_js: "8"
-      env: COMMAND=coverage:upload
 
 jobs:
   include:
     - stage: lint
-      script: npm run pretest
+      env: COMMAND=pretest
     - stage: test
+      env: COMMAND=record
+    - env: COMMAND=test:unit
+    - env: COMMAND=test:integration
+    - env: COMMAND=test:scenarios
+    - env: COMMAND=test:e2e:server
+    - env: COMMAND=test:e2e:external-fixtures
+    - node_js: 4
+      env: COMMAND=test:node4
     - stage: release
       node_js: lts/*
-      script: npm run semantic-release
+      env: COMMAND=semantic-release
+  allow_failures:
+    - node_js: "8"
+      env: COMMAND=coverage:upload
 
 stages:
   - lint
   - test
-  - release
+  - name: release
+    if: branch = master AND type IN (push)
