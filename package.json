@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/octokit/fixtures#readme",
   "dependencies": {
+    "cors": "^2.8.4",
     "lodash": "^4.17.4",
     "nock": "^9.1.6",
     "url-template": "^2.0.8",
