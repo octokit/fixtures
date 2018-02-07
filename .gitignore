@@ -2,5 +2,6 @@
 .nyc_output
 *.lock
 coverage
+dist
 node_modules
 package-lock.json
