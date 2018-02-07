@@ -12,7 +12,8 @@
   "files": [
     "index.js",
     "bin",
-    "lib"
+    "lib",
+    "scenarios"
   ],
   "scripts": {
     "coverage": "tap --coverage-report=html",
