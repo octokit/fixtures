@@ -22,6 +22,7 @@
     "test:node4": "node test/node-4-compatibility.js",
     "test:e2e:server": "test/end-to-end/server-test.sh",
     "test:e2e:external-fixtures": "test/end-to-end/server-external-fixtures-test.sh",
+    "prepublishOnly": "pkg . --out-path=dist/",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -57,7 +58,7 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "proxyquire": "^1.8.0",
-    "semantic-release": "^12.2.2",
+    "semantic-release": "^13.1.3",
     "standard": "^10.0.3",
     "tap": "^11.0.0"
   },
@@ -65,6 +66,17 @@
     "exclude": [
       "test",
       "scenarios/**/test.js"
+    ]
+  },
+  "release": {
+    "publish": [
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/github",
+        "assets": [
+          "dist/*"
+        ]
+      }
     ]
   }
 }
