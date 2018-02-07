@@ -9,6 +9,11 @@
   "bin": {
     "octokit-fixtures-server": "bin/serve.js"
   },
+  "files": [
+    "index.js",
+    "bin",
+    "lib"
+  ],
   "scripts": {
     "coverage": "tap --coverage-report=html",
     "coverage:upload": "npm run test && tap --coverage-report=text-lcov | coveralls",
