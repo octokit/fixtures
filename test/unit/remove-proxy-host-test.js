@@ -1,4 +1,4 @@
-const proxyquire = require('proxyquire')
+const proxyquire = require('proxyquire').noCallThru()
 const {test} = require('tap')
 
 const minimalFixture = {
