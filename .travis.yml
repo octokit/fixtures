@@ -24,7 +24,6 @@ jobs:
     - env: COMMAND=test:integration
     - env: COMMAND=test:scenarios
     - env: COMMAND=test:e2e:server
-    - env: COMMAND=test:e2e:external-fixtures
     - node_js: 4
       env: COMMAND=test:node4
     - stage: release
