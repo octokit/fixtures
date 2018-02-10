@@ -5,6 +5,10 @@ module.exports = {
 }
 
 const assert = require('assert')
+const parseUrl = require('url').parse
+
+const cloneDeep = require('lodash/cloneDeep')
+const merge = require('lodash/merge')
 const pick = require('lodash/pick')
 const nock = require('nock')
 const headers = require('./lib/headers')
@@ -15,8 +19,17 @@ function get (name) {
   return fixtures.map(fixture => Object.assign({}, fixture))
 }
 
-function mock (name) {
-  const fixtures = get(name)
+function mock (name, additions) {
+  const fixtures = additions ? cloneDeep(get(name)) : get(name)
+
+  if (additions) {
+    const applyAdditions = typeof additions === 'function'
+       ? additions
+       : applyAdditionsDefault.bind(null, additions)
+    fixtures.forEach((fixture, i) => {
+      fixtures[i] = applyAdditions(fixture)
+    })
+  }
 
   fixtures.forEach(fixture => {
     fixture.rawHeaders = headers.toArray(fixture.headers)
@@ -72,4 +85,17 @@ function getNextMockConfig (mocks) {
     url: `https://api.github.com${nextMock.uri}`,
     headers: nextMock.options.reqheaders
   }
+}
+
+function applyAdditionsDefault (additions, fixture) {
+  merge(fixture, additions)
+  if (additions.scope) {
+    const url = parseUrl(additions.scope)
+    fixture.reqheaders.host = url.host
+    if (fixture.headers.location) {
+      fixture.headers.location = fixture.headers.location.replace('https://api.github.com/', url.href)
+    }
+  }
+
+  return fixture
 }
