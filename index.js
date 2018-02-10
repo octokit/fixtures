@@ -1,9 +1,3 @@
-module.exports = {
-  // don’t use short syntax for node@4 compatibility
-  get: get,
-  mock: mock
-}
-
 const assert = require('assert')
 const parseUrl = require('url').parse
 
@@ -13,6 +7,13 @@ const pick = require('lodash/pick')
 const nock = require('nock')
 const headers = require('./lib/headers')
 const diffString = require('json-diff').diffString
+
+module.exports = {
+  // don’t use short syntax for node@4 compatibility
+  get: get,
+  mock: mock,
+  nock: nock
+}
 
 function get (name) {
   const fixtures = require(`./scenarios/${name}/normalized-fixture.json`)
