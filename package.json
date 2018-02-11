@@ -36,6 +36,7 @@
   "homepage": "https://github.com/octokit/fixtures#readme",
   "dependencies": {
     "lodash": "^4.17.4",
+    "json-diff": "^0.5.2",
     "nock": "^9.1.6",
     "url-template": "^2.0.8"
   },
@@ -46,7 +47,6 @@
     "envalid": "^4.0.1",
     "glob": "^7.1.2",
     "humanize-string": "^1.0.1",
-    "json-diff": "^0.5.2",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "proxyquire": "^1.8.0",
