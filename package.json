@@ -21,7 +21,6 @@
     "test:unit": "tap 'test/unit/**/*-test.js'",
     "test:integration": "tap 'test/integration/**/*-test.js'",
     "test:scenarios": "tap 'scenarios/**/test.js'",
-    "presemantic-release": "pkg . --out-path=dist/",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -50,7 +49,6 @@
     "json-diff": "^0.5.2",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
-    "pkg": "^4.3.0",
     "proxyquire": "^1.8.0",
     "semantic-release": "^13.1.3",
     "standard": "^10.0.3",
