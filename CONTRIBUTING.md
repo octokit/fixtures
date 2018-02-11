@@ -3,7 +3,6 @@
 * [Requirements & local setup](#requirements--local-setup)
 * [Test users / organization / tokens](#test-users--organization--tokens)
 * [Record](#record)
-* [Server](#server)
 * [Tests](#tests)
 * [Coverage](#coverage)
 
@@ -142,26 +141,12 @@ In case you created temporary repositories that you want to delete all at once:
 node bin/remove-temporary-repositories
 ```
 
-## Server
-
-Start the server with
-
-```
-node bin/serve
-```
-
 ## Tests
 
 Run integration & unit tests with
 
 ```
 npm test
-```
-
-Run the end-to-end test with
-
-```
-test/end-to-end/server-test.sh
 ```
 
 ## Coverage
@@ -182,8 +167,3 @@ The following commit message conventions determine which version is released:
 3. `BREAKING CHANGE:` in body: bumps breaking version, e.g. `1.2.3` → `2.0.0`
 
 Only one version number is bumped at a time, the highest version change trumps the others.
-
-The server binaries are currently not generated and uploaded automatically. To
-generate them run `npx pgk .`, then upload the resulting binaries to the respective
-[release](https://github.com/octokit/fixtures/releases). We plan to automate
-that process: [#6](https://github.com/octokit/fixtures/issues/6) – pull requests welcome 🤗
