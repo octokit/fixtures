@@ -16,12 +16,14 @@ module.exports = {
 }
 
 function get (name) {
-  const fixtures = require(`./scenarios/${name}/normalized-fixture.json`)
-  return fixtures.map(fixture => Object.assign({}, fixture))
+  return require(`./scenarios/${name}/normalized-fixture.json`)
 }
 
-function mock (name, additions) {
-  const fixtures = additions ? cloneDeep(get(name)) : get(name)
+function mock (fixtures, additions) {
+  if (typeof fixtures === 'string') {
+    fixtures = get(fixtures)
+  }
+  fixtures = cloneDeep(fixtures)
 
   if (additions) {
     const applyAdditions = typeof additions === 'function'
@@ -56,7 +58,6 @@ function mock (name, additions) {
       const requestConfig = JSON.parse(actualString)
       const actual = pick(requestConfig, Object.keys(expected))
       actual.headers = pick(requestConfig.headers, Object.keys(expected.headers))
-
       error.message = `Request did not match mock ${api.pending()[0]}:\n${diffString(expected, actual)}`
 
       delete error.config
