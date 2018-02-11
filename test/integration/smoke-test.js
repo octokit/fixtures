@@ -3,6 +3,22 @@ const {test} = require('tap')
 
 const fixtures = require('../..')
 
+test('Accepts fixtures object as argument', async (t) => {
+  fixtures.mock(require('../../scenarios/api.github.com/get-repository/normalized-fixture.json'))
+
+  const result = await axios({
+    method: 'get',
+    url: 'https://api.github.com/repos/octokit-fixture-org/hello-world',
+    headers: {
+      Accept: 'application/vnd.github.v3+json'
+    }
+  }).catch(t.error)
+
+  t.is(result.data.name, 'hello-world')
+
+  t.end()
+})
+
 test('Missing Accept header', async (t) => {
   fixtures.mock('api.github.com/get-repository')
 
