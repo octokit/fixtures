@@ -21,7 +21,6 @@
     "test:unit": "tap 'test/unit/**/*-test.js'",
     "test:integration": "tap 'test/integration/**/*-test.js'",
     "test:scenarios": "tap 'scenarios/**/test.js'",
-    "test:node4": "node test/node-4-compatibility.js",
     "presemantic-release": "pkg . --out-path=dist/",
     "semantic-release": "semantic-release"
   },
