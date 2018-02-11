@@ -7,44 +7,21 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/octokit/fixtures.svg)](https://greenkeeper.io/)
 
 Records requests/responses against the [GitHub REST API](https://developer.github.com/v3/)
-and stores them as JSON fixtures for usage as a standalone [http mock server](#standalonemockserver)
-or as a [Node module](#asnodemodule).
+and stores them as JSON fixtures.
 
 - [Usage](#usage)
-  * [Standalone mock server](#standalone-mock-server)
-  * [As node module](#as-node-module)
-    + [fixtures.mock(scenario)](#fixturesmockscenario)
-    + [fixtures.get(scenario)](#fixturesgetscenario)
+  + [fixtures.mock(scenario)](#fixturesmockscenario)
+  + [fixtures.get(scenario)](#fixturesgetscenario)
+  + [fixtures.nock](#fixturesnock)
 - [How it works](HOW_IT_WORKS.md)
 - [Contributing](CONTRIBUTING.md)
 - [License](#license)
 
 ## Usage
 
-### Standalone mock server
-
-Download binary for your os from the [latest release](https://github.com/octokit/fixtures/releases/latest).
-
-Alternatively, you can also install `@octokit/fixtures` as a global npm package, if you prefer that:
-
-```
-# npm install --global @octokit/fixtures
-octokit-fixtures-server
-```
-
-It currently loads all mocks from [`/scenarios/api.github.com/*/normalized-fixture.json`](scenarios/api.github.com/). Once started,
-you can send requests
-
-```
-curl -H'Accept: application/vnd.github.v3+json' http://localhost:3000/repos/octokit-fixture-org/hello-world
-# returns response from fixture
-```
-
-### As node module
-
 Currently requires node 8+
 
-#### fixtures.mock(scenario)
+### fixtures.mock(scenario)
 
 `fixtures.mock(scenario)` will intercept requests using [nock](https://www.npmjs.com/package/nock).
 `scenario` is a String in the form `<host name>/<scenario name>`. `host name`
@@ -118,11 +95,16 @@ pending mock is
  }
 ```
 
-#### fixtures.get(scenario)
+### fixtures.get(scenario)
 
 `fixtures.get(scenario)` will return the JSON object which is used by [nock](https://www.npmjs.com/package/nock)
 to mock the API routes. You can use that method to convert the JSON to another
 format, for example.
+
+### fixtures.nock
+
+`fixtures.nock` is the [nock](https://github.com/node-nock/nock) instance used
+internally by `@octokit/fixtures` for the http mocking. Use at your own peril :)
 
 ## License
 
