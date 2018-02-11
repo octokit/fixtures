@@ -3,15 +3,13 @@
 * [Recording](#recording)
 * [Updating fixtures](#updating-fixtures)
 * [Automated pull requests when API change](#automated-pull-requests-when-api-change)
-* [Standalone server](#standalone-server)
 * [Normalizations](#normalizations)
 * [Cron job](#cron-job)
 
 [![](assets/octokit-fixtures-introduction.png)](https://youtu.be/L851arJSMhM)
 
 `@octokit/fixtures` provides fixtures that can be used by automated tests for
-GitHub API clients, either as [standalone mock server](#standalone-mock-server)
-or as a [Node module](#as-node-module).
+GitHub API clients.
 
 The fixtures are recorded programatically
 by sending requests against the [GitHub REST API](https://developer.github.com/v3/)
@@ -83,12 +81,6 @@ APIs, the record task is run daily utilizing [Travis Cron Jobs](https://docs.tra
 If a change in the fixtures occurs, a pull request is opened (or updated) in
 order to notify the maintainers who can then release a new breaking version
 of the `@octokit/fixtures` package and notify developers of the update.
-
-## Standalone server
-
-The standalone [http mock server](#standalonemockserver) is [a simple express app](bin/serve.js)
-which uses the [http-proxy-middleware package](https://www.npmjs.com/package/http-proxy-middleware)
-to proxy requests to the mocked routes based on the existing fixtures.
 
 ## Normalizations
 
