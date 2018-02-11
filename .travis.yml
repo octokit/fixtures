@@ -23,7 +23,6 @@ jobs:
     - env: COMMAND=test:unit
     - env: COMMAND=test:integration
     - env: COMMAND=test:scenarios
-    - env: COMMAND=test:e2e:server
     - node_js: 4
       env: COMMAND=test:node4
     - stage: release
