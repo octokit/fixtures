@@ -48,7 +48,8 @@
       "x-ratelimit-remaining": "59",
       "x-ratelimit-reset": "1507651200000",
       "x-runtime-rack": "0.000000",
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "1; mode=block",
+      "x-zeit-now-trace": "sfo1"
     },
     "badheaders": [
       "authorization"
