@@ -41,7 +41,7 @@
     "url-template": "^2.0.8"
   },
   "devDependencies": {
-    "axios": "^0.17.0",
+    "axios": "^0.18.0",
     "chalk": "^2.1.0",
     "coveralls": "^3.0.0",
     "envalid": "^4.0.1",
