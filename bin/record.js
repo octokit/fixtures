@@ -66,10 +66,10 @@ scenarios.reduce(async (promise, scenarioPath) => {
     ids: {}
   }
 
-  const newNormalizedFixtures = newRawFixtures
+  const newNormalizedFixtures = await Promise.all(newRawFixtures
     .map(cloneDeep)
     .filter(hasntIgnoreHeader)
-    .map(normalize.bind(null, scenarioState))
+    .map(normalize.bind(null, scenarioState)))
 
   const fixturesDiffs = diff(newNormalizedFixtures, oldNormalizedFixtures)
   if (!fixturesDiffs) {
