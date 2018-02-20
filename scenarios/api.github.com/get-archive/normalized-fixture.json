@@ -1,0 +1,71 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/get-archive/tarball/master",
+    "body": "",
+    "status": 302,
+    "response": "",
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "public, must-revalidate, max-age=0",
+      "connection": "close",
+      "content-length": "0",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "text/html;charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "expires": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/master",
+      "status": "302 Found",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "59",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    },
+    "badheaders": [
+      "authorization"
+    ]
+  },
+  {
+    "scope": "https://codeload.github.com:443",
+    "method": "get",
+    "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/master",
+    "body": "",
+    "status": 200,
+    "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "host": "codeload.github.com"
+    },
+    "responseIsBinary": true,
+    "headers": {
+      "access-control-allow-origin": "https://render.githubusercontent.com",
+      "connection": "close",
+      "content-disposition": "attachment; filename=octokit-fixture-org-get-archive-0000000.tar.gz",
+      "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+      "content-type": "application/x-gzip",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "strict-transport-security": "max-age=31536000",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-geo-block-list": "",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-xss-protection": "1; mode=block",
+      "content-length": 172
+    },
+    "badheaders": [
+      "authorization"
+    ]
+  }
+]
