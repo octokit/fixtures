@@ -9,7 +9,6 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
-      "column_url": "https://api.github.com/projects/columns/1000",
       "id": 1000,
       "note": "Example card 1",
       "creator": {
@@ -32,7 +31,8 @@
         "site_admin": false
       },
       "created_at": "2017-10-10T16:00:00Z",
-      "updated_at": "2017-10-10T16:00:00Z"
+      "updated_at": "2017-10-10T16:00:00Z",
+      "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -77,7 +77,6 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1001",
-      "column_url": "https://api.github.com/projects/columns/1000",
       "id": 1001,
       "note": "Example card 2",
       "creator": {
@@ -100,7 +99,8 @@
         "site_admin": false
       },
       "created_at": "2017-10-10T16:00:00Z",
-      "updated_at": "2017-10-10T16:00:00Z"
+      "updated_at": "2017-10-10T16:00:00Z",
+      "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -144,7 +144,6 @@
     "response": [
       {
         "url": "https://api.github.com/projects/columns/cards/1001",
-        "column_url": "https://api.github.com/projects/columns/1000",
         "id": 1001,
         "note": "Example card 2",
         "creator": {
@@ -167,11 +166,11 @@
           "site_admin": false
         },
         "created_at": "2017-10-10T16:00:00Z",
-        "updated_at": "2017-10-10T16:00:00Z"
+        "updated_at": "2017-10-10T16:00:00Z",
+        "column_url": "https://api.github.com/projects/columns/1000"
       },
       {
         "url": "https://api.github.com/projects/columns/cards/1000",
-        "column_url": "https://api.github.com/projects/columns/1000",
         "id": 1000,
         "note": "Example card 1",
         "creator": {
@@ -194,7 +193,8 @@
           "site_admin": false
         },
         "created_at": "2017-10-10T16:00:00Z",
-        "updated_at": "2017-10-10T16:00:00Z"
+        "updated_at": "2017-10-10T16:00:00Z",
+        "column_url": "https://api.github.com/projects/columns/1000"
       }
     ],
     "reqheaders": {
@@ -235,7 +235,6 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
-      "column_url": "https://api.github.com/projects/columns/1000",
       "id": 1000,
       "note": "Example card 1",
       "creator": {
@@ -258,7 +257,8 @@
         "site_admin": false
       },
       "created_at": "2017-10-10T16:00:00Z",
-      "updated_at": "2017-10-10T16:00:00Z"
+      "updated_at": "2017-10-10T16:00:00Z",
+      "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -300,7 +300,6 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
-      "column_url": "https://api.github.com/projects/columns/1000",
       "id": 1000,
       "note": "Example card 1 updated",
       "creator": {
@@ -323,7 +322,8 @@
         "site_admin": false
       },
       "created_at": "2017-10-10T16:00:00Z",
-      "updated_at": "2017-10-10T16:00:00Z"
+      "updated_at": "2017-10-10T16:00:00Z",
+      "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -513,8 +513,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-runtime-rack": "0.000000",
-      "x-xss-protection": "1; mode=block",
-      "content-length": "0"
+      "x-xss-protection": "1; mode=block"
     }
   }
 ]
