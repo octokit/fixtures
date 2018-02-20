@@ -6,7 +6,7 @@ const normalize = require('../../lib/normalize')
 glob.sync('scenarios/**/raw-fixture.json')
   .map(path => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ''))
   .forEach(fixturnName => {
-    test(`normalize ${fixturnName}`, t => {
+    test(`normalize ${fixturnName}`, async t => {
       const raw = require(`../../scenarios/${fixturnName}/raw-fixture.json`)
       const expected = require(`../../scenarios/${fixturnName}/normalized-fixture.json`)
 
@@ -14,7 +14,7 @@ glob.sync('scenarios/**/raw-fixture.json')
         commitSha: {},
         ids: {}
       }
-      const actual = raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))
+      const actual = await Promise.all(raw.filter(isntIgnored).map(normalize.bind(null, scenarioState)))
       t.deepEqual(actual, expected)
       t.end()
     })
