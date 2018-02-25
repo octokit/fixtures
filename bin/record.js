@@ -113,41 +113,41 @@ scenarios.reduce(async (promise, scenarioPath) => {
   }
 }, Promise.resolve())
 
-.then(() => {
-  if (diffs.length === 0) {
-    if (isTravisCronJob()) {
-      console.log('🤖  No fixture changes detected in cron job.')
+  .then(() => {
+    if (diffs.length === 0) {
+      if (isTravisCronJob()) {
+        console.log('🤖  No fixture changes detected in cron job.')
+      }
+      return
     }
-    return
-  }
 
-  if (doUpdate) {
-    return
-  }
+    if (doUpdate) {
+      return
+    }
 
-  if (isTravisCronJob()) {
-    return notifyAboutFixturesChanges(diffs)
-  }
+    if (isTravisCronJob()) {
+      return notifyAboutFixturesChanges(diffs)
+    }
 
-  console.log(`${diffs.length} fixtures are out of date. Exit 1`)
-  process.exit(1)
-})
-
-.catch((error) => {
-  if (!error.response) {
-    console.log(error)
+    console.log(`${diffs.length} fixtures are out of date. Exit 1`)
     process.exit(1)
-  }
+  })
 
-  console.log(error.toString())
-  console.log('REQUEST')
-  console.log(`${error.config.method.toUpperCase()} ${error.config.url}`)
-  console.log('RESPONSE HEADERS')
-  console.log(JSON.stringify(error.response.headers, null, 2))
-  console.log('RESPONSE BODY')
-  console.log(JSON.stringify(error.response.data, null, 2))
-  process.exit(1)
-})
+  .catch((error) => {
+    if (!error.response) {
+      console.log(error)
+      process.exit(1)
+    }
+
+    console.log(error.toString())
+    console.log('REQUEST')
+    console.log(`${error.config.method.toUpperCase()} ${error.config.url}`)
+    console.log('RESPONSE HEADERS')
+    console.log(JSON.stringify(error.response.headers, null, 2))
+    console.log('RESPONSE BODY')
+    console.log(JSON.stringify(error.response.data, null, 2))
+    process.exit(1)
+  })
 
 function hasntIgnoreHeader (fixture) {
   const hasIgnoreHeader = 'x-octokit-fixture-ignore' in fixture.reqheaders

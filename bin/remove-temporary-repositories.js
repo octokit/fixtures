@@ -15,18 +15,18 @@ const github = axios.create({
 
 github.get('/orgs/octokit-fixture-org/repos')
 
-.then(result => {
-  return Promise.all(result.data
-    .map(repository => repository.name)
-    .filter(name => temporaryRepository.regex.test(name))
-    .map(name => {
-      return github.delete(`/repos/octokit-fixture-org/${name}`)
+  .then(result => {
+    return Promise.all(result.data
+      .map(repository => repository.name)
+      .filter(name => temporaryRepository.regex.test(name))
+      .map(name => {
+        return github.delete(`/repos/octokit-fixture-org/${name}`)
 
-      .then(() => {
-        console.log(`✅  ${name} deleted`)
+          .then(() => {
+            console.log(`✅  ${name} deleted`)
+          })
       })
-    })
-  )
-})
+    )
+  })
 
-.catch(console.log)
+  .catch(console.log)

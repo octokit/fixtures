@@ -27,8 +27,8 @@ function mock (fixtures, additions) {
 
   if (additions) {
     const applyAdditions = typeof additions === 'function'
-       ? additions
-       : applyAdditionsDefault.bind(null, additions)
+      ? additions
+      : applyAdditionsDefault.bind(null, additions)
     fixtures.forEach((fixture, i) => {
       fixtures[i] = applyAdditions(fixture)
     })

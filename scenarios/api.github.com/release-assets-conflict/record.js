@@ -54,7 +54,7 @@ async function releaseAssetsConflict (state) {
 
     // https://developer.github.com/v3/repos/releases/#create-a-release
     // Get the release. The upload_url from the response must be used for uploads
-    const {data: {id: releaseId, upload_url}} = await state.request({
+    const {data: {id: releaseId, upload_url: uploadUrl}} = await state.request({
       method: 'get',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/tags/v1.0.0`,
       headers: {
@@ -63,7 +63,7 @@ async function releaseAssetsConflict (state) {
       }
     })
 
-    const uploadUrl = urlTemplate.parse(upload_url).expand({
+    const uploadUrlParsed = urlTemplate.parse(uploadUrl).expand({
       name: 'test-upload.txt',
       label: 'test'
     })
@@ -73,7 +73,7 @@ async function releaseAssetsConflict (state) {
     // Ignore this request as we want to test a conflict
     await state.request({
       method: 'post',
-      url: uploadUrl,
+      url: uploadUrlParsed,
       headers: {
         Accept: 'application/vnd.github.v3+json',
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
@@ -88,7 +88,7 @@ async function releaseAssetsConflict (state) {
     try {
       await state.request({
         method: 'post',
-        url: uploadUrl,
+        url: uploadUrlParsed,
         headers: {
           Accept: 'application/vnd.github.v3+json',
           Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
@@ -131,7 +131,7 @@ async function releaseAssetsConflict (state) {
     // And try to upload again, this time it should work
     await state.request({
       method: 'post',
-      url: uploadUrl,
+      url: uploadUrlParsed,
       headers: {
         Accept: 'application/vnd.github.v3+json',
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,

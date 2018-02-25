@@ -41,19 +41,19 @@ async function renameRepository (state) {
       }
     })
 
-    .catch((error) => {
-      const newUrl = error.response.data.url
+      .catch((error) => {
+        const newUrl = error.response.data.url
 
-      // get repository at returned URL
-      return state.request({
-        method: 'get',
-        url: newUrl,
-        headers: {
-          Accept: 'application/vnd.github.v3+json',
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-        }
+        // get repository at returned URL
+        return state.request({
+          method: 'get',
+          url: newUrl,
+          headers: {
+            Accept: 'application/vnd.github.v3+json',
+            Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+          }
+        })
       })
-    })
 
     // https://developer.github.com/v3/repos/#edit
     // update repository using previous name
@@ -70,23 +70,23 @@ async function renameRepository (state) {
       }
     })
 
-    .catch((error) => {
-      const newUrl = error.response.data.url
+      .catch((error) => {
+        const newUrl = error.response.data.url
 
-      // get repository at returned URL
-      return state.request({
-        method: 'patch',
-        url: newUrl,
-        headers: {
-          Accept: 'application/vnd.github.v3+json',
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-        },
-        data: {
-          name: `${temporaryRepository.name}-newname`,
-          description: 'test description'
-        }
+        // get repository at returned URL
+        return state.request({
+          method: 'patch',
+          url: newUrl,
+          headers: {
+            Accept: 'application/vnd.github.v3+json',
+            Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+          },
+          data: {
+            name: `${temporaryRepository.name}-newname`,
+            description: 'test description'
+          }
+        })
       })
-    })
   } catch (_error) {
     error = _error
   }

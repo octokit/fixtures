@@ -57,7 +57,7 @@ async function releaseAssets (state) {
 
     // https://developer.github.com/v3/repos/releases/#create-a-release
     // Get the release. The upload_url from the response must be used for uploads
-    const {data: {id: releaseId, upload_url}} = await state.request({
+    const {data: {id: releaseId, upload_url: uploadUrl}} = await state.request({
       method: 'get',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/tags/v1.0.0`,
       headers: {
@@ -70,7 +70,7 @@ async function releaseAssets (state) {
     // upload attachment to release URL returned by create release request
     const FILE_NAME = 'test-upload.txt'
     const filePath = pathResolve(__dirname, FILE_NAME)
-    const url = urlTemplate.parse(upload_url).expand({
+    const url = urlTemplate.parse(uploadUrl).expand({
       name: FILE_NAME,
       label: 'test'
     })
