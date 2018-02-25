@@ -53,5 +53,43 @@
     "badheaders": [
       "authorization"
     ]
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/repos/octokit-fixture-org/hello-world/contents/README.md",
+    "body": "",
+    "status": 200,
+    "response": "# hello-world",
+    "reqheaders": {
+      "accept": "application/vnd.github.v3.raw",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "cache-control": "public, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-length": "13",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/vnd.github.v3.raw; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\"",
+      "last-modified": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "status": "200 OK",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; param=raw",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "59",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    },
+    "badheaders": [
+      "authorization"
+    ]
   }
 ]
