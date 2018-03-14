@@ -132,6 +132,7 @@
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
       "last-modified": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
       "status": "200 OK",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-content-type-options": "nosniff",
