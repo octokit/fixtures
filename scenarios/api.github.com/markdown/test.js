@@ -23,7 +23,7 @@ b597b5d`,
   }).catch(mock.explain)
 
   t.is(contextMarkdown, `<h3>Hello</h3>
-<p><a href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8" class="commit-link"><tt>b597b5d</tt></a></p>`)
+<p><a class="commit-link" href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8"><tt>b597b5d</tt></a></p>`)
 
   const {data: markdown} = await axios({
     method: 'post',
