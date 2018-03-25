@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const axios = require('axios')
+const Bottleneck = require('bottleneck')
 const chalk = require('chalk')
 const cloneDeep = require('lodash/cloneDeep')
 const {diff, diffString} = require('json-diff')
@@ -54,6 +55,20 @@ scenarios.reduce(async (promise, scenarioPath) => {
       return config
     })
   }
+
+  // throttle writing requests
+  // https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits
+  const limiter = new Bottleneck({
+    maxConcurrent: 1,
+    minTime: 1000
+  })
+  request.interceptors.request.use(config => {
+    if (!['POST', 'PATCH', 'PUT', 'DELETE'].includes(config.method.toUpperCase())) {
+      return config
+    }
+
+    return limiter.schedule(async () => config)
+  })
 
   const oldNormalizedFixtures = await read(fixtureName)
   const newRawFixtures = await recordScenario({
