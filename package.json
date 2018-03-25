@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "axios": "^0.18.0",
+    "bottleneck": "^2.2.2",
     "chalk": "^2.1.0",
     "coveralls": "^3.0.0",
     "envalid": "^4.0.1",
