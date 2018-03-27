@@ -1,5 +1,14 @@
 #!/usr/bin/env node
 
+// run with "DEBUG=axios" to see debug logs
+require('axios-debug-log')({
+  request: function (debug, config) {
+    debug(`${config.method.toUpperCase()} ${config.url}`)
+  },
+  response: () => {},
+  error: () => {}
+})
+
 const axios = require('axios')
 const Bottleneck = require('bottleneck')
 const chalk = require('chalk')
@@ -60,7 +69,7 @@ scenarios.reduce(async (promise, scenarioPath) => {
   // https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits
   const limiter = new Bottleneck({
     maxConcurrent: 1,
-    minTime: 1000
+    minTime: 3000
   })
   request.interceptors.request.use(config => {
     if (!['POST', 'PATCH', 'PUT', 'DELETE'].includes(config.method.toUpperCase())) {
