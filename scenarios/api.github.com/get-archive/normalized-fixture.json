@@ -4,8 +4,65 @@
     "method": "get",
     "path": "/repos/octokit-fixture-org/get-archive/tarball/master",
     "body": "",
-    "status": 302,
-    "response": "",
+    "status": 503,
+    "response": {
+      "status": "503",
+      "description": "The deployment is currently unavailable"
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "host": "api.github.com"
+    },
+    "headers": {
+      "connection": "close",
+      "content-length": "72",
+      "content-type": "application/json",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "etag": "\"00000000000000000000000000000000\""
+    },
+    "badheaders": [
+      "authorization"
+    ]
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "get",
+    "path": "/",
+    "body": "",
+    "status": 200,
+    "response": {
+      "current_user_url": "https://api.github.com/user",
+      "current_user_authorizations_html_url": "https://github.com/settings/connections/applications{/client_id}",
+      "authorizations_url": "https://api.github.com/authorizations",
+      "code_search_url": "https://api.github.com/search/code?q={query}{&page,per_page,sort,order}",
+      "commit_search_url": "https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}",
+      "emails_url": "https://api.github.com/user/emails",
+      "emojis_url": "https://api.github.com/emojis",
+      "events_url": "https://api.github.com/events",
+      "feeds_url": "https://api.github.com/feeds",
+      "followers_url": "https://api.github.com/user/followers",
+      "following_url": "https://api.github.com/user/following{/target}",
+      "gists_url": "https://api.github.com/gists{/gist_id}",
+      "hub_url": "https://api.github.com/hub",
+      "issue_search_url": "https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}",
+      "issues_url": "https://api.github.com/issues",
+      "keys_url": "https://api.github.com/user/keys",
+      "notifications_url": "https://api.github.com/notifications",
+      "organization_repositories_url": "https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}",
+      "organization_url": "https://api.github.com/orgs/{org}",
+      "public_gists_url": "https://api.github.com/gists/public",
+      "rate_limit_url": "https://api.github.com/rate_limit",
+      "repository_url": "https://api.github.com/repos/{owner}/{repo}",
+      "repository_search_url": "https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}",
+      "current_user_repositories_url": "https://api.github.com/user/repos{?type,page,per_page,sort}",
+      "starred_url": "https://api.github.com/user/starred{/owner}{/repo}",
+      "starred_gists_url": "https://api.github.com/gists/starred",
+      "team_url": "https://api.github.com/teams",
+      "user_url": "https://api.github.com/users/{user}",
+      "user_organizations_url": "https://api.github.com/user/orgs",
+      "user_repositories_url": "https://api.github.com/users/{user}/repos{?type,page,per_page,sort}",
+      "user_search_url": "https://api.github.com/search/users?q={query}{&page,per_page,sort,order}"
+    },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "host": "api.github.com"
@@ -13,57 +70,25 @@
     "headers": {
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
-      "cache-control": "public, must-revalidate, max-age=0",
+      "cache-control": "public, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "0",
+      "content-length": "2039",
       "content-security-policy": "default-src 'none'",
-      "content-type": "text/html;charset=utf-8",
+      "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
-      "expires": "Tue, 10 Oct 2017 16:00:00 GMT",
-      "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/master",
+      "etag": "\"00000000000000000000000000000000\"",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
-      "status": "302 Found",
+      "status": "200 OK",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-ratelimit-limit": "60",
       "x-ratelimit-remaining": "59",
       "x-ratelimit-reset": "1507651200000",
       "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
-    },
-    "badheaders": [
-      "authorization"
-    ]
-  },
-  {
-    "scope": "https://codeload.github.com:443",
-    "method": "get",
-    "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/master",
-    "body": "",
-    "status": 200,
-    "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
-    "reqheaders": {
-      "accept": "application/vnd.github.v3+json",
-      "host": "codeload.github.com"
-    },
-    "responseIsBinary": true,
-    "headers": {
-      "access-control-allow-origin": "https://render.githubusercontent.com",
-      "connection": "close",
-      "content-disposition": "attachment; filename=octokit-fixture-org-get-archive-0000000.tar.gz",
-      "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
-      "content-type": "application/x-gzip",
-      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
-      "etag": "\"00000000000000000000000000000000\"",
-      "strict-transport-security": "max-age=31536000",
-      "x-content-type-options": "nosniff",
-      "x-frame-options": "deny",
-      "x-geo-block-list": "",
-      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
-      "x-xss-protection": "1; mode=block",
-      "content-length": 172
     },
     "badheaders": [
       "authorization"
