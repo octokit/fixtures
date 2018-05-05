@@ -1,0 +1,79 @@
+[
+  {
+    "scope": "https://api.github.com:443",
+    "method": "put",
+    "path": "/notifications",
+    "body": "",
+    "status": 400,
+    "response": {
+      "message": "Problems parsing JSON",
+      "documentation_url": "https://developer.github.com/v3/activity/notifications/#mark-as-read"
+    },
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "host": "api.github.com",
+      "content-length": 0
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "connection": "close",
+      "content-length": "126",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "status": "400 Bad Request",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "notifications, repo",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  },
+  {
+    "scope": "https://api.github.com:443",
+    "method": "put",
+    "path": "/notifications",
+    "body": {},
+    "status": 205,
+    "response": "",
+    "reqheaders": {
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
+      "content-length": 2,
+      "host": "api.github.com"
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "connection": "close",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/octet-stream",
+      "date": "Tue, 10 Oct 2017 16:00:00 GMT",
+      "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "status": "205 Reset Content",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-accepted-oauth-scopes": "notifications, repo",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
+      "x-ratelimit-reset": "1507651200000",
+      "x-runtime-rack": "0.000000",
+      "x-xss-protection": "1; mode=block"
+    }
+  }
+]
