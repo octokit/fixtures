@@ -91,7 +91,7 @@
           "created_at": "2017-10-10T16:00:00Z",
           "updated_at": "2017-10-10T16:00:00Z",
           "closed_at": null,
-          "author_association": "OWNER",
+          "author_association": "MEMBER",
           "body": "I tried \"open sesame\" as seen on Wikipedia but no luck!",
           "score": 42
         }
@@ -107,7 +107,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "no-cache",
       "connection": "close",
-      "content-length": "3913",
+      "content-length": "3914",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
