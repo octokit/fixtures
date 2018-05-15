@@ -46,7 +46,7 @@
       "created_at": "2017-10-10T16:00:00Z",
       "updated_at": "2017-10-10T16:00:00Z",
       "closed_at": null,
-      "author_association": "OWNER",
+      "author_association": "MEMBER",
       "body": null,
       "closed_by": null
     },
@@ -62,7 +62,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1914",
+      "content-length": "1915",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
