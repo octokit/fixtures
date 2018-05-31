@@ -11,6 +11,7 @@
       "upload_url": "https://uploads.github.com/repos/octokit-fixture-org/release-assets-conflict/releases/1000/assets{?name,label}",
       "html_url": "https://github.com/octokit-fixture-org/release-assets-conflict/releases/tag/v1.0.0",
       "id": 1000,
+      "node_id": "MDc6UmVsZWFzZTExMjU0Mjk3",
       "tag_name": "v1.0.0",
       "target_commitish": "0000000000000000000000000000000000000001",
       "name": "Version 1.0.0",
@@ -18,6 +19,7 @@
       "author": {
         "login": "octokit-fixture-user-a",
         "id": 1000,
+        "node_id": "MDQ6VXNlcjMxODk4MDQ2",
         "avatar_url": "https://avatars0.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -52,7 +54,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1939",
+      "content-length": "2009",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -126,11 +128,13 @@
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/release-assets-conflict/releases/assets/1000",
         "id": 1000,
+        "node_id": "MDEyOlJlbGVhc2VBc3NldDczNTg0OTI=",
         "name": "test-upload.txt",
         "label": "test",
         "uploader": {
           "login": "octokit-fixture-user-a",
           "id": 1000,
+          "node_id": "MDQ6VXNlcjMxODk4MDQ2",
           "avatar_url": "https://avatars0.githubusercontent.com/u/1000?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -166,7 +170,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1480",
+      "content-length": "1558",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -231,11 +235,13 @@
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/release-assets-conflict/releases/assets/1001",
       "id": 1001,
+      "node_id": "MDEyOlJlbGVhc2VBc3NldDczNTg0OTU=",
       "name": "test-upload.txt",
       "label": "test",
       "uploader": {
         "login": "octokit-fixture-user-a",
         "id": 1000,
+        "node_id": "MDQ6VXNlcjMxODk4MDQ2",
         "avatar_url": "https://avatars0.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -283,7 +289,7 @@
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-xss-protection": "1; mode=block",
-      "content-length": "1478"
+      "content-length": "1556"
     }
   }
 ]
