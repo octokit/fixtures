@@ -9,11 +9,13 @@
     "status": 200,
     "response": {
       "id": 1000,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU1MzcwOTI=",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxODk4MTAw",
         "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-org",
@@ -108,6 +110,7 @@
       "organization": {
         "login": "octokit-fixture-org",
         "id": 1000,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxODk4MTAw",
         "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-org",
@@ -139,7 +142,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "7156",
+      "content-length": "7291",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -209,11 +212,13 @@
     "status": 200,
     "response": {
       "id": 1000,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU1MzcwOTI=",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxODk4MTAw",
         "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-org",
@@ -308,6 +313,7 @@
       "organization": {
         "login": "octokit-fixture-org",
         "id": 1000,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxODk4MTAw",
         "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-org",
@@ -337,7 +343,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "7156",
+      "content-length": "7291",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -416,11 +422,13 @@
     "status": 200,
     "response": {
       "id": 1000,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU1MzcwOTI=",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxODk4MTAw",
         "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-org",
@@ -515,6 +523,7 @@
       "organization": {
         "login": "octokit-fixture-org",
         "id": 1000,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxODk4MTAw",
         "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-org",
@@ -546,7 +555,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "7170",
+      "content-length": "7305",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
