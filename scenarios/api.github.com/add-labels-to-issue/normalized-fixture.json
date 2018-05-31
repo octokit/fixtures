@@ -15,11 +15,13 @@
       "events_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/events",
       "html_url": "https://github.com/octokit-fixture-org/add-labels-to-issue/issues/1",
       "id": 1000,
+      "node_id": "MDU6SXNzdWUzMjgwMDA3NTY=",
       "number": 1,
       "title": "Issue without a label",
       "user": {
         "login": "octokit-fixture-user-a",
         "id": 1000,
+        "node_id": "MDQ6VXNlcjMxODk4MDQ2",
         "avatar_url": "https://avatars0.githubusercontent.com/u/1000?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -62,7 +64,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1915",
+      "content-length": "1985",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -97,6 +99,7 @@
     "response": [
       {
         "id": 1000,
+        "node_id": "MDU6TGFiZWw5NTAwODgwNjA=",
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/Foo",
         "name": "Foo",
         "color": "ededed",
@@ -104,6 +107,7 @@
       },
       {
         "id": 1001,
+        "node_id": "MDU6TGFiZWw5NTAwODgwNjE=",
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/bAr",
         "name": "bAr",
         "color": "ededed",
@@ -111,6 +115,7 @@
       },
       {
         "id": 1002,
+        "node_id": "MDU6TGFiZWw5NTAwODgwNjI=",
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/baZ",
         "name": "baZ",
         "color": "ededed",
@@ -129,7 +134,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "439",
+      "content-length": "550",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
