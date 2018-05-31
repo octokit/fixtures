@@ -8,6 +8,7 @@
     "response": [
       {
         "ref": "refs/heads/master",
+        "node_id": "MDM6UmVmMTM1NTM2OTE2Om1hc3Rlcg==",
         "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/master",
         "object": {
           "sha": "0000000000000000000000000000000000000001",
@@ -26,7 +27,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "312",
+      "content-length": "357",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -60,6 +61,7 @@
     "status": 201,
     "response": {
       "ref": "refs/heads/test",
+      "node_id": "MDM6UmVmMTM1NTM2OTE2OnRlc3Q=",
       "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
       "object": {
         "sha": "0000000000000000000000000000000000000002",
@@ -79,7 +81,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "306",
+      "content-length": "347",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -111,6 +113,7 @@
     "status": 200,
     "response": {
       "ref": "refs/heads/test",
+      "node_id": "MDM6UmVmMTM1NTM2OTE2OnRlc3Q=",
       "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
       "object": {
         "sha": "0000000000000000000000000000000000000001",
@@ -130,7 +133,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "306",
+      "content-length": "347",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -160,6 +163,7 @@
     "response": [
       {
         "ref": "refs/heads/master",
+        "node_id": "MDM6UmVmMTM1NTM2OTE2Om1hc3Rlcg==",
         "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/master",
         "object": {
           "sha": "0000000000000000000000000000000000000001",
@@ -169,6 +173,7 @@
       },
       {
         "ref": "refs/heads/test",
+        "node_id": "MDM6UmVmMTM1NTM2OTE2OnRlc3Q=",
         "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
         "object": {
           "sha": "0000000000000000000000000000000000000001",
@@ -187,7 +192,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "619",
+      "content-length": "705",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
