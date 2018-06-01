@@ -9,7 +9,7 @@
     "status": 200,
     "response": {
       "id": 1000,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU1MzcwOTI=",
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU2NzI0ODM=",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
       "owner": {
@@ -212,7 +212,7 @@
     "status": 200,
     "response": {
       "id": 1000,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU1MzcwOTI=",
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU2NzI0ODM=",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
       "owner": {
@@ -422,7 +422,7 @@
     "status": 200,
     "response": {
       "id": 1000,
-      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU1MzcwOTI=",
+      "node_id": "MDEwOlJlcG9zaXRvcnkxMzU2NzI0ODM=",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
       "owner": {
