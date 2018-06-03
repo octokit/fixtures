@@ -15,7 +15,7 @@
       "events_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/events",
       "html_url": "https://github.com/octokit-fixture-org/add-labels-to-issue/issues/1",
       "id": 1000,
-      "node_id": "MDU6SXNzdWUzMjg3MTYwMzE=",
+      "node_id": "MDU6SXNzdWUzMjg4MDEzNTk=",
       "number": 1,
       "title": "Issue without a label",
       "user": {
@@ -99,7 +99,7 @@
     "response": [
       {
         "id": 1000,
-        "node_id": "MDU6TGFiZWw5NTIxMzMzMzY=",
+        "node_id": "MDU6TGFiZWw5NTI4MjUwMDM=",
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/Foo",
         "name": "Foo",
         "color": "ededed",
@@ -107,7 +107,7 @@
       },
       {
         "id": 1001,
-        "node_id": "MDU6TGFiZWw5NTIxMzMzMzc=",
+        "node_id": "MDU6TGFiZWw5NTI4MjUwMDQ=",
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/bAr",
         "name": "bAr",
         "color": "ededed",
@@ -115,7 +115,7 @@
       },
       {
         "id": 1002,
-        "node_id": "MDU6TGFiZWw5NTIxMzMzMzg=",
+        "node_id": "MDU6TGFiZWw5NTI4MjUwMDU=",
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/baZ",
         "name": "baZ",
         "color": "ededed",
