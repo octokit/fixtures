@@ -11,7 +11,7 @@
       "upload_url": "https://uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets{?name,label}",
       "html_url": "https://github.com/octokit-fixture-org/release-assets/releases/tag/v1.0.0",
       "id": 1000,
-      "node_id": "MDc6UmVsZWFzZTExMjkxNDE3",
+      "node_id": "MDc6UmVsZWFzZTExMjk2MDky",
       "tag_name": "v1.0.0",
       "target_commitish": "0000000000000000000000000000000000000001",
       "name": "Version 1.0.0",
@@ -85,7 +85,7 @@
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",
       "id": 1000,
-      "node_id": "MDEyOlJlbGVhc2VBc3NldDczODQxNzY=",
+      "node_id": "MDEyOlJlbGVhc2VBc3NldDczODkzMzc=",
       "name": "test-upload.txt",
       "label": "test",
       "uploader": {
@@ -152,7 +152,7 @@
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",
         "id": 1000,
-        "node_id": "MDEyOlJlbGVhc2VBc3NldDczODQxNzY=",
+        "node_id": "MDEyOlJlbGVhc2VBc3NldDczODkzMzc=",
         "name": "test-upload.txt",
         "label": "test",
         "uploader": {
@@ -224,7 +224,7 @@
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",
       "id": 1000,
-      "node_id": "MDEyOlJlbGVhc2VBc3NldDczODQxNzY=",
+      "node_id": "MDEyOlJlbGVhc2VBc3NldDczODkzMzc=",
       "name": "test-upload.txt",
       "label": "test",
       "uploader": {
@@ -299,7 +299,7 @@
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",
       "id": 1000,
-      "node_id": "MDEyOlJlbGVhc2VBc3NldDczODQxNzY=",
+      "node_id": "MDEyOlJlbGVhc2VBc3NldDczODkzMzc=",
       "name": "new-filename.txt",
       "label": "new label",
       "uploader": {
