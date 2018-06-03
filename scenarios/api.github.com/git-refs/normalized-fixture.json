@@ -8,7 +8,7 @@
     "response": [
       {
         "ref": "refs/heads/master",
-        "node_id": "MDM6UmVmMTM1NzkwNzMzOm1hc3Rlcg==",
+        "node_id": "MDM6UmVmMTM1ODc2ODg5Om1hc3Rlcg==",
         "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/master",
         "object": {
           "sha": "0000000000000000000000000000000000000001",
@@ -61,7 +61,7 @@
     "status": 201,
     "response": {
       "ref": "refs/heads/test",
-      "node_id": "MDM6UmVmMTM1NzkwNzMzOnRlc3Q=",
+      "node_id": "MDM6UmVmMTM1ODc2ODg5OnRlc3Q=",
       "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
       "object": {
         "sha": "0000000000000000000000000000000000000002",
@@ -113,7 +113,7 @@
     "status": 200,
     "response": {
       "ref": "refs/heads/test",
-      "node_id": "MDM6UmVmMTM1NzkwNzMzOnRlc3Q=",
+      "node_id": "MDM6UmVmMTM1ODc2ODg5OnRlc3Q=",
       "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
       "object": {
         "sha": "0000000000000000000000000000000000000001",
@@ -163,7 +163,7 @@
     "response": [
       {
         "ref": "refs/heads/master",
-        "node_id": "MDM6UmVmMTM1NzkwNzMzOm1hc3Rlcg==",
+        "node_id": "MDM6UmVmMTM1ODc2ODg5Om1hc3Rlcg==",
         "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/master",
         "object": {
           "sha": "0000000000000000000000000000000000000001",
@@ -173,7 +173,7 @@
       },
       {
         "ref": "refs/heads/test",
-        "node_id": "MDM6UmVmMTM1NzkwNzMzOnRlc3Q=",
+        "node_id": "MDM6UmVmMTM1ODc2ODg5OnRlc3Q=",
         "url": "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
         "object": {
           "sha": "0000000000000000000000000000000000000001",
