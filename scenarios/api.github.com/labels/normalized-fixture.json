@@ -8,7 +8,7 @@
     "response": [
       {
         "id": 1000,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5Nzk=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1Mzg=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/bug",
         "name": "bug",
         "color": "d73a4a",
@@ -16,7 +16,7 @@
       },
       {
         "id": 1001,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODA=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDE=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/duplicate",
         "name": "duplicate",
         "color": "cfd3d7",
@@ -24,7 +24,7 @@
       },
       {
         "id": 1002,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODE=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDQ=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/enhancement",
         "name": "enhancement",
         "color": "a2eeef",
@@ -32,7 +32,7 @@
       },
       {
         "id": 1003,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODM=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDY=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/good%20first%20issue",
         "name": "good first issue",
         "color": "7057ff",
@@ -40,7 +40,7 @@
       },
       {
         "id": 1004,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODI=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDU=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/help%20wanted",
         "name": "help wanted",
         "color": "008672",
@@ -48,7 +48,7 @@
       },
       {
         "id": 1005,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODQ=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDc=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/invalid",
         "name": "invalid",
         "color": "e4e669",
@@ -56,7 +56,7 @@
       },
       {
         "id": 1006,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODU=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDg=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/question",
         "name": "question",
         "color": "d876e3",
@@ -64,7 +64,7 @@
       },
       {
         "id": 1007,
-        "node_id": "MDU6TGFiZWw5NTIxMzM5ODY=",
+        "node_id": "MDU6TGFiZWw5NTI4MjU1NDk=",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/wontfix",
         "name": "wontfix",
         "color": "ffffff",
@@ -113,7 +113,7 @@
     "status": 201,
     "response": {
       "id": 1008,
-      "node_id": "MDU6TGFiZWw5NTIxMzQwMTE=",
+      "node_id": "MDU6TGFiZWw5NTI4MjU1ODI=",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
       "name": "test-label",
       "color": "663399",
@@ -161,7 +161,7 @@
     "status": 200,
     "response": {
       "id": 1008,
-      "node_id": "MDU6TGFiZWw5NTIxMzQwMTE=",
+      "node_id": "MDU6TGFiZWw5NTI4MjU1ODI=",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
       "name": "test-label",
       "color": "663399",
@@ -210,7 +210,7 @@
     "status": 200,
     "response": {
       "id": 1008,
-      "node_id": "MDU6TGFiZWw5NTIxMzQwMTE=",
+      "node_id": "MDU6TGFiZWw5NTI4MjU1ODI=",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label-updated",
       "name": "test-label-updated",
       "color": "BADA55",
