@@ -10,7 +10,7 @@
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
       "id": 1000,
-      "node_id": "MDExOlByb2plY3RDYXJkMTAyNjQwNzc=",
+      "node_id": "MDExOlByb2plY3RDYXJkMTAyNzY5MzY=",
       "note": "Example card 1",
       "creator": {
         "login": "octokit-fixture-user-a",
@@ -81,7 +81,7 @@
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1001",
       "id": 1001,
-      "node_id": "MDExOlByb2plY3RDYXJkMTAyNjQwNzg=",
+      "node_id": "MDExOlByb2plY3RDYXJkMTAyNzY5Mzc=",
       "note": "Example card 2",
       "creator": {
         "login": "octokit-fixture-user-a",
@@ -151,7 +151,7 @@
       {
         "url": "https://api.github.com/projects/columns/cards/1001",
         "id": 1001,
-        "node_id": "MDExOlByb2plY3RDYXJkMTAyNjQwNzg=",
+        "node_id": "MDExOlByb2plY3RDYXJkMTAyNzY5Mzc=",
         "note": "Example card 2",
         "creator": {
           "login": "octokit-fixture-user-a",
@@ -180,7 +180,7 @@
       {
         "url": "https://api.github.com/projects/columns/cards/1000",
         "id": 1000,
-        "node_id": "MDExOlByb2plY3RDYXJkMTAyNjQwNzc=",
+        "node_id": "MDExOlByb2plY3RDYXJkMTAyNzY5MzY=",
         "note": "Example card 1",
         "creator": {
           "login": "octokit-fixture-user-a",
@@ -247,7 +247,7 @@
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
       "id": 1000,
-      "node_id": "MDExOlByb2plY3RDYXJkMTAyNjQwNzc=",
+      "node_id": "MDExOlByb2plY3RDYXJkMTAyNzY5MzY=",
       "note": "Example card 1",
       "creator": {
         "login": "octokit-fixture-user-a",
@@ -315,7 +315,7 @@
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
       "id": 1000,
-      "node_id": "MDExOlByb2plY3RDYXJkMTAyNjQwNzc=",
+      "node_id": "MDExOlByb2plY3RDYXJkMTAyNzY5MzY=",
       "note": "Example card 1 updated",
       "creator": {
         "login": "octokit-fixture-user-a",
