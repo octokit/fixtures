@@ -7,10 +7,10 @@
     "status": 201,
     "response": {
       "id": 1000,
-      "node_id": "MDIwOlJlcG9zaXRvcnlJbnZpdGF0aW9uOTU0MDg3MA==",
+      "node_id": "MDIwOlJlcG9zaXRvcnlJbnZpdGF0aW9uOTU2MDIzMw==",
       "repository": {
         "id": 1000,
-        "node_id": "MDEwOlJlcG9zaXRvcnkxMzYxMjU1OTc=",
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMzYyNzc1MTQ=",
         "name": "add-and-remove-repository-collaborator",
         "full_name": "octokit-fixture-org/add-and-remove-repository-collaborator",
         "owner": {
@@ -162,10 +162,10 @@
     "response": [
       {
         "id": 1000,
-        "node_id": "MDIwOlJlcG9zaXRvcnlJbnZpdGF0aW9uOTU0MDg3MA==",
+        "node_id": "MDIwOlJlcG9zaXRvcnlJbnZpdGF0aW9uOTU2MDIzMw==",
         "repository": {
           "id": 1000,
-          "node_id": "MDEwOlJlcG9zaXRvcnkxMzYxMjU1OTc=",
+          "node_id": "MDEwOlJlcG9zaXRvcnkxMzYyNzc1MTQ=",
           "name": "add-and-remove-repository-collaborator",
           "full_name": "octokit-fixture-org/add-and-remove-repository-collaborator",
           "owner": {
