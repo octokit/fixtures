@@ -27,6 +27,7 @@
       },
       "commit": {
         "sha": "0000000000000000000000000000000000000002",
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/commits/0000000000000000000000000000000000000002",
         "html_url": "https://github.com/octokit-fixture-org/create-file/commit/0000000000000000000000000000000000000002",
         "author": {
@@ -65,7 +66,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1721",
+      "content-length": "1750",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

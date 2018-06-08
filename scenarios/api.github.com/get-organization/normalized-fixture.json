@@ -8,6 +8,7 @@
     "response": {
       "login": "octokit-fixture-org",
       "id": 1000,
+      "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/orgs/octokit-fixture-org",
       "repos_url": "https://api.github.com/orgs/octokit-fixture-org/repos",
       "events_url": "https://api.github.com/orgs/octokit-fixture-org/events",
@@ -37,7 +38,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "public, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "906",
+      "content-length": "935",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
