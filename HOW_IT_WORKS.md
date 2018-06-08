@@ -86,6 +86,7 @@ of the `@octokit/fixtures` package and notify developers of the update.
 
 - **All IDs are set to 1000** or above. The ID increments for each entity of the
   same type within the same scenario
+- **All Node IDs are set to `MDA6RW50aXR5MQ==`** which is the base64 string for `00:Entity1`.
 - **Tokens Authorization Header are zerofied** ending with the token number, see [environment variables below](https://github.com/octokit/fixtures#test-users--organization--tokens)  
   e.g. `FIXTURES_USER_A_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000001`,
   `FIXTURES_USER_B_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000002`, etc
