@@ -8,6 +8,7 @@
     "response": [
       {
         "id": 1000,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/bug",
         "name": "bug",
         "color": "d73a4a",
@@ -15,6 +16,7 @@
       },
       {
         "id": 1001,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/duplicate",
         "name": "duplicate",
         "color": "cfd3d7",
@@ -22,6 +24,7 @@
       },
       {
         "id": 1002,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/enhancement",
         "name": "enhancement",
         "color": "a2eeef",
@@ -29,6 +32,7 @@
       },
       {
         "id": 1003,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/good%20first%20issue",
         "name": "good first issue",
         "color": "7057ff",
@@ -36,6 +40,7 @@
       },
       {
         "id": 1004,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/help%20wanted",
         "name": "help wanted",
         "color": "008672",
@@ -43,6 +48,7 @@
       },
       {
         "id": 1005,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/invalid",
         "name": "invalid",
         "color": "e4e669",
@@ -50,6 +56,7 @@
       },
       {
         "id": 1006,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/question",
         "name": "question",
         "color": "d876e3",
@@ -57,6 +64,7 @@
       },
       {
         "id": 1007,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/wontfix",
         "name": "wontfix",
         "color": "ffffff",
@@ -73,7 +81,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1159",
+      "content-length": "1391",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -105,6 +113,7 @@
     "status": 201,
     "response": {
       "id": 1008,
+      "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
       "name": "test-label",
       "color": "663399",
@@ -122,7 +131,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "146",
+      "content-length": "175",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -152,6 +161,7 @@
     "status": 200,
     "response": {
       "id": 1008,
+      "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
       "name": "test-label",
       "color": "663399",
@@ -167,7 +177,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "146",
+      "content-length": "175",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -200,6 +210,7 @@
     "status": 200,
     "response": {
       "id": 1008,
+      "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label-updated",
       "name": "test-label-updated",
       "color": "BADA55",
@@ -217,7 +228,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "162",
+      "content-length": "191",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

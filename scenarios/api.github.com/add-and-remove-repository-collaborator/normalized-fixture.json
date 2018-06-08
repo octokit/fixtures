@@ -7,13 +7,16 @@
     "status": 201,
     "response": {
       "id": 1000,
+      "node_id": "MDA6RW50aXR5MQ==",
       "repository": {
         "id": 1000,
+        "node_id": "MDA6RW50aXR5MQ==",
         "name": "add-and-remove-repository-collaborator",
         "full_name": "octokit-fixture-org/add-and-remove-repository-collaborator",
         "owner": {
           "login": "octokit-fixture-org",
           "id": 1000,
+          "node_id": "MDA6RW50aXR5MQ==",
           "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-org",
@@ -75,6 +78,7 @@
       "invitee": {
         "login": "octokit-fixture-user-b",
         "id": 1002,
+        "node_id": "MDA6RW50aXR5MQ==",
         "avatar_url": "https://avatars1.githubusercontent.com/u/1002?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-b",
@@ -94,6 +98,7 @@
       "inviter": {
         "login": "octokit-fixture-user-a",
         "id": 1001,
+        "node_id": "MDA6RW50aXR5MQ==",
         "avatar_url": "https://avatars0.githubusercontent.com/u/1001?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -126,7 +131,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "8070",
+      "content-length": "8215",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -157,13 +162,16 @@
     "response": [
       {
         "id": 1000,
+        "node_id": "MDA6RW50aXR5MQ==",
         "repository": {
           "id": 1000,
+          "node_id": "MDA6RW50aXR5MQ==",
           "name": "add-and-remove-repository-collaborator",
           "full_name": "octokit-fixture-org/add-and-remove-repository-collaborator",
           "owner": {
             "login": "octokit-fixture-org",
             "id": 1000,
+            "node_id": "MDA6RW50aXR5MQ==",
             "avatar_url": "https://avatars2.githubusercontent.com/u/1000?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/octokit-fixture-org",
@@ -225,6 +233,7 @@
         "invitee": {
           "login": "octokit-fixture-user-b",
           "id": 1002,
+          "node_id": "MDA6RW50aXR5MQ==",
           "avatar_url": "https://avatars1.githubusercontent.com/u/1002?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-user-b",
@@ -244,6 +253,7 @@
         "inviter": {
           "login": "octokit-fixture-user-a",
           "id": 1001,
+          "node_id": "MDA6RW50aXR5MQ==",
           "avatar_url": "https://avatars0.githubusercontent.com/u/1001?v=4",
           "gravatar_id": "",
           "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -276,7 +286,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "8072",
+      "content-length": "8217",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -343,6 +353,7 @@
       {
         "login": "octokit-fixture-user-a",
         "id": 31898046,
+        "node_id": "MDA6RW50aXR5MQ==",
         "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -367,6 +378,7 @@
       {
         "login": "octokit-fixture-user-b",
         "id": 31899067,
+        "node_id": "MDA6RW50aXR5MQ==",
         "avatar_url": "https://avatars1.githubusercontent.com/u/31899067?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-b",
@@ -399,7 +411,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2196",
+      "content-length": "2254",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -465,6 +477,7 @@
       {
         "login": "octokit-fixture-user-a",
         "id": 31898046,
+        "node_id": "MDA6RW50aXR5MQ==",
         "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
         "gravatar_id": "",
         "url": "https://api.github.com/users/octokit-fixture-user-a",
@@ -497,7 +510,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1098",
+      "content-length": "1127",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
