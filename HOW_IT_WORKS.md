@@ -2,6 +2,7 @@
 
 * [Recording](#recording)
 * [Updating fixtures](#updating-fixtures)
+* [Creating new fixtures](#creating-fixtures)
 * [Automated pull requests when API change](#automated-pull-requests-when-api-change)
 * [Normalizations](#normalizations)
 * [Cron job](#cron-job)
@@ -40,7 +41,10 @@ an error is logged.
 
 ## Updating fixtures
 
-The stored fixtures can be updated by running `bin/record.js --update`.
+The stored fixtures can be updated by running `bin/record.js --update`. Both
+the normalized and raw fixtures will be updated.
+
+## Creating fixtures
 
 To create a new scenario, follow the steps below which describe the process
 for the example to create a new scenario "Get repository" for GitHub’s public
