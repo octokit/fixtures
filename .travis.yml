@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 8
+  - lts/*
 cache:
   directories:
     - $HOME/.npm
@@ -27,7 +27,7 @@ jobs:
       node_js: lts/*
       env: COMMAND=semantic-release
   allow_failures:
-    - node_js: "8"
+    - node_js: lts/*
       env: COMMAND=coverage:upload
 
 stages:
