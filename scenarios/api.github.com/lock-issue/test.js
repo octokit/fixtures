@@ -3,7 +3,7 @@ const {test} = require('tap')
 
 const fixtures = require('../../..')
 
-test('Labels', async (t) => {
+test('Lock issues', async (t) => {
   const mock = fixtures.mock('api.github.com/lock-issue')
 
   // https://developer.github.com/v3/issues/#lock-an-issue
