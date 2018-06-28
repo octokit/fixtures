@@ -34,7 +34,8 @@
       },
       "created_at": "2017-10-10T16:00:00Z",
       "updated_at": "2017-10-10T16:00:00Z",
-      "column_url": "https://api.github.com/projects/columns/1000"
+      "column_url": "https://api.github.com/projects/columns/1000",
+      "archived": false
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -48,7 +49,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1330",
+      "content-length": "1347",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -105,7 +106,8 @@
       },
       "created_at": "2017-10-10T16:00:00Z",
       "updated_at": "2017-10-10T16:00:00Z",
-      "column_url": "https://api.github.com/projects/columns/1000"
+      "column_url": "https://api.github.com/projects/columns/1000",
+      "archived": false
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -119,7 +121,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1330",
+      "content-length": "1347",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -175,7 +177,8 @@
         },
         "created_at": "2017-10-10T16:00:00Z",
         "updated_at": "2017-10-10T16:00:00Z",
-        "column_url": "https://api.github.com/projects/columns/1000"
+        "column_url": "https://api.github.com/projects/columns/1000",
+        "archived": false
       },
       {
         "url": "https://api.github.com/projects/columns/cards/1000",
@@ -204,7 +207,8 @@
         },
         "created_at": "2017-10-10T16:00:00Z",
         "updated_at": "2017-10-10T16:00:00Z",
-        "column_url": "https://api.github.com/projects/columns/1000"
+        "column_url": "https://api.github.com/projects/columns/1000",
+        "archived": false
       }
     ],
     "reqheaders": {
@@ -217,7 +221,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2663",
+      "content-length": "2697",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -271,7 +275,8 @@
       },
       "created_at": "2017-10-10T16:00:00Z",
       "updated_at": "2017-10-10T16:00:00Z",
-      "column_url": "https://api.github.com/projects/columns/1000"
+      "column_url": "https://api.github.com/projects/columns/1000",
+      "archived": false
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -283,7 +288,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1330",
+      "content-length": "1347",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -339,7 +344,8 @@
       },
       "created_at": "2017-10-10T16:00:00Z",
       "updated_at": "2017-10-10T16:00:00Z",
-      "column_url": "https://api.github.com/projects/columns/1000"
+      "column_url": "https://api.github.com/projects/columns/1000",
+      "archived": false
     },
     "reqheaders": {
       "accept": "application/vnd.github.inertia-preview+json",
@@ -353,7 +359,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1338",
+      "content-length": "1355",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
