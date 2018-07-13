@@ -40,7 +40,7 @@
     },
     "rawHeaders": [
       "Date",
-      "Thu, 12 Jul 2018 05:59:11 GMT",
+      "Fri, 13 Jul 2018 05:59:32 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Transfer-Encoding",
@@ -48,7 +48,7 @@
       "Connection",
       "close",
       "Set-Cookie",
-      "__cfduid=d5a9688d34a0ca68d8c497c2201f2eb8d1531375151; expires=Fri, 12-Jul-19 05:59:11 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
+      "__cfduid=d43f8b562858564fc54155ab7ce67a4d71531461571; expires=Sat, 13-Jul-19 05:59:31 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status",
       "200 OK",
       "x-ratelimit-limit",
@@ -100,7 +100,7 @@
       "Server",
       "cloudflare",
       "CF-RAY",
-      "43914846fc694728-EWR"
+      "439986273cfa1870-EWR"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -150,7 +150,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 12 Jul 2018 05:59:11 GMT",
+      "Fri, 13 Jul 2018 05:59:32 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -164,7 +164,7 @@
       "X-RateLimit-Remaining",
       "4967",
       "X-RateLimit-Reset",
-      "1531378679",
+      "1531465081",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
@@ -194,9 +194,9 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-Runtime-rack",
-      "0.029927",
+      "0.021658",
       "X-GitHub-Request-Id",
-      "AB6A:7DB5:58EFF57:C351237:5B46EE2F"
+      "D18A:7DB4:43601F5:96943FE:5B483FC4"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
