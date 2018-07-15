@@ -25,7 +25,7 @@
     ],
     "rawHeaders": [
       "Date",
-      "Sat, 14 Jul 2018 06:00:13 GMT",
+      "Sun, 15 Jul 2018 05:59:51 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Transfer-Encoding",
@@ -33,7 +33,7 @@
       "Connection",
       "close",
       "Set-Cookie",
-      "__cfduid=de32865e2e2b47b1fe8bf36a90cf469a71531548012; expires=Sun, 14-Jul-19 06:00:12 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
+      "__cfduid=d67d1751f673cbbb224b835fec32de9f41531634390; expires=Mon, 15-Jul-19 05:59:50 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status",
       "200 OK",
       "x-ratelimit-limit",
@@ -81,13 +81,13 @@
       "X-Now-Instance",
       "171665592",
       "CF-Cache-Status",
-      "MISS",
+      "REVALIDATED",
       "Expect-CT",
       "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
       "Server",
       "cloudflare",
       "CF-RAY",
-      "43a1c486de480eeb-EWR"
+      "43aa015eccc4927e-EWR"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -103,7 +103,7 @@
     "response": "# hello-world",
     "rawHeaders": [
       "Date",
-      "Sat, 14 Jul 2018 06:00:13 GMT",
+      "Sun, 15 Jul 2018 05:59:51 GMT",
       "Content-Type",
       "application/vnd.github.v3.raw; charset=utf-8",
       "Content-Length",
@@ -111,7 +111,7 @@
       "Connection",
       "close",
       "Set-Cookie",
-      "__cfduid=def38072b8244597ff3b62e5c0466a3fd1531548013; expires=Sun, 14-Jul-19 06:00:13 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
+      "__cfduid=d4e41d6e32e4344a5634ddcc3acebf5111531634391; expires=Mon, 15-Jul-19 05:59:51 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status",
       "200 OK",
       "x-ratelimit-limit",
@@ -159,7 +159,7 @@
       "X-Now-Instance",
       "171665592",
       "CF-Cache-Status",
-      "MISS",
+      "REVALIDATED",
       "Accept-Ranges",
       "bytes",
       "Expect-CT",
@@ -167,7 +167,7 @@
       "Server",
       "cloudflare",
       "CF-RAY",
-      "43a1c48a2d5e18a0-EWR"
+      "43aa01620c804722-EWR"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3.raw",
