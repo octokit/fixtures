@@ -25,7 +25,7 @@
     ],
     "rawHeaders": [
       "Date",
-      "Sun, 15 Jul 2018 05:59:51 GMT",
+      "Mon, 16 Jul 2018 06:01:05 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Transfer-Encoding",
@@ -33,7 +33,7 @@
       "Connection",
       "close",
       "Set-Cookie",
-      "__cfduid=d67d1751f673cbbb224b835fec32de9f41531634390; expires=Mon, 15-Jul-19 05:59:50 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
+      "__cfduid=d6891045010b4826011b363cd998234721531720864; expires=Tue, 16-Jul-19 06:01:04 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status",
       "200 OK",
       "x-ratelimit-limit",
@@ -87,7 +87,7 @@
       "Server",
       "cloudflare",
       "CF-RAY",
-      "43aa015eccc4927e-EWR"
+      "43b2408d7a4499e0-EWR"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -103,7 +103,7 @@
     "response": "# hello-world",
     "rawHeaders": [
       "Date",
-      "Sun, 15 Jul 2018 05:59:51 GMT",
+      "Mon, 16 Jul 2018 06:01:05 GMT",
       "Content-Type",
       "application/vnd.github.v3.raw; charset=utf-8",
       "Content-Length",
@@ -111,7 +111,7 @@
       "Connection",
       "close",
       "Set-Cookie",
-      "__cfduid=d4e41d6e32e4344a5634ddcc3acebf5111531634391; expires=Mon, 15-Jul-19 05:59:51 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
+      "__cfduid=d31467d88789eda1232b75787ac8538861531720865; expires=Tue, 16-Jul-19 06:01:05 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status",
       "200 OK",
       "x-ratelimit-limit",
@@ -167,7 +167,7 @@
       "Server",
       "cloudflare",
       "CF-RAY",
-      "43aa01620c804722-EWR"
+      "43b240909e25184c-EWR"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3.raw",
