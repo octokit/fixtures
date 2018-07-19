@@ -122,7 +122,7 @@
     },
     "rawHeaders": [
       "Date",
-      "Wed, 18 Jul 2018 06:02:03 GMT",
+      "Thu, 19 Jul 2018 06:03:59 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Transfer-Encoding",
@@ -130,7 +130,7 @@
       "Connection",
       "close",
       "Set-Cookie",
-      "__cfduid=daa36155429de22debd715071bb95735a1531893723; expires=Thu, 18-Jul-19 06:02:03 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
+      "__cfduid=dddf3e248574a1fd18419edc40480c3e91531980239; expires=Fri, 19-Jul-19 06:03:59 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status",
       "200 OK",
       "x-ratelimit-limit",
@@ -178,13 +178,13 @@
       "X-Now-Instance",
       "970056078",
       "CF-Cache-Status",
-      "MISS",
+      "REVALIDATED",
       "Expect-CT",
       "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
       "Server",
       "cloudflare",
       "CF-RAY",
-      "43c2bcb98e6521aa-EWR"
+      "43cafceff9194704-EWR"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
