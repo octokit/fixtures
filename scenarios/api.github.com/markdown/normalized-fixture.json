@@ -19,9 +19,8 @@
     "headers": {
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
-      "cache-control": "max-age=0",
+      "cache-control": "s-maxage=0",
       "connection": "close",
-      "content-length": "171",
       "content-security-policy": "default-src 'none'",
       "content-type": "text/html;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -58,9 +57,8 @@
     "headers": {
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
-      "cache-control": "max-age=0",
+      "cache-control": "s-maxage=0",
       "connection": "close",
-      "content-length": "171",
       "content-security-policy": "default-src 'none'",
       "content-type": "text/html;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
