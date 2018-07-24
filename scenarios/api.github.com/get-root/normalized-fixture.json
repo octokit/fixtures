@@ -46,13 +46,17 @@
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "public, max-age=60, s-maxage=60",
+      "cf-cache-status": "REVALIDATED",
+      "cf-ray": "43f435090c5e2186-EWR",
       "connection": "close",
-      "content-length": "2039",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
+      "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "now": "1",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "set-cookie": "__cfduid=dbe2954d7cbe265eded3a63239d5967741532412453; expires=Wed, 24-Jul-19 06:07:33 GMT; path=/; domain=.octokit-fixtures-proxy.now.sh; HttpOnly",
       "status": "200 OK",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-content-type-options": "nosniff",
@@ -63,7 +67,8 @@
       "x-ratelimit-remaining": "59",
       "x-ratelimit-reset": "1507651200000",
       "x-runtime-rack": "0.000000",
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "1; mode=block",
+      "content-length": "2039"
     },
     "badheaders": [
       "authorization"
