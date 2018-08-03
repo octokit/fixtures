@@ -12,6 +12,7 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "state": "failure",
@@ -53,7 +54,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1426",
+      "content-length": "1495",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -88,6 +89,7 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
       "id": 1001,
       "node_id": "MDA6RW50aXR5MQ==",
       "state": "success",
@@ -129,7 +131,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1426",
+      "content-length": "1495",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -160,6 +162,7 @@
     "response": [
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
         "id": 1001,
         "node_id": "MDA6RW50aXR5MQ==",
         "state": "success",
@@ -191,6 +194,7 @@
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
         "id": 1000,
         "node_id": "MDA6RW50aXR5MQ==",
         "state": "failure",
@@ -231,7 +235,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2855",
+      "content-length": "2993",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -263,6 +267,7 @@
       "statuses": [
         {
           "url": "https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001",
+          "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
           "id": 1000,
           "node_id": "MDA6RW50aXR5MQ==",
           "state": "failure",
@@ -274,6 +279,7 @@
         },
         {
           "url": "https://api.github.com/repos/octokit-fixture-org/create-status/statuses/0000000000000000000000000000000000000001",
+          "avatar_url": "https://avatars0.githubusercontent.com/u/31898046?v=4",
           "id": 1001,
           "node_id": "MDA6RW50aXR5MQ==",
           "state": "success",
@@ -366,7 +372,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "5850",
+      "content-length": "5988",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
