@@ -9,7 +9,7 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
-      "project_url": "https://api.github.com/projects/1736680",
+      "project_url": "https://api.github.com/projects/1738056",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 1",
@@ -82,7 +82,7 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1001",
-      "project_url": "https://api.github.com/projects/1736680",
+      "project_url": "https://api.github.com/projects/1738056",
       "id": 1001,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 2",
@@ -154,7 +154,7 @@
     "response": [
       {
         "url": "https://api.github.com/projects/columns/cards/1001",
-        "project_url": "https://api.github.com/projects/1736680",
+        "project_url": "https://api.github.com/projects/1738056",
         "id": 1001,
         "node_id": "MDA6RW50aXR5MQ==",
         "note": "Example card 2",
@@ -185,7 +185,7 @@
       },
       {
         "url": "https://api.github.com/projects/columns/cards/1000",
-        "project_url": "https://api.github.com/projects/1736680",
+        "project_url": "https://api.github.com/projects/1738056",
         "id": 1000,
         "node_id": "MDA6RW50aXR5MQ==",
         "note": "Example card 1",
@@ -254,7 +254,7 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
-      "project_url": "https://api.github.com/projects/1736680",
+      "project_url": "https://api.github.com/projects/1738056",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 1",
@@ -324,7 +324,7 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
-      "project_url": "https://api.github.com/projects/1736680",
+      "project_url": "https://api.github.com/projects/1738056",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 1 updated",
