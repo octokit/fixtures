@@ -9,6 +9,7 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
+      "project_url": "https://api.github.com/projects/1786971",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 1",
@@ -49,7 +50,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1347",
+      "content-length": "1403",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -81,6 +82,7 @@
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1001",
+      "project_url": "https://api.github.com/projects/1786971",
       "id": 1001,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 2",
@@ -121,7 +123,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1347",
+      "content-length": "1403",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -152,6 +154,7 @@
     "response": [
       {
         "url": "https://api.github.com/projects/columns/cards/1001",
+        "project_url": "https://api.github.com/projects/1786971",
         "id": 1001,
         "node_id": "MDA6RW50aXR5MQ==",
         "note": "Example card 2",
@@ -182,6 +185,7 @@
       },
       {
         "url": "https://api.github.com/projects/columns/cards/1000",
+        "project_url": "https://api.github.com/projects/1786971",
         "id": 1000,
         "node_id": "MDA6RW50aXR5MQ==",
         "note": "Example card 1",
@@ -221,7 +225,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2697",
+      "content-length": "2809",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -250,6 +254,7 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
+      "project_url": "https://api.github.com/projects/1786971",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 1",
@@ -288,7 +293,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1347",
+      "content-length": "1403",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -319,6 +324,7 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
+      "project_url": "https://api.github.com/projects/1786971",
       "id": 1000,
       "node_id": "MDA6RW50aXR5MQ==",
       "note": "Example card 1 updated",
@@ -359,7 +365,7 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1355",
+      "content-length": "1411",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
