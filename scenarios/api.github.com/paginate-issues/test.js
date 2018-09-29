@@ -18,7 +18,7 @@ test('paginate issues', async (t) => {
   }
 
   await axios.request(Object.assign(options, {
-    url: baseUrl
+    url: `${baseUrl}&page=1`
   })).catch(mock.explain)
 
   for (let i = 2; i <= 5; i++) {
