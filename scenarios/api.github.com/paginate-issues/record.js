@@ -49,7 +49,7 @@ async function paginateIssues (state) {
     }
 
     await state.request(Object.assign(options, {
-      url: baseUrl
+      url: `${baseUrl}&page=1`
     }))
 
     for (let i = 2; i <= 5; i++) {

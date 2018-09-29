@@ -2,7 +2,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3",
+    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3&page=1",
     "body": "",
     "status": 200,
     "response": [
