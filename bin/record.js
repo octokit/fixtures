@@ -79,6 +79,13 @@ scenarios.reduce(async (promise, scenarioPath) => {
     return limiter.schedule(async () => config)
   })
 
+  // set strict validation header
+  // TODO: remove after Nov 1, see https://blog.github.com/changelog/2018-09-26-new-preview-header-for-strict-validation-in-rest-api/
+  request.interceptors.request.use(config => {
+    config.headers.Accept = `${config.headers.Accept},application/vnd.github.speedy-preview+json`
+    return config
+  })
+
   const oldNormalizedFixtures = await read(fixtureName)
   const newRawFixtures = await recordScenario({
     request: request,
