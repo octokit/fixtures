@@ -1,4 +1,4 @@
-const {test} = require('tap')
+const { test } = require('tap')
 
 const setIfExists = require('../../lib/set-if-exists')
 

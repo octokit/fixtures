@@ -1,5 +1,5 @@
 const glob = require('glob')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const normalize = require('../../lib/normalize')
 

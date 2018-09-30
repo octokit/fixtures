@@ -18,7 +18,7 @@ async function createStatus (state) {
   try {
     // https://developer.github.com/v3/repos/contents/#create-a-file
     // (this request gets ignored, we need an existing commit to set status on)
-    const {data: {commit: {sha}}} = await state.request({
+    const { data: { commit: { sha } } } = await state.request({
       method: 'put',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/README.md`,
       headers: {

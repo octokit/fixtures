@@ -20,7 +20,7 @@ async function releaseAssetsConflict (state) {
   try {
     // https://developer.github.com/v3/repos/contents/#create-a-file
     // (this request gets ignored, we need an existing commit before creating a release)
-    const {data: {commit: {sha}}} = await state.request({
+    const { data: { commit: { sha } } } = await state.request({
       method: 'put',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/README.md`,
       headers: {
@@ -54,7 +54,7 @@ async function releaseAssetsConflict (state) {
 
     // https://developer.github.com/v3/repos/releases/#create-a-release
     // Get the release. The upload_url from the response must be used for uploads
-    const {data: {id: releaseId, upload_url: uploadUrl}} = await state.request({
+    const { data: { id: releaseId, upload_url: uploadUrl } } = await state.request({
       method: 'get',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/tags/v1.0.0`,
       headers: {
@@ -108,7 +108,7 @@ async function releaseAssetsConflict (state) {
     // Assuming a library would now want to delete the asset before trying to
     // re-upload again, we need to retrieve the asset lists first to get the
     // id of the existing asset
-    const {data: [{id: assetId}]} = await state.request({
+    const { data: [{ id: assetId }] } = await state.request({
       method: 'get',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/${releaseId}/assets`,
       headers: {

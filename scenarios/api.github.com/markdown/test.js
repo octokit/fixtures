@@ -1,12 +1,12 @@
 const axios = require('axios')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const fixtures = require('../../..')
 
 test('Get repository', async (t) => {
   const mock = fixtures.mock('api.github.com/markdown')
 
-  const {data: contextMarkdown} = await axios({
+  const { data: contextMarkdown } = await axios({
     method: 'post',
     url: 'https://api.github.com/markdown',
     headers: {
@@ -25,7 +25,7 @@ b597b5d`,
   t.is(contextMarkdown, `<h3>Hello</h3>
 <p><a class="commit-link" href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8"><tt>b597b5d</tt></a></p>`)
 
-  const {data: markdown} = await axios({
+  const { data: markdown } = await axios({
     method: 'post',
     url: 'https://api.github.com/markdown/raw',
     headers: {

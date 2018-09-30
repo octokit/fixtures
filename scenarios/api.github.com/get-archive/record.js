@@ -44,7 +44,7 @@ async function getArchive (state) {
         }
       })
     } catch (error) {
-      const {headers} = error.response
+      const { headers } = error.response
 
       await state.request({
         method: 'get',

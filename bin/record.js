@@ -13,7 +13,7 @@ const axios = require('axios')
 const Bottleneck = require('bottleneck')
 const chalk = require('chalk')
 const cloneDeep = require('lodash/cloneDeep')
-const {diff, diffString} = require('json-diff')
+const { diff, diffString } = require('json-diff')
 const glob = require('glob')
 const humanize = require('humanize-string')
 

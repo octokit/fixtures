@@ -1,6 +1,6 @@
 const _ = require('lodash')
 const axios = require('axios')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const fixtures = require('../..')
 
@@ -106,7 +106,7 @@ test('additions function', async (t) => {
 
   // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
   // Get release to retrieve upload URL
-  const {data} = await axios({
+  const { data } = await axios({
     method: 'get',
     url: `http://localhost:3000/repos/octokit-fixture-org/release-assets/releases/tags/v1.0.0`,
     headers: {
