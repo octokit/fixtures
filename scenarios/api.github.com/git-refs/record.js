@@ -18,7 +18,7 @@ async function gitRefs (state) {
   try {
     // https://developer.github.com/v3/repos/contents/#create-a-file
     // (these requests get ignored, we need two commits to test our refrences)
-    const {data: {commit: {sha: sha1}}} = await state.request({
+    const { data: { commit: { sha: sha1 } } } = await state.request({
       method: 'put',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/1.md`,
       headers: {
@@ -31,7 +31,7 @@ async function gitRefs (state) {
         content: Buffer.from('# git-refs\ncreated with initial commit').toString('base64')
       }
     })
-    const {data: {commit: {sha: sha2}}} = await state.request({
+    const { data: { commit: { sha: sha2 } } } = await state.request({
       method: 'put',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/2.md`,
       headers: {

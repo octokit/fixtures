@@ -18,7 +18,7 @@ async function lockIssue (state) {
   try {
     // https://developer.github.com/v3/projects/#create-a-repository-project
     // (this request gets ignored, we need an existing project to create cards in)
-    const {data: {id: projectId}} = await state.request({
+    const { data: { id: projectId } } = await state.request({
       method: 'post',
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/projects`,
       headers: {
@@ -33,7 +33,7 @@ async function lockIssue (state) {
 
     // https://developer.github.com/v3/projects/columns/#create-a-project-column
     // (this request gets ignored, we need an existing columns to create cards in and move to)
-    const {data: {id: column1Id}} = await state.request({
+    const { data: { id: column1Id } } = await state.request({
       method: 'post',
       url: `/projects/${projectId}/columns`,
       headers: {
@@ -45,7 +45,7 @@ async function lockIssue (state) {
         name: 'Example column 1'
       }
     })
-    const {data: {id: column2Id}} = await state.request({
+    const { data: { id: column2Id } } = await state.request({
       method: 'post',
       url: `/projects/${projectId}/columns`,
       headers: {
@@ -75,7 +75,7 @@ async function lockIssue (state) {
     // })
 
     // https://developer.github.com/v3/projects/cards/#create-a-project-card
-    const {data: {id: card1Id}} = await state.request({
+    const { data: { id: card1Id } } = await state.request({
       method: 'post',
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
@@ -87,7 +87,7 @@ async function lockIssue (state) {
       }
     })
 
-    const {data: {id: card2Id}} = await state.request({
+    const { data: { id: card2Id } } = await state.request({
       method: 'post',
       url: `/projects/columns/${column1Id}/cards`,
       headers: {

@@ -1,5 +1,5 @@
 const proxyquire = require('proxyquire').noCallThru()
-const {test} = require('tap')
+const { test } = require('tap')
 
 const minimalFixture = {
   path: '/',

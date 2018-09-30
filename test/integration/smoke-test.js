@@ -1,5 +1,5 @@
 const axios = require('axios')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const fixtures = require('../..')
 

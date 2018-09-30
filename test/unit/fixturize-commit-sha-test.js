@@ -1,4 +1,4 @@
-const {test} = require('tap')
+const { test } = require('tap')
 
 const fixturizeCommitSha = require('../../lib/fixturize-commit-sha')
 

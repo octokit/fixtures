@@ -1,4 +1,4 @@
-const {test} = require('tap')
+const { test } = require('tap')
 
 const temporaryRepository = require('../../lib/temporary-repository')
 
@@ -24,7 +24,7 @@ test('temporaryRepository(name) returns {name}', (t) => {
 })
 
 test('temporaryRepository.regex', (t) => {
-  const {name} = temporaryRepository({name: 'funky-repo'})
+  const { name } = temporaryRepository({ name: 'funky-repo' })
   const [, originalName] = name.match(temporaryRepository.regex)
   t.is(originalName, 'funky-repo')
   t.is(`/repos/org-foo/${name}`.replace(temporaryRepository.regex, '$1'), '/repos/org-foo/funky-repo')

@@ -1,5 +1,5 @@
 const axios = require('axios')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const fixtures = require('../../..')
 
@@ -51,7 +51,7 @@ test('Create status', async (t) => {
   })
 
   // get combined status
-  const {data} = await axios({
+  const { data } = await axios({
     method: 'get',
     url: 'https://api.github.com/repos/octokit-fixture-org/create-status/commits/0000000000000000000000000000000000000001/status',
     headers: {
