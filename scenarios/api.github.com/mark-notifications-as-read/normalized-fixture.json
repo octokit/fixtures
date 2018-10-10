@@ -32,7 +32,6 @@
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
     }
   }
