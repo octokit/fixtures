@@ -12,6 +12,7 @@
       "node_id": "MDA6RW50aXR5MQ==",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
+      "private": false,
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
@@ -32,7 +33,6 @@
         "type": "Organization",
         "site_admin": false
       },
-      "private": false,
       "html_url": "https://github.com/octokit-fixture-org/rename-repository-newname",
       "description": null,
       "fork": false,
@@ -159,7 +159,6 @@
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
     }
   },
@@ -200,7 +199,6 @@
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
     }
   },
@@ -215,6 +213,7 @@
       "node_id": "MDA6RW50aXR5MQ==",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
+      "private": false,
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
@@ -235,7 +234,6 @@
         "type": "Organization",
         "site_admin": false
       },
-      "private": false,
       "html_url": "https://github.com/octokit-fixture-org/rename-repository-newname",
       "description": null,
       "fork": false,
@@ -361,7 +359,6 @@
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
     }
   },
@@ -407,7 +404,6 @@
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
     }
   },
@@ -425,6 +421,7 @@
       "node_id": "MDA6RW50aXR5MQ==",
       "name": "rename-repository-newname",
       "full_name": "octokit-fixture-org/rename-repository-newname",
+      "private": false,
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
@@ -445,7 +442,6 @@
         "type": "Organization",
         "site_admin": false
       },
-      "private": false,
       "html_url": "https://github.com/octokit-fixture-org/rename-repository-newname",
       "description": "test description",
       "fork": false,
@@ -572,7 +568,6 @@
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
       "x-xss-protection": "1; mode=block"
     }
   }
