@@ -10,6 +10,7 @@
       "node_id": "MDA6RW50aXR5MQ==",
       "name": "hello-world",
       "full_name": "octokit-fixture-org/hello-world",
+      "private": false,
       "owner": {
         "login": "octokit-fixture-org",
         "id": 1000,
@@ -30,7 +31,6 @@
         "type": "Organization",
         "site_admin": false
       },
-      "private": false,
       "html_url": "https://github.com/octokit-fixture-org/hello-world",
       "description": null,
       "fork": false,
@@ -129,7 +129,6 @@
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "cache-control": "public, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "6496",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -145,8 +144,8 @@
       "x-ratelimit-limit": "60",
       "x-ratelimit-remaining": "59",
       "x-ratelimit-reset": "1507651200000",
-      "x-runtime-rack": "0.000000",
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "1; mode=block",
+      "content-length": "6496"
     },
     "badheaders": [
       "authorization"
