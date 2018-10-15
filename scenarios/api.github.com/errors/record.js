@@ -26,7 +26,8 @@ async function errors (state) {
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
-        name: false
+        name: 'foo',
+        color: 'invalid'
       }
     })
 

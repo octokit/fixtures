@@ -4,25 +4,33 @@
     "method": "post",
     "path": "/repos/octokit-fixture-org/errors/labels",
     "body": {
-      "name": false
+      "name": "foo",
+      "color": "invalid"
     },
     "status": 422,
     "response": {
-      "message": "Invalid request.\n\nFor 'properties/name', false is not a string.",
+      "message": "Validation Failed",
+      "errors": [
+        {
+          "resource": "Label",
+          "code": "invalid",
+          "field": "color"
+        }
+      ],
       "documentation_url": "https://developer.github.com/v3/issues/labels/#create-a-label"
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000001",
-      "content-length": 14,
+      "content-length": 32,
       "host": "api.github.com"
     },
     "headers": {
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "connection": "close",
-      "content-length": "163",
+      "content-length": "180",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

@@ -17,7 +17,8 @@ test('Errors', async (t) => {
         'Content-Type': 'application/json; charset=utf-8'
       },
       data: {
-        name: false
+        name: 'foo',
+        color: 'invalid'
       }
     })
   } catch (error) {
