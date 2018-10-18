@@ -2,7 +2,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/git-refs/git/refs",
+    "path": "/repos/octokit-fixture-org/git-refs/git/refs/",
     "body": "",
     "status": 200,
     "response": [
@@ -154,7 +154,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/git-refs/git/refs",
+    "path": "/repos/octokit-fixture-org/git-refs/git/refs/",
     "body": "",
     "status": 200,
     "response": [
