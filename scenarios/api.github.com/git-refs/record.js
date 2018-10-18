@@ -49,7 +49,7 @@ async function gitRefs (state) {
     // returns a single reference for the master branch, pointing to sha of 2nd commit
     await state.request({
       method: 'get',
-      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs`,
+      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs/`,
       headers: {
         Accept: 'application/vnd.github.v3+json',
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
@@ -89,7 +89,7 @@ async function gitRefs (state) {
     // Now returns both branches: master & test
     await state.request({
       method: 'get',
-      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs`,
+      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs/`,
       headers: {
         Accept: 'application/vnd.github.v3+json',
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
