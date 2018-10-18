@@ -10,7 +10,7 @@ test('Git references', async (t) => {
   // returns a single reference for the master branch, pointing to sha for 2nd commit
   await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs',
+    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`
@@ -52,7 +52,7 @@ test('Git references', async (t) => {
   // Now returns both branches: master & test
   await axios({
     method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs',
+    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`
