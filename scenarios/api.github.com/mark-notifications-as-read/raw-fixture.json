@@ -10,7 +10,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Wed, 10 Oct 2018 06:50:14 GMT",
+      "Wed, 31 Oct 2018 07:02:16 GMT",
       "Content-Type",
       "text/plain;charset=utf-8",
       "Content-Length",
@@ -22,9 +22,9 @@
       "X-RateLimit-Limit",
       "5000",
       "X-RateLimit-Remaining",
-      "4945",
+      "4942",
       "X-RateLimit-Reset",
-      "1539157696",
+      "1540972789",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -32,7 +32,7 @@
       "X-GitHub-Media-Type",
       "github.v3; param=speedy-preview; format=json",
       "Access-Control-Expose-Headers",
-      "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "Access-Control-Allow-Origin",
       "*",
       "Strict-Transport-Security",
@@ -48,7 +48,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "D0D4:5B6F:1D6B3A:3FB283:5BBDA126"
+      "9B82:2DEF:3989E0:780F71:5BD95378"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
