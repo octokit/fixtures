@@ -89,11 +89,13 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels",
-    "body": [
-      "Foo",
-      "bAr",
-      "baZ"
-    ],
+    "body": {
+      "labels": [
+        "Foo",
+        "bAr",
+        "baZ"
+      ]
+    },
     "status": 200,
     "response": [
       {
@@ -125,7 +127,7 @@
       "accept": "application/vnd.github.v3+json",
       "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000001",
-      "content-length": 19,
+      "content-length": 30,
       "host": "api.github.com"
     },
     "headers": {
