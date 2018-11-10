@@ -23,12 +23,9 @@ jobs:
     - env: COMMAND=test:unit
     - env: COMMAND=test:integration
     - env: COMMAND=test:scenarios
+    - env: COMMAND=coverage:upload
     - stage: release
-      node_js: lts/*
       env: COMMAND=semantic-release
-  allow_failures:
-    - node_js: lts/*
-      env: COMMAND=coverage:upload
 
 stages:
   - lint
