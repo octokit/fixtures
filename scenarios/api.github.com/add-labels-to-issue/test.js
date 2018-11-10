@@ -29,11 +29,13 @@ test('Get repository', async (t) => {
       Authorization: `token 0000000000000000000000000000000000000001`,
       'Content-Type': 'application/json; charset=utf-8'
     },
-    data: [
-      'Foo',
-      'bAr',
-      'baZ'
-    ]
+    data: {
+      labels: [
+        'Foo',
+        'bAr',
+        'baZ'
+      ]
+    }
   }) // .catch(mock.explain)
 
   t.doesNotThrow(mock.done.bind(mock), 'satisfies all mocks')

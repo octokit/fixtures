@@ -39,11 +39,13 @@ async function addAndRemoveRepostioryCollaborator (state) {
         Accept: 'application/vnd.github.v3+json',
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
-      data: [
-        'Foo',
-        'bAr',
-        'baZ'
-      ]
+      data: {
+        labels: [
+          'Foo',
+          'bAr',
+          'baZ'
+        ]
+      }
     })
   } catch (_error) {
     error = _error
