@@ -22,8 +22,7 @@ b597b5d`,
     }
   }).catch(mock.explain)
 
-  t.is(contextMarkdown, `<h3>Hello</h3>
-<p><a class="commit-link" href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8"><tt>b597b5d</tt></a></p>`)
+  t.is(contextMarkdown, '<h3>Hello</h3>\n<p><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8/hovercard" href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8"><tt>b597b5d</tt></a></p>')
 
   const { data: markdown } = await axios({
     method: 'post',
@@ -37,10 +36,7 @@ b597b5d`,
 b597b5d`
   }).catch(mock.explain)
 
-  t.is(markdown, `<h3>
-<a id="user-content-hello" class="anchor" href="#hello" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hello</h3>
-<p>b597b5d</p>
-`)
+  t.is(markdown, '<h3>\n<a id="user-content-hello" class="anchor" href="#hello" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hello</h3>\n<p>b597b5d</p>\n')
   t.doesNotThrow(mock.done.bind(mock), 'satisfies all mocks')
 
   t.end()
