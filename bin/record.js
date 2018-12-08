@@ -79,8 +79,8 @@ scenarios.reduce(async (promise, scenarioPath) => {
     return limiter.schedule(async () => config)
   })
 
-  // set strict validation header
-  // TODO: remove after Nov 1, see https://blog.github.com/changelog/2018-09-26-new-preview-header-for-strict-validation-in-rest-api/
+  // set strict validation header, remove once stricter validations are applied
+  // to all requests: https://developer.github.com/changes/2018-11-07-strict-validation/
   request.interceptors.request.use(config => {
     config.headers.Accept = `${config.headers.Accept},application/vnd.github.speedy-preview+json`
     return config
