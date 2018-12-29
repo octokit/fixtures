@@ -13,14 +13,15 @@
     "reqheaders": {
       "accept": "text/html",
       "content-type": "application/json; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 88,
       "host": "api.github.com"
     },
     "headers": {
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
-      "cache-control": "s-maxage=0",
       "connection": "close",
+      "content-length": "330",
       "content-security-policy": "default-src 'none'",
       "content-type": "text/html;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -31,14 +32,11 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
-      "x-ratelimit-limit": "60",
-      "x-ratelimit-remaining": "59",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-xss-protection": "1; mode=block"
-    },
-    "badheaders": [
-      "authorization"
-    ]
+    }
   },
   {
     "scope": "https://api.github.com:443",
@@ -50,14 +48,15 @@
     "reqheaders": {
       "accept": "text/html",
       "content-type": "text/plain; charset=utf-8",
+      "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 18,
       "host": "api.github.com"
     },
     "headers": {
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
-      "cache-control": "s-maxage=0",
       "connection": "close",
+      "content-length": "171",
       "content-security-policy": "default-src 'none'",
       "content-type": "text/html;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -68,13 +67,10 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
-      "x-ratelimit-limit": "60",
-      "x-ratelimit-remaining": "59",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-xss-protection": "1; mode=block"
-    },
-    "badheaders": [
-      "authorization"
-    ]
+    }
   }
 ]

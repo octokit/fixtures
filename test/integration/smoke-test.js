@@ -10,7 +10,8 @@ test('Accepts fixtures object as argument', async (t) => {
     method: 'get',
     url: 'https://api.github.com/repos/octokit-fixture-org/hello-world',
     headers: {
-      Accept: 'application/vnd.github.v3+json'
+      Accept: 'application/vnd.github.v3+json',
+      Authorization: `token 0000000000000000000000000000000000000001`
     }
   }).catch(t.error)
 

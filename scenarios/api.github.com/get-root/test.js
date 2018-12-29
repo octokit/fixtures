@@ -10,14 +10,6 @@ test('Get repository', async (t) => {
     method: 'get',
     url: 'https://api.github.com/',
     headers: {
-      Accept: 'application/vnd.github.v3+json'
-    }
-  }).catch(mock.explain)
-
-  await axios({
-    method: 'get',
-    url: 'https://api.github.com/',
-    headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token 0000000000000000000000000000000000000001`
     }
