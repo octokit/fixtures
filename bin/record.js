@@ -17,7 +17,6 @@ const { diff, diffString } = require('json-diff')
 const glob = require('glob')
 const humanize = require('humanize-string')
 
-const env = require('../lib/env')
 const isTravisCronJob = require('../lib/is-travis-cron-job')
 const normalize = require('../lib/normalize')
 const notifyAboutFixturesChanges = require('../lib/notify-about-fixtures-changes')
@@ -47,23 +46,6 @@ scenarios.reduce(async (promise, scenarioPath) => {
     baseURL: `https://${domain}`,
     maxRedirects: 0 // record redirects explicitly
   })
-
-  // set Proxy for unauthenticated requests to https://api.github.com
-  if (env.FIXTURES_PROXY) {
-    request.interceptors.request.use(config => {
-      if (config.headers.Authorization) {
-        return config
-      }
-
-      if (config.baseURL !== 'https://api.github.com') {
-        return config
-      }
-
-      config.baseURL = env.FIXTURES_PROXY
-
-      return config
-    })
-  }
 
   // throttle writing requests
   // https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits

@@ -16,7 +16,8 @@ test('reqheaders additions', async (t) => {
       method: 'get',
       url: 'https://api.github.com/repos/octokit-fixture-org/hello-world',
       headers: {
-        Accept: 'application/vnd.github.v3+json'
+        Accept: 'application/vnd.github.v3+json',
+        Authorization: `token 0000000000000000000000000000000000000001`
       }
     })
     t.fail('should fail without X-Foo header')
@@ -30,6 +31,7 @@ test('reqheaders additions', async (t) => {
       url: 'https://api.github.com/repos/octokit-fixture-org/hello-world',
       headers: {
         Accept: 'application/vnd.github.v3+json',
+        Authorization: `token 0000000000000000000000000000000000000001`,
         'x-fixtures-id': '123'
       }
     })

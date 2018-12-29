@@ -8,6 +8,7 @@
     "response": "",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
     },
     "headers": {
@@ -27,14 +28,11 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
-      "x-ratelimit-limit": "60",
-      "x-ratelimit-remaining": "59",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-xss-protection": "1; mode=block"
-    },
-    "badheaders": [
-      "authorization"
-    ]
+    }
   },
   {
     "scope": "https://codeload.github.com:443",
@@ -45,6 +43,7 @@
     "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
+      "authorization": "token 0000000000000000000000000000000000000001",
       "host": "codeload.github.com"
     },
     "responseIsBinary": true,
@@ -63,9 +62,6 @@
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-xss-protection": "1; mode=block",
       "content-length": 172
-    },
-    "badheaders": [
-      "authorization"
-    ]
+    }
   }
 ]

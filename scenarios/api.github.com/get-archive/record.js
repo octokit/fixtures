@@ -40,7 +40,8 @@ async function getArchive (state) {
         method: 'get',
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}/tarball/master`,
         headers: {
-          Accept: 'application/vnd.github.v3+json'
+          Accept: 'application/vnd.github.v3+json',
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
         }
       })
     } catch (error) {
@@ -50,7 +51,8 @@ async function getArchive (state) {
         method: 'get',
         url: headers.location,
         headers: {
-          Accept: 'application/vnd.github.v3+json'
+          Accept: 'application/vnd.github.v3+json',
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
         }
       })
     }

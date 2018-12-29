@@ -11,6 +11,7 @@ test('Get repository', async (t) => {
     url: 'https://api.github.com/markdown',
     headers: {
       Accept: 'text/html',
+      Authorization: `token 0000000000000000000000000000000000000001`,
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
@@ -29,6 +30,7 @@ b597b5d`,
     url: 'https://api.github.com/markdown/raw',
     headers: {
       Accept: 'text/html',
+      Authorization: `token 0000000000000000000000000000000000000001`,
       'Content-Type': 'text/plain; charset=utf-8'
     },
     data: `### Hello
