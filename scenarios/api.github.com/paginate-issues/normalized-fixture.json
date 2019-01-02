@@ -2,7 +2,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3&page=1",
+    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3",
     "body": "",
     "status": 200,
     "response": [
@@ -173,7 +173,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3&page=2",
+    "path": "/repositories/1000/issues?per_page=3&page=2",
     "body": "",
     "status": 200,
     "response": [
@@ -344,7 +344,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3&page=3",
+    "path": "/repositories/1000/issues?per_page=3&page=3",
     "body": "",
     "status": 200,
     "response": [
@@ -515,7 +515,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3&page=4",
+    "path": "/repositories/1000/issues?per_page=3&page=4",
     "body": "",
     "status": 200,
     "response": [
@@ -686,7 +686,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/paginate-issues/issues?per_page=3&page=5",
+    "path": "/repositories/1000/issues?per_page=3&page=5",
     "body": "",
     "status": 200,
     "response": [
