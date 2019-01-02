@@ -39,7 +39,7 @@ async function paginateIssues (state) {
 
     // https://developer.github.com/v3/issues/#list-issues-for-a-repository
     // Get 1st page and then page 2-5 with page query parameter
-    const baseUrl = `/repos/octokit-fixture-org/${temporaryRepository.name}/issues?per_page=3`
+    let url = `/repos/octokit-fixture-org/${temporaryRepository.name}/issues?per_page=3`
     const options = {
       method: 'get',
       headers: {
@@ -48,14 +48,12 @@ async function paginateIssues (state) {
       }
     }
 
-    await state.request(Object.assign(options, {
-      url: `${baseUrl}&page=1`
-    }))
-
-    for (let i = 2; i <= 5; i++) {
-      await state.request(Object.assign(options, {
-        url: `${baseUrl}&page=${i}`
+    for (let i = 1; i <= 5; i++) {
+      const response = await state.request(Object.assign(options, {
+        url
       }))
+
+      url = ((response.headers.link || '').match(/<([^>]+)>;\s*rel="next"/) || [])[1]
     }
   } catch (_error) {
     error = _error
