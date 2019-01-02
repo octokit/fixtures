@@ -8,7 +8,6 @@ test('paginate issues', async (t) => {
 
   // https://developer.github.com/v3/issues/#list-issues-for-a-repository
   // Get pages 1 - 5.
-  const baseUrl = 'https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues?per_page=3'
   const options = {
     method: 'get',
     headers: {
@@ -17,13 +16,17 @@ test('paginate issues', async (t) => {
     }
   }
 
-  await axios.request(Object.assign(options, {
-    url: `${baseUrl}&page=1`
-  })).catch(mock.explain)
+  const urls = [
+    'https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues?per_page=3',
+    'https://api.github.com/repositories/1000/issues?per_page=3&page=2',
+    'https://api.github.com/repositories/1000/issues?per_page=3&page=3',
+    'https://api.github.com/repositories/1000/issues?per_page=3&page=4',
+    'https://api.github.com/repositories/1000/issues?per_page=3&page=5'
+  ]
 
-  for (let i = 2; i <= 5; i++) {
+  for (var i = 0; i < urls.length; i++) {
     await axios.request(Object.assign(options, {
-      url: `${baseUrl}&page=${i}`
+      url: urls[i]
     })).catch(mock.explain)
   }
 
