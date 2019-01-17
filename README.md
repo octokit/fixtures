@@ -25,7 +25,7 @@ Currently requires node 8+
 
 `fixtures.mock(scenario)` will intercept requests using [nock](https://www.npmjs.com/package/nock).
 `scenario` is a String in the form `<host name>/<scenario name>`. `host name`
-is any folder in [`fixtures/`](fixtures/). `scenario name` is any filename in
+is any folder in [`scenarios/`](scenarios/). `scenario name` is any filename in
 the host name folders without the `.js` extension.
 
 ```js
