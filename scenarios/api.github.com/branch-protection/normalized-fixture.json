@@ -164,6 +164,7 @@
             "description": "If you have a problem, if no one else can help you, then if you can find them, maybe you can hire the A-Team!",
             "privacy": "closed",
             "url": "https://api.github.com/teams/1000",
+            "html_url": "https://github.com/orgs/octokit-fixture-org/teams/a-team",
             "members_url": "https://api.github.com/teams/1000/members{/member}",
             "repositories_url": "https://api.github.com/teams/1000/repos",
             "permission": "pull"
@@ -220,7 +221,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4207",
+      "content-length": "4277",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
