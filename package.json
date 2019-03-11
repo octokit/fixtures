@@ -47,7 +47,7 @@
     "chalk": "^2.4.1",
     "coveralls": "^3.0.2",
     "envalid": "^4.0.1",
-    "get-stream": "^4.1.0",
+    "get-stream": "^5.0.0",
     "glob": "^7.1.3",
     "gunzip-maybe": "^1.4.1",
     "humanize-string": "^2.0.0",
