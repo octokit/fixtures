@@ -113,6 +113,7 @@
       "x-frame-options": "deny",
       "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-glb-via": "hostname=alambic-fe-7a39cf1.cp1-iad.github.net service=alambic t=1557477655.787860",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-xss-protection": "1; mode=block"
     }
@@ -284,6 +285,7 @@
       "x-frame-options": "deny",
       "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-glb-via": "hostname=alambic-fe-eb7a121.cp1-iad.github.net service=alambic t=1557477661.793561",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-xss-protection": "1; mode=block",
       "content-length": "1536"
