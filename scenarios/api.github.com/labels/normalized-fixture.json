@@ -17,13 +17,21 @@
       {
         "id": 1001,
         "node_id": "MDA6RW50aXR5MQ==",
+        "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "default": true
+      },
+      {
+        "id": 1002,
+        "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/duplicate",
         "name": "duplicate",
         "color": "cfd3d7",
         "default": true
       },
       {
-        "id": 1002,
+        "id": 1003,
         "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/enhancement",
         "name": "enhancement",
@@ -31,7 +39,7 @@
         "default": true
       },
       {
-        "id": 1003,
+        "id": 1004,
         "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/good%20first%20issue",
         "name": "good first issue",
@@ -39,7 +47,7 @@
         "default": true
       },
       {
-        "id": 1004,
+        "id": 1005,
         "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/help%20wanted",
         "name": "help wanted",
@@ -47,7 +55,7 @@
         "default": true
       },
       {
-        "id": 1005,
+        "id": 1006,
         "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/invalid",
         "name": "invalid",
@@ -55,7 +63,7 @@
         "default": true
       },
       {
-        "id": 1006,
+        "id": 1007,
         "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/question",
         "name": "question",
@@ -63,7 +71,7 @@
         "default": true
       },
       {
-        "id": 1007,
+        "id": 1008,
         "node_id": "MDA6RW50aXR5MQ==",
         "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/wontfix",
         "name": "wontfix",
@@ -81,7 +89,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1391",
+      "content-length": "1572",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -111,7 +119,7 @@
     },
     "status": 201,
     "response": {
-      "id": 1008,
+      "id": 1009,
       "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
       "name": "test-label",
@@ -158,7 +166,7 @@
     "body": "",
     "status": 200,
     "response": {
-      "id": 1008,
+      "id": 1009,
       "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
       "name": "test-label",
@@ -206,7 +214,7 @@
     },
     "status": 200,
     "response": {
-      "id": 1008,
+      "id": 1009,
       "node_id": "MDA6RW50aXR5MQ==",
       "url": "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label-updated",
       "name": "test-label-updated",
