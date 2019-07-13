@@ -1,5 +1,5 @@
 const assert = require('assert')
-const parseUrl = require('url').parse
+const { URL } = require('url')
 
 const cloneDeep = require('lodash/cloneDeep')
 const merge = require('lodash/merge')
@@ -92,7 +92,7 @@ function getNextMockConfig (mocks) {
 function applyAdditionsDefault (additions, fixture) {
   merge(fixture, additions)
   if (additions.scope) {
-    const url = parseUrl(additions.scope)
+    const url = new URL(additions.scope)
     fixture.reqheaders.host = url.host
     if (fixture.headers.location) {
       fixture.headers.location = fixture.headers.location.replace('https://api.github.com/', url.href)
