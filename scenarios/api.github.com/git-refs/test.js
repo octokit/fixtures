@@ -13,7 +13,7 @@ test('Git references', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   }).catch(mock.explain)
 
@@ -24,7 +24,7 @@ test('Git references', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`,
+      Authorization: 'token 0000000000000000000000000000000000000001',
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
@@ -40,7 +40,7 @@ test('Git references', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`,
+      Authorization: 'token 0000000000000000000000000000000000000001',
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
@@ -55,7 +55,7 @@ test('Git references', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   }).catch(mock.explain)
 
@@ -66,7 +66,7 @@ test('Git references', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   }).catch(mock.explain)
 

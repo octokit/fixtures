@@ -107,7 +107,7 @@ test('Labels', async (t) => {
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
-      position: `after:1001`
+      position: 'after:1001'
     }
   })
 

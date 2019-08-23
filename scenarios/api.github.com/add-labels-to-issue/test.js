@@ -9,10 +9,10 @@ test('Get repository', async (t) => {
   // https://developer.github.com/v3/issues/#create-an-issue
   await axios({
     method: 'post',
-    url: `https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues`,
+    url: 'https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`,
+      Authorization: 'token 0000000000000000000000000000000000000001',
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {
@@ -23,10 +23,10 @@ test('Get repository', async (t) => {
   // https://developer.github.com/v3/issues/labels/#add-labels-to-an-issue
   await axios({
     method: 'post',
-    url: `https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels`,
+    url: 'https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`,
+      Authorization: 'token 0000000000000000000000000000000000000001',
       'Content-Type': 'application/json; charset=utf-8'
     },
     data: {

@@ -7,7 +7,7 @@ test('Labels', async (t) => {
   const mock = fixtures.mock('api.github.com/search-issues')
 
   // https://developer.github.com/v3/search/#search-issues
-  const query = `sesame repo:octokit-fixture-org/search-issues`
+  const query = 'sesame repo:octokit-fixture-org/search-issues'
   await axios({
     method: 'get',
     url: `https://api.github.com/search/issues?q=${encodeURIComponent(query)}`,

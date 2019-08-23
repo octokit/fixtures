@@ -10,7 +10,7 @@ test('Labels', async (t) => {
   // Get release to retrieve upload URL
   await axios({
     method: 'get',
-    url: `https://api.github.com/repos/octokit-fixture-org/release-assets/releases/tags/v1.0.0`,
+    url: 'https://api.github.com/repos/octokit-fixture-org/release-assets/releases/tags/v1.0.0',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001'
@@ -21,7 +21,7 @@ test('Labels', async (t) => {
   // upload attachment to release URL returned by create release request
   await axios({
     method: 'post',
-    url: `https://uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets?name=test-upload.txt&label=test`,
+    url: 'https://uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets?name=test-upload.txt&label=test',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: 'token 0000000000000000000000000000000000000001',

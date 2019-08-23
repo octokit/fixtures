@@ -11,7 +11,7 @@ test('Get organization', async (t) => {
     url: 'https://api.github.com/orgs/octokit-fixture-org',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   }).catch(mock.explain)
 
