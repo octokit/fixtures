@@ -11,7 +11,7 @@ test('Get repository', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/hello-world/contents/',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   }).catch(mock.explain)
 
@@ -23,7 +23,7 @@ test('Get repository', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/hello-world/contents/README.md',
     headers: {
       Accept: 'application/vnd.github.v3.raw',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   }).catch(mock.explain)
 

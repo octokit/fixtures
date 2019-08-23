@@ -12,7 +12,7 @@ test('Get archive', async (t) => {
     url: 'https://api.github.com/repos/octokit-fixture-org/get-archive/tarball/master',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     },
     // axios (or the lower level follow-redirects package) does not handle 307
     // redirects correctly
@@ -33,7 +33,7 @@ test('Get archive', async (t) => {
     url: redirectLocation,
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 0000000000000000000000000000000000000001`
+      Authorization: 'token 0000000000000000000000000000000000000001'
     }
   })
 

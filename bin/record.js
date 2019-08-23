@@ -86,7 +86,7 @@ scenarios.reduce(async (promise, scenarioPath) => {
 
   const fixturesDiffs = diff(newNormalizedFixtures, oldNormalizedFixtures)
   if (!fixturesDiffs) {
-    console.log(`✅  Fixtures are up-to-date`)
+    console.log('✅  Fixtures are up-to-date')
     return
   }
 
@@ -100,7 +100,7 @@ scenarios.reduce(async (promise, scenarioPath) => {
 
   if (fixturesDiffs[0][0] === '-') {
     if (doUpdate) {
-      console.log(`📼  New fixtures recorded`)
+      console.log('📼  New fixtures recorded')
       return write(fixtureName, {
         normalized: newNormalizedFixtures,
         raw: newRawFixtures
@@ -111,14 +111,14 @@ scenarios.reduce(async (promise, scenarioPath) => {
   }
 
   if (doUpdate) {
-    console.log(`📼  Fixture updates recorded`)
+    console.log('📼  Fixture updates recorded')
     return write(fixtureName, {
       normalized: newNormalizedFixtures,
       raw: newRawFixtures
     })
   }
 
-  console.log(`❌  Fixtures are not up-to-date`)
+  console.log('❌  Fixtures are not up-to-date')
 
   if (!isTravisCronJob()) {
     console.log(diffString(oldNormalizedFixtures, newNormalizedFixtures))
