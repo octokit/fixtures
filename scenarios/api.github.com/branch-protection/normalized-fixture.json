@@ -133,6 +133,7 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/restrictions",
         "users_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/restrictions/users",
         "teams_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/restrictions/teams",
+        "apps_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20190909203753919-2ti8n/branches/master/protection/restrictions/apps",
         "users": [
           {
             "login": "octokit-fixture-user-a",
@@ -169,7 +170,8 @@
             "repositories_url": "https://api.github.com/teams/1000/repos",
             "permission": "pull"
           }
-        ]
+        ],
+        "apps": []
       },
       "required_pull_request_reviews": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_pull_request_reviews",
@@ -221,7 +223,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4277",
+      "content-length": "4449",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
