@@ -1,90 +1,90 @@
-module.exports = labels
+module.exports = labels;
 
-const env = require('../../../lib/env')
-const getTemporaryRepository = require('../../../lib/temporary-repository')
+const env = require("../../../lib/env");
+const getTemporaryRepository = require("../../../lib/temporary-repository");
 
-async function labels (state) {
-  let error
+async function labels(state) {
+  let error;
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
-    org: 'octokit-fixture-org',
-    name: 'labels'
-  })
+    org: "octokit-fixture-org",
+    name: "labels"
+  });
 
-  await temporaryRepository.create()
+  await temporaryRepository.create();
 
   try {
     // https://developer.github.com/v3/issues/labels/#list-all-labels-for-this-repository
     // List all labels for a repository
     await state.request({
-      method: 'get',
+      method: "get",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       }
-    })
+    });
 
     // https://developer.github.com/v3/issues/labels/#create-a-label
     // Create a label
     await state.request({
-      method: 'post',
+      method: "post",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
-        name: 'test-label',
-        color: '663399'
+        name: "test-label",
+        color: "663399"
       }
-    })
+    });
 
     // https://developer.github.com/v3/issues/labels/#get-a-single-label
     // Get a label
     await state.request({
-      method: 'get',
+      method: "get",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels/test-label`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       }
-    })
+    });
 
     // https://developer.github.com/v3/issues/labels/#get-a-single-label
     // Update a label
     await state.request({
-      method: 'patch',
+      method: "patch",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels/test-label`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
-        name: 'test-label-updated',
-        color: 'BADA55'
+        name: "test-label-updated",
+        color: "BADA55"
       }
-    })
+    });
 
     // https://developer.github.com/v3/issues/labels/#delete-a-label
     // Delete a label
     await state.request({
-      method: 'delete',
+      method: "delete",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels/test-label-updated`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       }
-    })
+    });
   } catch (_error) {
-    error = _error
+    error = _error;
   }
 
-  await temporaryRepository.delete()
+  await temporaryRepository.delete();
 
   if (error) {
-    return Promise.reject(error)
+    return Promise.reject(error);
   }
 }

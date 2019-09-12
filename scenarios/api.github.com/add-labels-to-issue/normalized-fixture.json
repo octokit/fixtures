@@ -90,11 +90,7 @@
     "method": "post",
     "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels",
     "body": {
-      "labels": [
-        "Foo",
-        "bAr",
-        "baZ"
-      ]
+      "labels": ["Foo", "bAr", "baZ"]
     },
     "status": 200,
     "response": [

@@ -1,19 +1,19 @@
-module.exports = paginateIssues
+module.exports = paginateIssues;
 
-const env = require('../../../lib/env')
-const getTemporaryRepository = require('../../../lib/temporary-repository')
+const env = require("../../../lib/env");
+const getTemporaryRepository = require("../../../lib/temporary-repository");
 
-async function paginateIssues (state) {
-  let error
+async function paginateIssues(state) {
+  let error;
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
-    org: 'octokit-fixture-org',
-    name: 'paginate-issues'
-  })
+    org: "octokit-fixture-org",
+    name: "paginate-issues"
+  });
 
-  await temporaryRepository.create()
+  await temporaryRepository.create();
 
   try {
     // create 13 issues for our testing. We want 5 pages so that we can request
@@ -24,44 +24,47 @@ async function paginateIssues (state) {
       // https://developer.github.com/v3/issues/#create-an-issue
       // This request will be ignored
       await state.request({
-        method: 'post',
+        method: "post",
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}/issues`,
         headers: {
-          Accept: 'application/vnd.github.v3+json',
+          Accept: "application/vnd.github.v3+json",
           Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-          'X-Octokit-Fixture-Ignore': 'true'
+          "X-Octokit-Fixture-Ignore": "true"
         },
         data: {
           title: `Test issue ${i}`
         }
-      })
+      });
     }
 
     // https://developer.github.com/v3/issues/#list-issues-for-a-repository
     // Get 1st page and then page 2-5 with page query parameter
-    let url = `/repos/octokit-fixture-org/${temporaryRepository.name}/issues?per_page=3`
+    let url = `/repos/octokit-fixture-org/${temporaryRepository.name}/issues?per_page=3`;
     const options = {
-      method: 'get',
+      method: "get",
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       }
-    }
+    };
 
     for (let i = 1; i <= 5; i++) {
-      const response = await state.request(Object.assign(options, {
-        url
-      }))
+      const response = await state.request(
+        Object.assign(options, {
+          url
+        })
+      );
 
-      url = ((response.headers.link || '').match(/<([^>]+)>;\s*rel="next"/) || [])[1]
+      url = ((response.headers.link || "").match(/<([^>]+)>;\s*rel="next"/) ||
+        [])[1];
     }
   } catch (_error) {
-    error = _error
+    error = _error;
   }
 
-  await temporaryRepository.delete()
+  await temporaryRepository.delete();
 
   if (error) {
-    return Promise.reject(error)
+    return Promise.reject(error);
   }
 }

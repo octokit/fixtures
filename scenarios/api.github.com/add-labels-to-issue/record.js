@@ -1,59 +1,55 @@
-module.exports = addAndRemoveRepostioryCollaborator
+module.exports = addAndRemoveRepostioryCollaborator;
 
-const env = require('../../../lib/env')
-const getTemporaryRepository = require('../../../lib/temporary-repository')
+const env = require("../../../lib/env");
+const getTemporaryRepository = require("../../../lib/temporary-repository");
 
 // - create issue
 // - add labels to issue
-async function addAndRemoveRepostioryCollaborator (state) {
-  let error
+async function addAndRemoveRepostioryCollaborator(state) {
+  let error;
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
-    org: 'octokit-fixture-org',
-    name: 'add-labels-to-issue'
-  })
+    org: "octokit-fixture-org",
+    name: "add-labels-to-issue"
+  });
 
-  await temporaryRepository.create()
+  await temporaryRepository.create();
 
   try {
     // https://developer.github.com/v3/issues/#create-an-issue
     await state.request({
-      method: 'post',
+      method: "post",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/issues`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
-        title: 'Issue without a label'
+        title: "Issue without a label"
       }
-    })
+    });
 
     // https://developer.github.com/v3/issues/labels/#add-labels-to-an-issue
     await state.request({
-      method: 'post',
+      method: "post",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/issues/1/labels`,
       headers: {
-        Accept: 'application/vnd.github.v3+json',
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
-        labels: [
-          'Foo',
-          'bAr',
-          'baZ'
-        ]
+        labels: ["Foo", "bAr", "baZ"]
       }
-    })
+    });
   } catch (_error) {
-    error = _error
+    error = _error;
   }
 
-  await temporaryRepository.delete()
+  await temporaryRepository.delete();
 
   if (error) {
-    return Promise.reject(error)
+    return Promise.reject(error);
   }
 }

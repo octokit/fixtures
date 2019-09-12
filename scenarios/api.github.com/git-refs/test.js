@@ -1,75 +1,77 @@
-const axios = require('axios')
-const { test } = require('tap')
+const axios = require("axios");
+const { test } = require("tap");
 
-const fixtures = require('../../..')
+const fixtures = require("../../..");
 
-test('Git references', async (t) => {
-  const mock = fixtures.mock('api.github.com/git-refs')
+test("Git references", async t => {
+  const mock = fixtures.mock("api.github.com/git-refs");
 
   // https://developer.github.com/v3/git/refs/#get-all-references
   // returns a single reference for the master branch, pointing to sha for 2nd commit
   await axios({
-    method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/',
+    method: "get",
+    url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/",
     headers: {
-      Accept: 'application/vnd.github.v3+json',
-      Authorization: 'token 0000000000000000000000000000000000000001'
+      Accept: "application/vnd.github.v3+json",
+      Authorization: "token 0000000000000000000000000000000000000001"
     }
-  }).catch(mock.explain)
+  }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#create-a-reference
   // Create a new branch "test" pointing to sha of initial commit
   await axios({
-    method: 'post',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs',
+    method: "post",
+    url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs",
     headers: {
-      Accept: 'application/vnd.github.v3+json',
-      Authorization: 'token 0000000000000000000000000000000000000001',
-      'Content-Type': 'application/json; charset=utf-8'
+      Accept: "application/vnd.github.v3+json",
+      Authorization: "token 0000000000000000000000000000000000000001",
+      "Content-Type": "application/json; charset=utf-8"
     },
     data: {
-      ref: 'refs/heads/test',
-      sha: '0000000000000000000000000000000000000002'
+      ref: "refs/heads/test",
+      sha: "0000000000000000000000000000000000000002"
     }
-  }).catch(mock.explain)
+  }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#update-a-reference
   // update test branch to point to sha of 2nd commit instead
   await axios({
-    method: 'patch',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test',
+    method: "patch",
+    url:
+      "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
     headers: {
-      Accept: 'application/vnd.github.v3+json',
-      Authorization: 'token 0000000000000000000000000000000000000001',
-      'Content-Type': 'application/json; charset=utf-8'
+      Accept: "application/vnd.github.v3+json",
+      Authorization: "token 0000000000000000000000000000000000000001",
+      "Content-Type": "application/json; charset=utf-8"
     },
     data: {
-      sha: '0000000000000000000000000000000000000001'
+      sha: "0000000000000000000000000000000000000001"
     }
-  }).catch(mock.explain)
+  }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#get-all-references
   // Now returns both branches: master & test
   await axios({
-    method: 'get',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/',
+    method: "get",
+    url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/",
     headers: {
-      Accept: 'application/vnd.github.v3+json',
-      Authorization: 'token 0000000000000000000000000000000000000001'
+      Accept: "application/vnd.github.v3+json",
+      Authorization: "token 0000000000000000000000000000000000000001"
     }
-  }).catch(mock.explain)
+  }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#delete-a-reference
   // Delete test branch
   await axios({
-    method: 'delete',
-    url: 'https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test',
+    method: "delete",
+    url:
+      "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
     headers: {
-      Accept: 'application/vnd.github.v3+json',
-      Authorization: 'token 0000000000000000000000000000000000000001'
+      Accept: "application/vnd.github.v3+json",
+      Authorization: "token 0000000000000000000000000000000000000001"
     }
-  }).catch(mock.explain)
+  }).catch(mock.explain);
 
-  t.doesNotThrow(mock.done.bind(mock), 'satisfies all mocks')
-  t.end()
-})
+  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
+  t.end();
+});

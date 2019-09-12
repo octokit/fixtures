@@ -313,11 +313,7 @@
     "method": "post",
     "path": "/repos/octokit-fixture-org/tmp-scenario-add-labels-to-issue-20181208024555659-ph5cl/issues/1/labels",
     "body": {
-      "labels": [
-        "Foo",
-        "bAr",
-        "baZ"
-      ]
+      "labels": ["Foo", "bAr", "baZ"]
     },
     "status": 200,
     "response": [
