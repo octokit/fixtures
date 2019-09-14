@@ -206,7 +206,6 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "connection": "close",
       "content-security-policy": "default-src 'none'",
-      "content-type": "application/octet-stream",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
       "status": "204 No Content",
