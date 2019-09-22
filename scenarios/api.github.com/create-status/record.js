@@ -65,6 +65,9 @@ async function createStatus(state) {
         context: "example/2"
       }
     });
+    
+    // Wait for the created data to propagate
+    await new Promise(resolve => setTimeout(resolve, 3000))
 
     // https://developer.github.com/v3/repos/statuses/#list-statuses-for-a-specific-ref
     await state.request({
