@@ -38,7 +38,6 @@
       "default_repository_permission": "read",
       "members_can_create_repositories": true,
       "two_factor_requirement_enabled": false,
-      "members_allowed_repository_creation_type": "all",
       "plan": {
         "name": "team",
         "space": 976562499,
@@ -57,7 +56,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1365",
+      "content-length": "1316",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
