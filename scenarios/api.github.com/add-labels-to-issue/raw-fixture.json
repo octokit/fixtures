@@ -314,11 +314,7 @@
     "method": "post",
     "path": "/repos/octokit-fixture-org/tmp-scenario-add-labels-to-issue-20191005095247352-0flky/issues/1/labels",
     "body": {
-      "labels": [
-        "Foo",
-        "bAr",
-        "baZ"
-      ]
+      "labels": ["Foo", "bAr", "baZ"]
     },
     "status": 200,
     "response": [
