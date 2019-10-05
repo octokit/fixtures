@@ -77,7 +77,7 @@
       "x-accepted-oauth-scopes": "",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-ratelimit-limit": "5000",
