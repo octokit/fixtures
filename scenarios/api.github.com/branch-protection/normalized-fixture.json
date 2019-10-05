@@ -28,7 +28,7 @@
       "x-accepted-oauth-scopes": "",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-ratelimit-limit": "5000",
@@ -78,7 +78,7 @@
       "x-accepted-oauth-scopes": "",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-ratelimit-limit": "5000",
@@ -92,18 +92,29 @@
     "method": "put",
     "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
     "body": {
-      "required_status_checks": { "strict": true, "contexts": ["foo/bar"] },
+      "required_status_checks": {
+        "strict": true,
+        "contexts": [
+          "foo/bar"
+        ]
+      },
       "required_pull_request_reviews": {
         "dismissal_restrictions": {
-          "users": ["octokit-fixture-user-a"],
+          "users": [
+            "octokit-fixture-user-a"
+          ],
           "teams": []
         },
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false
       },
       "restrictions": {
-        "users": ["octokit-fixture-user-a"],
-        "teams": ["a-team"]
+        "users": [
+          "octokit-fixture-user-a"
+        ],
+        "teams": [
+          "a-team"
+        ]
       },
       "enforce_admins": true
     },
@@ -113,7 +124,9 @@
       "required_status_checks": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks",
         "strict": true,
-        "contexts": ["foo/bar"],
+        "contexts": [
+          "foo/bar"
+        ],
         "contexts_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks/contexts"
       },
       "restrictions": {
@@ -221,7 +234,7 @@
       "x-accepted-oauth-scopes": "",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-ratelimit-limit": "5000",
@@ -254,7 +267,7 @@
       "x-accepted-oauth-scopes": "",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.v3; format=json, github.speedy-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "x-ratelimit-limit": "5000",
