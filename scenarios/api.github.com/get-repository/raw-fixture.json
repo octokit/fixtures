@@ -133,7 +133,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 04 Apr 2019 08:21:56 GMT",
+      "Sat, 05 Oct 2019 09:53:47 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -147,7 +147,7 @@
       "X-RateLimit-Remaining",
       "4961",
       "X-RateLimit-Reset",
-      "1554369645",
+      "1570272755",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
@@ -161,7 +161,7 @@
       "X-Accepted-OAuth-Scopes",
       "repo",
       "X-GitHub-Media-Type",
-      "github.v3; format=json, github.speedy-preview; format=json",
+      "github.v3; param=speedy-preview; format=json",
       "Access-Control-Expose-Headers",
       "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "Access-Control-Allow-Origin",
@@ -179,7 +179,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "920C:5D1B:1F585F:43A27C:5CA5BEA4"
+      "B930:5D92:19209AE:342E827:5D98682B"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
