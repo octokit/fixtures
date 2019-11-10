@@ -44,7 +44,10 @@ function mock(fixtures, additions) {
 
   const api = {
     pending() {
-      return [].concat.apply([], mocks.map(mock => mock.pendingMocks()));
+      return [].concat.apply(
+        [],
+        mocks.map(mock => mock.pendingMocks())
+      );
     },
     explain(error) {
       if (!/^Nock: No match/.test(error.message)) {
