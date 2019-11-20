@@ -90,7 +90,11 @@
     "method": "post",
     "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels",
     "body": {
-      "labels": ["Foo", "bAr", "baZ"]
+      "labels": [
+        "Foo",
+        "bAr",
+        "baZ"
+      ]
     },
     "status": 200,
     "response": [
@@ -100,7 +104,8 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/Foo",
         "name": "Foo",
         "color": "ededed",
-        "default": false
+        "default": false,
+        "description": null
       },
       {
         "id": 1001,
@@ -108,7 +113,8 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/bAr",
         "name": "bAr",
         "color": "ededed",
-        "default": false
+        "default": false,
+        "description": null
       },
       {
         "id": 1002,
@@ -116,7 +122,8 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/labels/baZ",
         "name": "baZ",
         "color": "ededed",
-        "default": false
+        "default": false,
+        "description": null
       }
     ],
     "reqheaders": {
@@ -131,7 +138,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "526",
+      "content-length": "583",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
