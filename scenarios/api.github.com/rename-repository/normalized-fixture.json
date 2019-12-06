@@ -307,6 +307,7 @@
         "push": true,
         "pull": true
       },
+      "temp_clone_token": "",
       "allow_squash_merge": true,
       "allow_merge_commit": true,
       "allow_rebase_merge": true,
@@ -343,7 +344,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "7260",
+      "content-length": "7282",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
