@@ -4,14 +4,14 @@
     "method": "post",
     "path": "/orgs/octokit-fixture-org/repos",
     "body": {
-      "name": "tmp-scenario-branch-protection-20191205102221939-x2co9"
+      "name": "tmp-scenario-branch-protection-20191213102631379-wjewm"
     },
     "status": 201,
     "response": {
-      "id": 226074790,
-      "node_id": "MDEwOlJlcG9zaXRvcnkyMjYwNzQ3OTA=",
-      "name": "tmp-scenario-branch-protection-20191205102221939-x2co9",
-      "full_name": "octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
+      "id": 227814188,
+      "node_id": "MDEwOlJlcG9zaXRvcnkyMjc4MTQxODg=",
+      "name": "tmp-scenario-branch-protection-20191213102631379-wjewm",
+      "full_name": "octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
       "private": false,
       "owner": {
         "login": "octokit-fixture-org",
@@ -33,53 +33,53 @@
         "type": "Organization",
         "site_admin": false
       },
-      "html_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
+      "html_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
       "description": null,
       "fork": false,
-      "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
-      "forks_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/forks",
-      "keys_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/keys{/key_id}",
-      "collaborators_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/collaborators{/collaborator}",
-      "teams_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/teams",
-      "hooks_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/hooks",
-      "issue_events_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/issues/events{/number}",
-      "events_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/events",
-      "assignees_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/assignees{/user}",
-      "branches_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches{/branch}",
-      "tags_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/tags",
-      "blobs_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/blobs{/sha}",
-      "git_tags_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/tags{/sha}",
-      "git_refs_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/refs{/sha}",
-      "trees_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/trees{/sha}",
-      "statuses_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/statuses/{sha}",
-      "languages_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/languages",
-      "stargazers_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/stargazers",
-      "contributors_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/contributors",
-      "subscribers_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/subscribers",
-      "subscription_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/subscription",
-      "commits_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/commits{/sha}",
-      "git_commits_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/commits{/sha}",
-      "comments_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/comments{/number}",
-      "issue_comment_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/issues/comments{/number}",
-      "contents_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/contents/{+path}",
-      "compare_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/compare/{base}...{head}",
-      "merges_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/merges",
-      "archive_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/{archive_format}{/ref}",
-      "downloads_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/downloads",
-      "issues_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/issues{/number}",
-      "pulls_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/pulls{/number}",
-      "milestones_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/milestones{/number}",
-      "notifications_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/notifications{?since,all,participating}",
-      "labels_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/labels{/name}",
-      "releases_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/releases{/id}",
-      "deployments_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/deployments",
-      "created_at": "2019-12-05T10:22:22Z",
-      "updated_at": "2019-12-05T10:22:22Z",
-      "pushed_at": "2019-12-05T10:22:23Z",
-      "git_url": "git://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9.git",
-      "ssh_url": "git@github.com:octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9.git",
-      "clone_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9.git",
-      "svn_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
+      "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
+      "forks_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/forks",
+      "keys_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/teams",
+      "hooks_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/hooks",
+      "issue_events_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/events",
+      "assignees_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/tags",
+      "blobs_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/languages",
+      "stargazers_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/stargazers",
+      "contributors_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/contributors",
+      "subscribers_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/subscribers",
+      "subscription_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/subscription",
+      "commits_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/merges",
+      "archive_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/downloads",
+      "issues_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/labels{/name}",
+      "releases_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/deployments",
+      "created_at": "2019-12-13T10:26:31Z",
+      "updated_at": "2019-12-13T10:26:31Z",
+      "pushed_at": "2019-12-13T10:26:32Z",
+      "git_url": "git://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm.git",
+      "ssh_url": "git@github.com:octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm.git",
+      "clone_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm.git",
+      "svn_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
       "homepage": null,
       "size": 0,
       "stargazers_count": 0,
@@ -135,7 +135,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:23 GMT",
+      "Fri, 13 Dec 2019 10:26:32 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -149,19 +149,19 @@
       "X-RateLimit-Remaining",
       "4988",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236370",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
       "Accept, Authorization, Cookie, X-GitHub-OTP",
       "ETag",
-      "\"fa4372824aed29b6240c80508b1ed53c\"",
+      "\"cba7a2e54bebae05adf2b77a746e0b1e\"",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
       "public_repo, repo",
       "Location",
-      "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
+      "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
       "X-GitHub-Media-Type",
       "github.v3; param=speedy-preview; format=json",
       "Access-Control-Expose-Headers",
@@ -181,7 +181,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E908:6234:3F2B684:804FC92:5DE8DA5D"
+      "ACEE:1C8A:658388A:D46E58A:5DF36757"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -195,7 +195,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "put",
-    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/contents/README.md",
+    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/contents/README.md",
     "body": {
       "message": "initial commit",
       "content": "IyBicmFuY2gtcHJvdGVjdGlvbg=="
@@ -207,35 +207,35 @@
         "path": "README.md",
         "sha": "c2c82f494b3473a2b931b878d378cc4e1e59522a",
         "size": 19,
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/contents/README.md?ref=master",
-        "html_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/blob/master/README.md",
-        "git_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/blobs/c2c82f494b3473a2b931b878d378cc4e1e59522a",
-        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/master/README.md",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/contents/README.md?ref=master",
+        "html_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/blob/master/README.md",
+        "git_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/blobs/c2c82f494b3473a2b931b878d378cc4e1e59522a",
+        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/master/README.md",
         "type": "file",
         "_links": {
-          "self": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/contents/README.md?ref=master",
-          "git": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/blobs/c2c82f494b3473a2b931b878d378cc4e1e59522a",
-          "html": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/blob/master/README.md"
+          "self": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/contents/README.md?ref=master",
+          "git": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/blobs/c2c82f494b3473a2b931b878d378cc4e1e59522a",
+          "html": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/blob/master/README.md"
         }
       },
       "commit": {
-        "sha": "af3dadc0eac31e1901553932244547fbfaaf02e7",
-        "node_id": "MDY6Q29tbWl0MjI2MDc0NzkwOmFmM2RhZGMwZWFjMzFlMTkwMTU1MzkzMjI0NDU0N2ZiZmFhZjAyZTc=",
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/commits/af3dadc0eac31e1901553932244547fbfaaf02e7",
-        "html_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/commit/af3dadc0eac31e1901553932244547fbfaaf02e7",
+        "sha": "c5f742d241f636e5351be8b1668a0075e965d9bb",
+        "node_id": "MDY6Q29tbWl0MjI3ODE0MTg4OmM1Zjc0MmQyNDFmNjM2ZTUzNTFiZThiMTY2OGEwMDc1ZTk2NWQ5YmI=",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/commits/c5f742d241f636e5351be8b1668a0075e965d9bb",
+        "html_url": "https://github.com/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/commit/c5f742d241f636e5351be8b1668a0075e965d9bb",
         "author": {
           "name": "octokit-fixture-user-a",
           "email": "31898046+octokit-fixture-user-a@users.noreply.github.com",
-          "date": "2019-12-05T10:22:25Z"
+          "date": "2019-12-13T10:26:34Z"
         },
         "committer": {
           "name": "octokit-fixture-user-a",
           "email": "31898046+octokit-fixture-user-a@users.noreply.github.com",
-          "date": "2019-12-05T10:22:25Z"
+          "date": "2019-12-13T10:26:34Z"
         },
         "tree": {
           "sha": "ce0e063a59695a2c3d82c7395e6f43b9df50c7dc",
-          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/git/trees/ce0e063a59695a2c3d82c7395e6f43b9df50c7dc"
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/git/trees/ce0e063a59695a2c3d82c7395e6f43b9df50c7dc"
         },
         "message": "initial commit",
         "parents": [],
@@ -251,7 +251,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:25 GMT",
+      "Fri, 13 Dec 2019 10:26:35 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -265,13 +265,13 @@
       "X-RateLimit-Remaining",
       "4987",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236370",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
       "Accept, Authorization, Cookie, X-GitHub-OTP",
       "ETag",
-      "\"833862cd523d879b31ff9c0434c2ccf6\"",
+      "\"27ce11f78ad1c8a43deea9c17fea31c7\"",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -295,7 +295,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E90A:315D:34070DE:6D09AF1:5DE8DA60"
+      "BC3E:717D:1738373:3C8B459:5DF3675A"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -309,7 +309,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "put",
-    "path": "/teams/2527061/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
+    "path": "/teams/2527061/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
     "body": {
       "permission": "push"
     },
@@ -319,7 +319,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:28 GMT",
+      "Fri, 13 Dec 2019 10:26:37 GMT",
       "Connection",
       "close",
       "Status",
@@ -329,7 +329,7 @@
       "X-RateLimit-Remaining",
       "4986",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236370",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -353,7 +353,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E90C:6E1D:407779E:83E746E:5DE8DA63"
+      "BC40:2C4E:261A4C8:58DCA71:5DF3675D"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -367,7 +367,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection",
+    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection",
     "body": "",
     "status": 404,
     "response": {
@@ -378,7 +378,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:28 GMT",
+      "Fri, 13 Dec 2019 10:26:38 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -392,7 +392,7 @@
       "X-RateLimit-Remaining",
       "4985",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236371",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -416,7 +416,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E90E:0644:1E39B15:4829655:5DE8DA64"
+      "BC42:316B:8A581C:1333FBA:5DF3675D"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -427,7 +427,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "put",
-    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection",
+    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection",
     "body": {
       "required_status_checks": null,
       "required_pull_request_reviews": null,
@@ -436,9 +436,9 @@
     },
     "status": 200,
     "response": {
-      "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection",
+      "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection",
       "enforce_admins": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/enforce_admins",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/enforce_admins",
         "enabled": false
       },
       "required_linear_history": {
@@ -455,7 +455,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:31 GMT",
+      "Fri, 13 Dec 2019 10:26:40 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -469,13 +469,13 @@
       "X-RateLimit-Remaining",
       "4984",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236370",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
       "Accept, Authorization, Cookie, X-GitHub-OTP",
       "ETag",
-      "\"9df0707b06d775c80c8c99baf9ba22ed\"",
+      "\"43be5d1e95b58dcdc40f2b6d428c344a\"",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -499,7 +499,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E912:3CBA:494C9FA:8B705C6:5DE8DA66"
+      "BC44:110F:252A0DD:57B2252:5DF36760"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -512,40 +512,50 @@
   {
     "scope": "https://api.github.com:443",
     "method": "put",
-    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection",
+    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection",
     "body": {
       "required_status_checks": {
         "strict": true,
-        "contexts": ["foo/bar"]
+        "contexts": [
+          "foo/bar"
+        ]
       },
       "required_pull_request_reviews": {
         "dismissal_restrictions": {
-          "users": ["octokit-fixture-user-a"],
+          "users": [
+            "octokit-fixture-user-a"
+          ],
           "teams": []
         },
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false
       },
       "restrictions": {
-        "users": ["octokit-fixture-user-a"],
-        "teams": ["a-team"]
+        "users": [
+          "octokit-fixture-user-a"
+        ],
+        "teams": [
+          "a-team"
+        ]
       },
       "enforce_admins": true
     },
     "status": 200,
     "response": {
-      "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection",
+      "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection",
       "required_status_checks": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/required_status_checks",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/required_status_checks",
         "strict": true,
-        "contexts": ["foo/bar"],
-        "contexts_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/required_status_checks/contexts"
+        "contexts": [
+          "foo/bar"
+        ],
+        "contexts_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/required_status_checks/contexts"
       },
       "restrictions": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/restrictions",
-        "users_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/restrictions/users",
-        "teams_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/restrictions/teams",
-        "apps_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/restrictions/apps",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/restrictions",
+        "users_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/restrictions/users",
+        "teams_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/restrictions/teams",
+        "apps_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/restrictions/apps",
         "users": [
           {
             "login": "octokit-fixture-user-a",
@@ -580,19 +590,20 @@
             "html_url": "https://github.com/orgs/octokit-fixture-org/teams/a-team",
             "members_url": "https://api.github.com/teams/2527061/members{/member}",
             "repositories_url": "https://api.github.com/teams/2527061/repos",
-            "permission": "pull"
+            "permission": "pull",
+            "parent": null
           }
         ],
         "apps": []
       },
       "required_pull_request_reviews": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/required_pull_request_reviews",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/required_pull_request_reviews",
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false,
         "dismissal_restrictions": {
-          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/dismissal_restrictions",
-          "users_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/dismissal_restrictions/users",
-          "teams_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/dismissal_restrictions/teams",
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/dismissal_restrictions",
+          "users_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/dismissal_restrictions/users",
+          "teams_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/dismissal_restrictions/teams",
           "users": [
             {
               "login": "octokit-fixture-user-a",
@@ -619,7 +630,7 @@
         }
       },
       "enforce_admins": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection/enforce_admins",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection/enforce_admins",
         "enabled": true
       },
       "required_linear_history": {
@@ -636,11 +647,11 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:34 GMT",
+      "Fri, 13 Dec 2019 10:26:44 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
-      "5015",
+      "5029",
       "Connection",
       "close",
       "Status",
@@ -650,13 +661,13 @@
       "X-RateLimit-Remaining",
       "4983",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236371",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
       "Accept, Authorization, Cookie, X-GitHub-OTP",
       "ETag",
-      "\"5709d21eb0289a8163bea3fafed25e49\"",
+      "\"57396d45081c3754ecd0939aa9771ebf\"",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -680,7 +691,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E914:2691:48577B3:8D13CFB:5DE8DA69"
+      "BC46:0EAD:2667B03:5A3312E:5DF36763"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -693,7 +704,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "delete",
-    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9/branches/master/protection",
+    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm/branches/master/protection",
     "body": "",
     "status": 204,
     "response": "",
@@ -701,7 +712,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:37 GMT",
+      "Fri, 13 Dec 2019 10:26:46 GMT",
       "Connection",
       "close",
       "Status",
@@ -711,7 +722,7 @@
       "X-RateLimit-Remaining",
       "4982",
       "X-RateLimit-Reset",
-      "1575544921",
+      "1576236370",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -735,7 +746,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "E916:0E69:34185B6:6DA154A:5DE8DA6C"
+      "BC48:599C:180CA53:3DB9E08:5DF36766"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
@@ -746,7 +757,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "delete",
-    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191205102221939-x2co9",
+    "path": "/repos/octokit-fixture-org/tmp-scenario-branch-protection-20191213102631379-wjewm",
     "body": "",
     "status": 204,
     "response": "",
@@ -754,7 +765,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Thu, 05 Dec 2019 10:22:40 GMT",
+      "Fri, 13 Dec 2019 10:26:49 GMT",
       "Connection",
       "close",
       "Status",
@@ -764,7 +775,7 @@
       "X-RateLimit-Remaining",
       "4981",
       "X-RateLimit-Reset",
-      "1575544960",
+      "1576236370",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -788,7 +799,7 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "X-GitHub-Request-Id",
-      "B9E0:78CF:3DCB60:968F55:5DE8DA6F"
+      "BC4E:28B6:26F4E18:5A0FBE1:5DF36769"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
