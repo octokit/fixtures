@@ -103,19 +103,27 @@
     "body": {
       "required_status_checks": {
         "strict": true,
-        "contexts": ["foo/bar"]
+        "contexts": [
+          "foo/bar"
+        ]
       },
       "required_pull_request_reviews": {
         "dismissal_restrictions": {
-          "users": ["octokit-fixture-user-a"],
+          "users": [
+            "octokit-fixture-user-a"
+          ],
           "teams": []
         },
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false
       },
       "restrictions": {
-        "users": ["octokit-fixture-user-a"],
-        "teams": ["a-team"]
+        "users": [
+          "octokit-fixture-user-a"
+        ],
+        "teams": [
+          "a-team"
+        ]
       },
       "enforce_admins": true
     },
@@ -125,7 +133,9 @@
       "required_status_checks": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks",
         "strict": true,
-        "contexts": ["foo/bar"],
+        "contexts": [
+          "foo/bar"
+        ],
         "contexts_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks/contexts"
       },
       "restrictions": {
@@ -167,7 +177,8 @@
             "html_url": "https://github.com/orgs/octokit-fixture-org/teams/a-team",
             "members_url": "https://api.github.com/teams/1000/members{/member}",
             "repositories_url": "https://api.github.com/teams/1000/repos",
-            "permission": "pull"
+            "permission": "pull",
+            "parent": null
           }
         ],
         "apps": []
@@ -231,7 +242,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4531",
+      "content-length": "4545",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
