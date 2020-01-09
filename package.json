@@ -58,7 +58,7 @@
     "mkdirp": "^0.5.1",
     "prettier": "^1.19.1",
     "proxyquire": "^2.1.0",
-    "semantic-release": "^15.9.17",
+    "semantic-release": "^16.0.0",
     "tap": "^14.0.0",
     "tar-stream": "^2.0.1"
   },
