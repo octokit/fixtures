@@ -288,10 +288,7 @@
     "scope": "https://api.github.com:443",
     "method": "patch",
     "path": "/repos/octokit-fixture-org/release-assets/releases/assets/1000",
-    "body": {
-      "name": "new-filename.txt",
-      "label": "new label"
-    },
+    "body": { "name": "new-filename.txt", "label": "new label" },
     "status": 200,
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",

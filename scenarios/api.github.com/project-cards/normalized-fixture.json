@@ -3,9 +3,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/projects/columns/1000/cards",
-    "body": {
-      "note": "Example card 1"
-    },
+    "body": { "note": "Example card 1" },
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
@@ -75,9 +73,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/projects/columns/1000/cards",
-    "body": {
-      "note": "Example card 2"
-    },
+    "body": { "note": "Example card 2" },
     "status": 201,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1001",
@@ -314,9 +310,7 @@
     "scope": "https://api.github.com:443",
     "method": "patch",
     "path": "/projects/columns/cards/1000",
-    "body": {
-      "note": "Example card 1 updated"
-    },
+    "body": { "note": "Example card 1 updated" },
     "status": 200,
     "response": {
       "url": "https://api.github.com/projects/columns/cards/1000",
@@ -385,10 +379,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/projects/columns/cards/1000/moves",
-    "body": {
-      "position": "top",
-      "column_id": 1001
-    },
+    "body": { "position": "top", "column_id": 1001 },
     "status": 201,
     "response": {},
     "reqheaders": {
@@ -427,10 +418,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/projects/columns/cards/1001/moves",
-    "body": {
-      "position": "bottom",
-      "column_id": 1001
-    },
+    "body": { "position": "bottom", "column_id": 1001 },
     "status": 201,
     "response": {},
     "reqheaders": {
@@ -469,9 +457,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/projects/columns/cards/1000/moves",
-    "body": {
-      "position": "after:1001"
-    },
+    "body": { "position": "after:1001" },
     "status": 201,
     "response": {},
     "reqheaders": {

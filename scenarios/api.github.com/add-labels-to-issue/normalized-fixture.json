@@ -3,9 +3,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues",
-    "body": {
-      "title": "Issue without a label"
-    },
+    "body": { "title": "Issue without a label" },
     "status": 201,
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1",
@@ -89,9 +87,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/repos/octokit-fixture-org/add-labels-to-issue/issues/1/labels",
-    "body": {
-      "labels": ["Foo", "bAr", "baZ"]
-    },
+    "body": { "labels": ["Foo", "bAr", "baZ"] },
     "status": 200,
     "response": [
       {

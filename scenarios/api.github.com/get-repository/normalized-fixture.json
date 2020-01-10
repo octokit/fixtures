@@ -98,11 +98,7 @@
       "open_issues": 42,
       "watchers": 42,
       "default_branch": "master",
-      "permissions": {
-        "admin": true,
-        "push": true,
-        "pull": true
-      },
+      "permissions": { "admin": true, "push": true, "pull": true },
       "temp_clone_token": "",
       "allow_squash_merge": true,
       "allow_merge_commit": true,
