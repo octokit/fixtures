@@ -62,7 +62,7 @@
       "x-frame-options": "deny",
       "x-geo-block-list": "",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
-      "x-varnish": "74624297",
+      "x-varnish": "1000",
       "x-xss-protection": "1; mode=block",
       "content-length": 172
     }
