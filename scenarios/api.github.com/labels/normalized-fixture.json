@@ -122,10 +122,7 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/repos/octokit-fixture-org/labels/labels",
-    "body": {
-      "name": "test-label",
-      "color": "663399"
-    },
+    "body": { "name": "test-label", "color": "663399" },
     "status": 201,
     "response": {
       "id": 1009,
@@ -219,10 +216,7 @@
     "scope": "https://api.github.com:443",
     "method": "patch",
     "path": "/repos/octokit-fixture-org/labels/labels/test-label",
-    "body": {
-      "name": "test-label-updated",
-      "color": "BADA55"
-    },
+    "body": { "name": "test-label-updated", "color": "BADA55" },
     "status": 200,
     "response": {
       "id": 1009,

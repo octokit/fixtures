@@ -365,11 +365,7 @@
         "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
         "type": "User",
         "site_admin": false,
-        "permissions": {
-          "admin": true,
-          "push": true,
-          "pull": true
-        }
+        "permissions": { "admin": true, "push": true, "pull": true }
       },
       {
         "login": "octokit-fixture-user-b",
@@ -390,11 +386,7 @@
         "received_events_url": "https://api.github.com/users/octokit-fixture-user-b/received_events",
         "type": "User",
         "site_admin": false,
-        "permissions": {
-          "admin": false,
-          "push": true,
-          "pull": true
-        }
+        "permissions": { "admin": false, "push": true, "pull": true }
       }
     ],
     "reqheaders": {
@@ -486,11 +478,7 @@
         "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
         "type": "User",
         "site_admin": false,
-        "permissions": {
-          "admin": true,
-          "push": true,
-          "pull": true
-        }
+        "permissions": { "admin": true, "push": true, "pull": true }
       }
     ],
     "reqheaders": {

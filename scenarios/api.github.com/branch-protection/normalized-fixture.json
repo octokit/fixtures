@@ -54,15 +54,9 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/enforce_admins",
         "enabled": false
       },
-      "required_linear_history": {
-        "enabled": false
-      },
-      "allow_force_pushes": {
-        "enabled": false
-      },
-      "allow_deletions": {
-        "enabled": false
-      }
+      "required_linear_history": { "enabled": false },
+      "allow_force_pushes": { "enabled": false },
+      "allow_deletions": { "enabled": false }
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -101,10 +95,7 @@
     "method": "put",
     "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
     "body": {
-      "required_status_checks": {
-        "strict": true,
-        "contexts": ["foo/bar"]
-      },
+      "required_status_checks": { "strict": true, "contexts": ["foo/bar"] },
       "required_pull_request_reviews": {
         "dismissal_restrictions": {
           "users": ["octokit-fixture-user-a"],
@@ -210,15 +201,9 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/enforce_admins",
         "enabled": true
       },
-      "required_linear_history": {
-        "enabled": false
-      },
-      "allow_force_pushes": {
-        "enabled": false
-      },
-      "allow_deletions": {
-        "enabled": false
-      }
+      "required_linear_history": { "enabled": false },
+      "allow_force_pushes": { "enabled": false },
+      "allow_deletions": { "enabled": false }
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",

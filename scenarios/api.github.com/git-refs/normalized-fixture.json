@@ -105,9 +105,7 @@
     "scope": "https://api.github.com:443",
     "method": "patch",
     "path": "/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
-    "body": {
-      "sha": "0000000000000000000000000000000000000001"
-    },
+    "body": { "sha": "0000000000000000000000000000000000000001" },
     "status": 200,
     "response": {
       "ref": "refs/heads/test",

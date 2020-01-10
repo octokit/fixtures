@@ -3,20 +3,11 @@
     "scope": "https://api.github.com:443",
     "method": "post",
     "path": "/repos/octokit-fixture-org/errors/labels",
-    "body": {
-      "name": "foo",
-      "color": "invalid"
-    },
+    "body": { "name": "foo", "color": "invalid" },
     "status": 422,
     "response": {
       "message": "Validation Failed",
-      "errors": [
-        {
-          "resource": "Label",
-          "code": "invalid",
-          "field": "color"
-        }
-      ],
+      "errors": [{ "resource": "Label", "code": "invalid", "field": "color" }],
       "documentation_url": "https://developer.github.com/v3/issues/labels/#create-a-label"
     },
     "reqheaders": {
