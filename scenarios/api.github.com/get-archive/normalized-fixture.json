@@ -49,6 +49,7 @@
     "responseIsBinary": true,
     "headers": {
       "access-control-allow-origin": "https://render.githubusercontent.com",
+      "age": "0",
       "connection": "close",
       "content-disposition": "attachment; filename=octokit-fixture-org-get-archive-0000000.tar.gz",
       "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
@@ -56,10 +57,12 @@
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
       "strict-transport-security": "max-age=31536000",
+      "via": "1.1 varnish-v4",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-geo-block-list": "",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
+      "x-varnish": "74624297",
       "x-xss-protection": "1; mode=block",
       "content-length": 172
     }
