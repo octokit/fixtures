@@ -54,9 +54,15 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/enforce_admins",
         "enabled": false
       },
-      "required_linear_history": { "enabled": false },
-      "allow_force_pushes": { "enabled": false },
-      "allow_deletions": { "enabled": false }
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      }
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -95,18 +101,29 @@
     "method": "put",
     "path": "/repos/octokit-fixture-org/branch-protection/branches/master/protection",
     "body": {
-      "required_status_checks": { "strict": true, "contexts": ["foo/bar"] },
+      "required_status_checks": {
+        "strict": true,
+        "contexts": [
+          "foo/bar"
+        ]
+      },
       "required_pull_request_reviews": {
         "dismissal_restrictions": {
-          "users": ["octokit-fixture-user-a"],
+          "users": [
+            "octokit-fixture-user-a"
+          ],
           "teams": []
         },
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false
       },
       "restrictions": {
-        "users": ["octokit-fixture-user-a"],
-        "teams": ["a-team"]
+        "users": [
+          "octokit-fixture-user-a"
+        ],
+        "teams": [
+          "a-team"
+        ]
       },
       "enforce_admins": true
     },
@@ -116,7 +133,9 @@
       "required_status_checks": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks",
         "strict": true,
-        "contexts": ["foo/bar"],
+        "contexts": [
+          "foo/bar"
+        ],
         "contexts_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/required_status_checks/contexts"
       },
       "restrictions": {
@@ -154,10 +173,10 @@
             "slug": "a-team",
             "description": "If you have a problem, if no one else can help you, then if you can find them, maybe you can hire the A-Team!",
             "privacy": "closed",
-            "url": "https://api.github.com/teams/1000",
+            "url": "https://api.github.com/organizations/31898100/team/2527061",
             "html_url": "https://github.com/orgs/octokit-fixture-org/teams/a-team",
-            "members_url": "https://api.github.com/teams/1000/members{/member}",
-            "repositories_url": "https://api.github.com/teams/1000/repos",
+            "members_url": "https://api.github.com/organizations/31898100/team/2527061/members{/member}",
+            "repositories_url": "https://api.github.com/organizations/31898100/team/2527061/repos",
             "permission": "pull",
             "parent": null
           }
@@ -201,9 +220,15 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection/enforce_admins",
         "enabled": true
       },
-      "required_linear_history": { "enabled": false },
-      "allow_force_pushes": { "enabled": false },
-      "allow_deletions": { "enabled": false }
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      }
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -217,7 +242,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4545",
+      "content-length": "4620",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
