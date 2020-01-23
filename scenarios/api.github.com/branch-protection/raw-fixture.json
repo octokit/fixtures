@@ -517,27 +517,19 @@
     "body": {
       "required_status_checks": {
         "strict": true,
-        "contexts": [
-          "foo/bar"
-        ]
+        "contexts": ["foo/bar"]
       },
       "required_pull_request_reviews": {
         "dismissal_restrictions": {
-          "users": [
-            "octokit-fixture-user-a"
-          ],
+          "users": ["octokit-fixture-user-a"],
           "teams": []
         },
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false
       },
       "restrictions": {
-        "users": [
-          "octokit-fixture-user-a"
-        ],
-        "teams": [
-          "a-team"
-        ]
+        "users": ["octokit-fixture-user-a"],
+        "teams": ["a-team"]
       },
       "enforce_admins": true
     },
@@ -547,9 +539,7 @@
       "required_status_checks": {
         "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20200117104213446-xk1dq/branches/master/protection/required_status_checks",
         "strict": true,
-        "contexts": [
-          "foo/bar"
-        ],
+        "contexts": ["foo/bar"],
         "contexts_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20200117104213446-xk1dq/branches/master/protection/required_status_checks/contexts"
       },
       "restrictions": {
