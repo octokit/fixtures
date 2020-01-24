@@ -55,7 +55,7 @@
     "humanize-string": "^2.0.0",
     "into-stream": "^5.1.0",
     "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.3",
     "prettier": "^1.19.1",
     "proxyquire": "^2.1.0",
     "semantic-release": "^16.0.0",
