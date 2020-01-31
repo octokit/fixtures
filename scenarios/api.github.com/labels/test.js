@@ -57,7 +57,7 @@ test("Labels", async t => {
       "Content-Type": "application/json; charset=utf-8"
     },
     data: {
-      name: "test-label-updated",
+      new_name: "test-label-updated",
       color: "BADA55"
     }
   }).catch(mock.explain);
