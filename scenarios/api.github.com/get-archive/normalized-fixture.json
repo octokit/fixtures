@@ -57,7 +57,7 @@
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
       "strict-transport-security": "max-age=31536000",
-      "via": "1.1 varnish-v4",
+      "via": "1.1 varnish (Varnish/6.0)",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-geo-block-list": "",
