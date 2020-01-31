@@ -63,7 +63,7 @@ async function labels(state) {
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
       },
       data: {
-        name: "test-label-updated",
+        new_name: "test-label-updated",
         color: "BADA55"
       }
     });
