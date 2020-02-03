@@ -9,6 +9,7 @@ branches:
   only:
     - master
     - /^greenkeeper.*$/
+    - 19.x
 
 script: npm run $COMMAND
 
