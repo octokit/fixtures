@@ -81,7 +81,7 @@ api at https://api.github.com, make sure to adapt it for your own scenario.
 ## Automated pull requests when API change
 
 In order to keep the fixtures up-to-date with GitHub’s and GitHub Enterprise’s
-APIs, the record task is run daily utilizing [Travis Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/).
+APIs, the record task is run daily utilizing GitHub Actions.
 If a change in the fixtures occurs, a pull request is opened (or updated) in
 order to notify the maintainers who can then release a new breaking version
 of the `@octokit/fixtures` package and notify developers of the update.
@@ -120,19 +120,5 @@ of the `@octokit/fixtures` package and notify developers of the update.
 ## Cron job
 
 Changes to GitHub’s API are automatically detected using a daily cron job which
-runs on Travis. If changes are detected, the cron job creates a pull request
+runs on GitHub ACtions. If changes are detected, the cron job creates a pull request
 ([example](https://github.com/octokit/fixtures/pull/61)).
-
-A Cron job is detected by checking if the `TRAVIS_EVENT_TYPE` environment
-variable is set to `cron`. Other required environment variables are
-
-- `TRAVIS_REPO_SLUG`: full name of the fixtures repository (set to `octokit/fixtures`)
-- `FIXTURES_USER_A_TOKEN_FULL_ACCESS`: [@octokit-fixture-user-a](https://github.com/octokit-fixture-user-a)
-  is creating the pull request. If you use a token of a different account, make
-  sure it has write access to the `TRAVIS_REPO_SLUG` repository.
-
-You can run the cron-related code for local testing with
-
-```
-TRAVIS_EVENT_TYPE=cron bin/record
-```

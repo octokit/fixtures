@@ -14,7 +14,6 @@
   ],
   "scripts": {
     "coverage": "tap --coverage-report=html",
-    "coverage:upload": "npm run test && tap --coverage-report=text-lcov | coveralls",
     "record": "bin/record.js",
     "pretest": "npm run -s lint",
     "lint": "prettier --check '{lib,scenarios,test}/**/*.{js,json}' index.js README.md package.json",
