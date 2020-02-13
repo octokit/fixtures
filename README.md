@@ -2,8 +2,7 @@
 
 > Fixtures for all the octokittens
 
-[![Build Status](https://travis-ci.org/octokit/fixtures.svg?branch=master)](https://travis-ci.org/octokit/fixtures)
-[![Coverage Status](https://coveralls.io/repos/octokit/fixtures/badge.svg?branch=master)](https://coveralls.io/github/octokit/fixtures?branch=master)
+![Test](https://github.com/octokit/graphql-schema/workflows/Test/badge.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/octokit/fixtures.svg)](https://greenkeeper.io/)
 
 Records requests/responses against the [GitHub REST API](https://developer.github.com/v3/)
@@ -23,7 +22,7 @@ Currently requires node 8+
 
 ### fixtures.mock(scenario)
 
-`fixtures.mock(scenario)` will intercept requests using [nock](https://www.npmjs.com/package/nock).
+`fixtures.mock(scenario)` will intercept requeswts using [nock](https://www.npmjs.com/package/nock).
 `scenario` is a String in the form `<host name>/<scenario name>`. `host name`
 is any folder in [`scenarios/`](scenarios/). `scenario name` is any filename in
 the host name folders without the `.js` extension.
