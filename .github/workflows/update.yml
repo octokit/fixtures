@@ -16,6 +16,8 @@ jobs:
       - run: node bin/record --update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIXTURES_USER_A_TOKEN_FULL_ACCESS: ${{ secrets.FIXTURES_USER_A_TOKEN_FULL_ACCESS }}
+          FIXTURES_USER_B_TOKEN_FULL_ACCESS: ${{ secrets.FIXTURES_USER_B_TOKEN_FULL_ACCESS }}
       - name: create pull request
         uses: gr2m/create-or-update-pull-request-action@v1.x
         env:
