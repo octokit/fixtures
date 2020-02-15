@@ -14,7 +14,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Fri, 07 Feb 2020 10:56:42 GMT",
+      "Sat, 15 Feb 2020 04:11:32 GMT",
       "Content-Type",
       "text/html;charset=utf-8",
       "Content-Length",
@@ -28,7 +28,7 @@
       "X-RateLimit-Remaining",
       "4937",
       "X-RateLimit-Reset",
-      "1581076487",
+      "1581743377",
       "X-CommonMarker-Version",
       "0.21.0",
       "Access-Control-Expose-Headers",
@@ -47,8 +47,10 @@
       "origin-when-cross-origin, strict-origin-when-cross-origin",
       "Content-Security-Policy",
       "default-src 'none'",
+      "Vary",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "9E3C:57C0:319BCA:79D154:5E3D426A"
+      "0788:6FC2:319DB3:74F203:5E476F74"
     ],
     "reqheaders": {
       "accept": "text/html,application/vnd.github.speedy-preview+json",
@@ -56,7 +58,8 @@
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 88,
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   },
   {
     "scope": "https://api.github.com:443",
@@ -69,7 +72,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Fri, 07 Feb 2020 10:56:45 GMT",
+      "Sat, 15 Feb 2020 04:11:35 GMT",
       "Content-Type",
       "text/html;charset=utf-8",
       "Content-Length",
@@ -83,7 +86,7 @@
       "X-RateLimit-Remaining",
       "4936",
       "X-RateLimit-Reset",
-      "1581076487",
+      "1581743377",
       "X-CommonMarker-Version",
       "0.21.0",
       "Access-Control-Expose-Headers",
@@ -102,8 +105,10 @@
       "origin-when-cross-origin, strict-origin-when-cross-origin",
       "Content-Security-Policy",
       "default-src 'none'",
+      "Vary",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "9E3E:7FA8:1C992A:455217:5E3D426D"
+      "0781:4FC6:347D12:7B7A30:5E476F77"
     ],
     "reqheaders": {
       "accept": "text/html,application/vnd.github.speedy-preview+json",
@@ -111,6 +116,7 @@
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 18,
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   }
 ]

@@ -7,24 +7,24 @@
     "status": 205,
     "response": "",
     "rawHeaders": [
+      "Server",
+      "GitHub.com",
       "Date",
-      "Fri, 10 Jan 2020 17:33:49 GMT",
+      "Sat, 15 Feb 2020 04:11:32 GMT",
       "Content-Type",
       "text/plain;charset=utf-8",
       "Content-Length",
       "0",
       "Connection",
       "close",
-      "Server",
-      "GitHub.com",
       "Status",
       "205 Reset Content",
       "X-RateLimit-Limit",
       "5000",
       "X-RateLimit-Remaining",
-      "4504",
+      "4938",
       "X-RateLimit-Reset",
-      "1578680040",
+      "1581743377",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -47,14 +47,17 @@
       "origin-when-cross-origin, strict-origin-when-cross-origin",
       "Content-Security-Policy",
       "default-src 'none'",
+      "Vary",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "DA48:5588:A2AEDD:C639F5:5E18B57D"
+      "0785:6F6A:1CCAA3:451CAA:5E476F73"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
       "content-type": "application/x-www-form-urlencoded",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   }
 ]

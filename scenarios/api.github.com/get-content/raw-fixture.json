@@ -24,24 +24,24 @@
       }
     ],
     "rawHeaders": [
+      "Server",
+      "GitHub.com",
       "Date",
-      "Fri, 10 Jan 2020 17:33:00 GMT",
+      "Sat, 15 Feb 2020 04:10:48 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
       "836",
       "Connection",
       "close",
-      "Server",
-      "GitHub.com",
       "Status",
       "200 OK",
       "X-RateLimit-Limit",
       "5000",
       "X-RateLimit-Remaining",
-      "4530",
+      "4964",
       "X-RateLimit-Reset",
-      "1578680040",
+      "1581743377",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
@@ -73,15 +73,16 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "Vary",
-      "Accept-Encoding",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "DA2C:7895:4A2C84:5BB187:5E18B54C"
+      "078B:5C58:55327E:A1A604:5E476F48"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   },
   {
     "scope": "https://api.github.com:443",
@@ -91,24 +92,24 @@
     "status": 200,
     "response": "# hello-world",
     "rawHeaders": [
+      "Server",
+      "GitHub.com",
       "Date",
-      "Fri, 10 Jan 2020 17:33:01 GMT",
+      "Sat, 15 Feb 2020 04:10:48 GMT",
       "Content-Type",
       "application/vnd.github.v3.raw; charset=utf-8",
       "Content-Length",
       "13",
       "Connection",
       "close",
-      "Server",
-      "GitHub.com",
       "Status",
       "200 OK",
       "X-RateLimit-Limit",
       "5000",
       "X-RateLimit-Remaining",
-      "4529",
+      "4963",
       "X-RateLimit-Reset",
-      "1578680040",
+      "1581743376",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
@@ -140,14 +141,15 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "Vary",
-      "Accept-Encoding",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "DA2D:3808:2C25F5:337D88:5E18B54C"
+      "078C:5188:310C89:7644D4:5E476F48"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3.raw",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   }
 ]

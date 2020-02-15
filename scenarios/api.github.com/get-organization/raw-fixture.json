@@ -27,7 +27,7 @@
       "following": 0,
       "html_url": "https://github.com/octokit-fixture-org",
       "created_at": "2017-09-12T16:55:36Z",
-      "updated_at": "2019-12-12T15:55:42Z",
+      "updated_at": "2020-02-12T16:02:43Z",
       "type": "Organization",
       "total_private_repos": 0,
       "owned_private_repos": 0,
@@ -47,32 +47,32 @@
       }
     },
     "rawHeaders": [
+      "Server",
+      "GitHub.com",
       "Date",
-      "Fri, 10 Jan 2020 17:33:02 GMT",
+      "Sat, 15 Feb 2020 04:10:48 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
       "1340",
       "Connection",
       "close",
-      "Server",
-      "GitHub.com",
       "Status",
       "200 OK",
       "X-RateLimit-Limit",
       "5000",
       "X-RateLimit-Remaining",
-      "4528",
+      "4962",
       "X-RateLimit-Reset",
-      "1578680040",
+      "1581743376",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
       "Accept, Authorization, Cookie, X-GitHub-OTP",
       "ETag",
-      "\"fbf786085ca017c52668490de3b04ee5\"",
+      "\"c5290d46d7b521c08eaa0d87d7c1d497\"",
       "Last-Modified",
-      "Thu, 12 Dec 2019 15:55:42 GMT",
+      "Wed, 12 Feb 2020 16:02:43 GMT",
       "X-OAuth-Scopes",
       "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user",
       "X-Accepted-OAuth-Scopes",
@@ -96,14 +96,15 @@
       "Content-Security-Policy",
       "default-src 'none'",
       "Vary",
-      "Accept-Encoding",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "DA2E:93B3:C0AD9C:EBAA31:5E18B54D"
+      "078D:08C4:102162:2657A0:5E476F48"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   }
 ]
