@@ -43,7 +43,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Fri, 17 Jan 2020 10:43:04 GMT",
+      "Sun, 16 Feb 2020 04:10:42 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -57,7 +57,7 @@
       "X-RateLimit-Remaining",
       "4960",
       "X-RateLimit-Reset",
-      "1579261312",
+      "1581829770",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
@@ -86,13 +86,16 @@
       "origin-when-cross-origin, strict-origin-when-cross-origin",
       "Content-Security-Policy",
       "default-src 'none'",
+      "Vary",
+      "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "DF56:7131:4B546D:A96A8C:5E218FB8"
+      "0784:60AF:6FF145:E74273:5E48C0C2"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
-    }
+    },
+    "responseIsBinary": false
   }
 ]
