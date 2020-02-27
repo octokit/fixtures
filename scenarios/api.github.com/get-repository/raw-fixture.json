@@ -131,7 +131,7 @@
       "Server",
       "GitHub.com",
       "Date",
-      "Sun, 16 Feb 2020 04:10:42 GMT",
+      "Thu, 27 Feb 2020 04:09:45 GMT",
       "Content-Type",
       "application/json; charset=utf-8",
       "Content-Length",
@@ -145,7 +145,7 @@
       "X-RateLimit-Remaining",
       "4961",
       "X-RateLimit-Reset",
-      "1581829770",
+      "1582780113",
       "Cache-Control",
       "private, max-age=60, s-maxage=60",
       "Vary",
@@ -161,7 +161,7 @@
       "X-GitHub-Media-Type",
       "github.v3; param=speedy-preview; format=json",
       "Access-Control-Expose-Headers",
-      "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type",
+      "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "Access-Control-Allow-Origin",
       "*",
       "Strict-Transport-Security",
@@ -179,7 +179,7 @@
       "Vary",
       "Accept-Encoding, Accept, X-Requested-With",
       "X-GitHub-Request-Id",
-      "078E:393C:6AB309:DB88BE:5E48C0C2"
+      "0409:5AF4:3532E2:65E00D:5E574109"
     ],
     "reqheaders": {
       "accept": "application/vnd.github.v3+json,application/vnd.github.speedy-preview+json",
