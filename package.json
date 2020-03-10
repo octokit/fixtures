@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "axios": "^0.19.1",
-    "axios-debug-log": "^0.6.1",
+    "axios-debug-log": "^0.7.0",
     "bottleneck": "^2.12.0",
     "chalk": "^3.0.0",
     "envalid": "^6.0.0",
