@@ -10,7 +10,7 @@ async function labels(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "labels"
+    name: "labels",
   });
 
   await temporaryRepository.create();
@@ -23,8 +23,8 @@ async function labels(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/issues/labels/#create-a-label
@@ -34,12 +34,12 @@ async function labels(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         name: "test-label",
-        color: "663399"
-      }
+        color: "663399",
+      },
     });
 
     // https://developer.github.com/v3/issues/labels/#get-a-single-label
@@ -49,8 +49,8 @@ async function labels(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels/test-label`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/issues/labels/#get-a-single-label
@@ -60,12 +60,12 @@ async function labels(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels/test-label`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         new_name: "test-label-updated",
-        color: "BADA55"
-      }
+        color: "BADA55",
+      },
     });
 
     // https://developer.github.com/v3/issues/labels/#delete-a-label
@@ -75,8 +75,8 @@ async function labels(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels/test-label-updated`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

@@ -6,6 +6,6 @@ module.exports = {
   url: "/repos/octokit-fixture-org/hello-world",
   headers: {
     Accept: "application/vnd.github.v3+json",
-    Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-  }
+    Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+  },
 };

@@ -10,7 +10,7 @@ async function createFile(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "create-file"
+    name: "create-file",
   });
 
   await temporaryRepository.create();
@@ -22,12 +22,12 @@ async function createFile(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/test.txt`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         message: "create test.txt",
-        content: Buffer.from("Test content").toString("base64")
-      }
+        content: Buffer.from("Test content").toString("base64"),
+      },
     });
   } catch (_error) {
     error = _error;

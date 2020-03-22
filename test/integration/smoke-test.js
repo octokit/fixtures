@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../..");
 
-test("Accepts fixtures object as argument", async t => {
+test("Accepts fixtures object as argument", async (t) => {
   fixtures.mock(
     require("../../scenarios/api.github.com/get-repository/normalized-fixture.json")
   );
@@ -13,8 +13,8 @@ test("Accepts fixtures object as argument", async t => {
     url: "https://api.github.com/repos/octokit-fixture-org/hello-world",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(t.error);
 
   t.is(result.data.name, "hello-world");
@@ -22,13 +22,13 @@ test("Accepts fixtures object as argument", async t => {
   t.end();
 });
 
-test("Missing Accept header", async t => {
+test("Missing Accept header", async (t) => {
   fixtures.mock("api.github.com/get-repository");
 
   try {
     await axios({
       method: "get",
-      url: "https://api.github.com/repos/octokit-fixture-org/hello-world"
+      url: "https://api.github.com/repos/octokit-fixture-org/hello-world",
     });
     t.fail("request should fail");
   } catch (error) {
@@ -38,7 +38,7 @@ test("Missing Accept header", async t => {
   t.end();
 });
 
-test("Matches corret fixture based on authorization header", async t => {
+test("Matches corret fixture based on authorization header", async (t) => {
   fixtures.mock("api.github.com/get-root");
 
   const result = await axios({
@@ -46,8 +46,8 @@ test("Matches corret fixture based on authorization header", async t => {
     url: "https://api.github.com",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   t.is(result.headers["x-ratelimit-remaining"], "4999");
@@ -55,7 +55,7 @@ test("Matches corret fixture based on authorization header", async t => {
   t.end();
 });
 
-test("unmatched request error", async t => {
+test("unmatched request error", async (t) => {
   const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
@@ -63,8 +63,8 @@ test("unmatched request error", async t => {
       method: "get",
       url: "https://api.github.com/unknown",
       headers: {
-        Accept: "application/vnd.github.v3+json"
-      }
+        Accept: "application/vnd.github.v3+json",
+      },
     }).catch(mock.explain);
     t.fail("request should fail");
   } catch (error) {
@@ -74,7 +74,7 @@ test("unmatched request error", async t => {
   t.end();
 });
 
-test("explain non-request error", async t => {
+test("explain non-request error", async (t) => {
   const mock = fixtures.mock("api.github.com/get-repository");
 
   try {

@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Labels", async t => {
+test("Labels", async (t) => {
   const mock = fixtures.mock("api.github.com/rename-repository");
 
   // https://developer.github.com/v3/repos/#edit
@@ -13,11 +13,11 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      name: "rename-repository-newname"
-    }
+      name: "rename-repository-newname",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/repos/#get
@@ -26,8 +26,8 @@ test("Labels", async t => {
     url: "https://api.github.com/repos/octokit-fixture-org/rename-repository",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/repos/#edit
@@ -37,17 +37,17 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       name: "rename-repository-newname",
-      description: "test description"
+      description: "test description",
     },
     // axios (or the lower level follow-redirects package) does not handle 307
     // redirects correctly
-    maxRedirects: 0
+    maxRedirects: 0,
   })
-    .catch(error => {
+    .catch((error) => {
       if (error.response.status === 307) {
         return; // all good
       }
@@ -63,12 +63,12 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       name: "rename-repository-newname",
-      description: "test description"
-    }
+      description: "test description",
+    },
   }).catch(mock.explain);
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");

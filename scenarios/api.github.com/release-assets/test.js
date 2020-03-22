@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Labels", async t => {
+test("Labels", async (t) => {
   const mock = fixtures.mock("api.github.com/release-assets");
 
   // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
@@ -14,8 +14,8 @@ test("Labels", async t => {
       "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/tags/v1.0.0",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
@@ -28,9 +28,9 @@ test("Labels", async t => {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "text/plain",
-      "Content-Length": 14
+      "Content-Length": 14,
     },
-    data: "Hello, world!\n"
+    data: "Hello, world!\n",
   });
 
   // https://developer.github.com/v3/repos/releases/#list-assets-for-a-release
@@ -41,8 +41,8 @@ test("Labels", async t => {
       "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   // https://developer.github.com/v3/repos/releases/#get-a-single-release-asset
@@ -53,8 +53,8 @@ test("Labels", async t => {
       "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   // https://developer.github.com/v3/repos/releases/#get-a-single-release-asset
@@ -66,12 +66,12 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       name: "new-filename.txt",
-      label: "new label"
-    }
+      label: "new label",
+    },
   });
 
   // https://developer.github.com/v3/repos/releases/#delete-a-release-asset
@@ -82,8 +82,8 @@ test("Labels", async t => {
       "https://api.github.com/repos/octokit-fixture-org/release-assets/releases/assets/1000",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");

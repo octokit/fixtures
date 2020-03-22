@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get repository", async t => {
+test("Get repository", async (t) => {
   const mock = fixtures.mock("api.github.com/get-content");
 
   const jsonResult = await axios({
@@ -12,8 +12,8 @@ test("Get repository", async t => {
       "https://api.github.com/repos/octokit-fixture-org/hello-world/contents/",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   t.is(jsonResult.data.length, 1);
@@ -25,8 +25,8 @@ test("Get repository", async t => {
       "https://api.github.com/repos/octokit-fixture-org/hello-world/contents/README.md",
     headers: {
       Accept: "application/vnd.github.v3.raw",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   t.is(rawResult.data, "# hello-world");

@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Errors", async t => {
+test("Errors", async (t) => {
   t.plan(2);
   const mock = fixtures.mock("api.github.com/errors");
 
@@ -14,12 +14,12 @@ test("Errors", async t => {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: "token 0000000000000000000000000000000000000001",
-        "Content-Type": "application/json; charset=utf-8"
+        "Content-Type": "application/json; charset=utf-8",
       },
       data: {
         name: "foo",
-        color: "invalid"
-      }
+        color: "invalid",
+      },
     });
   } catch (error) {
     t.is(error.response.status, 422);

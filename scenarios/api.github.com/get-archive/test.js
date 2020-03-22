@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get archive", async t => {
+test("Get archive", async (t) => {
   const mock = fixtures.mock("api.github.com/get-archive");
 
   // https://developer.github.com/v3/repos/#edit
@@ -13,13 +13,13 @@ test("Get archive", async t => {
       "https://api.github.com/repos/octokit-fixture-org/get-archive/tarball/master",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
+      Authorization: "token 0000000000000000000000000000000000000001",
     },
     // axios (or the lower level follow-redirects package) does not handle 307
     // redirects correctly
-    maxRedirects: 0
+    maxRedirects: 0,
   })
-    .catch(error => {
+    .catch((error) => {
       t.is(error.response.status, 302);
       if (error.response.status === 302) {
         return error.response.headers.location;
@@ -39,8 +39,8 @@ test("Get archive", async t => {
     url: redirectLocation,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   t.is(Buffer.from(result.data, "binary").toString("hex").length, 340);

@@ -10,7 +10,7 @@ async function lockIssue(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "prooject-cards"
+    name: "prooject-cards",
   });
 
   await temporaryRepository.create();
@@ -19,49 +19,49 @@ async function lockIssue(state) {
     // https://developer.github.com/v3/projects/#create-a-repository-project
     // (this request gets ignored, we need an existing project to create cards in)
     const {
-      data: { id: projectId }
+      data: { id: projectId },
     } = await state.request({
       method: "post",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/projects`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
-        name: "Example project"
-      }
+        name: "Example project",
+      },
     });
 
     // https://developer.github.com/v3/projects/columns/#create-a-project-column
     // (this request gets ignored, we need an existing columns to create cards in and move to)
     const {
-      data: { id: column1Id }
+      data: { id: column1Id },
     } = await state.request({
       method: "post",
       url: `/projects/${projectId}/columns`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
-        name: "Example column 1"
-      }
+        name: "Example column 1",
+      },
     });
     const {
-      data: { id: column2Id }
+      data: { id: column2Id },
     } = await state.request({
       method: "post",
       url: `/projects/${projectId}/columns`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
-        name: "Example column 2"
-      }
+        name: "Example column 2",
+      },
     });
 
     // Creating a card assigned to an issue is currently broken, so we skip it for now
@@ -82,31 +82,31 @@ async function lockIssue(state) {
 
     // https://developer.github.com/v3/projects/cards/#create-a-project-card
     const {
-      data: { id: card1Id }
+      data: { id: card1Id },
     } = await state.request({
       method: "post",
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
-        note: "Example card 1"
-      }
+        note: "Example card 1",
+      },
     });
 
     const {
-      data: { id: card2Id }
+      data: { id: card2Id },
     } = await state.request({
       method: "post",
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
-        note: "Example card 2"
-      }
+        note: "Example card 2",
+      },
     });
 
     // see above, creating a card assigned to an issue via API is currently broken
@@ -129,8 +129,8 @@ async function lockIssue(state) {
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/projects/cards/#get-a-project-card
@@ -139,8 +139,8 @@ async function lockIssue(state) {
       url: `/projects/columns/cards/${card1Id}`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/projects/cards/#update-a-project-card
@@ -149,11 +149,11 @@ async function lockIssue(state) {
       url: `/projects/columns/cards/${card1Id}`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
-        note: "Example card 1 updated"
-      }
+        note: "Example card 1 updated",
+      },
     });
 
     // https://developer.github.com/v3/projects/cards/#move-a-project-card
@@ -163,12 +163,12 @@ async function lockIssue(state) {
       url: `/projects/columns/cards/${card1Id}/moves`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         position: "top",
-        column_id: column2Id
-      }
+        column_id: column2Id,
+      },
     });
 
     // move 2nd card to bottom of 2nd column
@@ -177,12 +177,12 @@ async function lockIssue(state) {
       url: `/projects/columns/cards/${card2Id}/moves`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         position: "bottom",
-        column_id: column2Id
-      }
+        column_id: column2Id,
+      },
     });
 
     // move 1st card below 2nd card
@@ -191,11 +191,11 @@ async function lockIssue(state) {
       url: `/projects/columns/cards/${card1Id}/moves`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
-        position: `after:${card2Id}`
-      }
+        position: `after:${card2Id}`,
+      },
     });
 
     // https://developer.github.com/v3/projects/cards/#delete-a-project-card
@@ -204,8 +204,8 @@ async function lockIssue(state) {
       url: `/projects/columns/cards/${card1Id}`,
       headers: {
         Accept: "application/vnd.github.inertia-preview+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

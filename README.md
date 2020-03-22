@@ -39,12 +39,12 @@ https
       hostname: "api.github.com",
       path: "/repos/octokit-fixture-org/hello-world",
       headers: {
-        accept: "application/vnd.github.v3+json"
-      }
+        accept: "application/vnd.github.v3+json",
+      },
     },
-    response => {
+    (response) => {
       console.log("headers:", response.headers);
-      response.on("data", data => console.log(data.toString()));
+      response.on("data", (data) => console.log(data.toString()));
       // logs response from fixture
     }
   )

@@ -5,15 +5,15 @@ const normalize = require("../../lib/normalize");
 
 glob
   .sync("scenarios/**/raw-fixture.json")
-  .map(path => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
-  .forEach(fixturnName => {
-    test(`normalize ${fixturnName}`, async t => {
+  .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
+  .forEach((fixturnName) => {
+    test(`normalize ${fixturnName}`, async (t) => {
       const raw = require(`../../scenarios/${fixturnName}/raw-fixture.json`);
       const expected = require(`../../scenarios/${fixturnName}/normalized-fixture.json`);
 
       const scenarioState = {
         commitSha: {},
-        ids: {}
+        ids: {},
       };
       const actual = await Promise.all(
         raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))

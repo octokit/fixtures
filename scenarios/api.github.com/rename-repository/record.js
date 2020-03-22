@@ -10,7 +10,7 @@ async function renameRepository(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "rename-repository"
+    name: "rename-repository",
   });
 
   await temporaryRepository.create();
@@ -23,11 +23,11 @@ async function renameRepository(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
-        name: `${temporaryRepository.name}-newname`
-      }
+        name: `${temporaryRepository.name}-newname`,
+      },
     });
 
     // https://developer.github.com/v3/repos/#get
@@ -38,11 +38,11 @@ async function renameRepository(state) {
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}`,
         headers: {
           Accept: "application/vnd.github.v3+json",
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-        }
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+        },
       })
 
-      .catch(error => {
+      .catch((error) => {
         const newUrl = error.response.data.url;
 
         // get repository at returned URL
@@ -51,8 +51,8 @@ async function renameRepository(state) {
           url: newUrl,
           headers: {
             Accept: "application/vnd.github.v3+json",
-            Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-          }
+            Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+          },
         });
       });
 
@@ -64,15 +64,15 @@ async function renameRepository(state) {
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}`,
         headers: {
           Accept: "application/vnd.github.v3+json",
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
         },
         data: {
           name: `${temporaryRepository.name}-newname`,
-          description: "test description"
-        }
+          description: "test description",
+        },
       })
 
-      .catch(error => {
+      .catch((error) => {
         const newUrl = error.response.data.url;
 
         // get repository at returned URL
@@ -81,12 +81,12 @@ async function renameRepository(state) {
           url: newUrl,
           headers: {
             Accept: "application/vnd.github.v3+json",
-            Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+            Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
           },
           data: {
             name: `${temporaryRepository.name}-newname`,
-            description: "test description"
-          }
+            description: "test description",
+          },
         });
       });
   } catch (_error) {

@@ -10,7 +10,7 @@ async function getArchive(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "get-archive"
+    name: "get-archive",
   });
 
   await temporaryRepository.create();
@@ -24,12 +24,12 @@ async function getArchive(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         message: "initial commit",
-        content: Buffer.from("# get-archive").toString("base64")
-      }
+        content: Buffer.from("# get-archive").toString("base64"),
+      },
     });
 
     // https://developer.github.com/v3/repos/contents/#get-archive-link
@@ -41,8 +41,8 @@ async function getArchive(state) {
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}/tarball/master`,
         headers: {
           Accept: "application/vnd.github.v3+json",
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-        }
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+        },
       });
     } catch (error) {
       const { headers } = error.response;
@@ -52,8 +52,8 @@ async function getArchive(state) {
         url: headers.location,
         headers: {
           Accept: "application/vnd.github.v3+json",
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-        }
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+        },
       });
     }
   } catch (_error) {

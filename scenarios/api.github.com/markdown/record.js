@@ -7,15 +7,15 @@ module.exports = [
     url: "/markdown",
     headers: {
       Accept: "text/html",
-      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
     },
     data: {
       text: `### Hello
 
 b597b5d`,
       context: "octokit-fixture-org/hello-world",
-      mode: "gfm"
-    }
+      mode: "gfm",
+    },
   },
   {
     method: "post",
@@ -23,10 +23,10 @@ b597b5d`,
     headers: {
       Accept: "text/html",
       Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-      "Content-Type": "text/plain; charset=utf-8"
+      "Content-Type": "text/plain; charset=utf-8",
     },
     data: `### Hello
 
-b597b5d`
-  }
+b597b5d`,
+  },
 ];

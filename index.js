@@ -12,7 +12,7 @@ module.exports = {
   // don’t use short syntax for node@4 compatibility
   get: get,
   mock: mock,
-  nock: nock
+  nock: nock,
 };
 
 function get(name) {
@@ -35,7 +35,7 @@ function mock(fixtures, additions) {
     });
   }
 
-  fixtures.forEach(fixture => {
+  fixtures.forEach((fixture) => {
     fixture.rawHeaders = headers.toArray(fixture.headers);
     delete fixture.headers;
   });
@@ -46,7 +46,7 @@ function mock(fixtures, additions) {
     pending() {
       return [].concat.apply(
         [],
-        mocks.map(mock => mock.pendingMocks())
+        mocks.map((mock) => mock.pendingMocks())
       );
     },
     explain(error) {
@@ -86,19 +86,19 @@ function mock(fixtures, additions) {
     },
     isDone() {
       return api.pending().length === 0;
-    }
+    },
   };
 
   return api;
 }
 
 function getNextMockConfig(mocks) {
-  const nextMock = mocks.find(mock => mock.pendingMocks().length > 0)
+  const nextMock = mocks.find((mock) => mock.pendingMocks().length > 0)
     .interceptors[0];
   return {
     method: nextMock.method.toLowerCase(),
     url: `https://api.github.com${nextMock.uri}`,
-    headers: nextMock.options.reqheaders
+    headers: nextMock.options.reqheaders,
   };
 }
 

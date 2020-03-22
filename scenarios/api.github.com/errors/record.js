@@ -10,7 +10,7 @@ async function errors(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "errors"
+    name: "errors",
   });
 
   await temporaryRepository.create();
@@ -24,16 +24,16 @@ async function errors(state) {
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}/labels`,
         headers: {
           Accept: "application/vnd.github.v3+json",
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
         },
         data: {
           name: "foo",
-          color: "invalid"
-        }
+          color: "invalid",
+        },
       })
 
       // record expected 422 error
-      .catch(error => {
+      .catch((error) => {
         if (error.response.status !== 422) {
           throw error;
         }

@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get repository", async t => {
+test("Get repository", async (t) => {
   const mock = fixtures.mock(
     "api.github.com/add-and-remove-repository-collaborator"
   );
@@ -16,8 +16,8 @@ test("Get repository", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Length": 0
-    }
+      "Content-Length": 0,
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/repos/invitations/
@@ -27,8 +27,8 @@ test("Get repository", async t => {
       "https://api.github.com/repos/octokit-fixture-org/add-and-remove-repository-collaborator/invitations",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   t.is(invitationsResponse.data[0].id, 1000);
@@ -40,8 +40,8 @@ test("Get repository", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000002",
-      "Content-Length": 0
-    }
+      "Content-Length": 0,
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/repos/collaborators/#list-collaborators
@@ -51,8 +51,8 @@ test("Get repository", async t => {
       "https://api.github.com/repos/octokit-fixture-org/add-and-remove-repository-collaborator/collaborators",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/repos/collaborators/#remove-user-as-a-collaborator
@@ -62,8 +62,8 @@ test("Get repository", async t => {
       "https://api.github.com/repos/octokit-fixture-org/add-and-remove-repository-collaborator/collaborators/octokit-fixture-user-b",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/repos/collaborators/#list-collaborators
@@ -73,8 +73,8 @@ test("Get repository", async t => {
       "https://api.github.com/repos/octokit-fixture-org/add-and-remove-repository-collaborator/collaborators",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");

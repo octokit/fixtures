@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get repository", async t => {
+test("Get repository", async (t) => {
   const mock = fixtures.mock("api.github.com/markdown");
 
   const { data: contextMarkdown } = await axios({
@@ -12,15 +12,15 @@ test("Get repository", async t => {
     headers: {
       Accept: "text/html",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       text: `### Hello
 
 b597b5d`,
       context: "octokit-fixture-org/hello-world",
-      mode: "gfm"
-    }
+      mode: "gfm",
+    },
   }).catch(mock.explain);
 
   t.is(
@@ -34,11 +34,11 @@ b597b5d`,
     headers: {
       Accept: "text/html",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "text/plain; charset=utf-8"
+      "Content-Type": "text/plain; charset=utf-8",
     },
     data: `### Hello
 
-b597b5d`
+b597b5d`,
   }).catch(mock.explain);
 
   t.is(

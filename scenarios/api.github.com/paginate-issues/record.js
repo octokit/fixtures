@@ -10,7 +10,7 @@ async function paginateIssues(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "paginate-issues"
+    name: "paginate-issues",
   });
 
   await temporaryRepository.create();
@@ -29,11 +29,11 @@ async function paginateIssues(state) {
         headers: {
           Accept: "application/vnd.github.v3+json",
           Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-          "X-Octokit-Fixture-Ignore": "true"
+          "X-Octokit-Fixture-Ignore": "true",
         },
         data: {
-          title: `Test issue ${i}`
-        }
+          title: `Test issue ${i}`,
+        },
       });
     }
 
@@ -44,14 +44,14 @@ async function paginateIssues(state) {
       method: "get",
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     };
 
     for (let i = 1; i <= 5; i++) {
       const response = await state.request(
         Object.assign(options, {
-          url
+          url,
         })
       );
 

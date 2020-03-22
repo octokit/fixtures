@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Labels", async t => {
+test("Labels", async (t) => {
   const mock = fixtures.mock("api.github.com/project-cards");
 
   // https://developer.github.com/v3/projects/cards/#create-a-project-card
@@ -13,11 +13,11 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      note: "Example card 1"
-    }
+      note: "Example card 1",
+    },
   });
   await axios({
     method: "post",
@@ -25,11 +25,11 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      note: "Example card 2"
-    }
+      note: "Example card 2",
+    },
   });
 
   // https://developer.github.com/v3/projects/cards/#list-project-cards
@@ -38,8 +38,8 @@ test("Labels", async t => {
     url: "https://api.github.com/projects/columns/1000/cards",
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   // https://developer.github.com/v3/projects/cards/#get-a-project-card
@@ -48,8 +48,8 @@ test("Labels", async t => {
     url: "https://api.github.com/projects/columns/cards/1000",
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   // https://developer.github.com/v3/projects/cards/#update-a-project-card
@@ -59,11 +59,11 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      note: "Example card 1 updated"
-    }
+      note: "Example card 1 updated",
+    },
   });
 
   // https://developer.github.com/v3/projects/cards/#move-a-project-card
@@ -74,12 +74,12 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       position: "top",
-      column_id: 1001
-    }
+      column_id: 1001,
+    },
   });
 
   // move 2nd card to bottom of 2nd column
@@ -89,12 +89,12 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       position: "bottom",
-      column_id: 1001
-    }
+      column_id: 1001,
+    },
   });
 
   // move 1st card below 2nd card
@@ -104,11 +104,11 @@ test("Labels", async t => {
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      position: "after:1001"
-    }
+      position: "after:1001",
+    },
   });
 
   // https://developer.github.com/v3/projects/cards/#delete-a-project-card
@@ -117,8 +117,8 @@ test("Labels", async t => {
     url: "https://api.github.com/projects/columns/cards/1000",
     headers: {
       Accept: "application/vnd.github.inertia-preview+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   });
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");

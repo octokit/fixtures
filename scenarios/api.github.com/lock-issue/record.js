@@ -10,7 +10,7 @@ async function lockIssue(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "lock-issue"
+    name: "lock-issue",
   });
 
   await temporaryRepository.create();
@@ -24,11 +24,11 @@ async function lockIssue(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
-        title: "Issue without a label"
-      }
+        title: "Issue without a label",
+      },
     });
 
     // https://developer.github.com/v3/issues/#lock-an-issue
@@ -37,8 +37,8 @@ async function lockIssue(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/issues/1/lock`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/issues/#unlock-an-issue
@@ -47,8 +47,8 @@ async function lockIssue(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/issues/1/lock`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

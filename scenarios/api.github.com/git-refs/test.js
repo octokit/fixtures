@@ -3,7 +3,7 @@ const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Git references", async t => {
+test("Git references", async (t) => {
   const mock = fixtures.mock("api.github.com/git-refs");
 
   // https://developer.github.com/v3/git/refs/#get-all-references
@@ -13,8 +13,8 @@ test("Git references", async t => {
     url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#create-a-reference
@@ -25,12 +25,12 @@ test("Git references", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
       ref: "refs/heads/test",
-      sha: "0000000000000000000000000000000000000002"
-    }
+      sha: "0000000000000000000000000000000000000002",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#update-a-reference
@@ -42,11 +42,11 @@ test("Git references", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      sha: "0000000000000000000000000000000000000001"
-    }
+      sha: "0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#get-all-references
@@ -56,8 +56,8 @@ test("Git references", async t => {
     url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   // https://developer.github.com/v3/git/refs/#delete-a-reference
@@ -68,8 +68,8 @@ test("Git references", async t => {
       "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
-    }
+      Authorization: "token 0000000000000000000000000000000000000001",
+    },
   }).catch(mock.explain);
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");

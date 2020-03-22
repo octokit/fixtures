@@ -15,7 +15,7 @@ async function releaseAssets(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "release-assets"
+    name: "release-assets",
   });
 
   await temporaryRepository.create();
@@ -25,20 +25,20 @@ async function releaseAssets(state) {
     // (this request gets ignored, we need an existing commit before creating a release)
     const {
       data: {
-        commit: { sha }
-      }
+        commit: { sha },
+      },
     } = await state.request({
       method: "put",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/README.md`,
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         message: "initial commit",
-        content: Buffer.from("# release-assets").toString("base64")
-      }
+        content: Buffer.from("# release-assets").toString("base64"),
+      },
     });
 
     // https://developer.github.com/v3/repos/releases/#create-a-release
@@ -49,27 +49,27 @@ async function releaseAssets(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         tag_name: "v1.0.0",
         name: "Version 1.0.0",
         body: "Initial release",
-        target_commitish: sha
-      }
+        target_commitish: sha,
+      },
     });
 
     // https://developer.github.com/v3/repos/releases/#create-a-release
     // Get the release. The upload_url from the response must be used for uploads
     const {
-      data: { id: releaseId, upload_url: uploadUrl }
+      data: { id: releaseId, upload_url: uploadUrl },
     } = await state.request({
       method: "get",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/tags/v1.0.0`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
@@ -78,7 +78,7 @@ async function releaseAssets(state) {
     const filePath = pathResolve(__dirname, FILE_NAME);
     const url = urlTemplate.parse(uploadUrl).expand({
       name: FILE_NAME,
-      label: "test"
+      label: "test",
     });
     const size = fs.statSync(filePath).size;
     await state.request({
@@ -88,22 +88,22 @@ async function releaseAssets(state) {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
         "Content-Type": "text/plain",
-        "Content-Length": size
+        "Content-Length": size,
       },
-      data: fs.createReadStream(filePath)
+      data: fs.createReadStream(filePath),
     });
 
     // https://developer.github.com/v3/repos/releases/#list-assets-for-a-release
     // list assets for release
     const {
-      data: [{ id: assetId }]
+      data: [{ id: assetId }],
     } = await state.request({
       method: "get",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/${releaseId}/assets`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/repos/releases/#get-a-single-release-asset
@@ -113,8 +113,8 @@ async function releaseAssets(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/assets/${assetId}`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/repos/releases/#get-a-single-release-asset
@@ -124,12 +124,12 @@ async function releaseAssets(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/assets/${assetId}`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         name: "new-filename.txt",
-        label: "new label"
-      }
+        label: "new label",
+      },
     });
 
     // https://developer.github.com/v3/repos/releases/#delete-a-release-asset
@@ -139,8 +139,8 @@ async function releaseAssets(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/releases/assets/${assetId}`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

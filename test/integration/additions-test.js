@@ -4,11 +4,11 @@ const { test } = require("tap");
 
 const fixtures = require("../..");
 
-test("reqheaders additions", async t => {
+test("reqheaders additions", async (t) => {
   const mock = fixtures.mock("api.github.com/get-repository", {
     reqheaders: {
-      "x-fixtures-id": "123"
-    }
+      "x-fixtures-id": "123",
+    },
   });
 
   try {
@@ -17,8 +17,8 @@ test("reqheaders additions", async t => {
       url: "https://api.github.com/repos/octokit-fixture-org/hello-world",
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: "token 0000000000000000000000000000000000000001"
-      }
+        Authorization: "token 0000000000000000000000000000000000000001",
+      },
     });
     t.fail("should fail without X-Foo header");
   } catch (error) {
@@ -32,8 +32,8 @@ test("reqheaders additions", async t => {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: "token 0000000000000000000000000000000000000001",
-        "x-fixtures-id": "123"
-      }
+        "x-fixtures-id": "123",
+      },
     });
   } catch (error) {
     t.fail(mock.explain(error));
@@ -42,9 +42,9 @@ test("reqheaders additions", async t => {
   t.end();
 });
 
-test("scope additions", async t => {
+test("scope additions", async (t) => {
   const mock = fixtures.mock("api.github.com/rename-repository", {
-    scope: "http://localhost:3000"
+    scope: "http://localhost:3000",
   });
 
   // https://developer.github.com/v3/repos/#edit
@@ -54,12 +54,12 @@ test("scope additions", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
     data: {
-      name: "rename-repository-newname"
-    }
-  }).catch(error => t.error(mock.explain(error)));
+      name: "rename-repository-newname",
+    },
+  }).catch((error) => t.error(mock.explain(error)));
 
   // https://developer.github.com/v3/repos/#get
   await axios({
@@ -67,10 +67,10 @@ test("scope additions", async t => {
     url: "http://localhost:3000/repos/octokit-fixture-org/rename-repository",
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 0000000000000000000000000000000000000001"
+      Authorization: "token 0000000000000000000000000000000000000001",
     },
-    maxRedirects: 0
-  }).catch(error => {
+    maxRedirects: 0,
+  }).catch((error) => {
     if (/No match for request/.test(error.message)) {
       t.error(mock.explain(error));
     }
@@ -84,12 +84,12 @@ test("scope additions", async t => {
   t.end();
 });
 
-test("additions function", async t => {
+test("additions function", async (t) => {
   const mapValuesDeep = (v, callback) =>
     _.isObject(v)
-      ? _.mapValues(v, v => mapValuesDeep(v, callback))
+      ? _.mapValues(v, (v) => mapValuesDeep(v, callback))
       : callback(v);
-  const mock = fixtures.mock("api.github.com/release-assets", fixture => {
+  const mock = fixtures.mock("api.github.com/release-assets", (fixture) => {
     if (fixture.scope === "https://uploads.github.com:443") {
       fixture.path = `/uploads.github.com${fixture.path}`;
     }
@@ -97,7 +97,7 @@ test("additions function", async t => {
     fixture.scope = "http://localhost:3000";
     fixture.reqheaders.host = "localhost:3000";
     fixture.reqheaders["x-fixtures-id"] = "123";
-    return mapValuesDeep(fixture, value => {
+    return mapValuesDeep(fixture, (value) => {
       if (typeof value !== "string") {
         return value;
       }
@@ -120,9 +120,9 @@ test("additions function", async t => {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
-      "x-fixtures-id": "123"
-    }
-  }).catch(error => t.error(mock.explain(error)));
+      "x-fixtures-id": "123",
+    },
+  }).catch((error) => t.error(mock.explain(error)));
 
   t.is(
     data.url,
@@ -144,10 +144,10 @@ test("additions function", async t => {
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "text/plain",
       "Content-Length": 14,
-      "x-fixtures-id": "123"
+      "x-fixtures-id": "123",
     },
-    data: "Hello, world!\n"
-  }).catch(error => console.log(mock.explain(error)));
+    data: "Hello, world!\n",
+  }).catch((error) => console.log(mock.explain(error)));
 
   t.end();
 });

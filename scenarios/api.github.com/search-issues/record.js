@@ -11,7 +11,7 @@ async function searchIssues(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "search-issues"
+    name: "search-issues",
   });
 
   await temporaryRepository.create();
@@ -25,12 +25,12 @@ async function searchIssues(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         title: "The doors don’t open",
-        body: 'I tried "open sesame" as seen on Wikipedia but no luck!'
-      }
+        body: 'I tried "open sesame" as seen on Wikipedia but no luck!',
+      },
     });
 
     await state.request({
@@ -39,16 +39,16 @@ async function searchIssues(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_B_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         title: "Sesame seeds split without a pop!",
-        body: "I’ve waited all year long, but there was no pop 😭"
-      }
+        body: "I’ve waited all year long, but there was no pop 😭",
+      },
     });
 
     // timeout for search indexing
-    await new Promise(resolve => setTimeout(resolve, 5000));
+    await new Promise((resolve) => setTimeout(resolve, 5000));
 
     const query = `sesame repo:octokit-fixture-org/${temporaryRepository.name}`;
     await state.request({
@@ -56,8 +56,8 @@ async function searchIssues(state) {
       url: `/search/issues?q=${encodeURIComponent(query)}`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

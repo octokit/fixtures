@@ -10,7 +10,7 @@ async function gitRefs(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "git-refs"
+    name: "git-refs",
   });
 
   await temporaryRepository.create();
@@ -20,41 +20,41 @@ async function gitRefs(state) {
     // (these requests get ignored, we need two commits to test our refrences)
     const {
       data: {
-        commit: { sha: sha1 }
-      }
+        commit: { sha: sha1 },
+      },
     } = await state.request({
       method: "put",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/1.md`,
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         message: "initial commit",
         content: Buffer.from(
           "# git-refs\ncreated with initial commit"
-        ).toString("base64")
-      }
+        ).toString("base64"),
+      },
     });
     const {
       data: {
-        commit: { sha: sha2 }
-      }
+        commit: { sha: sha2 },
+      },
     } = await state.request({
       method: "put",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/contents/2.md`,
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         message: "2nd commit",
         content: Buffer.from("# git-refs\ncreated with 2nd commit").toString(
           "base64"
-        )
-      }
+        ),
+      },
     });
 
     // https://developer.github.com/v3/git/refs/#get-all-references
@@ -64,8 +64,8 @@ async function gitRefs(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs/`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/git/refs/#create-a-reference
@@ -75,12 +75,12 @@ async function gitRefs(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         ref: "refs/heads/test",
-        sha: sha1
-      }
+        sha: sha1,
+      },
     });
 
     // https://developer.github.com/v3/git/refs/#update-a-reference
@@ -90,11 +90,11 @@ async function gitRefs(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs/heads/test`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
-        sha: sha2
-      }
+        sha: sha2,
+      },
     });
 
     // https://developer.github.com/v3/git/refs/#get-all-references
@@ -104,8 +104,8 @@ async function gitRefs(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs/`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
 
     // https://developer.github.com/v3/git/refs/#delete-a-reference
@@ -115,8 +115,8 @@ async function gitRefs(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/git/refs/heads/test`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

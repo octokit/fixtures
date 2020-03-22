@@ -10,7 +10,7 @@ async function branchProtection(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "branch-protection"
+    name: "branch-protection",
   });
 
   await temporaryRepository.create();
@@ -24,12 +24,12 @@ async function branchProtection(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
         message: "initial commit",
-        content: Buffer.from("# branch-protection").toString("base64")
-      }
+        content: Buffer.from("# branch-protection").toString("base64"),
+      },
     });
 
     // https://developer.github.com/v3/orgs/teams/#add-or-update-team-repository
@@ -42,11 +42,11 @@ async function branchProtection(state) {
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
-        "X-Octokit-Fixture-Ignore": "true"
+        "X-Octokit-Fixture-Ignore": "true",
       },
       data: {
-        permission: "push"
-      }
+        permission: "push",
+      },
     });
 
     // https://developer.github.com/v3/repos/branches/#get-branch-protection
@@ -57,10 +57,10 @@ async function branchProtection(state) {
         url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
         headers: {
           Accept: "application/vnd.github.v3+json",
-          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-        }
+          Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+        },
       })
-      .catch(error => {
+      .catch((error) => {
         if (error.response.data.message === "Branch not protected") {
           return; // this 404 is expected
         }
@@ -75,14 +75,14 @@ async function branchProtection(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         required_status_checks: null,
         required_pull_request_reviews: null,
         restrictions: null,
-        enforce_admins: false
-      }
+        enforce_admins: false,
+      },
     });
 
     // https://developer.github.com/v3/repos/branches/#update-branch-protection
@@ -92,27 +92,27 @@ async function branchProtection(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
         required_status_checks: {
           strict: true,
-          contexts: ["foo/bar"]
+          contexts: ["foo/bar"],
         },
         required_pull_request_reviews: {
           dismissal_restrictions: {
             users: ["octokit-fixture-user-a"],
-            teams: [] // bug: server returns "Only 100 users and teams can be specified." when set to ['a-team']
+            teams: [], // bug: server returns "Only 100 users and teams can be specified." when set to ['a-team']
           },
           dismiss_stale_reviews: true,
-          require_code_owner_reviews: false
+          require_code_owner_reviews: false,
         },
         restrictions: {
           users: ["octokit-fixture-user-a"],
-          teams: ["a-team"]
+          teams: ["a-team"],
         },
-        enforce_admins: true
-      }
+        enforce_admins: true,
+      },
     });
 
     // https://developer.github.com/v3/repos/branches/#remove-branch-protection
@@ -122,8 +122,8 @@ async function branchProtection(state) {
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-      }
+        Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      },
     });
   } catch (_error) {
     error = _error;

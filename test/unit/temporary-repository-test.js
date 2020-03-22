@@ -2,7 +2,7 @@ const { test } = require("tap");
 
 const temporaryRepository = require("../../lib/temporary-repository");
 
-test("temporaryRepository(name) returns {create, delete} API", t => {
+test("temporaryRepository(name) returns {create, delete} API", (t) => {
   const options = {};
   const api = temporaryRepository(options);
 
@@ -12,9 +12,9 @@ test("temporaryRepository(name) returns {create, delete} API", t => {
   t.end();
 });
 
-test("temporaryRepository(name) returns {name}", t => {
+test("temporaryRepository(name) returns {name}", (t) => {
   const options = {
-    name: "foo-bar"
+    name: "foo-bar",
   };
   const api = temporaryRepository(options);
 
@@ -27,7 +27,7 @@ test("temporaryRepository(name) returns {name}", t => {
   t.end();
 });
 
-test("temporaryRepository.regex", t => {
+test("temporaryRepository.regex", (t) => {
   const { name } = temporaryRepository({ name: "funky-repo" });
   const [, originalName] = name.match(temporaryRepository.regex);
   t.is(originalName, "funky-repo");
@@ -38,7 +38,7 @@ test("temporaryRepository.regex", t => {
   t.end();
 });
 
-test("temporaryRepository(name).create() sends POST /orgs/octokit-fixture-org/repos request", t => {
+test("temporaryRepository(name).create() sends POST /orgs/octokit-fixture-org/repos request", (t) => {
   t.plan(4);
 
   const options = {
@@ -51,13 +51,13 @@ test("temporaryRepository(name).create() sends POST /orgs/octokit-fixture-org/re
       t.is(options.headers.Authorization, "token token123");
       t.is(options.data.name, api.name);
       return Promise.resolve();
-    }
+    },
   };
   const api = temporaryRepository(options);
   api.create();
 });
 
-test("temporaryRepository(name).delete() sends DELETE `/repos/octokit-fixture-org/<tmp name> request", t => {
+test("temporaryRepository(name).delete() sends DELETE `/repos/octokit-fixture-org/<tmp name> request", (t) => {
   t.plan(3);
 
   const options = {
@@ -68,7 +68,7 @@ test("temporaryRepository(name).delete() sends DELETE `/repos/octokit-fixture-or
       t.is(options.method, "delete");
       t.is(options.url, `/repos/org-foo/${api.name}`);
       t.is(options.headers.Authorization, "token token123");
-    }
+    },
   };
   const api = temporaryRepository(options);
   api.delete();
