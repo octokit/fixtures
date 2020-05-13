@@ -3,7 +3,7 @@
 > Fixtures for all the octokittens
 
 ![Test](https://github.com/octokit/fixtures/workflows/Test/badge.svg)
-[![Greenkeeper badge](https://badges.greenkeeper.io/octokit/fixtures.svg)](https://greenkeeper.io/)
+
 
 Records requests/responses against the [GitHub REST API](https://developer.github.com/v3/)
 and stores them as JSON fixtures.
