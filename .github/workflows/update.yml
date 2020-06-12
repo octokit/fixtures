@@ -25,7 +25,7 @@ jobs:
         with:
           title: "🚧 🤖📯 Fixtures changed"
           body: |
-            I found new changes in GitHub's GraphQL Schema 👋🤖
+            I found new changes in the recorded fixtures 👋🤖
 
             I can't tell if the changes are fixes, features or breaking, you'll have to figure that out on yourself and adapt the commit messages accordingly to trigger the right release, see [our commit message conventions](https://github.com/octokit/routes/blob/master/CONTRIBUTING.md#merging-the-pull-request--releasing-a-new-version).
           branch: "fixtures-update"
