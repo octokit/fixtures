@@ -51,6 +51,7 @@
           "updated_at": "2017-10-10T16:00:00Z",
           "closed_at": null,
           "author_association": "NONE",
+          "active_lock_reason": null,
           "body": "I’ve waited all year long, but there was no pop 😭",
           "score": 42
         },
@@ -96,6 +97,7 @@
           "updated_at": "2017-10-10T16:00:00Z",
           "closed_at": null,
           "author_association": "MEMBER",
+          "active_lock_reason": null,
           "body": "I tried \"open sesame\" as seen on Wikipedia but no luck!",
           "score": 42
         }
@@ -112,7 +114,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "no-cache",
       "connection": "close",
-      "content-length": "4030",
+      "content-length": "4082",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
