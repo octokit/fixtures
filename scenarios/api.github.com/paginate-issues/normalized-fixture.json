@@ -49,7 +49,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/12",
@@ -94,7 +95,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/11",
@@ -139,7 +141,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       }
     ],
     "reqheaders": {
@@ -153,7 +156,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "5872",
+      "content-length": "5968",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -224,7 +227,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/9",
@@ -269,7 +273,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/8",
@@ -314,7 +319,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       }
     ],
     "reqheaders": {
@@ -328,7 +334,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "5858",
+      "content-length": "5954",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -399,7 +405,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/6",
@@ -444,7 +451,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/5",
@@ -489,7 +497,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       }
     ],
     "reqheaders": {
@@ -503,7 +512,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "5851",
+      "content-length": "5947",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -574,7 +583,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/3",
@@ -619,7 +629,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/2",
@@ -664,7 +675,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       }
     ],
     "reqheaders": {
@@ -678,7 +690,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "5851",
+      "content-length": "5947",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -749,7 +761,8 @@
         "closed_at": null,
         "author_association": "MEMBER",
         "active_lock_reason": null,
-        "body": null
+        "body": null,
+        "performed_via_github_app": null
       }
     ],
     "reqheaders": {
@@ -763,7 +776,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1951",
+      "content-length": "1983",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
