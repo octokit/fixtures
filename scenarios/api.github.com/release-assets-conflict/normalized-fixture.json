@@ -85,7 +85,7 @@
     "response": {
       "message": "Validation Failed",
       "request_id": "0000:00000:0000000:0000000:00000000",
-      "documentation_url": "https://developer.github.com/v3",
+      "documentation_url": "https://docs.github.com/rest",
       "errors": [
         {
           "resource": "ReleaseAsset",
@@ -105,7 +105,7 @@
     "headers": {
       "cache-control": "no-cache",
       "connection": "close",
-      "content-length": "214",
+      "content-length": "211",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

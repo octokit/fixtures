@@ -168,7 +168,7 @@
     "response": {
       "message": "Moved Permanently",
       "url": "https://api.github.com/repositories/1000",
-      "documentation_url": "https://developer.github.com/v3/#http-redirects"
+      "documentation_url": "https://docs.github.com/v3/#http-redirects"
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -180,7 +180,7 @@
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "connection": "close",
-      "content-length": "155",
+      "content-length": "150",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -372,7 +372,7 @@
     "response": {
       "message": "Moved Permanently",
       "url": "https://api.github.com/repositories/1000",
-      "documentation_url": "https://developer.github.com/v3/#http-redirects"
+      "documentation_url": "https://docs.github.com/v3/#http-redirects"
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -386,7 +386,7 @@
       "access-control-allow-origin": "*",
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "connection": "close",
-      "content-length": "155",
+      "content-length": "150",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
