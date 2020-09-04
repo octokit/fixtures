@@ -113,7 +113,7 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "no-cache",
       "connection": "close",
       "content-length": "4146",
@@ -132,6 +132,7 @@
       "x-ratelimit-limit": "30",
       "x-ratelimit-remaining": "29",
       "x-ratelimit-reset": "1507651200000",
+      "x-ratelimit-used": 1,
       "x-xss-protection": "1; mode=block"
     }
   }
