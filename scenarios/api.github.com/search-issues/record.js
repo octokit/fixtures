@@ -48,7 +48,7 @@ async function searchIssues(state) {
     });
 
     // timeout for search indexing
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    await new Promise((resolve) => setTimeout(resolve, 15000));
 
     const query = `sesame repo:octokit-fixture-org/${temporaryRepository.name}`;
     await state.request({
