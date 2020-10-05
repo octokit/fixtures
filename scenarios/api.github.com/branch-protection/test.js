@@ -11,7 +11,7 @@ test("Branch protection", async (t) => {
   await axios({
     method: "get",
     url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -31,7 +31,7 @@ test("Branch protection", async (t) => {
   await axios({
     method: "put",
     url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -50,7 +50,7 @@ test("Branch protection", async (t) => {
   await axios({
     method: "put",
     url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -82,7 +82,7 @@ test("Branch protection", async (t) => {
   await axios({
     method: "delete",
     url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/master/protection",
+      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",

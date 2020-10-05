@@ -54,7 +54,7 @@ async function branchProtection(state) {
     await state
       .request({
         method: "get",
-        url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
+        url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/main/protection`,
         headers: {
           Accept: "application/vnd.github.v3+json",
           Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
@@ -72,7 +72,7 @@ async function branchProtection(state) {
     // Update branch protection with minimal settings
     await state.request({
       method: "put",
-      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
+      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/main/protection`,
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
@@ -89,7 +89,7 @@ async function branchProtection(state) {
     // Update branch protection with maximal settings
     await state.request({
       method: "put",
-      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
+      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/main/protection`,
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
@@ -119,7 +119,7 @@ async function branchProtection(state) {
     // Remove branch protection
     await state.request({
       method: "delete",
-      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/master/protection`,
+      url: `/repos/octokit-fixture-org/${temporaryRepository.name}/branches/main/protection`,
       headers: {
         Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
@@ -129,7 +129,7 @@ async function branchProtection(state) {
     error = _error;
   }
 
-  await temporaryRepository.delete();
+  // await temporaryRepository.delete();
 
   if (error) {
     return Promise.reject(error);
