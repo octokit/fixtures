@@ -2,7 +2,7 @@
   {
     "scope": "https://api.github.com:443",
     "method": "get",
-    "path": "/repos/octokit-fixture-org/get-archive/tarball/master",
+    "path": "/repos/octokit-fixture-org/get-archive/tarball/main",
     "body": "",
     "status": 302,
     "response": "",
@@ -22,7 +22,7 @@
       "content-type": "text/html;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "expires": "Tue, 10 Oct 2017 16:00:00 GMT",
-      "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/master",
+      "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/main",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
       "status": "302 Found",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
@@ -39,7 +39,7 @@
   {
     "scope": "https://codeload.github.com:443",
     "method": "get",
-    "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/master",
+    "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/main",
     "body": "",
     "status": 200,
     "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
