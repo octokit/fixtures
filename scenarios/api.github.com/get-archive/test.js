@@ -10,7 +10,7 @@ test("Get archive", async (t) => {
   const redirectLocation = await axios({
     method: "get",
     url:
-      "https://api.github.com/repos/octokit-fixture-org/get-archive/tarball/master",
+      "https://api.github.com/repos/octokit-fixture-org/get-archive/tarball/main",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -31,7 +31,7 @@ test("Get archive", async (t) => {
 
   t.is(
     redirectLocation,
-    "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/master"
+    "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/main"
   );
 
   const result = await axios({

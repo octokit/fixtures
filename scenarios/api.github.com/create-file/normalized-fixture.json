@@ -11,15 +11,15 @@
         "path": "test.txt",
         "sha": "3f3f005b29247e51a4f4d6b8ce07b67646cd6074",
         "size": 12,
-        "url": "https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt?ref=master",
-        "html_url": "https://github.com/octokit-fixture-org/create-file/blob/master/test.txt",
+        "url": "https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt?ref=main",
+        "html_url": "https://github.com/octokit-fixture-org/create-file/blob/main/test.txt",
         "git_url": "https://api.github.com/repos/octokit-fixture-org/create-file/git/blobs/3f3f005b29247e51a4f4d6b8ce07b67646cd6074",
-        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/create-file/master/test.txt",
+        "download_url": "https://raw.githubusercontent.com/octokit-fixture-org/create-file/main/test.txt",
         "type": "file",
         "_links": {
-          "self": "https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt?ref=master",
+          "self": "https://api.github.com/repos/octokit-fixture-org/create-file/contents/test.txt?ref=main",
           "git": "https://api.github.com/repos/octokit-fixture-org/create-file/git/blobs/3f3f005b29247e51a4f4d6b8ce07b67646cd6074",
-          "html": "https://github.com/octokit-fixture-org/create-file/blob/master/test.txt"
+          "html": "https://github.com/octokit-fixture-org/create-file/blob/main/test.txt"
         }
       },
       "commit": {
@@ -64,7 +64,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1750",
+      "content-length": "1740",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

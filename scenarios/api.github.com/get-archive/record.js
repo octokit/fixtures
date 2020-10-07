@@ -38,7 +38,7 @@ async function getArchive(state) {
     try {
       await state.request({
         method: "get",
-        url: `/repos/octokit-fixture-org/${temporaryRepository.name}/tarball/master`,
+        url: `/repos/octokit-fixture-org/${temporaryRepository.name}/tarball/main`,
         headers: {
           Accept: "application/vnd.github.v3+json",
           Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
