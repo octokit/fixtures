@@ -34,7 +34,7 @@ and recording both requests and responses into JSON files. Each scenario has the
 
 ## Recording
 
-The [record task](#record) [normalizes](#normalization) requests and responses
+The [record task](CONTRIBUTING.md#record) [normalizes](#normalizations) requests and responses
 before storing them in order to remove changing values like time stamps and counts.
 Afterwards the new fixtures are compared to the existing ones. If a change occurs,
 an error is logged.
@@ -91,7 +91,7 @@ of the `@octokit/fixtures` package and notify developers of the update.
 - **All IDs are set to 1000** or above. The ID increments for each entity of the
   same type within the same scenario
 - **All Node IDs are set to `MDA6RW50aXR5MQ==`** which is the base64 string for `00:Entity1`.
-- **Tokens Authorization Header are zerofied** ending with the token number, see [environment variables below](https://github.com/octokit/fixtures#test-users--organization--tokens)  
+- **Tokens Authorization Header are zerofied** ending with the token number, see [environment variables below](CONTRIBUTING.md#test-users--organization--tokens)  
   e.g. `FIXTURES_USER_A_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000001`,
   `FIXTURES_USER_B_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000002`, etc
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
