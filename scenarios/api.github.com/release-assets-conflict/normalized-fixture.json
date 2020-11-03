@@ -111,7 +111,6 @@
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "strict-transport-security": "max-age=31557600",
-      "x-accepted-oauth-scopes": "repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
       "x-github-media-type": "github.v3; format=json",
