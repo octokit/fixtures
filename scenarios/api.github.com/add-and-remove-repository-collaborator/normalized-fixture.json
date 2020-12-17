@@ -274,7 +274,8 @@
         "permissions": "write",
         "created_at": "2017-10-10T09:00:00-07:00",
         "url": "https://api.github.com/user/repository_invitations/1000",
-        "html_url": "https://github.com/octokit-fixture-org/add-and-remove-repository-collaborator/invitations"
+        "html_url": "https://github.com/octokit-fixture-org/add-and-remove-repository-collaborator/invitations",
+        "expired": false
       }
     ],
     "reqheaders": {
@@ -288,7 +289,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "8217",
+      "content-length": "8233",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
