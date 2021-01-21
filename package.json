@@ -65,5 +65,10 @@
       "test",
       "scenarios/**/test.js"
     ]
+  },
+  "renovate": {
+    "extends": [
+      "github>octokit/.github"
+    ]
   }
 }
