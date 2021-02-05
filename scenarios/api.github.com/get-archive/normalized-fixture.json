@@ -24,7 +24,6 @@
       "expires": "Tue, 10 Oct 2017 16:00:00 GMT",
       "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/main",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
-      "status": "302 Found",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",

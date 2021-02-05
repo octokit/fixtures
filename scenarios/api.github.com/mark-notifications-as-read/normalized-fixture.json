@@ -22,7 +22,6 @@
       "content-type": "text/plain;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
-      "status": "205 Reset Content",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-accepted-oauth-scopes": "notifications, repo",
       "x-content-type-options": "nosniff",
