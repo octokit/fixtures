@@ -24,17 +24,10 @@
     "test:scenarios": "tap 'scenarios/**/test.js'",
     "semantic-release": "semantic-release"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/octokit/fixtures.git"
-  },
+  "repository": "github:octokit/fixtures",
   "keywords": [],
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/octokit/fixtures/issues"
-  },
-  "homepage": "https://github.com/octokit/fixtures#readme",
   "dependencies": {
     "json-diff": "^0.5.3",
     "lodash": "^4.17.11",
