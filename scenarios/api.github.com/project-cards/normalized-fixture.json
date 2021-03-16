@@ -67,7 +67,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -138,7 +138,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -239,7 +239,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -307,7 +307,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -377,7 +377,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -417,7 +417,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -457,7 +457,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -497,7 +497,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   },
   {
@@ -531,7 +531,7 @@
       "x-ratelimit-remaining": "4999",
       "x-ratelimit-reset": "1507651200000",
       "x-ratelimit-used": 1,
-      "x-xss-protection": "1; mode=block"
+      "x-xss-protection": "0"
     }
   }
 ]
