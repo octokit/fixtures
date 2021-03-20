@@ -31,7 +31,7 @@ test("Get archive", async (t) => {
 
   t.is(
     redirectLocation,
-    "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/main"
+    "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main"
   );
 
   const result = await axios({
@@ -43,7 +43,7 @@ test("Get archive", async (t) => {
     },
   });
 
-  t.is(Buffer.from(result.data, "binary").toString("hex").length, 340);
+  t.is(Buffer.from(result.data, "binary").toString("hex").length, 586);
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
   t.end();
