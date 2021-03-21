@@ -22,7 +22,7 @@
       "content-type": "text/html;charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "expires": "Tue, 10 Oct 2017 16:00:00 GMT",
-      "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/main",
+      "location": "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main",
       "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-content-type-options": "nosniff",
@@ -38,10 +38,10 @@
   {
     "scope": "https://codeload.github.com:443",
     "method": "get",
-    "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/main",
+    "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main",
     "body": "",
     "status": 200,
-    "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
+    "response": "1f8b0800000000000003edd5bd4ec3301007f0cc3c45256683bfce710606243ab2f002959bb869445357ae8bcadb633e065a5490506885faff2d8eec4877f6f99295db4eda4598bac564ee5de363313c9e1963dec66c7fcc8bba109a4b9225e952e579a149aaa2fd835cbed8ac938b39640c217df7de4febfb9bfb27488eead0f77e996e8c91c2ceec948423f26525a4b7c69a4af2cacada340d299a96c25d9c3a67184ea85378ec129b75dbb4899e85d8b2d4afd8baf64b17bbc05a9f988bf5bc7bf24c7229b8929c6ba5a8aa6cc59e6d970cfbb839d70762bcf64359d2e1fecfcfbbfd2f496955d0310ee0ccfb7fd0fa3f8c6fefeec7577db31be3fdfbaf0fd75fd07efd8d11f97f718c0338f3fa5f8e3e15f8d4c9000000000000000000000000000000c0afbc0058d7cb3700280000",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
@@ -51,8 +51,8 @@
     "headers": {
       "access-control-allow-origin": "https://render.githubusercontent.com",
       "connection": "close",
-      "content-disposition": "attachment; filename=octokit-fixture-org-get-archive-0000000.tar.gz",
-      "content-length": 172,
+      "content-disposition": "attachment; filename=octokit-fixture-org-tmp-scenario-get-archive-20210320043359989-y8it6-66218f8.tar.gz",
+      "content-length": 305,
       "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
       "content-type": "application/x-gzip",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
