@@ -41,7 +41,7 @@
     "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main",
     "body": "",
     "status": 200,
-    "response": "1f8b0800000000000003edd5dd4ac3301407f05efb1403afa3f94e77e185e02ebdf105469aa65d716d4696c91edff871e1265390ba31f6ff5148490ae724a7a75dd9edbc5d86ca2ee70b6f6b1f8bf1d14c6bfd3e66fb635e940593946b2594a132cf33a9382dda7fc8e59bcd3ad99843c610d24fcffdb6bebfb933a1f8c485bef743ba6b4459f18a5a612a6b6823987265ada695b6a6d1baf1d49576dab8f2ead439c378824be1b94ba4e9b669133d09b125a95f91b5f3838d5d20ad4fc446b7e85e3ce194332ab8a492e54b71413aba5d0ce4f3cdb93d10e3ad1f8c5187fb3fdfeff63f57d288421de3002ebcff47adffd3ecfee17176d3d7bb313ebefff270fd99daafbf3632ff2f8e7100175effebc997029f3a19000000000000000000000000000000f89357e79cc33100280000",
+    "response": "1f8b0800000000000003edd5bb4ec3301406e0cc3c45256683edf8120606243ab2f00295e3b869d426ae5c072a9e1e731968504042a555d5ff5b6cc591ceb18f4fb236db59bdf2a559cd16ce542e64fb4713a5d4fb980cc7b428322628d76926354bcf99904c64f53fe4f24dbf8926a490c1fbf8d37bbfad0f377722249f58dfb6ae8bb795b546e5da9579294b6e2a55a8dc2853decc2515b43285a685a8687971ec9c617fbc8d7ed944326fb6b10f8ef85093d8aec9c6bace84c693da4562825d344f8e70ca19cd79ba0e8ce5421505593ebff41df9bc39d72331defa416b39deff69bedbff5c6a9e67f2100770e6fdbfd7fa3f4eefee1fa6576db51be3e3fb2fc6ebcfe4b0fe9ae9f4bf38c4019c79fd2f275f0a7cec64000000000000000000000000000000e04f5e0102ec0aa800280000",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
@@ -51,8 +51,8 @@
     "headers": {
       "access-control-allow-origin": "https://render.githubusercontent.com",
       "connection": "close",
-      "content-disposition": "attachment; filename=octokit-fixture-org-tmp-scenario-get-archive-20210324041041523-i0xhn-f38b2b0.tar.gz",
-      "content-length": 304,
+      "content-disposition": "attachment; filename=octokit-fixture-org-tmp-scenario-get-archive-20210325041134688-kwzun-dcca637.tar.gz",
+      "content-length": 307,
       "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
       "content-type": "application/x-gzip",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
