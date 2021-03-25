@@ -43,7 +43,7 @@ test("Get archive", async (t) => {
     },
   });
 
-  t.is(Buffer.from(result.data, "binary").toString("hex").length, 586);
+  t.is(Buffer.from(result.data, "binary").toString("hex").length, 340);
 
   t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
   t.end();
