@@ -41,7 +41,7 @@
     "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main",
     "body": "",
     "status": 200,
-    "response": "1f8b0800000000000003edd5bb4ec3301406e0cc3c45256683edf8120606243ab2f00295e3b869d426ae5c072a9e1e731968504042a555d5ff5b6cc591ceb18f4fb236db59bdf2a559cd16ce542e64fb4713a5d4fb980cc7b428322628d76926354bcf99904c64f53fe4f24dbf8926a490c1fbf8d37bbfad0f377722249f58dfb6ae8bb795b546e5da9579294b6e2a55a8dc2853decc2515b43285a685a8687971ec9c617fbc8d7ed944326fb6b10f8ef85093d8aec9c6bace84c693da4562825d344f8e70ca19cd79ba0e8ce5421505593ebff41df9bc39d72331defa416b39deff69bedbff5c6a9e67f2100770e6fdbfd7fa3f4eefee1fa6576db51be3e3fb2fc6ebcfe4b0fe9ae9f4bf38c4019c79fd2f275f0a7cec64000000000000000000000000000000e04f5e0102ec0aa800280000",
+    "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
@@ -51,8 +51,8 @@
     "headers": {
       "access-control-allow-origin": "https://render.githubusercontent.com",
       "connection": "close",
-      "content-disposition": "attachment; filename=octokit-fixture-org-tmp-scenario-get-archive-20210325041134688-kwzun-dcca637.tar.gz",
-      "content-length": 307,
+      "content-disposition": "attachment; filename=octokit-fixture-org-get-archive-0000000.tar.gz",
+      "content-length": 172,
       "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
       "content-type": "application/x-gzip",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
