@@ -30,6 +30,9 @@ async function renameRepository(state) {
       },
     });
 
+    // wait for 1000ms to account for replication delay
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     // https://developer.github.com/v3/repos/#get
     // get repository using previous name
     await state
