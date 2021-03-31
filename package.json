@@ -50,7 +50,7 @@
     "prettier": "^2.0.1",
     "proxyquire": "^2.1.0",
     "semantic-release": "^17.0.0",
-    "tap": "^14.0.0",
+    "tap": "^15.0.0",
     "tar-stream": "^2.0.1"
   },
   "nyc": {
