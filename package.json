@@ -6,6 +6,7 @@
   },
   "description": "Fixtures for all the octokittens",
   "main": "index.js",
+  "type": "module",
   "files": [
     "index.js",
     "bin",
