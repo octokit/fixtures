@@ -1,7 +1,7 @@
-const env = require("../../../lib/env");
+import env from "../../../lib/env";
 
 // https://developer.github.com/v3/repos/#get
-module.exports = {
+export default {
   method: "get",
   url: "/repos/octokit-fixture-org/hello-world",
   headers: {

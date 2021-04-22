@@ -1,7 +1,7 @@
-const env = require("../../../lib/env");
+import env from "../../../lib/env";
 
 // https://developer.github.com/v3/orgs/#get-an-organization
-module.exports = {
+export default {
   method: "get",
   url: "/orgs/octokit-fixture-org",
   headers: {

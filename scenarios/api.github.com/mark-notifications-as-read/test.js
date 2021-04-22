@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 const axios = require("axios");
 
 const fixtures = require("../../..");
+=======
+import axios from "axios";
+import { test } from "tap";
+import fixtures from "../../..";
+>>>>>>> c8c956a (feat: rewrite in ESModules)
 
 test("Labels", async () => {
   const mock = fixtures.mock("api.github.com/mark-notifications-as-read");

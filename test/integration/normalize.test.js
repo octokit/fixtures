@@ -1,9 +1,8 @@
-const glob = require("glob");
+import { sync } from "glob";
 
-const normalize = require("../../lib/normalize");
+import { bind } from "../../lib/normalize";
 
-glob
-  .sync("scenarios/**/raw-fixture.json")
+sync("scenarios/**/raw-fixture.json")
   .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
   .forEach((fixturnName) => {
     test(`normalize ${fixturnName}`, async () => {
@@ -15,7 +14,7 @@ glob
         ids: {},
       };
       const actual = await Promise.all(
-        raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))
+        raw.filter(isntIgnored).map(bind(null, scenarioState))
       );
       expect(actual).toEqual(expected);
     });

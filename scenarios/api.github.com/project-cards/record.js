@@ -1,7 +1,6 @@
-module.exports = lockIssue;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default lockIssue;
+import env from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 async function lockIssue(state) {
   let error;

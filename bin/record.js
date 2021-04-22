@@ -9,18 +9,18 @@ require("axios-debug-log")({
   error: () => {}
 });
 
-const axios = require("axios");
-const Bottleneck = require("bottleneck");
-const chalk = require("chalk");
-const cloneDeep = require("lodash/cloneDeep");
-const { diff, diffString } = require("json-diff");
-const glob = require("glob");
-const humanize = require("humanize-string");
+import { create } from "axios";
+import Bottleneck from "bottleneck";
+import { bold } from "chalk";
+import cloneDeep from "lodash/cloneDeep";
+import { diff, diffString } from "json-diff";
+import { sync } from "glob";
+import humanize from "humanize-string";
 
-const normalize = require("../lib/normalize");
-const read = require("../lib/read");
-const recordScenario = require("../lib/record-scenario");
-const write = require("../lib/write");
+import normalize from "../lib/normalize";
+import read from "../lib/read";
+import recordScenario from "../lib/record-scenario";
+import write from "../lib/write";
 
 const argv = require("minimist")(process.argv.slice(2), {
   boolean: ["update", "test-cached"]
@@ -31,7 +31,7 @@ const hasSelectedScenarios = selectedScenarios.length > 0;
 
 const scenarios = hasSelectedScenarios
   ? selectedScenarios
-  : glob.sync("scenarios/**/record.js");
+  : sync("scenarios/**/record.js");
 const diffs = [];
 
 // run scenarios one by one
@@ -45,10 +45,10 @@ scenarios
     const [domain, title] = fixtureName.split("/");
     console.log("");
     console.log(
-      `⏯️  ${chalk.bold(domain)}: ${humanize(title.replace(".js", ""))} ...`
+      `⏯️  ${bold(domain)}: ${humanize(title.replace(".js", ""))} ...`
     );
 
-    const request = axios.create({
+    const request = create({
       baseURL: `https://${domain}`,
       maxRedirects: 0 // record redirects explicitly
     });
@@ -134,7 +134,7 @@ scenarios
 
     console.log(diffString(oldNormalizedFixtures, newNormalizedFixtures));
     console.log(
-      `💁  Update fixtures with \`${chalk.bold("bin/record.js --update")}\``
+      `💁  Update fixtures with \`${bold("bin/record.js --update")}\``
     );
   }, Promise.resolve())
 

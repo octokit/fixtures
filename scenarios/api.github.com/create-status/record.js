@@ -1,7 +1,6 @@
-module.exports = createStatus;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default createStatus;
+import env from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 async function createStatus(state) {
   let error;

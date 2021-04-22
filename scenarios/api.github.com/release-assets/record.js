@@ -1,12 +1,9 @@
-module.exports = releaseAssets;
-
-const fs = require("fs");
-const pathResolve = require("path").resolve;
-
-const urlTemplate = require("url-template");
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default releaseAssets;
+import fs from "fs";
+import { resolve as pathResolve } from "path";
+import urlTemplate from "url-template";
+import env from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 async function releaseAssets(state) {
   let error;

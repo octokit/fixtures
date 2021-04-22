@@ -1,7 +1,6 @@
-module.exports = getArchive;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default getArchive;
+import env from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 async function getArchive(state) {
   let error;

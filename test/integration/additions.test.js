@@ -1,10 +1,10 @@
-const _ = require("lodash");
-const axios = require("axios");
+import { isObject, mapValues } from "lodash";
+import axios from "axios";
 
-const fixtures = require("../..");
+import { mock as _mock } from "../..";
 
 test("reqheaders additions", async () => {
-  const mock = fixtures.mock("api.github.com/get-repository", {
+  const mock = _mock("api.github.com/get-repository", {
     reqheaders: {
       "x-fixtures-id": "123",
     },
@@ -39,8 +39,8 @@ test("reqheaders additions", async () => {
   }
 });
 
-test("scope additions", async () => {
-  const mock = fixtures.mock("api.github.com/rename-repository", {
+test("scope additions", async (t) => {
+  const mock = _mock("api.github.com/rename-repository", {
     scope: "http://localhost:3000",
   });
 
@@ -80,10 +80,8 @@ test("scope additions", async () => {
 
 test("additions function", async () => {
   const mapValuesDeep = (v, callback) =>
-    _.isObject(v)
-      ? _.mapValues(v, (v) => mapValuesDeep(v, callback))
-      : callback(v);
-  const mock = fixtures.mock("api.github.com/release-assets", (fixture) => {
+    isObject(v) ? mapValues(v, (v) => mapValuesDeep(v, callback)) : callback(v);
+  const mock = _mock("api.github.com/release-assets", (fixture) => {
     if (fixture.scope === "https://uploads.github.com:443") {
       fixture.path = `/uploads.github.com${fixture.path}`;
     }

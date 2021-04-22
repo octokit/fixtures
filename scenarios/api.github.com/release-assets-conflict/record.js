@@ -1,9 +1,7 @@
-module.exports = releaseAssetsConflict;
-
-const urlTemplate = require("url-template");
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default releaseAssetsConflict;
+import urlTemplate from "url-template";
+import env from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 async function releaseAssetsConflict(state) {
   let error;

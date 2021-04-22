@@ -1,7 +1,6 @@
-module.exports = searchIssues;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default searchIssues;
+import env from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 async function searchIssues(state) {
   let error;

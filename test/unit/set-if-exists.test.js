@@ -1,4 +1,4 @@
-const setIfExists = require("../../lib/set-if-exists");
+import setIfExists from "../../lib/set-if-exists";
 
 test("setIfExists accepts undefined as object argument", () => {
   const result = setIfExists(undefined, "foo", "bar");

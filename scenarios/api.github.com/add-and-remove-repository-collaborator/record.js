@@ -1,7 +1,10 @@
-module.exports = addAndRemoveRepostioryCollaborator;
+export default addAndRemoveRepostioryCollaborator;
 
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+import {
+  FIXTURES_USER_A_TOKEN_FULL_ACCESS,
+  FIXTURES_USER_B_TOKEN_FULL_ACCESS,
+} from "../../../lib/env";
+import getTemporaryRepository from "../../../lib/temporary-repository";
 
 // - As user A, invite user B as collaborator to repository "octokit-fixture-org/hello-world"
 // - As user A, list invitations
@@ -13,7 +16,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({
     request: state.request,
-    token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
+    token: FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
     name: "add-and-remove-repository-collaborator",
   });
@@ -26,7 +29,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
     url: `/repos/octokit-fixture-org/${temporaryRepository.name}/collaborators/octokit-fixture-user-b`,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      Authorization: `token ${FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
     },
   });
 
@@ -36,7 +39,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
     url: `/repos/octokit-fixture-org/${temporaryRepository.name}/invitations`,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      Authorization: `token ${FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
     },
   });
 
@@ -46,7 +49,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
     url: `/user/repository_invitations/${invitationsResponse.data[0].id}`,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: `token ${env.FIXTURES_USER_B_TOKEN_FULL_ACCESS}`,
+      Authorization: `token ${FIXTURES_USER_B_TOKEN_FULL_ACCESS}`,
     },
   });
 
@@ -59,7 +62,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
     url: `/repos/octokit-fixture-org/${temporaryRepository.name}/collaborators`,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      Authorization: `token ${FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
     },
   });
 
@@ -69,7 +72,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
     url: `/repos/octokit-fixture-org/${temporaryRepository.name}/collaborators/octokit-fixture-user-b`,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      Authorization: `token ${FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
     },
   });
 
@@ -79,7 +82,7 @@ async function addAndRemoveRepostioryCollaborator(state) {
     url: `/repos/octokit-fixture-org/${temporaryRepository.name}/collaborators`,
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+      Authorization: `token ${FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
     },
   });
 

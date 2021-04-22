@@ -1,4 +1,4 @@
-const temporaryRepository = require("../../lib/temporary-repository");
+import temporaryRepository from "../../lib/temporary-repository";
 
 test("temporaryRepository(name) returns {create, delete} API", () => {
   const options = {};
