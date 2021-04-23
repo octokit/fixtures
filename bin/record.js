@@ -9,20 +9,21 @@ require("axios-debug-log")({
   error: () => {}
 });
 
-import { create } from "axios";
+import axios from "axios";
 import Bottleneck from "bottleneck";
-import { bold } from "chalk";
+import chalk from "chalk";
 import cloneDeep from "lodash/cloneDeep";
 import { diff, diffString } from "json-diff";
-import { sync } from "glob";
+import glob from "glob";
 import humanize from "humanize-string";
 
 import normalize from "../lib/normalize";
-import read from "../lib/read";
+import read from "../lib/read.js";
 import recordScenario from "../lib/record-scenario";
 import write from "../lib/write";
 
-const argv = require("minimist")(process.argv.slice(2), {
+import minimist from "minimist";
+const argv = minimist(process.argv.slice(2), {
   boolean: ["update", "test-cached"]
 });
 const doUpdate = argv.update;
@@ -31,7 +32,7 @@ const hasSelectedScenarios = selectedScenarios.length > 0;
 
 const scenarios = hasSelectedScenarios
   ? selectedScenarios
-  : sync("scenarios/**/record.js");
+  : glob.sync("scenarios/**/record.js");
 const diffs = [];
 
 // run scenarios one by one
@@ -45,10 +46,10 @@ scenarios
     const [domain, title] = fixtureName.split("/");
     console.log("");
     console.log(
-      `⏯️  ${bold(domain)}: ${humanize(title.replace(".js", ""))} ...`
+      `⏯️  ${chalk.bold(domain)}: ${humanize(title.replace(".js", ""))} ...`
     );
 
-    const request = create({
+    const request = axios.create({
       baseURL: `https://${domain}`,
       maxRedirects: 0 // record redirects explicitly
     });

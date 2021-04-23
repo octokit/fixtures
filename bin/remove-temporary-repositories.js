@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-import { create } from 'axios'
+import axios from 'axios'
 
-import { FIXTURES_USER_A_TOKEN_FULL_ACCESS } from '../lib/env'
+import env from '../lib/env'
 import { regex } from '../lib/temporary-repository'
 
-const github = create({
+const github = axios.create({
   baseURL: 'https://api.github.com',
   headers: {
     Accept: 'application/vnd.github.v3+json',
-    Authorization: `token ${FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
+    Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
   }
 })
 

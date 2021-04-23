@@ -1,9 +1,9 @@
 import axios from "axios";
 
-import { mock as _mock } from "../../..";
+import fixtures from "../../..";
 
 test("Get repository", async () => {
-  const mock = _mock("api.github.com/add-and-remove-repository-collaborator");
+  const mock = fixtures.mock("api.github.com/add-and-remove-repository-collaborator");
 
   // https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator
   await axios({

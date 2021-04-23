@@ -1,9 +1,9 @@
 import axios from "axios";
 
-import { mock as _mock } from "../..";
+import fixtures from "../..";
 
 test("Accepts fixtures object as argument", async () => {
-  _mock(
+  fixtures.mock(
     require("../../scenarios/api.github.com/get-repository/normalized-fixture.json")
   );
 
@@ -20,7 +20,7 @@ test("Accepts fixtures object as argument", async () => {
 });
 
 test("Missing Accept header", async (t) => {
-  _mock("api.github.com/get-repository");
+  fixtures.mock("api.github.com/get-repository");
 
   try {
     await axios({
@@ -34,7 +34,7 @@ test("Missing Accept header", async (t) => {
 });
 
 test("Matches corret fixture based on authorization header", async (t) => {
-  _mock("api.github.com/get-root");
+  fixtures.mock("api.github.com/get-root");
 
   const result = await axios({
     method: "get",
@@ -49,7 +49,7 @@ test("Matches corret fixture based on authorization header", async (t) => {
 });
 
 test("unmatched request error", async () => {
-  const mock = _mock("api.github.com/get-repository");
+  const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
     await axios({
@@ -66,7 +66,7 @@ test("unmatched request error", async () => {
 });
 
 test("explain non-request error", async () => {
-  const mock = _mock("api.github.com/get-repository");
+  const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
     mock.explain(new Error("foo"));
