@@ -1,10 +1,10 @@
 import assert from "assert";
 import { URL } from "url";
-import cloneDeep from "lodash/cloneDeep";
-import merge from "lodash/merge";
-import pick from "lodash/pick";
+import cloneDeep from "lodash/cloneDeep.js";
+import merge from "lodash/merge.js";
+import pick from "lodash/pick.js";
 import nock from "nock";
-import headers from "./lib/headers";
+import { toArray } from "./lib/headers.js";
 import { diffString } from "json-diff";
 
 export default {
@@ -35,7 +35,7 @@ function mock(fixtures, additions) {
   }
 
   fixtures.forEach((fixture) => {
-    fixture.rawHeaders = headers.toArray(fixture.headers);
+    fixture.rawHeaders = toArray(fixture.headers);
     delete fixture.headers;
   });
 

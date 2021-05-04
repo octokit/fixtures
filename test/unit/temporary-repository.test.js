@@ -1,4 +1,4 @@
-import temporaryRepository from "../../lib/temporary-repository";
+import temporaryRepository from "../../lib/temporary-repository.js";
 
 test("temporaryRepository(name) returns {create, delete} API", () => {
   const options = {};

@@ -2,8 +2,8 @@ export default releaseAssets;
 import fs from "fs";
 import { resolve as pathResolve } from "path";
 import urlTemplate from "url-template";
-import env from "../../../lib/env";
-import getTemporaryRepository from "../../../lib/temporary-repository";
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function releaseAssets(state) {
   let error;

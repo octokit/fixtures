@@ -1,6 +1,6 @@
 import { sync } from "glob";
 
-import { bind } from "../../lib/normalize";
+import { bind } from "../../lib/normalize/index.js";
 
 sync("scenarios/**/raw-fixture.json")
   .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))

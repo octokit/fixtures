@@ -1,6 +1,6 @@
 export default errors;
-import env from "../../../lib/env";
-import getTemporaryRepository from "../../../lib/temporary-repository";
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function errors(state) {
   let error;

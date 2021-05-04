@@ -1,5 +1,5 @@
 export default markNotificationsAsRead;
-import env from "../../../lib/env";
+import env from "../../../lib/env.js";
 
 // https://developer.github.com/v3/activity/notifications/#mark-as-read
 async function markNotificationsAsRead(state) {

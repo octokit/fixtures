@@ -1,4 +1,4 @@
-import env from "../../../lib/env";
+import env from "../../../lib/env.js";
 
 // https://developer.github.com/v3/orgs/#get-an-organization
 export default {

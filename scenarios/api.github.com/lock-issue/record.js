@@ -1,6 +1,6 @@
 export default lockIssue;
-import env from "../../../lib/env";
-import getTemporaryRepository from "../../../lib/temporary-repository";
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function lockIssue(state) {
   let error;

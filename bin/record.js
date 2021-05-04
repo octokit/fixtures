@@ -12,7 +12,7 @@ require("axios-debug-log")({
 import axios from "axios";
 import Bottleneck from "bottleneck";
 import chalk from "chalk";
-import cloneDeep from "lodash/cloneDeep";
+import cloneDeep from "lodash/cloneDeep.js";
 import { diff, diffString } from "json-diff";
 import glob from "glob";
 import humanize from "humanize-string";

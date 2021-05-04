@@ -1,6 +1,6 @@
 export default searchIssues;
-import env from "../../../lib/env";
-import getTemporaryRepository from "../../../lib/temporary-repository";
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function searchIssues(state) {
   let error;

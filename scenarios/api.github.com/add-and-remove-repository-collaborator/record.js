@@ -3,8 +3,8 @@ export default addAndRemoveRepostioryCollaborator;
 import {
   FIXTURES_USER_A_TOKEN_FULL_ACCESS,
   FIXTURES_USER_B_TOKEN_FULL_ACCESS,
-} from "../../../lib/env";
-import getTemporaryRepository from "../../../lib/temporary-repository";
+} from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 // - As user A, invite user B as collaborator to repository "octokit-fixture-org/hello-world"
 // - As user A, list invitations

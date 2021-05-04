@@ -1,7 +1,8 @@
-import { isObject, mapValues } from "lodash";
+import isObject from "lodash/isObject.js";
+import mapValues from "lodash/mapValues.js";
 import axios from "axios";
 
-import fixtures from "../..";
+import fixtures from "../../index.js";
 
 test("reqheaders additions", async () => {
   const mock = fixtures.mock("api.github.com/get-repository", {

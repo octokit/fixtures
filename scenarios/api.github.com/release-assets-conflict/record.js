@@ -1,7 +1,7 @@
 export default releaseAssetsConflict;
 import urlTemplate from "url-template";
-import env from "../../../lib/env";
-import getTemporaryRepository from "../../../lib/temporary-repository";
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function releaseAssetsConflict(state) {
   let error;
