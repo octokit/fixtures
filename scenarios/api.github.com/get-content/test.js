@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get repository", async (t) => {
+test("Get repository", async () => {
   const mock = fixtures.mock("api.github.com/get-content");
 
   const jsonResult = await axios({
@@ -15,8 +14,8 @@ test("Get repository", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.is(jsonResult.data.length, 1);
-  t.is(jsonResult.data[0].path, "README.md");
+  expect(jsonResult.data.length).toBe(1);
+  expect(jsonResult.data[0].path).toBe("README.md");
 
   const rawResult = await axios({
     method: "get",
@@ -27,12 +26,10 @@ test("Get repository", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.is(rawResult.data, "# hello-world");
-  t.is(
-    rawResult.headers["content-type"],
+  expect(rawResult.data).toBe("# hello-world");
+  expect(rawResult.headers["content-type"]).toBe(
     "application/vnd.github.v3.raw; charset=utf-8"
   );
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });

@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Branch protection", async (t) => {
+test("Branch protection", async () => {
   const mock = fixtures.mock("api.github.com/branch-protection");
 
   // https://developer.github.com/v3/repos/branches/#get-branch-protection
@@ -85,6 +84,5 @@ test("Branch protection", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });

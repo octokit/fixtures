@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Create File", async (t) => {
+test("Create File", async () => {
   const mock = fixtures.mock("api.github.com/create-file");
 
   const result = await axios({
@@ -20,7 +19,6 @@ test("Create File", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.is(result.data.content.type, "file");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
+  expect(result.data.content.type).toBe("file");
 });

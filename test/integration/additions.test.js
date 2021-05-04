@@ -1,10 +1,9 @@
 const _ = require("lodash");
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../..");
 
-test("reqheaders additions", async (t) => {
+test("reqheaders additions", async (done) => {
   const mock = fixtures.mock("api.github.com/get-repository", {
     reqheaders: {
       "x-fixtures-id": "123",
@@ -20,9 +19,9 @@ test("reqheaders additions", async (t) => {
         Authorization: "token 0000000000000000000000000000000000000001",
       },
     });
-    t.fail("should fail without X-Foo header");
+    done.fail("should fail without X-Foo header");
   } catch (error) {
-    t.match(error.message, "No match for request");
+    expect(error.message).toMatch("No match for request");
   }
 
   try {
@@ -36,13 +35,11 @@ test("reqheaders additions", async (t) => {
       },
     });
   } catch (error) {
-    t.fail(mock.explain(error));
+    done.fail(mock.explain(error));
   }
-
-  t.end();
 });
 
-test("scope additions", async (t) => {
+test("scope additions", async () => {
   const mock = fixtures.mock("api.github.com/rename-repository", {
     scope: "http://localhost:3000",
   });
@@ -59,7 +56,7 @@ test("scope additions", async (t) => {
     data: {
       name: "rename-repository-newname",
     },
-  }).catch((error) => t.error(mock.explain(error)));
+  }).catch((error) => expect(mock.explain(error)).toBeFalsy());
 
   // https://developer.github.com/v3/repos/#get
   await axios({
@@ -72,19 +69,16 @@ test("scope additions", async (t) => {
     maxRedirects: 0,
   }).catch((error) => {
     if (/No match for request/.test(error.message)) {
-      t.error(mock.explain(error));
+      expect(mock.explain(error)).toBeFalsy();
     }
 
-    t.is(
-      error.response.headers.location,
+    expect(error.response.headers.location).toBe(
       "http://localhost:3000/repositories/1000"
     );
   });
-
-  t.end();
 });
 
-test("additions function", async (t) => {
+test("additions function", async () => {
   const mapValuesDeep = (v, callback) =>
     _.isObject(v)
       ? _.mapValues(v, (v) => mapValuesDeep(v, callback))
@@ -121,14 +115,12 @@ test("additions function", async (t) => {
       Authorization: "token 0000000000000000000000000000000000000001",
       "x-fixtures-id": "123",
     },
-  }).catch((error) => t.error(mock.explain(error)));
+  }).catch((error) => expect(mock.explain(error)).toBeFalsy());
 
-  t.is(
-    data.url,
+  expect(data.url).toBe(
     "http://localhost:3000/repos/octokit-fixture-org/release-assets/releases/1000"
   );
-  t.is(
-    data.upload_url,
+  expect(data.upload_url).toBe(
     "http://localhost:3000/uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets{?name,label}"
   );
 
@@ -146,6 +138,4 @@ test("additions function", async (t) => {
     },
     data: "Hello, world!\n",
   }).catch((error) => console.log(mock.explain(error)));
-
-  t.end();
 });

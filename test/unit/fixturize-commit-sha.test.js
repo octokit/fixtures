@@ -1,8 +1,6 @@
-const { test } = require("tap");
-
 const fixturizeCommitSha = require("../../lib/fixturize-commit-sha");
 
-test("fixturizeCommitSha for fixturized sha", (t) => {
+test("fixturizeCommitSha for fixturized sha", () => {
   const map = {
     existing: "0000000000000000000000000000000000000001",
   };
@@ -10,6 +8,5 @@ test("fixturizeCommitSha for fixturized sha", (t) => {
     map,
     "0000000000000000000000000000000000000001"
   );
-  t.is(sha, "0000000000000000000000000000000000000001");
-  t.end();
+  expect(sha).toBe("0000000000000000000000000000000000000001");
 });

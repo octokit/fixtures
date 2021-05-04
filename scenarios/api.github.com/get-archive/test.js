@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get archive", async (t) => {
+test("Get archive", async () => {
   const mock = fixtures.mock("api.github.com/get-archive");
 
   // https://developer.github.com/v3/repos/#edit
@@ -19,7 +18,7 @@ test("Get archive", async (t) => {
     maxRedirects: 0,
   })
     .catch((error) => {
-      t.is(error.response.status, 302);
+      expect(error.response.status).toBe(302);
       if (error.response.status === 302) {
         return error.response.headers.location;
       }
@@ -28,8 +27,7 @@ test("Get archive", async (t) => {
     })
     .catch(mock.explain);
 
-  t.is(
-    redirectLocation,
+  expect(redirectLocation).toBe(
     "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main"
   );
 
@@ -42,8 +40,7 @@ test("Get archive", async (t) => {
     },
   });
 
-  t.is(Buffer.from(result.data, "binary").toString("hex").length, 340);
+  expect(Buffer.from(result.data, "binary").toString("hex").length).toBe(340);
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });

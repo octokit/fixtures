@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get repository", async (t) => {
+test("Get repository", async () => {
   const mock = fixtures.mock(
     "api.github.com/add-and-remove-repository-collaborator"
   );
@@ -29,7 +28,7 @@ test("Get repository", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.is(invitationsResponse.data[0].id, 1000);
+  expect(invitationsResponse.data[0].id).toBe(1000);
 
   // https://developer.github.com/v3/repos/invitations/#accept-a-repository-invitation
   await axios({
@@ -72,6 +71,5 @@ test("Get repository", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });

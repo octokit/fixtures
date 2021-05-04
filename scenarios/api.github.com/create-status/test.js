@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Create status", async (t) => {
+test("Create status", async () => {
   const mock = fixtures.mock("api.github.com/create-status");
 
   // create failure status
@@ -60,7 +59,6 @@ test("Create status", async (t) => {
     },
   });
 
-  t.is(data.state, "failure", "combined state is failure");
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(data.state).toBe("failure");
+  expect(mock.done.bind(mock)).not.toThrow();
 });

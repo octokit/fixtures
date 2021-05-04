@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Get organization", async (t) => {
+test("Get organization", async () => {
   const mock = fixtures.mock("api.github.com/get-organization");
 
   const result = await axios({
@@ -15,7 +14,6 @@ test("Get organization", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.is(result.data.id, 1000);
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
+  expect(result.data.id).toBe(1000);
 });
