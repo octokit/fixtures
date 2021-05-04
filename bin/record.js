@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 // run with "DEBUG=axios" to see debug logs
-require("axios-debug-log")({
+import axiosDebugLog from "axios-debug-log"
+axiosDebugLog({
   request: function(debug, config) {
     debug(`${config.method.toUpperCase()} ${config.url}`);
   },

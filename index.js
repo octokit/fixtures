@@ -6,6 +6,7 @@ import pick from "lodash/pick.js";
 import nock from "nock";
 import { toArray } from "./lib/headers.js";
 import { diffString } from "json-diff";
+import { readFileSync } from "fs";
 
 export default {
   // don’t use short syntax for node@4 compatibility
@@ -15,7 +16,9 @@ export default {
 };
 
 function get(name) {
-  return require(`./scenarios/${name}/normalized-fixture.json`);
+  return JSON.parse(
+    readFileSync(`./scenarios/${name}/normalized-fixture.json`)
+  );
 }
 
 function mock(fixtures, additions) {
