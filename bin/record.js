@@ -136,7 +136,7 @@ scenarios
 
     console.log(diffString(oldNormalizedFixtures, newNormalizedFixtures));
     console.log(
-      `💁  Update fixtures with \`${bold("bin/record.js --update")}\``
+      `💁  Update fixtures with \`${chalk.bold("bin/record.js --update")}\``
     );
   }, Promise.resolve())
 
