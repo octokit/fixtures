@@ -2,8 +2,8 @@
 
 import axios from "axios";
 
-import env from "../lib/env";
-import { regex } from "../lib/temporary-repository";
+import env from "../lib/env.js";
+import { regex } from "../lib/temporary-repository.js";
 
 const github = axios.create({
   baseURL: "https://api.github.com",

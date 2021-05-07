@@ -18,10 +18,10 @@ import { diff, diffString } from "json-diff";
 import glob from "glob";
 import humanize from "humanize-string";
 
-import normalize from "../lib/normalize";
+import normalize from "../lib/normalize/index.js";
 import read from "../lib/read.js";
-import recordScenario from "../lib/record-scenario";
-import write from "../lib/write";
+import recordScenario from "../lib/record-scenario.js";
+import write from "../lib/write.js";
 
 import minimist from "minimist";
 const argv = minimist(process.argv.slice(2), {
