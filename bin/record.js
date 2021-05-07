@@ -17,13 +17,13 @@ import cloneDeep from "lodash/cloneDeep.js";
 import { diff, diffString } from "json-diff";
 import glob from "glob";
 import humanize from "humanize-string";
+import minimist from "minimist";
 
 import normalize from "../lib/normalize/index.js";
 import read from "../lib/read.js";
 import recordScenario from "../lib/record-scenario.js";
 import write from "../lib/write.js";
 
-import minimist from "minimist";
 const argv = minimist(process.argv.slice(2), {
   boolean: ["update", "test-cached"],
 });
@@ -31,10 +31,16 @@ const doUpdate = argv.update;
 const selectedScenarios = argv._;
 const hasSelectedScenarios = selectedScenarios.length > 0;
 
+console.log(`hasSelectedScenarios`);
+console.log(hasSelectedScenarios);
+
 const scenarios = hasSelectedScenarios
   ? selectedScenarios
   : glob.sync("scenarios/**/record.js");
 const diffs = [];
+
+console.log(`scenarios`);
+console.log(scenarios);
 
 // run scenarios one by one
 scenarios
@@ -83,7 +89,7 @@ scenarios
     const oldNormalizedFixtures = await read(fixtureName);
     const newRawFixtures = await recordScenario({
       request: request,
-      scenario: require(`../scenarios/${fixtureName}/record`),
+      scenario: await import(`../scenarios/${fixtureName}/record.js`),
     });
 
     const scenarioState = {
