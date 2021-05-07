@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 // run with "DEBUG=axios" to see debug logs
-import axiosDebugLog from "axios-debug-log"
+import axiosDebugLog from "axios-debug-log";
 axiosDebugLog({
-  request: function(debug, config) {
+  request: function (debug, config) {
     debug(`${config.method.toUpperCase()} ${config.url}`);
   },
   response: () => {},
-  error: () => {}
+  error: () => {},
 });
 
 import axios from "axios";
@@ -25,7 +25,7 @@ import write from "../lib/write";
 
 import minimist from "minimist";
 const argv = minimist(process.argv.slice(2), {
-  boolean: ["update", "test-cached"]
+  boolean: ["update", "test-cached"],
 });
 const doUpdate = argv.update;
 const selectedScenarios = argv._;
@@ -52,16 +52,16 @@ scenarios
 
     const request = axios.create({
       baseURL: `https://${domain}`,
-      maxRedirects: 0 // record redirects explicitly
+      maxRedirects: 0, // record redirects explicitly
     });
 
     // throttle writing requests
     // https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits
     const limiter = new Bottleneck({
       maxConcurrent: 1,
-      minTime: 3000
+      minTime: 3000,
     });
-    request.interceptors.request.use(config => {
+    request.interceptors.request.use((config) => {
       if (
         !["POST", "PATCH", "PUT", "DELETE"].includes(
           config.method.toUpperCase()
@@ -75,7 +75,7 @@ scenarios
 
     // set strict validation header, remove once stricter validations are applied
     // to all requests: https://developer.github.com/changes/2018-11-07-strict-validation/
-    request.interceptors.request.use(config => {
+    request.interceptors.request.use((config) => {
       config.headers.Accept = `${config.headers.Accept},application/vnd.github.speedy-preview+json`;
       return config;
     });
@@ -83,12 +83,12 @@ scenarios
     const oldNormalizedFixtures = await read(fixtureName);
     const newRawFixtures = await recordScenario({
       request: request,
-      scenario: require(`../scenarios/${fixtureName}/record`)
+      scenario: require(`../scenarios/${fixtureName}/record`),
     });
 
     const scenarioState = {
       commitSha: {}, // map original commit sha hashes to normalized commit hashes
-      ids: {}
+      ids: {},
     };
 
     const newNormalizedFixtures = await Promise.all(
@@ -109,7 +109,7 @@ scenarios
       changes: fixturesDiffs,
       newNormalizedFixtures,
       oldNormalizedFixtures,
-      newRawFixtures
+      newRawFixtures,
     });
 
     if (fixturesDiffs[0][0] === "-") {
@@ -117,7 +117,7 @@ scenarios
         console.log("📼  New fixtures recorded");
         return write(fixtureName, {
           normalized: newNormalizedFixtures,
-          raw: newRawFixtures
+          raw: newRawFixtures,
         });
       }
       console.log(`❌  "${fixtureName}" looks like a new fixture`);
@@ -128,7 +128,7 @@ scenarios
       console.log("📼  Fixture updates recorded");
       return write(fixtureName, {
         normalized: newNormalizedFixtures,
-        raw: newRawFixtures
+        raw: newRawFixtures,
       });
     }
 
@@ -154,7 +154,7 @@ scenarios
     process.exit(1);
   })
 
-  .catch(error => {
+  .catch((error) => {
     if (!error.response) {
       console.log(error);
       process.exit(1);
