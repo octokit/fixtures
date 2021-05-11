@@ -37,8 +37,7 @@ test("Labels", async (t) => {
   // Get a label
   await axios({
     method: "get",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
+    url: "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -49,8 +48,7 @@ test("Labels", async (t) => {
   // Update a label
   await axios({
     method: "patch",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
+    url: "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -66,8 +64,7 @@ test("Labels", async (t) => {
   // Delete a label
   await axios({
     method: "delete",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label-updated",
+    url: "https://api.github.com/repos/octokit-fixture-org/labels/labels/test-label-updated",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",

@@ -9,8 +9,7 @@ test("Lock issues", async (t) => {
   // https://developer.github.com/v3/issues/#lock-an-issue
   await axios({
     method: "put",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/lock-issue/issues/1/lock",
+    url: "https://api.github.com/repos/octokit-fixture-org/lock-issue/issues/1/lock",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -24,8 +23,7 @@ test("Lock issues", async (t) => {
   // https://developer.github.com/v3/issues/#unlock-an-issue
   await axios({
     method: "delete",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/lock-issue/issues/1/lock",
+    url: "https://api.github.com/repos/octokit-fixture-org/lock-issue/issues/1/lock",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",

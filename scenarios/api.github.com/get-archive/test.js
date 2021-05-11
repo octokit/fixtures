@@ -9,8 +9,7 @@ test("Get archive", async (t) => {
   // https://developer.github.com/v3/repos/#edit
   const redirectLocation = await axios({
     method: "get",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/get-archive/tarball/main",
+    url: "https://api.github.com/repos/octokit-fixture-org/get-archive/tarball/main",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
