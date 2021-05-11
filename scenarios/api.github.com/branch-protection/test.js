@@ -10,8 +10,7 @@ test("Branch protection", async (t) => {
   // Get branch protection
   await axios({
     method: "get",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
+    url: "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -30,8 +29,7 @@ test("Branch protection", async (t) => {
   // Update branch protection with minimal settings
   await axios({
     method: "put",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
+    url: "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -49,8 +47,7 @@ test("Branch protection", async (t) => {
   // Update branch protection with maximal settings
   await axios({
     method: "put",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
+    url: "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -81,8 +78,7 @@ test("Branch protection", async (t) => {
   // Remove branch protection
   await axios({
     method: "delete",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
+    url: "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",

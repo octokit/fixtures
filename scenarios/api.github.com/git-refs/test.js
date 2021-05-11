@@ -37,8 +37,7 @@ test("Git references", async (t) => {
   // update test branch to point to sha of 2nd commit instead
   await axios({
     method: "patch",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
+    url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
@@ -64,8 +63,7 @@ test("Git references", async (t) => {
   // Delete test branch
   await axios({
     method: "delete",
-    url:
-      "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
+    url: "https://api.github.com/repos/octokit-fixture-org/git-refs/git/refs/heads/test",
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
