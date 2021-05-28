@@ -46,7 +46,7 @@
     "gunzip-maybe": "^1.4.1",
     "humanize-string": "^2.0.0",
     "into-stream": "^6.0.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.1",
     "minimist": "^1.2.5",
     "mkdirp": "^1.0.3",
     "prettier": "2.3.1",
