@@ -58,7 +58,8 @@
       },
       "required_linear_history": { "enabled": false },
       "allow_force_pushes": { "enabled": false },
-      "allow_deletions": { "enabled": false }
+      "allow_deletions": { "enabled": false },
+      "required_conversation_resolution": { "enabled": false }
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -73,7 +74,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "370",
+      "content-length": "423",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -207,7 +208,8 @@
       },
       "required_linear_history": { "enabled": false },
       "allow_force_pushes": { "enabled": false },
-      "allow_deletions": { "enabled": false }
+      "allow_deletions": { "enabled": false },
+      "required_conversation_resolution": { "enabled": false }
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -222,7 +224,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4594",
+      "content-length": "4647",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
