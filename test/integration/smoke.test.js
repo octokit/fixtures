@@ -61,7 +61,7 @@ test("unmatched request error", async (done) => {
     }).catch(mock.explain);
     done.fail("request should fail");
   } catch (error) {
-    t.match(error.message, '+  url: "https://api.github.com/unknown');
+    expect(error.message).toMatch('+  url: "https://api.github.com/unknown');
   }
 });
 
