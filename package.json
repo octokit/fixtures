@@ -47,7 +47,7 @@
     "into-stream": "^6.0.0",
     "minimist": "^1.2.5",
     "mkdirp": "^1.0.3",
-    "prettier": "2.3.0",
+    "prettier": "2.3.1",
     "proxyquire": "^2.1.0",
     "semantic-release": "^17.0.0",
     "tap": "^15.0.0",
