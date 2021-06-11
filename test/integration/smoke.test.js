@@ -1,6 +1,7 @@
 import axios from "axios";
 
 import fixtures from "../..";
+import { readFileSync } from "fs";
 
 test("Accepts fixtures object as argument", async () => {
   fixtures.mock(
