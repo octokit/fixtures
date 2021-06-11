@@ -1,10 +1,9 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Labels", async (t) => {
-  t.plan(2);
+test("Labels", async () => {
+  expect.assertions(2);
   const mock = fixtures.mock("api.github.com/release-assets-conflict");
 
   // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
@@ -33,7 +32,7 @@ test("Labels", async (t) => {
       data: "Hello, world!\n",
     });
   } catch (error) {
-    t.is(error.response.status, 422);
+    expect(error.response.status).toBe(422);
   }
 
   // https://developer.github.com/v3/repos/releases/#list-assets-for-a-release
@@ -71,6 +70,5 @@ test("Labels", async (t) => {
     data: "Hello, world!\n",
   });
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });

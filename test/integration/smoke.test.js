@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../..");
 
-test("Accepts fixtures object as argument", async (t) => {
+test("Accepts fixtures object as argument", async () => {
   fixtures.mock(
     require("../../scenarios/api.github.com/get-repository/normalized-fixture.json")
   );
@@ -15,14 +14,12 @@ test("Accepts fixtures object as argument", async (t) => {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
     },
-  }).catch(t.error);
+  });
 
-  t.is(result.data.name, "hello-world");
-
-  t.end();
+  expect(result.data.name).toBe("hello-world");
 });
 
-test("Missing Accept header", async (t) => {
+test("Missing Accept header", async () => {
   fixtures.mock("api.github.com/get-repository");
 
   try {
@@ -30,15 +27,13 @@ test("Missing Accept header", async (t) => {
       method: "get",
       url: "https://api.github.com/repos/octokit-fixture-org/hello-world",
     });
-    t.fail("request should fail");
+    throw new Error("request should fail");
   } catch (error) {
-    t.match(error.message, "No match for request");
+    expect(error.message).toMatch("No match for request");
   }
-
-  t.end();
 });
 
-test("Matches corret fixture based on authorization header", async (t) => {
+test("Matches corret fixture based on authorization header", async () => {
   fixtures.mock("api.github.com/get-root");
 
   const result = await axios({
@@ -50,12 +45,10 @@ test("Matches corret fixture based on authorization header", async (t) => {
     },
   });
 
-  t.is(result.headers["x-ratelimit-remaining"], "4999");
-
-  t.end();
+  expect(result.headers["x-ratelimit-remaining"]).toBe("4999");
 });
 
-test("unmatched request error", async (t) => {
+test("unmatched request error", async () => {
   const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
@@ -66,23 +59,19 @@ test("unmatched request error", async (t) => {
         Accept: "application/vnd.github.v3+json",
       },
     }).catch(mock.explain);
-    t.fail("request should fail");
+    throw new Error("request should fail");
   } catch (error) {
-    t.match(error.message, '+  url: "https://api.github.com/unknown');
+    expect(error.message).toMatch('+  url: "https://api.github.com/unknown');
   }
-
-  t.end();
 });
 
-test("explain non-request error", async (t) => {
+test("explain non-request error", async () => {
   const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
     mock.explain(new Error("foo"));
-    t.fail("should throw error");
+    throw new Error("should throw error");
   } catch (error) {
-    t.is(error.message, "foo");
+    expect(error.message).toBe("foo");
   }
-
-  t.end();
 });

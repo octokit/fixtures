@@ -1,10 +1,9 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Errors", async (t) => {
-  t.plan(2);
+test("Errors", async () => {
+  expect.assertions(2);
   const mock = fixtures.mock("api.github.com/errors");
 
   try {
@@ -22,10 +21,8 @@ test("Errors", async (t) => {
       },
     });
   } catch (error) {
-    t.is(error.response.status, 422);
+    expect(error.response.status).toBe(422);
   }
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });

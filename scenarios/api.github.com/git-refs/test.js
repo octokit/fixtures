@@ -1,9 +1,8 @@
 const axios = require("axios");
-const { test } = require("tap");
 
 const fixtures = require("../../..");
 
-test("Git references", async (t) => {
+test("Git references", async () => {
   const mock = fixtures.mock("api.github.com/git-refs");
 
   // https://developer.github.com/v3/git/refs/#get-all-references
@@ -70,6 +69,5 @@ test("Git references", async (t) => {
     },
   }).catch(mock.explain);
 
-  t.doesNotThrow(mock.done.bind(mock), "satisfies all mocks");
-  t.end();
+  expect(mock.done.bind(mock)).not.toThrow();
 });
