@@ -4,7 +4,7 @@ import cloneDeep from "lodash/cloneDeep.js";
 import merge from "lodash/merge.js";
 import pick from "lodash/pick.js";
 import nock from "nock";
-import { toArray } from "./lib/headers.js";
+import headers from "./lib/headers.js";
 import { diffString } from "json-diff";
 import { readFileSync } from "fs";
 
@@ -38,7 +38,7 @@ function mock(fixtures, additions) {
   }
 
   fixtures.forEach((fixture) => {
-    fixture.rawHeaders = toArray(fixture.headers);
+    fixture.rawHeaders = headers.toArray(fixture.headers);
     delete fixture.headers;
   });
 
