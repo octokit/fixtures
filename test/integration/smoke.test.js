@@ -24,7 +24,7 @@ test("Accepts fixtures object as argument", async () => {
   expect(result.data.name).toBe("hello-world");
 });
 
-test("Missing Accept header", async (t) => {
+test("Missing Accept header", async () => {
   fixtures.mock("api.github.com/get-repository");
 
   try {
@@ -38,7 +38,7 @@ test("Missing Accept header", async (t) => {
   }
 });
 
-test("Matches corret fixture based on authorization header", async (t) => {
+test("Matches corret fixture based on authorization header", async () => {
   fixtures.mock("api.github.com/get-root");
 
   const result = await axios({

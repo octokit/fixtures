@@ -7,7 +7,7 @@ glob
   .sync("scenarios/**/raw-fixture.json")
   .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
   .forEach((fixturnName) => {
-    test(`normalize ${fixturnName}`, async (t) => {
+    test(`normalize ${fixturnName}`, async () => {
       const raw = JSON.parse(
         readFileSync(`./scenarios/${fixturnName}/raw-fixture.json`)
       );

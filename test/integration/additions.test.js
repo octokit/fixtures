@@ -40,7 +40,7 @@ test("reqheaders additions", async () => {
   }
 });
 
-test("scope additions", async (t) => {
+test("scope additions", async () => {
   const mock = fixtures.mock("api.github.com/rename-repository", {
     scope: "http://localhost:3000",
   });
