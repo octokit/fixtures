@@ -2,7 +2,7 @@ const axios = require("axios");
 
 const fixtures = require("../..");
 
-test("Accepts fixtures object as argument", async () => {
+test("Accepts fixtures object as argument", async (done) => {
   fixtures.mock(
     require("../../scenarios/api.github.com/get-repository/normalized-fixture.json")
   );
@@ -14,7 +14,7 @@ test("Accepts fixtures object as argument", async () => {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
     },
-  }).catch(t.error);
+  }).catch(done.fail);
 
   expect(result.data.name).toBe("hello-world");
 });
