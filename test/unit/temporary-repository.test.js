@@ -22,9 +22,9 @@ test("temporaryRepository.regex", () => {
   const { name } = temporaryRepository({ name: "funky-repo" });
   const [, originalName] = name.match(regex);
   expect(originalName).toBe("funky-repo");
-  expect(
-    `/repos/org-foo/${name}`.replace(regex, "$1")
-  ).toBe("/repos/org-foo/funky-repo");
+  expect(`/repos/org-foo/${name}`.replace(regex, "$1")).toBe(
+    "/repos/org-foo/funky-repo"
+  );
 });
 
 test("temporaryRepository(name).create() sends POST /orgs/octokit-fixture-org/repos request", () => {
