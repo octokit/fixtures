@@ -2,7 +2,7 @@ const axios = require("axios");
 
 const fixtures = require("../..");
 
-test("Accepts fixtures object as argument", async (done) => {
+test("Accepts fixtures object as argument", async () => {
   fixtures.mock(
     require("../../scenarios/api.github.com/get-repository/normalized-fixture.json")
   );
@@ -14,12 +14,12 @@ test("Accepts fixtures object as argument", async (done) => {
       Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
     },
-  }).catch(done.fail);
+  });
 
   expect(result.data.name).toBe("hello-world");
 });
 
-test("Missing Accept header", async (done) => {
+test("Missing Accept header", async () => {
   fixtures.mock("api.github.com/get-repository");
 
   try {
@@ -27,7 +27,7 @@ test("Missing Accept header", async (done) => {
       method: "get",
       url: "https://api.github.com/repos/octokit-fixture-org/hello-world",
     });
-    done.fail("request should fail");
+    throw new Error("request should fail");
   } catch (error) {
     expect(error.message).toMatch("No match for request");
   }
@@ -48,7 +48,7 @@ test("Matches corret fixture based on authorization header", async () => {
   expect(result.headers["x-ratelimit-remaining"]).toBe("4999");
 });
 
-test("unmatched request error", async (done) => {
+test("unmatched request error", async () => {
   const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
@@ -59,18 +59,18 @@ test("unmatched request error", async (done) => {
         Accept: "application/vnd.github.v3+json",
       },
     }).catch(mock.explain);
-    done.fail("request should fail");
+    throw new Error("request should fail");
   } catch (error) {
     expect(error.message).toMatch('+  url: "https://api.github.com/unknown');
   }
 });
 
-test("explain non-request error", async (done) => {
+test("explain non-request error", async () => {
   const mock = fixtures.mock("api.github.com/get-repository");
 
   try {
     mock.explain(new Error("foo"));
-    done.fail("should throw error");
+    throw new Error("should throw error");
   } catch (error) {
     expect(error.message).toBe("foo");
   }

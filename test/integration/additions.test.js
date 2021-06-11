@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const fixtures = require("../..");
 
-test("reqheaders additions", async (done) => {
+test("reqheaders additions", async () => {
   const mock = fixtures.mock("api.github.com/get-repository", {
     reqheaders: {
       "x-fixtures-id": "123",
@@ -19,7 +19,7 @@ test("reqheaders additions", async (done) => {
         Authorization: "token 0000000000000000000000000000000000000001",
       },
     });
-    done.fail("should fail without X-Foo header");
+    throw new Error("should fail without X-Foo header");
   } catch (error) {
     expect(error.message).toMatch("No match for request");
   }
@@ -35,7 +35,7 @@ test("reqheaders additions", async (done) => {
       },
     });
   } catch (error) {
-    done.fail(mock.explain(error));
+    throw new Error(mock.explain(error));
   }
 });
 
