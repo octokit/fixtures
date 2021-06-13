@@ -19,9 +19,11 @@ glob
         commitSha: {},
         ids: {},
       };
-      const actual = await Promise.all(
-        raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))
-      );
+      const actual = [];
+      for (let item of raw.filter(isntIgnored)) {
+        let result = await normalize.bind(null, scenarioState)(item);
+        actual.push(result);
+      }
       expect(actual).toEqual(expected);
     });
   });
