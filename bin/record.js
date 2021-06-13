@@ -89,7 +89,7 @@ scenarios
     const oldNormalizedFixtures = await read(fixtureName);
     const newRawFixtures = await recordScenario({
       request: request,
-      scenario: await import(`../scenarios/${fixtureName}/record.js`),
+      scenario: (await import(`../scenarios/${fixtureName}/record.js`)).default,
     });
 
     const scenarioState = {
