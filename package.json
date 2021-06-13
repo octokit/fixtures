@@ -20,9 +20,9 @@
     "lint": "prettier --check '{bin,lib,scenarios,test}/**/*.{js,json}' index.js README.md package.json",
     "lint:fix": "prettier --write '{bin,lib,scenarios,test}/**/*.{js,json}' index.js README.md package.json",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage 'scenarios/.*/test.js' 'test/.*/.*.test.js'",
-    "test:unit": "jest -i 'test/unit/.*/*.test.js'",
-    "test:integration": "jest -i 'test/integration/.*/*.test.js'",
-    "test:scenarios": "jest -i 'scenarios/.*/test.js'",
+    "test:unit": "NODE_OPTIONS=--experimental-vm-modules npx jest -i 'test/unit/.*/*.test.js'",
+    "test:integration": "NODE_OPTIONS=--experimental-vm-modules npx jest -i 'test/integration/.*/*.test.js'",
+    "test:scenarios": "NODE_OPTIONS=--experimental-vm-modules npx jest -i 'scenarios/.*/test.js'",
     "semantic-release": "semantic-release"
   },
   "repository": "github:octokit/fixtures",
