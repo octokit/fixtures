@@ -1,10 +1,15 @@
-const axios = require("axios");
+import axios from "axios";
 
-const fixtures = require("../..");
+import fixtures from "../..";
+import { readFileSync } from "fs";
 
 test("Accepts fixtures object as argument", async () => {
   fixtures.mock(
-    require("../../scenarios/api.github.com/get-repository/normalized-fixture.json")
+    JSON.parse(
+      readFileSync(
+        "./scenarios/api.github.com/get-repository/normalized-fixture.json"
+      )
+    )
   );
 
   const result = await axios({

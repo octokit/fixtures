@@ -1,22 +1,24 @@
-const assert = require("assert");
-const { URL } = require("url");
+import assert from "assert";
+import { URL } from "url";
+import cloneDeep from "lodash/cloneDeep.js";
+import merge from "lodash/merge.js";
+import pick from "lodash/pick.js";
+import nock from "nock";
+import headers from "./lib/headers.js";
+import { diffString } from "json-diff";
+import { readFileSync } from "fs";
 
-const cloneDeep = require("lodash/cloneDeep");
-const merge = require("lodash/merge");
-const pick = require("lodash/pick");
-const nock = require("nock");
-const headers = require("./lib/headers");
-const diffString = require("json-diff").diffString;
-
-module.exports = {
+export default {
   // don’t use short syntax for node@4 compatibility
-  get: get,
-  mock: mock,
-  nock: nock,
+  get,
+  mock,
+  nock,
 };
 
 function get(name) {
-  return require(`./scenarios/${name}/normalized-fixture.json`);
+  return JSON.parse(
+    readFileSync(`./scenarios/${name}/normalized-fixture.json`)
+  );
 }
 
 function mock(fixtures, additions) {
@@ -44,10 +46,7 @@ function mock(fixtures, additions) {
 
   const api = {
     pending() {
-      return [].concat.apply(
-        [],
-        mocks.map((mock) => mock.pendingMocks())
-      );
+      return [].concat(...mocks.map((mock) => mock.pendingMocks()));
     },
     explain(error) {
       if (!/^Nock: No match/.test(error.message)) {
@@ -81,7 +80,7 @@ function mock(fixtures, additions) {
     done() {
       assert.ok(
         api.isDone(),
-        "Mocks not yet satisfied:\n" + api.pending().join("\n")
+        `Mocks not yet satisfied:\n${api.pending().join("\n")}`
       );
     },
     isDone() {

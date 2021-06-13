@@ -1,7 +1,8 @@
-const _ = require("lodash");
-const axios = require("axios");
+import isObject from "lodash/isObject.js";
+import mapValues from "lodash/mapValues.js";
+import axios from "axios";
 
-const fixtures = require("../..");
+import fixtures from "../../index.js";
 
 test("reqheaders additions", async () => {
   const mock = fixtures.mock("api.github.com/get-repository", {
@@ -80,9 +81,7 @@ test("scope additions", async () => {
 
 test("additions function", async () => {
   const mapValuesDeep = (v, callback) =>
-    _.isObject(v)
-      ? _.mapValues(v, (v) => mapValuesDeep(v, callback))
-      : callback(v);
+    isObject(v) ? mapValues(v, (v) => mapValuesDeep(v, callback)) : callback(v);
   const mock = fixtures.mock("api.github.com/release-assets", (fixture) => {
     if (fixture.scope === "https://uploads.github.com:443") {
       fixture.path = `/uploads.github.com${fixture.path}`;

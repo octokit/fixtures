@@ -1,7 +1,6 @@
-module.exports = labels;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default labels;
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function labels(state) {
   let error;

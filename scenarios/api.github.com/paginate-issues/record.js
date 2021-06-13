@@ -1,7 +1,6 @@
-module.exports = paginateIssues;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default paginateIssues;
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function paginateIssues(state) {
   let error;

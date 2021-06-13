@@ -1,7 +1,6 @@
-module.exports = errors;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default errors;
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function errors(state) {
   let error;

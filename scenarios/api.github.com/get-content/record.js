@@ -1,8 +1,8 @@
-const env = require("../../../lib/env");
+import env from "../../../lib/env.js";
 
 // https://developer.github.com/v3/repos/contents/#get-contents
 // empty path returns README file if present
-module.exports = [
+export default [
   {
     method: "get",
     url: "/repos/octokit-fixture-org/hello-world/contents/",

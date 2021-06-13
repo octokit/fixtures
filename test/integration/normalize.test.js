@@ -1,22 +1,29 @@
-const glob = require("glob");
+import glob from "glob";
+import { readFileSync } from "fs";
 
-const normalize = require("../../lib/normalize");
+import normalize from "../../lib/normalize/index.js";
 
 glob
   .sync("scenarios/**/raw-fixture.json")
   .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
   .forEach((fixturnName) => {
     test(`normalize ${fixturnName}`, async () => {
-      const raw = require(`../../scenarios/${fixturnName}/raw-fixture.json`);
-      const expected = require(`../../scenarios/${fixturnName}/normalized-fixture.json`);
+      const raw = JSON.parse(
+        readFileSync(`./scenarios/${fixturnName}/raw-fixture.json`)
+      );
+      const expected = JSON.parse(
+        readFileSync(`./scenarios/${fixturnName}/normalized-fixture.json`)
+      );
 
       const scenarioState = {
         commitSha: {},
         ids: {},
       };
-      const actual = await Promise.all(
-        raw.filter(isntIgnored).map(normalize.bind(null, scenarioState))
-      );
+      const actual = [];
+      for (let item of raw.filter(isntIgnored)) {
+        let result = await normalize.bind(null, scenarioState)(item);
+        actual.push(result);
+      }
       expect(actual).toEqual(expected);
     });
   });

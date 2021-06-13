@@ -1,4 +1,4 @@
-const temporaryRepository = require("../../lib/temporary-repository");
+import temporaryRepository, { regex } from "../../lib/temporary-repository.js";
 
 test("temporaryRepository(name) returns {create, delete} API", () => {
   const options = {};
@@ -14,17 +14,17 @@ test("temporaryRepository(name) returns {name}", () => {
   };
   const api = temporaryRepository(options);
 
-  expect(api.name).toMatch(temporaryRepository.regex);
+  expect(api.name).toMatch(regex);
   //  `"${api.name}" matches tmp repository name regex`
 });
 
 test("temporaryRepository.regex", () => {
   const { name } = temporaryRepository({ name: "funky-repo" });
-  const [, originalName] = name.match(temporaryRepository.regex);
+  const [, originalName] = name.match(regex);
   expect(originalName).toBe("funky-repo");
-  expect(
-    `/repos/org-foo/${name}`.replace(temporaryRepository.regex, "$1")
-  ).toBe("/repos/org-foo/funky-repo");
+  expect(`/repos/org-foo/${name}`.replace(regex, "$1")).toBe(
+    "/repos/org-foo/funky-repo"
+  );
 });
 
 test("temporaryRepository(name).create() sends POST /orgs/octokit-fixture-org/repos request", () => {

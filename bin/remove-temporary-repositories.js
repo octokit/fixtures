@@ -1,32 +1,35 @@
 #!/usr/bin/env node
 
-const axios = require('axios')
+import axios from "axios";
 
-const env = require('../lib/env')
-const temporaryRepository = require('../lib/temporary-repository')
+import env from "../lib/env.js";
+import { regex } from "../lib/temporary-repository.js";
 
 const github = axios.create({
-  baseURL: 'https://api.github.com',
+  baseURL: "https://api.github.com",
   headers: {
-    Accept: 'application/vnd.github.v3+json',
-    Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
-  }
-})
+    Accept: "application/vnd.github.v3+json",
+    Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
+  },
+});
 
-github.get('/orgs/octokit-fixture-org/repos')
+github
+  .get("/orgs/octokit-fixture-org/repos")
 
-  .then(result => {
-    return Promise.all(result.data
-      .map(repository => repository.name)
-      .filter(name => temporaryRepository.regex.test(name))
-      .map(name => {
-        return github.delete(`/repos/octokit-fixture-org/${name}`)
+  .then((result) => {
+    return Promise.all(
+      result.data
+        .map((repository) => repository.name)
+        .filter((name) => regex.test(name))
+        .map((name) => {
+          return github
+            .delete(`/repos/octokit-fixture-org/${name}`)
 
-          .then(() => {
-            console.log(`✅  ${name} deleted`)
-          })
-      })
-    )
+            .then(() => {
+              console.log(`✅  ${name} deleted`);
+            });
+        })
+    );
   })
 
-  .catch(console.log)
+  .catch(console.log);

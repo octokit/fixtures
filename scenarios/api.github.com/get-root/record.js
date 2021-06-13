@@ -1,7 +1,7 @@
-const env = require("../../../lib/env");
+import env from "../../../lib/env.js";
 
 // https://developer.github.com/v3/#root-endpoint
-module.exports = [
+export default [
   {
     method: "get",
     url: "/",

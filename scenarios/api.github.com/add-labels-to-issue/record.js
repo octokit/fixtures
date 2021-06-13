@@ -1,7 +1,6 @@
-module.exports = addAndRemoveRepostioryCollaborator;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default addAndRemoveRepostioryCollaborator;
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 // - create issue
 // - add labels to issue

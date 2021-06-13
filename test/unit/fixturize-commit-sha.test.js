@@ -1,4 +1,4 @@
-const fixturizeCommitSha = require("../../lib/fixturize-commit-sha");
+import fixturizeCommitSha from "../../lib/fixturize-commit-sha.js";
 
 test("fixturizeCommitSha for fixturized sha", () => {
   const map = {

@@ -1,12 +1,12 @@
-module.exports = releaseAssets;
+export default releaseAssets;
 
-const fs = require("fs");
-const pathResolve = require("path").resolve;
+import fs from "fs";
+import { resolve as pathResolve, dirname } from "path";
+import { fileURLToPath } from "url";
 
-const urlTemplate = require("url-template");
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+import urlTemplate from "url-template";
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function releaseAssets(state) {
   let error;
@@ -75,7 +75,10 @@ async function releaseAssets(state) {
     // https://developer.github.com/v3/repos/releases/#upload-a-release-asset
     // upload attachment to release URL returned by create release request
     const FILE_NAME = "test-upload.txt";
-    const filePath = pathResolve(__dirname, FILE_NAME);
+    const filePath = pathResolve(
+      dirname(fileURLToPath(import.meta.url)),
+      FILE_NAME
+    );
     const url = urlTemplate.parse(uploadUrl).expand({
       name: FILE_NAME,
       label: "test",

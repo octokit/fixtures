@@ -1,6 +1,6 @@
-const axios = require("axios");
+import axios from "axios";
 
-const fixtures = require("../../..");
+import fixtures from "../../../index.js";
 
 test("paginate issues", async () => {
   const mock = fixtures.mock("api.github.com/paginate-issues");
@@ -23,7 +23,7 @@ test("paginate issues", async () => {
     "https://api.github.com/repositories/1000/issues?per_page=3&page=5",
   ];
 
-  for (var i = 0; i < urls.length; i++) {
+  for (let i = 0; i < urls.length; i++) {
     await axios
       .request(
         Object.assign(options, {

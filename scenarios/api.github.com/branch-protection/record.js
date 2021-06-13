@@ -1,7 +1,6 @@
-module.exports = branchProtection;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default branchProtection;
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function branchProtection(state) {
   let error;

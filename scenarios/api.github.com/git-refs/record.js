@@ -1,7 +1,6 @@
-module.exports = gitRefs;
-
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+export default gitRefs;
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 async function gitRefs(state) {
   let error;

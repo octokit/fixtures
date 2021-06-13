@@ -1,7 +1,7 @@
-module.exports = addAndRemoveRepostioryCollaborator;
+export default addAndRemoveRepostioryCollaborator;
 
-const env = require("../../../lib/env");
-const getTemporaryRepository = require("../../../lib/temporary-repository");
+import env from "../../../lib/env.js";
+import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 // - As user A, invite user B as collaborator to repository "octokit-fixture-org/hello-world"
 // - As user A, list invitations

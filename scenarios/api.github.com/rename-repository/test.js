@@ -1,6 +1,6 @@
-const axios = require("axios");
+import axios from "axios";
 
-const fixtures = require("../../..");
+import fixtures from "../../../index.js";
 
 test("Labels", async () => {
   const mock = fixtures.mock("api.github.com/rename-repository");

@@ -1,6 +1,5 @@
-const axios = require("axios");
-
-const fixtures = require("../../..");
+import axios from "axios";
+import fixtures from "../../../index.js";
 
 test("Branch protection", async () => {
   const mock = fixtures.mock("api.github.com/branch-protection");
