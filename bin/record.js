@@ -42,10 +42,7 @@ console.log(`scenarios`);
 console.log(scenarios);
 
 async function runScenario(scenarioPath, diffs) {
-  const fixtureName = scenarioPath.replace(
-    /(^scenarios\/|\/record\.js$)/g,
-    ""
-  );
+  const fixtureName = scenarioPath.replace(/(^scenarios\/|\/record\.js$)/g, "");
   const [domain, title] = fixtureName.split("/");
   console.log("");
   console.log(
@@ -65,9 +62,7 @@ async function runScenario(scenarioPath, diffs) {
   });
   request.interceptors.request.use((config) => {
     if (
-      !["POST", "PATCH", "PUT", "DELETE"].includes(
-        config.method.toUpperCase()
-      )
+      !["POST", "PATCH", "PUT", "DELETE"].includes(config.method.toUpperCase())
     ) {
       return config;
     }
