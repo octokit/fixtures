@@ -82,12 +82,16 @@ async function runScenario(scenarioPath, diffs) {
     ids: {},
   };
 
-  const newNormalizedFixtures = await Promise.all(
-    newRawFixtures
-      .map(cloneDeep)
-      .filter(hasntIgnoreHeader)
-      .map(normalize.bind(null, scenarioState))
-  );
+  const newNormalizedFixtures = [];
+  for (const newRawFixture of newRawFixtures) {
+    if (hasIgnoreHeader(newRawFixture)) continue;
+
+    const newNormalizedFixture = await normalize(
+      scenarioState,
+      cloneDeep(newRawFixture)
+    );
+    newNormalizedFixtures.push(newNormalizedFixture);
+  }
 
   const fixturesDiffs = diff(newNormalizedFixtures, oldNormalizedFixtures);
   if (!fixturesDiffs) {
@@ -172,7 +176,6 @@ async function main() {
 
 main();
 
-function hasntIgnoreHeader(fixture) {
-  const hasIgnoreHeader = "x-octokit-fixture-ignore" in fixture.reqheaders;
-  return !hasIgnoreHeader;
+function hasIgnoreHeader(fixture) {
+  return "x-octokit-fixture-ignore" in fixture.reqheaders;
 }
