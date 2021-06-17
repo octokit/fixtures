@@ -31,15 +31,9 @@ const doUpdate = argv.update;
 const selectedScenarios = argv._;
 const hasSelectedScenarios = selectedScenarios.length > 0;
 
-console.log(`hasSelectedScenarios`);
-console.log(hasSelectedScenarios);
-
 const scenarios = hasSelectedScenarios
   ? selectedScenarios
   : glob.sync("scenarios/**/record.js");
-
-console.log(`scenarios`);
-console.log(scenarios);
 
 async function runScenario(scenarioPath, diffs) {
   const fixtureName = scenarioPath.replace(/(^scenarios\/|\/record\.js$)/g, "");
