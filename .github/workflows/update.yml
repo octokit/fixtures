@@ -1,8 +1,6 @@
-on:
+"on":
   schedule:
-    # https://crontab.guru/every-day-12pm
     - cron: 5 4 * * *
-
   workflow_dispatch: {}
 name: Update
 jobs:
@@ -12,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
           cache: npm
       - run: git checkout fixtures-update || true
       - run: npm ci
@@ -26,12 +24,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.OCTOKITBOT_PAT }}
         with:
-          title: "🚧 🤖📯 Fixtures changed"
-          body: |
+          title: 🚧 🤖📯 Fixtures changed
+          body: >
             I found new changes in the recorded fixtures 👋🤖
 
-            I can't tell if the changes are fixes, features or breaking, you'll have to figure that out on yourself and adapt the commit messages accordingly to trigger the right release, see [our commit message conventions](https://github.com/octokit/openapi/blob/main/CONTRIBUTING.md#merging-the-pull-request--releasing-a-new-version).
-          branch: "fixtures-update"
-          author: "Octokit Bot <octokitbot@martynus.net>"
+
+            I can't tell if the changes are fixes, features or breaking, you'll
+            have to figure that out on yourself and adapt the commit messages
+            accordingly to trigger the right release, see [our commit message
+            conventions](https://github.com/octokit/openapi/blob/main/CONTRIBUTING.md#merging-the-pull-request--releasing-a-new-version).
+          branch: fixtures-update
+          author: Octokit Bot <octokitbot@martynus.net>
           commit-message: "WIP: fixtures changed - please review"
-          labels: "maintenance"
+          labels: maintenance
