@@ -372,7 +372,13 @@
         "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
         "type": "User",
         "site_admin": false,
-        "permissions": { "admin": true, "push": true, "pull": true }
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "push": true,
+          "triage": true,
+          "pull": true
+        }
       },
       {
         "login": "octokit-fixture-user-b",
@@ -393,7 +399,13 @@
         "received_events_url": "https://api.github.com/users/octokit-fixture-user-b/received_events",
         "type": "User",
         "site_admin": false,
-        "permissions": { "admin": false, "push": true, "pull": true }
+        "permissions": {
+          "admin": false,
+          "maintain": false,
+          "push": true,
+          "triage": true,
+          "pull": true
+        }
       }
     ],
     "reqheaders": {
@@ -407,7 +419,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2252",
+      "content-length": "2313",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -489,7 +501,13 @@
         "received_events_url": "https://api.github.com/users/octokit-fixture-user-a/received_events",
         "type": "User",
         "site_admin": false,
-        "permissions": { "admin": true, "push": true, "pull": true }
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "push": true,
+          "triage": true,
+          "pull": true
+        }
       }
     ],
     "reqheaders": {
@@ -503,7 +521,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "1126",
+      "content-length": "1156",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

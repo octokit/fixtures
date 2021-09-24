@@ -64,13 +64,6 @@ async function runScenario(scenarioPath, diffs) {
     return limiter.schedule(async () => config);
   });
 
-  // set strict validation header, remove once stricter validations are applied
-  // to all requests: https://developer.github.com/changes/2018-11-07-strict-validation/
-  request.interceptors.request.use((config) => {
-    config.headers.Accept = `${config.headers.Accept},application/vnd.github.speedy-preview+json`;
-    return config;
-  });
-
   const oldNormalizedFixtures = await read(fixtureName);
   const newRawFixtures = await recordScenario({
     request: request,
