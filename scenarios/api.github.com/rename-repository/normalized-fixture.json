@@ -136,7 +136,7 @@
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/json",
+      "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 36,
       "host": "api.github.com"
@@ -395,7 +395,7 @@
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/json",
+      "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 69,
       "host": "api.github.com"
@@ -566,7 +566,7 @@
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
-      "content-type": "application/json",
+      "content-type": "application/json; charset=utf-8",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 69,
       "host": "api.github.com"
