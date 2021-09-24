@@ -10,7 +10,7 @@ test("Labels", async () => {
     method: "post",
     url: "https://api.github.com/projects/columns/1000/cards",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -22,7 +22,7 @@ test("Labels", async () => {
     method: "post",
     url: "https://api.github.com/projects/columns/1000/cards",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -36,7 +36,7 @@ test("Labels", async () => {
     method: "get",
     url: "https://api.github.com/projects/columns/1000/cards",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
     },
   });
@@ -46,7 +46,7 @@ test("Labels", async () => {
     method: "get",
     url: "https://api.github.com/projects/columns/cards/1000",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
     },
   });
@@ -56,7 +56,7 @@ test("Labels", async () => {
     method: "patch",
     url: "https://api.github.com/projects/columns/cards/1000",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -71,7 +71,7 @@ test("Labels", async () => {
     method: "post",
     url: "https://api.github.com/projects/columns/cards/1000/moves",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -86,7 +86,7 @@ test("Labels", async () => {
     method: "post",
     url: "https://api.github.com/projects/columns/cards/1001/moves",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -101,7 +101,7 @@ test("Labels", async () => {
     method: "post",
     url: "https://api.github.com/projects/columns/cards/1000/moves",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
       "Content-Type": "application/json; charset=utf-8",
     },
@@ -115,7 +115,7 @@ test("Labels", async () => {
     method: "delete",
     url: "https://api.github.com/projects/columns/cards/1000",
     headers: {
-      Accept: "application/vnd.github.inertia-preview+json",
+      Accept: "application/vnd.github.v3+json",
       Authorization: "token 0000000000000000000000000000000000000001",
     },
   });

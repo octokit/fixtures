@@ -23,7 +23,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/projects`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
         "X-Octokit-Fixture-Ignore": "true",
       },
@@ -40,7 +40,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/${projectId}/columns`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
         "X-Octokit-Fixture-Ignore": "true",
       },
@@ -54,7 +54,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/${projectId}/columns`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
         "X-Octokit-Fixture-Ignore": "true",
       },
@@ -86,7 +86,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
@@ -100,7 +100,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
@@ -113,7 +113,7 @@ async function lockIssue(state) {
     //   method: 'post',
     //   url: `/projects/columns/${column1Id}/cards`,
     //   headers: {
-    //     Accept: 'application/vnd.github.inertia-preview+json',
+    //     Accept: "application/vnd.github.v3+json",
     //     Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`
     //   },
     //   data: {
@@ -127,7 +127,7 @@ async function lockIssue(state) {
       method: "get",
       url: `/projects/columns/${column1Id}/cards`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
     });
@@ -137,7 +137,7 @@ async function lockIssue(state) {
       method: "get",
       url: `/projects/columns/cards/${card1Id}`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
     });
@@ -147,7 +147,7 @@ async function lockIssue(state) {
       method: "patch",
       url: `/projects/columns/cards/${card1Id}`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
@@ -161,7 +161,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/columns/cards/${card1Id}/moves`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
@@ -175,7 +175,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/columns/cards/${card2Id}/moves`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
@@ -189,7 +189,7 @@ async function lockIssue(state) {
       method: "post",
       url: `/projects/columns/cards/${card1Id}/moves`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
       data: {
@@ -202,7 +202,7 @@ async function lockIssue(state) {
       method: "delete",
       url: `/projects/columns/cards/${card1Id}`,
       headers: {
-        Accept: "application/vnd.github.inertia-preview+json",
+        Accept: "application/vnd.github.v3+json",
         Authorization: `token ${env.FIXTURES_USER_A_TOKEN_FULL_ACCESS}`,
       },
     });

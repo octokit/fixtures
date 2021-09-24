@@ -37,8 +37,8 @@
       "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
-      "content-type": "application/json; charset=utf-8",
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 25,
       "host": "api.github.com"
@@ -60,7 +60,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -109,8 +109,8 @@
       "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
-      "content-type": "application/json; charset=utf-8",
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 25,
       "host": "api.github.com"
@@ -132,7 +132,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -214,7 +214,7 @@
       }
     ],
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
+      "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
     },
@@ -234,7 +234,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -283,7 +283,7 @@
       "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
+      "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
     },
@@ -303,7 +303,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -352,8 +352,8 @@
       "column_url": "https://api.github.com/projects/columns/1000"
     },
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
-      "content-type": "application/json; charset=utf-8",
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 33,
       "host": "api.github.com"
@@ -374,7 +374,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -393,8 +393,8 @@
     "status": 201,
     "response": {},
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
-      "content-type": "application/json; charset=utf-8",
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 35,
       "host": "api.github.com"
@@ -415,7 +415,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -434,8 +434,8 @@
     "status": 201,
     "response": {},
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
-      "content-type": "application/json; charset=utf-8",
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 38,
       "host": "api.github.com"
@@ -456,7 +456,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -475,8 +475,8 @@
     "status": 201,
     "response": {},
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
-      "content-type": "application/json; charset=utf-8",
+      "accept": "application/vnd.github.v3+json",
+      "content-type": "application/json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "content-length": 25,
       "host": "api.github.com"
@@ -497,7 +497,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
@@ -516,7 +516,7 @@
     "status": 204,
     "response": "",
     "reqheaders": {
-      "accept": "application/vnd.github.inertia-preview+json",
+      "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
       "host": "api.github.com"
     },
@@ -532,7 +532,7 @@
       "x-accepted-oauth-scopes": "public_repo, repo",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
-      "x-github-media-type": "github.inertia-preview; format=json",
+      "x-github-media-type": "github.v3; format=json",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-oauth-scopes": "admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook, delete_repo, gist, notifications, repo, user, workflow",
       "x-ratelimit-limit": "5000",
