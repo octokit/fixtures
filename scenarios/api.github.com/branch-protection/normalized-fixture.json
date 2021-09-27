@@ -173,6 +173,7 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/required_pull_request_reviews",
         "dismiss_stale_reviews": true,
         "require_code_owner_reviews": false,
+        "required_approving_review_count": 1,
         "dismissal_restrictions": {
           "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/dismissal_restrictions",
           "users_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/dismissal_restrictions/users",
@@ -224,7 +225,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4647",
+      "content-length": "4683",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
