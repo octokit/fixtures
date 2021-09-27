@@ -50,7 +50,7 @@
       "active_lock_reason": null,
       "body": null,
       "closed_by": null,
-      "timeline_url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-add-labels-to-issue-20210924233425649-h1xb3/issues/1/timeline",
+      "timeline_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/timeline",
       "performed_via_github_app": null
     },
     "reqheaders": {
@@ -66,7 +66,7 @@
       "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2171",
+      "content-length": "2134",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
