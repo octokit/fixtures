@@ -30,7 +30,7 @@
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "MIT",
   "dependencies": {
-    "json-diff": "^0.5.3",
+    "json-diff": "^0.9.0",
     "lodash": "^4.17.11",
     "nock": "^13.0.0",
     "url-template": "^2.0.8"
