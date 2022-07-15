@@ -1,5 +1,5 @@
 export default releaseAssetsConflict;
-import urlTemplate from "url-template";
+import { parseTemplate } from "url-template";
 import env from "../../../lib/env.js";
 import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
@@ -67,7 +67,7 @@ async function releaseAssetsConflict(state) {
       },
     });
 
-    const uploadUrlParsed = urlTemplate.parse(uploadUrl).expand({
+    const uploadUrlParsed = parseTemplate(uploadUrl).expand({
       name: "test-upload.txt",
       label: "test",
     });

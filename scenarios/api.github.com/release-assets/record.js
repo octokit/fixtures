@@ -4,7 +4,7 @@ import fs from "fs";
 import { resolve as pathResolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
-import urlTemplate from "url-template";
+import { parseTemplate } from "url-template";
 import env from "../../../lib/env.js";
 import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
@@ -79,7 +79,7 @@ async function releaseAssets(state) {
       dirname(fileURLToPath(import.meta.url)),
       FILE_NAME
     );
-    const url = urlTemplate.parse(uploadUrl).expand({
+    const url = parseTemplate(uploadUrl).expand({
       name: FILE_NAME,
       label: "test",
     });
