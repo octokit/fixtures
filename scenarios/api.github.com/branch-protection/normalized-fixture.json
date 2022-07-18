@@ -53,7 +53,7 @@
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
       "required_signatures": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20220716041532854-di1mq/branches/main/protection/required_signatures",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20220718042717387-u3so5/branches/main/protection/required_signatures",
         "enabled": false
       },
       "enforce_admins": {
@@ -211,7 +211,7 @@
         }
       },
       "required_signatures": {
-        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20220716041532854-di1mq/branches/main/protection/required_signatures",
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20220718042717387-u3so5/branches/main/protection/required_signatures",
         "enabled": false
       },
       "enforce_admins": {
