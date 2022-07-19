@@ -50,8 +50,21 @@
       "active_lock_reason": null,
       "body": null,
       "closed_by": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-add-labels-to-issue-20220719043651190-v2c1k/issues/1/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
       "timeline_url": "https://api.github.com/repos/octokit-fixture-org/add-labels-to-issue/issues/1/timeline",
-      "performed_via_github_app": null
+      "performed_via_github_app": null,
+      "state_reason": null
     },
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
@@ -63,10 +76,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2134",
+      "content-length": "2395",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -133,7 +146,7 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
       "content-length": "583",

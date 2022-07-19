@@ -50,8 +50,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/13/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/13/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/12",
@@ -97,8 +110,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/12/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/12/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/11",
@@ -144,8 +170,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/11/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/11/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       }
     ],
     "reqheaders": {
@@ -156,10 +195,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "6268",
+      "content-length": "7042",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -232,8 +271,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/10/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/10/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/9",
@@ -279,8 +331,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/9/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/9/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/8",
@@ -326,8 +391,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/8/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/8/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       }
     ],
     "reqheaders": {
@@ -338,10 +416,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "6252",
+      "content-length": "7024",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -414,8 +492,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/7/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/6",
@@ -461,8 +552,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/6/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/5",
@@ -508,8 +612,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/5/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       }
     ],
     "reqheaders": {
@@ -520,10 +637,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "6244",
+      "content-length": "7015",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -596,8 +713,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/4/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/3",
@@ -643,8 +773,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/3/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       },
       {
         "url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/2",
@@ -690,8 +833,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/2/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       }
     ],
     "reqheaders": {
@@ -702,10 +858,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "6244",
+      "content-length": "7015",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -778,8 +934,21 @@
         "author_association": "MEMBER",
         "active_lock_reason": null,
         "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-paginate-issues-20220719043836917-izyoe/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
         "timeline_url": "https://api.github.com/repos/octokit-fixture-org/paginate-issues/issues/1/timeline",
-        "performed_via_github_app": null
+        "performed_via_github_app": null,
+        "state_reason": null
       }
     ],
     "reqheaders": {
@@ -790,10 +959,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "2082",
+      "content-length": "2339",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",

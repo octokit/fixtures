@@ -17,7 +17,7 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "connection": "close",
       "content-length": "123",
       "content-security-policy": "default-src 'none'",
@@ -52,6 +52,10 @@
     "status": 200,
     "response": {
       "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection",
+      "required_signatures": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20220719043700727-wbo1k/branches/main/protection/required_signatures",
+        "enabled": false
+      },
       "enforce_admins": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/enforce_admins",
         "enabled": false
@@ -59,6 +63,7 @@
       "required_linear_history": { "enabled": false },
       "allow_force_pushes": { "enabled": false },
       "allow_deletions": { "enabled": false },
+      "block_creations": { "enabled": false },
       "required_conversation_resolution": { "enabled": false }
     },
     "reqheaders": {
@@ -71,10 +76,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "423",
+      "content-length": "656",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -122,7 +127,8 @@
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/required_status_checks",
         "strict": true,
         "contexts": ["foo/bar"],
-        "contexts_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/required_status_checks/contexts"
+        "contexts_url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/required_status_checks/contexts",
+        "checks": [{ "context": "foo/bar", "app_id": null }]
       },
       "restrictions": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/restrictions",
@@ -200,8 +206,13 @@
               "site_admin": false
             }
           ],
-          "teams": []
+          "teams": [],
+          "apps": []
         }
+      },
+      "required_signatures": {
+        "url": "https://api.github.com/repos/octokit-fixture-org/tmp-scenario-branch-protection-20220719043700727-wbo1k/branches/main/protection/required_signatures",
+        "enabled": false
       },
       "enforce_admins": {
         "url": "https://api.github.com/repos/octokit-fixture-org/branch-protection/branches/main/protection/enforce_admins",
@@ -210,6 +221,7 @@
       "required_linear_history": { "enabled": false },
       "allow_force_pushes": { "enabled": false },
       "allow_deletions": { "enabled": false },
+      "block_creations": { "enabled": false },
       "required_conversation_resolution": { "enabled": false }
     },
     "reqheaders": {
@@ -222,10 +234,10 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "cache-control": "private, max-age=60, s-maxage=60",
       "connection": "close",
-      "content-length": "4683",
+      "content-length": "4973",
       "content-security-policy": "default-src 'none'",
       "content-type": "application/json; charset=utf-8",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
@@ -261,7 +273,7 @@
     "responseIsBinary": false,
     "headers": {
       "access-control-allow-origin": "*",
-      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
       "connection": "close",
       "content-security-policy": "default-src 'none'",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
