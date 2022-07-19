@@ -23,7 +23,7 @@ b597b5d`,
   }).catch(mock.explain);
 
   expect(contextMarkdown).toBe(
-    '<h3>Hello</h3>\n<p><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8/hovercard" href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8"><tt>b597b5d</tt></a></p>'
+    '<h3 dir="auto">Hello</h3>\n<p dir="auto"><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8/hovercard" href="https://github.com/octokit-fixture-org/hello-world/commit/b597b5d6eead8f1a9e9d3243cd70a890a6155ca8"><tt>b597b5d</tt></a></p>'
   );
 
   const { data: markdown } = await axios({
