@@ -36,7 +36,7 @@
     "url-template": "^3.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^28.0.0",
+    "@types/jest": "^29.0.0",
     "axios": "^0.27.0",
     "axios-debug-log": "^0.8.0",
     "bottleneck": "^2.12.0",
