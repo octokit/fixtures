@@ -64,10 +64,5 @@
         "statements": 100
       }
     }
-  },
-  "renovate": {
-    "extends": [
-      "github>octokit/.github"
-    ]
   }
 }
