@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.0.0",
-    "axios": "^0.27.0",
+    "axios": "^1.0.0",
     "axios-debug-log": "^0.8.0",
     "bottleneck": "^2.12.0",
     "chalk": "^5.0.0",
