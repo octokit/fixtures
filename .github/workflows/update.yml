@@ -36,4 +36,4 @@ jobs:
           branch: fixtures-update
           author: Octokit Bot <octokitbot@martynus.net>
           commit-message: "WIP: fixtures changed - please review"
-          labels: maintenance
+          labels: "Type: Maintenance"
