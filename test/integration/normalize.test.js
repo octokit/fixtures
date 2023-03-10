@@ -1,10 +1,9 @@
-import glob from "glob";
+import { globSync } from "glob";
 import { readFileSync } from "fs";
 
 import normalize from "../../lib/normalize/index.js";
 
-glob
-  .sync("scenarios/**/raw-fixture.json")
+globSync("scenarios/**/raw-fixture.json")
   .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
   .forEach((fixturnName) => {
     test(`normalize ${fixturnName}`, async () => {
