@@ -15,7 +15,7 @@ import Bottleneck from "bottleneck";
 import chalk from "chalk";
 import cloneDeep from "lodash/cloneDeep.js";
 import { diff, diffString } from "json-diff";
-import glob from "glob";
+import { globSync } from "glob";
 import humanize from "humanize-string";
 import minimist from "minimist";
 
@@ -33,7 +33,7 @@ const hasSelectedScenarios = selectedScenarios.length > 0;
 
 const scenarios = hasSelectedScenarios
   ? selectedScenarios
-  : glob.sync("scenarios/**/record.js");
+  : globSync("scenarios/**/record.js");
 
 async function runScenario(scenarioPath, diffs) {
   const fixtureName = scenarioPath.replace(/(^scenarios\/|\/record\.js$)/g, "");
