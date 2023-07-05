@@ -28,7 +28,7 @@ test("paginate issues", async () => {
       .request(
         Object.assign(options, {
           url: urls[i],
-        })
+        }),
       )
       .catch(mock.explain);
   }

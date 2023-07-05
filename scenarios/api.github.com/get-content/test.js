@@ -28,7 +28,7 @@ test("Get repository", async () => {
 
   expect(rawResult.data).toBe("# hello-world");
   expect(rawResult.headers["content-type"]).toBe(
-    "application/vnd.github.v3.raw; charset=utf-8"
+    "application/vnd.github.v3.raw; charset=utf-8",
   );
 
   expect(mock.done.bind(mock)).not.toThrow();

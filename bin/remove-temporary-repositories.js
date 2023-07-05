@@ -28,7 +28,7 @@ github
             .then(() => {
               console.log(`✅  ${name} deleted`);
             });
-        })
+        }),
     );
   })
 

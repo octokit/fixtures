@@ -17,7 +17,7 @@ export default {
 
 function get(name) {
   return JSON.parse(
-    readFileSync(`./scenarios/${name}/normalized-fixture.json`)
+    readFileSync(`./scenarios/${name}/normalized-fixture.json`),
   );
 }
 
@@ -62,7 +62,7 @@ function mock(fixtures, additions) {
       const actual = pick(requestConfig, Object.keys(expected));
       actual.headers = pick(
         requestConfig.headers,
-        Object.keys(expected.headers)
+        Object.keys(expected.headers),
       );
       error.message = `Request did not match mock ${
         api.pending()[0]
@@ -80,7 +80,7 @@ function mock(fixtures, additions) {
     done() {
       assert.ok(
         api.isDone(),
-        `Mocks not yet satisfied:\n${api.pending().join("\n")}`
+        `Mocks not yet satisfied:\n${api.pending().join("\n")}`,
       );
     },
     isDone() {
@@ -109,7 +109,7 @@ function applyAdditionsDefault(additions, fixture) {
     if (fixture.headers.location) {
       fixture.headers.location = fixture.headers.location.replace(
         "https://api.github.com/",
-        url.href
+        url.href,
       );
     }
   }

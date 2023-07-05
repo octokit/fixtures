@@ -45,7 +45,7 @@ https
       console.log("headers:", response.headers);
       response.on("data", (data) => console.log(data.toString()));
       // logs response from fixture
-    }
+    },
   )
   .end();
 ```

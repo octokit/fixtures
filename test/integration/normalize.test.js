@@ -8,10 +8,10 @@ globSync("scenarios/**/raw-fixture.json")
   .forEach((fixturnName) => {
     test(`normalize ${fixturnName}`, async () => {
       const raw = JSON.parse(
-        readFileSync(`./scenarios/${fixturnName}/raw-fixture.json`)
+        readFileSync(`./scenarios/${fixturnName}/raw-fixture.json`),
       );
       const expected = JSON.parse(
-        readFileSync(`./scenarios/${fixturnName}/normalized-fixture.json`)
+        readFileSync(`./scenarios/${fixturnName}/normalized-fixture.json`),
       );
 
       const scenarioState = {

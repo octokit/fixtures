@@ -40,7 +40,7 @@ async function runScenario(scenarioPath, diffs) {
   const [domain, title] = fixtureName.split("/");
   console.log("");
   console.log(
-    `⏯️  ${chalk.bold(domain)}: ${humanize(title.replace(".js", ""))} ...`
+    `⏯️  ${chalk.bold(domain)}: ${humanize(title.replace(".js", ""))} ...`,
   );
 
   const request = axios.create({
@@ -81,7 +81,7 @@ async function runScenario(scenarioPath, diffs) {
 
     const newNormalizedFixture = await normalize(
       scenarioState,
-      cloneDeep(newRawFixture)
+      cloneDeep(newRawFixture),
     );
     newNormalizedFixtures.push(newNormalizedFixture);
   }
@@ -126,7 +126,7 @@ async function runScenario(scenarioPath, diffs) {
 
   console.log(diffString(oldNormalizedFixtures, newNormalizedFixtures));
   console.log(
-    `💁  Update fixtures with \`${chalk.bold("bin/record.js --update")}\``
+    `💁  Update fixtures with \`${chalk.bold("bin/record.js --update")}\``,
   );
 }
 
