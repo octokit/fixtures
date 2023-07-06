@@ -6,7 +6,7 @@ test("fixturizeCommitSha for fixturized sha", () => {
   };
   const sha = fixturizeCommitSha(
     map,
-    "0000000000000000000000000000000000000001"
+    "0000000000000000000000000000000000000001",
   );
   expect(sha).toBe("0000000000000000000000000000000000000001");
 });

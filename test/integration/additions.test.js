@@ -74,7 +74,7 @@ test("scope additions", async () => {
     }
 
     expect(error.response.headers.location).toBe(
-      "http://localhost:3000/repositories/1000"
+      "http://localhost:3000/repositories/1000",
     );
   });
 });
@@ -99,7 +99,7 @@ test("additions function", async () => {
         .replace("https://api.github.com/", "http://localhost:3000/")
         .replace(
           "https://uploads.github.com/",
-          "http://localhost:3000/uploads.github.com/"
+          "http://localhost:3000/uploads.github.com/",
         );
     });
   });
@@ -117,10 +117,10 @@ test("additions function", async () => {
   }).catch((error) => expect(mock.explain(error)).toBeFalsy());
 
   expect(data.url).toBe(
-    "http://localhost:3000/repos/octokit-fixture-org/release-assets/releases/1000"
+    "http://localhost:3000/repos/octokit-fixture-org/release-assets/releases/1000",
   );
   expect(data.upload_url).toBe(
-    "http://localhost:3000/uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets{?name,label}"
+    "http://localhost:3000/uploads.github.com/repos/octokit-fixture-org/release-assets/releases/1000/assets{?name,label}",
   );
 
   // https://developer.github.com/v3/repos/releases/#upload-a-release-asset

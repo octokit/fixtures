@@ -77,7 +77,7 @@ async function releaseAssets(state) {
     const FILE_NAME = "test-upload.txt";
     const filePath = pathResolve(
       dirname(fileURLToPath(import.meta.url)),
-      FILE_NAME
+      FILE_NAME,
     );
     const url = parseTemplate(uploadUrl).expand({
       name: FILE_NAME,

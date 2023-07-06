@@ -28,7 +28,7 @@ test("Get archive", async () => {
     .catch(mock.explain);
 
   expect(redirectLocation).toBe(
-    "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main"
+    "https://codeload.github.com/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main",
   );
 
   const result = await axios({

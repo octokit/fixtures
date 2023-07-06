@@ -51,7 +51,7 @@ async function paginateIssues(state) {
       const response = await state.request(
         Object.assign(options, {
           url,
-        })
+        }),
       );
 
       url = ((response.headers.link || "").match(/<([^>]+)>;\s*rel="next"/) ||

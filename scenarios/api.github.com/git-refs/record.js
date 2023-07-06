@@ -32,7 +32,7 @@ async function gitRefs(state) {
       data: {
         message: "initial commit",
         content: Buffer.from(
-          "# git-refs\ncreated with initial commit"
+          "# git-refs\ncreated with initial commit",
         ).toString("base64"),
       },
     });
@@ -51,7 +51,7 @@ async function gitRefs(state) {
       data: {
         message: "2nd commit",
         content: Buffer.from("# git-refs\ncreated with 2nd commit").toString(
-          "base64"
+          "base64",
         ),
       },
     });

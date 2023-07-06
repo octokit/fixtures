@@ -4,7 +4,7 @@ import fixtures from "../../../index.js";
 
 test("Get repository", async () => {
   const mock = fixtures.mock(
-    "api.github.com/add-and-remove-repository-collaborator"
+    "api.github.com/add-and-remove-repository-collaborator",
   );
 
   // https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator

@@ -7,9 +7,9 @@ test("Accepts fixtures object as argument", async () => {
   fixtures.mock(
     JSON.parse(
       readFileSync(
-        "./scenarios/api.github.com/get-repository/normalized-fixture.json"
-      )
-    )
+        "./scenarios/api.github.com/get-repository/normalized-fixture.json",
+      ),
+    ),
   );
 
   const result = await axios({
