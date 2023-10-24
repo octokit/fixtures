@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import fixtures from "../..";
+import fixtures from "../../index.js";
 import { readFileSync } from "fs";
 
 test("Accepts fixtures object as argument", async () => {
