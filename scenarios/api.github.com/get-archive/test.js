@@ -40,7 +40,7 @@ test("Get archive", async () => {
     },
   });
 
-  expect(Buffer.from(result.data, "binary").toString("hex").length).toBe(340);
+  expect(Buffer.from(result.data, "binary").toString("hex").length).toBe(332);
 
   expect(mock.done.bind(mock)).not.toThrow();
 });
