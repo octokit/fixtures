@@ -9,6 +9,7 @@
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
+      "accept-encoding": "gzip, compress, deflate, br",
       "host": "api.github.com"
     },
     "responseIsBinary": false,
@@ -27,6 +28,7 @@
       "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "deny",
+      "x-github-api-version-selected": "2022-11-28",
       "x-github-request-id": "0000:00000:0000000:0000000:00000000",
       "x-ratelimit-limit": "5000",
       "x-ratelimit-remaining": "4999",
@@ -42,10 +44,11 @@
     "path": "/octokit-fixture-org/get-archive/legacy.tar.gz/refs/heads/main",
     "body": "",
     "status": 200,
-    "response": "1f8b0800000000000003cb4f2ec9cfce2cd14dcbac28292d4ad5cd2f4ad74d4f2dd14d2c4acec82c4bd53580007d060a0050bfb9b9a90203c428741ac2313436343307222320dbc010a8dc5c81c194124b8905a5c525894540a714e5e797e05347481edd734304e41319ff41ae8e2ebeae7ab92964d801d46f66668227fe0d4d51e3dfc8d0c8d808284f75df6201233cfe951590627ba01d330a46c1281805a3806e000024cb59d6000a0000",
+    "response": "1f8b0800000000000003edd1b10ac2301006e03c4ac039fa2735b959b0a38b6f506aac412490a6e2e33b64d10ab55854c47ccb1172e472fcbe8efee8a2d8bb4bec82153e34a2b15154a13eb8b31548166c0200449ab3f454bfa6832ca4216948011c924813677acad0b1ba36568101c1fb38d4f7ecbebfdc8ff023f3df96abf5a69c9f762fcc0060cc72207fa9eff35752158a33bc61df077f9eff8cdfa4fdedcf645996651f730524cb59d6000a0000",
     "reqheaders": {
       "accept": "application/vnd.github.v3+json",
       "authorization": "token 0000000000000000000000000000000000000001",
+      "accept-encoding": "gzip, compress, deflate, br",
       "host": "codeload.github.com"
     },
     "responseIsBinary": true,
@@ -53,9 +56,10 @@
       "access-control-allow-origin": "https://render.githubusercontent.com",
       "connection": "close",
       "content-disposition": "attachment; filename=octokit-fixture-org-get-archive-0000000.tar.gz",
-      "content-length": 172,
+      "content-length": 176,
       "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
       "content-type": "application/x-gzip",
+      "cross-origin-resource-policy": "cross-origin",
       "date": "Tue, 10 Oct 2017 16:00:00 GMT",
       "etag": "\"00000000000000000000000000000000\"",
       "strict-transport-security": "max-age=31536000",
