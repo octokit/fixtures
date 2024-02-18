@@ -16,7 +16,7 @@ async function gitRefs(state) {
 
   try {
     // https://developer.github.com/v3/repos/contents/#create-a-file
-    // (these requests get ignored, we need two commits to test our refrences)
+    // (these requests get ignored, we need two commits to test our references)
     const {
       data: {
         commit: { sha: sha1 },
