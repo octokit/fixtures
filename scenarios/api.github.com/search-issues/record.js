@@ -17,7 +17,7 @@ async function searchIssues(state) {
 
   try {
     // https://developer.github.com/v3/issues/#create-an-issue
-    // (theses requests get ignored, we need an existing issues for the serarch)
+    // (theses requests get ignored, we need an existing issues for the search)
     await state.request({
       method: "post",
       url: `/repos/octokit-fixture-org/${temporaryRepository.name}/issues`,
