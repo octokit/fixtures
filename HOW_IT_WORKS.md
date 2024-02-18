@@ -12,7 +12,7 @@
 `@octokit/fixtures` provides fixtures that can be used by automated tests for
 GitHub API clients.
 
-The fixtures are recorded programatically
+The fixtures are recorded programmatically
 by sending requests against the [GitHub REST API](https://developer.github.com/v3/)
 and recording both requests and responses into JSON files. Each scenario has their own folder in the [scenarios/<host>/ folder](scenarios/)). Each of these folders contains 4 files:
 
