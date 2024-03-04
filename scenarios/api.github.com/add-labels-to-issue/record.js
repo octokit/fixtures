@@ -1,10 +1,10 @@
-export default addAndRemoveRepostioryCollaborator;
+export default addAndRemoveRepositoryCollaborator;
 import env from "../../../lib/env.js";
 import getTemporaryRepository from "../../../lib/temporary-repository.js";
 
 // - create issue
 // - add labels to issue
-async function addAndRemoveRepostioryCollaborator(state) {
+async function addAndRemoveRepositoryCollaborator(state) {
   let error;
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({

@@ -1,4 +1,4 @@
-export default addAndRemoveRepostioryCollaborator;
+export default addAndRemoveRepositoryCollaborator;
 
 import env from "../../../lib/env.js";
 import getTemporaryRepository from "../../../lib/temporary-repository.js";
@@ -9,7 +9,7 @@ import getTemporaryRepository from "../../../lib/temporary-repository.js";
 // - As user A, list collaborators (now includes user B)
 // - As user A, remove user B as collaborator from repository
 // - As user A, list collaborators (no longer includes user B)
-async function addAndRemoveRepostioryCollaborator(state) {
+async function addAndRemoveRepositoryCollaborator(state) {
   // create a temporary repository
   const temporaryRepository = getTemporaryRepository({
     request: state.request,

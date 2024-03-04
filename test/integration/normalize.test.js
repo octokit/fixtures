@@ -5,13 +5,13 @@ import normalize from "../../lib/normalize/index.js";
 
 globSync("scenarios/**/raw-fixture.json")
   .map((path) => path.replace(/(^scenarios\/|\/raw-fixture.json$)/g, ""))
-  .forEach((fixturnName) => {
-    test(`normalize ${fixturnName}`, async () => {
+  .forEach((fixtureName) => {
+    test(`normalize ${fixtureName}`, async () => {
       const raw = JSON.parse(
-        readFileSync(`./scenarios/${fixturnName}/raw-fixture.json`),
+        readFileSync(`./scenarios/${fixtureName}/raw-fixture.json`),
       );
       const expected = JSON.parse(
-        readFileSync(`./scenarios/${fixturnName}/normalized-fixture.json`),
+        readFileSync(`./scenarios/${fixtureName}/normalized-fixture.json`),
       );
 
       const scenarioState = {

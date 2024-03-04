@@ -12,7 +12,7 @@
 `@octokit/fixtures` provides fixtures that can be used by automated tests for
 GitHub API clients.
 
-The fixtures are recorded programatically
+The fixtures are recorded programmatically
 by sending requests against the [GitHub REST API](https://developer.github.com/v3/)
 and recording both requests and responses into JSON files. Each scenario has their own folder in the [scenarios/<host>/ folder](scenarios/)). Each of these folders contains 4 files:
 
@@ -91,7 +91,7 @@ of the `@octokit/fixtures` package and notify developers of the update.
 - **All IDs are set to 1000** or above. The ID increments for each entity of the
   same type within the same scenario
 - **All Node IDs are set to `MDA6RW50aXR5MQ==`** which is the base64 string for `00:Entity1`.
-- **Tokens Authorization Header are zerofied** ending with the token number, see [environment variables below](CONTRIBUTING.md#test-users--organization--tokens)  
+- **Tokens Authorization Header are zeros** ending with the token number, see [environment variables below](CONTRIBUTING.md#test-users--organization--tokens)
   e.g. `FIXTURES_USER_A_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000001`,
   `FIXTURES_USER_B_TOKEN_FULL_ACCESS` becomes `0000000000000000000000000000000000000002`, etc
 - **All timestamps are set to the time of the GitHub Universe 2017 keynote**  
@@ -111,10 +111,10 @@ of the `@octokit/fixtures` package and notify developers of the update.
 - **URLs containing temporary repository names** in response properties, paths
   and location header are renamed,
   e.g. `tmp-scenario-create-file-20170930034241803` is renamed to `create-file`.
-- **Commit sha hashes** are zerofied with a counter,
+- **Commit sha hashes** are zeros with a counter,
   e.g. `3f3f005b29247e51a4f4d6b8ce07b67646cd6074` becomes `0000000000000000000000000000000000000001`,
   the next unique commit sha becomes `0000000000000000000000000000000000000002`, etc.
-- **GitHub Request IDs** are zerofied,
+- **GitHub Request IDs** are zeros,
   e.g. `DDA3:292D9:5B9AC0:62137E:5A022DD0` becomes `0000:00000:0000000:0000000:00000000`
 
 ## Cron job

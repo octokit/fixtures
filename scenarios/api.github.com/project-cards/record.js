@@ -9,7 +9,7 @@ async function lockIssue(state) {
     request: state.request,
     token: env.FIXTURES_USER_A_TOKEN_FULL_ACCESS,
     org: "octokit-fixture-org",
-    name: "prooject-cards",
+    name: "project-cards",
   });
 
   await temporaryRepository.create();

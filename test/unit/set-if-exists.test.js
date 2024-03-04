@@ -5,7 +5,7 @@ test("setIfExists accepts undefined as object argument", () => {
   expect(result).toBe(undefined);
 });
 
-test("setIfExists sets nested valuest", () => {
+test("setIfExists sets nested values", () => {
   const object = {
     foo: {
       bar: "baz",

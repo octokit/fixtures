@@ -38,7 +38,7 @@ test("Missing Accept header", async () => {
   }
 });
 
-test("Matches corret fixture based on authorization header", async () => {
+test("Matches correct fixture based on authorization header", async () => {
   fixtures.mock("api.github.com/get-root");
 
   const result = await axios({
