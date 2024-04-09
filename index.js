@@ -9,7 +9,6 @@ import { diffString } from "json-diff";
 import { readFileSync } from "fs";
 
 export default {
-  // don’t use short syntax for node@4 compatibility
   get,
   mock,
   nock,
@@ -17,7 +16,9 @@ export default {
 
 function get(name) {
   return JSON.parse(
-    readFileSync(`./scenarios/${name}/normalized-fixture.json`),
+    readFileSync(
+      new URL(`./scenarios/${name}/normalized-fixture.json`, import.meta.url),
+    ).toString(),
   );
 }
 
