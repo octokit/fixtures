@@ -16,7 +16,9 @@ export default {
 
 function get(name) {
   return JSON.parse(
-    readFileSync(`./scenarios/api.github.com/${name}/normalized-fixture.json`),
+    readFileSync(
+      new URL(`./scenarios/${name}/normalized-fixture.json`, import.meta.url),
+    ).toString(),
   );
 }
 
