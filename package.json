@@ -44,7 +44,7 @@
     "chalk": "^5.0.0",
     "envalid": "^8.0.0",
     "get-stream": "^9.0.0",
-    "glob": "^10.0.0",
+    "glob": "^11.0.0",
     "gunzip-maybe": "^1.4.1",
     "humanize-string": "^3.0.0",
     "into-stream": "^8.0.0",
