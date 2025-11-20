@@ -46,10 +46,8 @@
     "get-stream": "^9.0.0",
     "gunzip-maybe": "^1.4.1",
     "humanize-string": "^3.0.0",
-    "into-stream": "^9.0.0",
     "jest": "^30.0.0",
     "minimist": "^1.2.5",
-    "mkdirp": "^3.0.0",
     "prettier": "3.5.3",
     "tar-stream": "^3.0.0",
     "tinyglobby": "^0.2.15"
