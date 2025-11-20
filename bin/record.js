@@ -13,7 +13,6 @@ axiosDebugLog({
 import axios from "axios";
 import Bottleneck from "bottleneck";
 import chalk from "chalk";
-import cloneDeep from "lodash/cloneDeep.js";
 import { diff, diffString } from "json-diff";
 import { globSync } from "glob";
 import humanize from "humanize-string";
@@ -81,7 +80,7 @@ async function runScenario(scenarioPath, diffs) {
 
     const newNormalizedFixture = await normalize(
       scenarioState,
-      cloneDeep(newRawFixture),
+      structuredClone(newRawFixture),
     );
     newNormalizedFixtures.push(newNormalizedFixture);
   }

@@ -1,8 +1,11 @@
 import isObject from "lodash/isObject.js";
-import mapValues from "lodash/mapValues.js";
 import axios from "axios";
 
 import fixtures from "../../index.js";
+
+function mapValues(v, callback) {
+  return Object.fromEntries(Object.entries(v).map(callback));
+}
 
 test("reqheaders additions", async () => {
   const mock = fixtures.mock("api.github.com/get-repository", {

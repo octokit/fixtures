@@ -1,8 +1,6 @@
 import assert from "assert";
 import { URL } from "url";
-import cloneDeep from "lodash/cloneDeep.js";
 import merge from "lodash/merge.js";
-import pick from "lodash/pick.js";
 import nock from "nock";
 import headers from "./lib/headers.js";
 import { diffString } from "json-diff";
@@ -13,6 +11,15 @@ export default {
   mock,
   nock,
 };
+
+function pick(object, keys) {
+  return keys.reduce((obj, key) => {
+     if (object && object.hasOwnProperty(key)) {
+        obj[key] = object[key];
+     }
+     return obj;
+   }, {});
+}
 
 function get(name) {
   return JSON.parse(
@@ -26,7 +33,7 @@ function mock(fixtures, additions) {
   if (typeof fixtures === "string") {
     fixtures = get(fixtures);
   }
-  fixtures = cloneDeep(fixtures);
+  fixtures = structuredClone(fixtures);
 
   if (additions) {
     const applyAdditions =
