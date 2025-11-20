@@ -33,7 +33,7 @@
   "dependencies": {
     "json-diff": "^1.0.0",
     "lodash": "^4.17.11",
-    "nock": "^13.0.0",
+    "nock": "^14.0.0",
     "url-template": "^3.0.0"
   },
   "devDependencies": {
