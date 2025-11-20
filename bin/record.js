@@ -15,7 +15,7 @@ import Bottleneck from "bottleneck";
 import chalk from "chalk";
 import cloneDeep from "lodash/cloneDeep.js";
 import { diff, diffString } from "json-diff";
-import { globSync } from "glob";
+import { globSync } from "tinyglobby";
 import humanize from "humanize-string";
 import minimist from "minimist";
 

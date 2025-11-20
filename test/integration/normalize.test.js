@@ -1,4 +1,4 @@
-import { globSync } from "glob";
+import { globSync } from "tinyglobby";
 import { readFileSync } from "fs";
 
 import normalize from "../../lib/normalize/index.js";
