@@ -1,12 +1,12 @@
-import assert from "assert";
-import { URL } from "url";
+import assert from "node:assert";
+import { readFileSync } from "node:fs";
+import { URL } from "node:url";
 import cloneDeep from "lodash/cloneDeep.js";
 import merge from "lodash/merge.js";
 import pick from "lodash/pick.js";
 import nock from "nock";
 import headers from "./lib/headers.js";
 import { diffString } from "json-diff";
-import { readFileSync } from "fs";
 
 export default {
   get,
