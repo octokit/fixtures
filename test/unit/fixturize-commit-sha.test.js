@@ -1,3 +1,4 @@
+import { test, expect } from "vitest";
 import fixturizeCommitSha from "../../lib/fixturize-commit-sha.js";
 
 test("fixturizeCommitSha for fixturized sha", () => {

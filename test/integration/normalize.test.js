@@ -1,3 +1,4 @@
+import { test, expect } from "vitest";
 import { globSync } from "tinyglobby";
 import { readFileSync } from "fs";
 

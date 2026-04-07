@@ -1,3 +1,4 @@
+import { test, expect } from "vitest";
 import setIfExists from "../../lib/set-if-exists";
 
 test("setIfExists accepts undefined as object argument", () => {

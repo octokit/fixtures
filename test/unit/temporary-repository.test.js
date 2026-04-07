@@ -1,3 +1,4 @@
+import { test, expect } from "vitest";
 import temporaryRepository, { regex } from "../../lib/temporary-repository.js";
 
 test("temporaryRepository(name) returns {create, delete} API", () => {
