@@ -12,10 +12,10 @@ axiosDebugLog({
 
 import axios from "axios";
 import Bottleneck from "bottleneck";
-import chalk from "chalk";
+import { styleText } from "node:util";
 import cloneDeep from "lodash/cloneDeep.js";
 import { diff, diffString } from "json-diff";
-import { globSync } from "glob";
+import { globSync } from "tinyglobby";
 import humanize from "humanize-string";
 import minimist from "minimist";
 
@@ -40,7 +40,7 @@ async function runScenario(scenarioPath, diffs) {
   const [domain, title] = fixtureName.split("/");
   console.log("");
   console.log(
-    `⏯️  ${chalk.bold(domain)}: ${humanize(title.replace(".js", ""))} ...`,
+    `⏯️  ${styleText("bold", domain)}: ${humanize(title.replace(".js", ""))} ...`,
   );
 
   const request = axios.create({
@@ -126,7 +126,7 @@ async function runScenario(scenarioPath, diffs) {
 
   console.log(diffString(oldNormalizedFixtures, newNormalizedFixtures));
   console.log(
-    `💁  Update fixtures with \`${chalk.bold("bin/record.js --update")}\``,
+    `💁  Update fixtures with \`${styleText("bold", "bin/record.js --update")}\``,
   );
 }
 

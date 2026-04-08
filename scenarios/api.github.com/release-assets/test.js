@@ -1,3 +1,4 @@
+import { test, expect } from "vitest";
 import axios from "axios";
 
 import fixtures from "../../../index.js";

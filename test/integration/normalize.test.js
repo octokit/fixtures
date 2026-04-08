@@ -1,4 +1,5 @@
-import { globSync } from "glob";
+import { test, expect } from "vitest";
+import { globSync } from "tinyglobby";
 import { readFileSync } from "fs";
 
 import normalize from "../../lib/normalize/index.js";
