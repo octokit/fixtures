@@ -45,7 +45,7 @@
     "gunzip-maybe": "^1.4.1",
     "humanize-string": "^3.0.0",
     "minimist": "^1.2.5",
-    "prettier": "3.8.1",
+    "prettier": "3.8.3",
     "tar-stream": "^3.0.0",
     "tinyglobby": "^0.2.15",
     "vitest": "^4.1.3"
