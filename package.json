@@ -43,7 +43,7 @@
     "bottleneck": "^2.12.0",
     "envalid": "^8.0.0",
     "gunzip-maybe": "^1.4.1",
-    "humanize-string": "^3.0.0",
+    "humanize-string": "^4.0.0",
     "minimist": "^1.2.5",
     "prettier": "3.8.4",
     "tar-stream": "^3.0.0",
